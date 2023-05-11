@@ -1,0 +1,306 @@
+Building gpsp...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-gpsp"
+gmake platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-gpsp'
+rm -f ./main.o ./cpu.o ./gba_memory.o ./savestate.o ./video.o ./input.o ./sound.o ./cheats.o ./memmap.o ./libretro/libretro.o ./gba_cc_lut.o ./libretro/libretro-common/compat/compat_posix_string.o ./libretro/libretro-common/compat/compat_strl.o ./libretro/libretro-common/compat/fopen_utf8.o ./libretro/libretro-common/encodings/encoding_utf.o ./libretro/libretro-common/file/file_path.o ./libretro/libretro-common/file/file_path_io.o ./libretro/libretro-common/streams/file_stream.o ./libretro/libretro-common/string/stdstring.o ./libretro/libretro-common/time/rtime.o ./libretro/libretro-common/vfs/vfs_implementation.o ./bios_data.o gpsp_libretro.dylib
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-gpsp'
+gmake platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-gpsp'
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o main.o main.c
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o cpu.o cpu.c
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o gba_memory.o gba_memory.c
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o savestate.o savestate.c
+gba_memory.c:1702:3: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  sprintf(config_path, "%s" PATH_SEPARATOR "%s", main_path, CONFIG_FILENAME);
+  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o video.o video.c
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o input.o input.c
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o sound.o sound.c
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o cheats.o cheats.c
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o memmap.o memmap.c
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o libretro/libretro.o libretro/libretro.c
+1 warning generated.
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o gba_cc_lut.o gba_cc_lut.c
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o libretro/libretro-common/compat/compat_posix_string.o libretro/libretro-common/compat/compat_posix_string.c
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o libretro/libretro-common/compat/compat_strl.o libretro/libretro-common/compat/compat_strl.c
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o libretro/libretro-common/compat/fopen_utf8.o libretro/libretro-common/compat/fopen_utf8.c
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o libretro/libretro-common/encodings/encoding_utf.o libretro/libretro-common/encodings/encoding_utf.c
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o libretro/libretro-common/file/file_path.o libretro/libretro-common/file/file_path.c
+In file included from libretro/libretro-common/file/file_path.c:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:48:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h:19:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFAvailability.h:23:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h:134:14: warning: Building for Intel with Mac OS X Deployment Target < 10.4 is invalid. [-W#warnings]
+            #warning Building for Intel with Mac OS X Deployment Target < 10.4 is invalid.
+             ^
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o libretro/libretro-common/file/file_path_io.o libretro/libretro-common/file/file_path_io.c
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o libretro/libretro-common/streams/file_stream.o libretro/libretro-common/streams/file_stream.c
+1 warning generated.
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o libretro/libretro-common/string/stdstring.o libretro/libretro-common/string/stdstring.c
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o libretro/libretro-common/time/rtime.o libretro/libretro-common/time/rtime.c
+cc -arch i386 -I./libretro -I./libretro/libretro-common/include  -I./ -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c  -o libretro/libretro-common/vfs/vfs_implementation.o libretro/libretro-common/vfs/vfs_implementation.c
+In file included from libretro/libretro-common/vfs/vfs_implementation.c:87:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:48:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h:19:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFAvailability.h:23:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h:134:14: warning: Building for Intel with Mac OS X Deployment Target < 10.4 is invalid. [-W#warnings]
+            #warning Building for Intel with Mac OS X Deployment Target < 10.4 is invalid.
+             ^
+cc -arch i386  -DGIT_VERSION=\"" f4e65d1"\"  -DHAVE_STRINGS_H -DHAVE_STDINT_H -DHAVE_INTTYPES_H -D__LIBRETRO__ -DINLINE=inline -Wall   -DNDEBUG=1 -fPIC -mmacosx-version-min=10.1 -DFRONTEND_SUPPORTS_RGB565 -O3 -DNDEBUG -c -o bios_data.o bios_data.S
+1 warning generated.
+cc -arch i386 -fPIC -mmacosx-version-min=10.1 -dynamiclib -I./libretro -I./libretro/libretro-common/include  -I./ -O3 -DNDEBUG -o gpsp_libretro.dylib ./main.o ./cpu.o ./gba_memory.o ./savestate.o ./video.o ./input.o ./sound.o ./cheats.o ./memmap.o ./libretro/libretro.o ./gba_cc_lut.o ./libretro/libretro-common/compat/compat_posix_string.o ./libretro/libretro-common/compat/compat_strl.o ./libretro/libretro-common/compat/fopen_utf8.o ./libretro/libretro-common/encodings/encoding_utf.o ./libretro/libretro-common/file/file_path.o ./libretro/libretro-common/file/file_path_io.o ./libretro/libretro-common/streams/file_stream.o ./libretro/libretro-common/string/stdstring.o ./libretro/libretro-common/time/rtime.o ./libretro/libretro-common/vfs/vfs_implementation.o ./bios_data.o -lm 
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/dylib1.o, building for macOS-i386 but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+Undefined symbols for architecture i386:
+  "__DefaultRuneLocale", referenced from:
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+  "___error", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+  "___maskrune", referenced from:
+      _filestream_vscanf in file_stream.o
+  "___tolower", referenced from:
+      _path_is_compressed_file in file_path.o
+      _string_to_lower in stdstring.o
+  "___toupper", referenced from:
+      _string_to_upper in stdstring.o
+      _string_ucwords in stdstring.o
+  "_abort", referenced from:
+      _retro_vfs_file_get_path_impl in vfs_implementation.o
+  "_atoi", referenced from:
+      _check_variables in libretro.o
+  "_calloc", referenced from:
+      _retro_set_environment in libretro.o
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+      _retro_vfs_opendir_impl in vfs_implementation.o
+  "_close", referenced from:
+      _retro_vfs_file_close_impl in vfs_implementation.o
+     (maybe you meant: _retro_vfs_closedir_impl, _filestream_close , _retro_vfs_file_close_impl )
+  "_closedir", referenced from:
+      _retro_vfs_closedir_impl in vfs_implementation.o
+     (maybe you meant: _retro_vfs_closedir_impl)
+  "_fclose", referenced from:
+      _retro_vfs_file_close_impl in vfs_implementation.o
+  "_ferror", referenced from:
+      _retro_vfs_file_error_impl in vfs_implementation.o
+  "_fflush", referenced from:
+      _retro_vfs_file_flush_impl in vfs_implementation.o
+  "_fileno", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fopen", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_fread", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+  "_free", referenced from:
+      _memory_term in gba_memory.o
+      _retro_deinit in libretro.o
+      _retro_set_environment in libretro.o
+      _utf16_to_char_string in encoding_utf.o
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+      _path_linked_list_free in file_path.o
+      ...
+     (maybe you meant: _path_linked_list_free)
+  "_fseeko", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+  "_ftello", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+      _retro_vfs_file_write_impl in vfs_implementation.o
+  "_ftruncate", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fwrite", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+  "_localtime", referenced from:
+      _write_rtc in gba_memory.o
+      _rtime_localtime in rtime.o
+     (maybe you meant: _rtime_localtime)
+  "_lseek", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+      _retro_vfs_file_write_impl in vfs_implementation.o
+  "_malloc", referenced from:
+      _init_gamepak_buffer in gba_memory.o
+      _retro_init in libretro.o
+      _check_variables in libretro.o
+      _utf16_to_char_string in encoding_utf.o
+      _path_linked_list_new in file_path.o
+      _path_linked_list_add_path in file_path.o
+      _filestream_open in file_stream.o
+      ...
+  "_mbstowcs", referenced from:
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+  "_memcmp", referenced from:
+      _load_gamepak in gba_memory.o
+      _bson_find_key in savestate.o
+  "_memcpy", referenced from:
+      _main_write_savestate in main.o
+      _cpu_write_savestate in cpu.o
+      _memory_write_savestate in gba_memory.o
+      _bson_read_bytes in savestate.o
+      _sound_write_savestate in sound.o
+      _cheat_parse in cheats.o
+      _retro_load_game in libretro.o
+      ...
+  "_memmove", referenced from:
+      _string_trim_whitespace_left in stdstring.o
+      _string_trim_whitespace in stdstring.o
+  "_memset", referenced from:
+      _write_backup in gba_memory.o
+      _load_backup in gba_memory.o
+      _init_memory in gba_memory.o
+      _load_gamepak in gba_memory.o
+      _update_scanline in video.o
+      _render_scanline_conditional_tile in video.o
+      _reset_sound in sound.o
+      ...
+  "_mkdir", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+     (maybe you meant: _path_mkdir, _retro_vfs_mkdir_impl )
+  "_open", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+     (maybe you meant: _open_gba_bios_rom, _retro_vfs_opendir_impl , _retro_vfs_file_open_impl , _filestream_open )
+  "_opendir", referenced from:
+      _retro_vfs_opendir_impl in vfs_implementation.o
+     (maybe you meant: _retro_vfs_opendir_impl)
+  "_printf", referenced from:
+      _load_gamepak in gba_memory.o
+     (maybe you meant: _filestream_printf)
+  "_puts", referenced from:
+      _load_gamepak in gba_memory.o
+  "_read", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+     (maybe you meant: _read_memory32, _input_read_savestate , _memory_reads_s16 , _retro_vfs_readdir_impl , _retro_vfs_file_read_impl , _memory_reads_s8 , _state_mem_read_ptr , _memory_region_access_read_s8 , _read_memory8 , _memory_read_savestate , _filestream_read_file , _memory_reads_u32 , _read_memory16s , _memory_reads_u16 , _main_read_savestate , _sound_read_savestate , _bson_read_bytes , _memory_region_access_read_u8 , _filestream_read , _memory_map_read , _memory_reads_u8 , _memory_region_access_read_s16 , _bson_read_int32_array , _read_memory16_signed , _bson_read_int32 , _read_backup , _read_eeprom , _sound_read_samples , _cpu_read_savestate , _read_memory8s , _memory_region_access_read_u16 , _memory_region_access_read_u32 , _read_memory16 )
+  "_readdir", referenced from:
+      _retro_vfs_readdir_impl in vfs_implementation.o
+     (maybe you meant: _retro_vfs_readdir_impl)
+  "_realloc", referenced from:
+      _filestream_getline in file_stream.o
+  "_remove", referenced from:
+      _retro_vfs_file_remove_impl in vfs_implementation.o
+     (maybe you meant: _path_remove_extension, _retro_vfs_file_remove_impl , _string_remove_all_whitespace , _string_remove_all_chars )
+  "_rename", referenced from:
+      _retro_vfs_file_rename_impl in vfs_implementation.o
+     (maybe you meant: _filestream_rename, _retro_vfs_file_rename_impl )
+  "_snprintf", referenced from:
+      _load_gamepak in gba_memory.o
+  "_sprintf", referenced from:
+      _load_gamepak in gba_memory.o
+  "_sscanf", referenced from:
+      _cheat_parse in cheats.o
+      _filestream_vscanf in file_stream.o
+  "_stat", referenced from:
+      _retro_vfs_stat_impl in vfs_implementation.o
+      _retro_vfs_dirent_is_dir_impl in vfs_implementation.o
+     (maybe you meant: _state_mem_read_ptr, _state_mem_write_ptr , _rtc_status , _gba_save_state , _retro_vfs_stat_impl , _rtc_state , _path_stat , _retro_set_input_state , _gba_load_state )
+  "_strcat", referenced from:
+      _retro_set_environment in libretro.o
+  "_strchr", referenced from:
+      _load_gamepak in gba_memory.o
+      _path_get_archive_delim in file_path.o
+      _string_replace_all_chars in stdstring.o
+  "_strcmp", referenced from:
+      _load_gamepak in gba_memory.o
+      _retro_set_environment in libretro.o
+      _check_variables in libretro.o
+      _path_mkdir in file_path_io.o
+  "_strcpy", referenced from:
+      _load_gamepak in gba_memory.o
+      _retro_set_environment in libretro.o
+      _retro_load_game in libretro.o
+      _string_replace_substring in stdstring.o
+  "_strdup", referenced from:
+      _utf8_to_local_string_alloc in encoding_utf.o
+      _local_to_utf8_string_alloc in encoding_utf.o
+      _path_linked_list_add_path in file_path.o
+      _fill_pathname_parent_dir_name in file_path.o
+      _path_mkdir in file_path_io.o
+      _string_init in stdstring.o
+      _string_set in stdstring.o
+      ...
+  "_strftime", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+  "_strlcat", referenced from:
+      _fill_pathname in file_path.o
+      _fill_pathname_slash in file_path.o
+      _fill_pathname_dir in file_path.o
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+      _path_relative_to in file_path.o
+      _fill_pathname_resolve_relative in file_path.o
+      ...
+  "_strlcpy", referenced from:
+      _utf16_to_char_string in encoding_utf.o
+      _path_get_archive_delim in file_path.o
+      _fill_pathname in file_path.o
+      _fill_pathname_base in file_path.o
+      _fill_pathname_basedir in file_path.o
+      _fill_pathname_parent_dir_name in file_path.o
+      _fill_pathname_parent_dir in file_path.o
+      ...
+  "_strlen", referenced from:
+      _main_write_savestate in main.o
+      _cpu_write_savestate in cpu.o
+      _memory_write_savestate in gba_memory.o
+      _load_gamepak in gba_memory.o
+      _bson_find_key in savestate.o
+      _sound_write_savestate in sound.o
+      _cheat_parse in cheats.o
+      ...
+  "_strncpy", referenced from:
+      _load_gamepak in gba_memory.o
+      _retro_load_game in libretro.o
+  "_strrchr", referenced from:
+      _load_gamepak in gba_memory.o
+      _retro_load_game in libretro.o
+      _path_get_extension in file_path.o
+      _path_basename in file_path.o
+      _path_get_extension_mutable in file_path.o
+      _path_remove_extension in file_path.o
+      _path_is_compressed_file in file_path.o
+      ...
+  "_strstr", referenced from:
+      _string_replace_substring in stdstring.o
+      _string_tokenize in stdstring.o
+      _string_find_index_substring_string in stdstring.o
+  "_strtol", referenced from:
+      _load_gamepak in gba_memory.o
+      _check_variables in libretro.o
+  "_strtoul", referenced from:
+      _string_to_unsigned in stdstring.o
+      _string_hex_to_unsigned in stdstring.o
+  "_time", referenced from:
+      _write_rtc in gba_memory.o
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+     (maybe you meant: _sound_timer_queue32, _sound_timer , _timer )
+  "_vsnprintf", referenced from:
+      _filestream_vprintf in file_stream.o
+      _filestream_printf in file_stream.o
+  "_wcstombs", referenced from:
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+  "_write", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+     (maybe you meant: _write_backup, _memory_writes_u16 , _filestream_write_file , _write_rtc , _sound_write_savestate , _rtc_write_mode , _state_mem_write_ptr , _filestream_write , _memory_region_access_write_u8 , _main_write_savestate , _write_memory8 , _memory_writes_u32 , _write_io_register16 , _write_io_register8 , _write_io_register32 , _write_memory16 , _memory_region_access_write_u32 , _cpu_write_savestate , _memory_region_access_write_u16 , _write_eeprom , _memory_write_savestate , _write_memory32 , _input_write_savestate , _retro_vfs_file_write_impl , _memory_writes_u8 )
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile:569: gpsp_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-gpsp'
+cp "gpsp_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/gpsp_libretro.dylib"
+cp: gpsp_libretro.dylib: No such file or directory

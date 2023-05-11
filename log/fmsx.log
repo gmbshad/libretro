@@ -1,0 +1,441 @@
+Building fmsx...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-fmsx"
+gmake platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-fmsx'
+rm -f ./libretro.o ./EMULib/Sound.o ./fMSX/MSX.o ./fMSX/V9938.o ./EMULib/SHA1.o ./EMULib/Floppy.o ./EMULib/FDIDisk.o ./EMULib/MCF.o ./Z80/Z80.o ./EMULib/I8255.o ./EMULib/YM2413.o ./EMULib/AY8910.o ./EMULib/SCC.o ./EMULib/WD1793.o ./libretro-common/file/retro_dirent.o ./libretro-common/file/file_path.o ./libretro-common/file/file_path_io.o ./libretro-common/compat/compat_posix_string.o ./libretro-common/compat/compat_strl.o ./libretro-common/compat/compat_snprintf.o ./libretro-common/compat/fopen_utf8.o ./libretro-common/compat/compat_strcasestr.o ./libretro-common/encodings/encoding_utf.o ./libretro-common/streams/file_stream.o ./libretro-common/streams/file_stream_transforms.o ./libretro-common/time/rtime.o ./libretro-common/string/stdstring.o ./libretro-common/vfs/vfs_implementation.o ./fMSX/Patch.o
+rm -f fmsx_libretro.dylib
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-fmsx'
+gmake platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-fmsx'
+cc -arch i386 -c -o libretro.o libretro.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o EMULib/Sound.o EMULib/Sound.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o fMSX/MSX.o fMSX/MSX.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o fMSX/V9938.o fMSX/V9938.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+libretro.c:1120:28: warning: multiple unsequenced modifications to 'current_cheat' [-Wunsequenced]
+            current_cheat=(++current_cheat)%(MCFCount+1);
+                         ~ ^
+fMSX/MSX.c:3111:9: warning: assigning to 'char *' from 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+      T = (uint8_t*)(const char*)strrchr(SRAMName[Slot],'.');
+        ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fMSX/MSX.c:3337:5: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+    SaveDATA(SCCIRAM,16*0x2000);
+    ^
+fMSX/MSX.c:3244:3: note: expanded from macro 'SaveDATA'
+  else { memcpy(Buf+Size,(Name),(DataSize));Size+=(DataSize); }
+  ^
+fMSX/MSX.c:3368:5: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+    LoadDATA(SCCIRAM,16*0x2000);
+    ^
+fMSX/MSX.c:3260:3: note: expanded from macro 'LoadDATA'
+  else { memcpy((Name),Buf+Size,(DataSize));Size+=(DataSize); }
+  ^
+cc -arch i386 -c -o EMULib/SHA1.o EMULib/SHA1.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o EMULib/Floppy.o EMULib/Floppy.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+EMULib/Floppy.c:484:33: warning: passing 'char *' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+          if((K = DSKRead(Dsk,J,P,DSKFileSize(Dsk,J))))
+                                ^
+EMULib/Floppy.c:272:48: note: passing argument to parameter 'Buf' here
+int DSKRead(const uint8_t *Dsk,int ID,uint8_t *Buf,int Size)
+                                               ^
+1 warning generated.
+cc -arch i386 -c -o EMULib/FDIDisk.o EMULib/FDIDisk.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o EMULib/MCF.o EMULib/MCF.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o Z80/Z80.o Z80/Z80.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o EMULib/I8255.o EMULib/I8255.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o EMULib/YM2413.o EMULib/YM2413.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o EMULib/AY8910.o EMULib/AY8910.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o EMULib/SCC.o EMULib/SCC.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+3 warnings generated.
+cc -arch i386 -c -o EMULib/WD1793.o EMULib/WD1793.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+EMULib/WD1793.c:304:20: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+          if(D->Ptr=SeekFDI(D->Disk[D->Drive],0,D->Track[D->Drive],0,D->R[1],1))
+             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+EMULib/WD1793.c:304:20: note: place parentheses around the assignment to silence this warning
+          if(D->Ptr=SeekFDI(D->Disk[D->Drive],0,D->Track[D->Drive],0,D->R[1],1))
+                   ^
+             (                                                                 )
+EMULib/WD1793.c:304:20: note: use '==' to turn this assignment into an equality comparison
+          if(D->Ptr=SeekFDI(D->Disk[D->Drive],0,D->Track[D->Drive],0,D->R[1],1))
+                   ^
+                   ==
+cc -arch i386 -c -o libretro-common/file/retro_dirent.o libretro-common/file/retro_dirent.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+1 warning generated.
+1 warning generated.
+cc -arch i386 -c -o libretro-common/file/file_path.o libretro-common/file/file_path.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o libretro-common/file/file_path_io.o libretro-common/file/file_path_io.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o libretro-common/compat/compat_posix_string.o libretro-common/compat/compat_posix_string.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o libretro-common/compat/compat_strl.o libretro-common/compat/compat_strl.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o libretro-common/compat/compat_snprintf.o libretro-common/compat/compat_snprintf.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o libretro-common/compat/fopen_utf8.o libretro-common/compat/fopen_utf8.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o libretro-common/compat/compat_strcasestr.o libretro-common/compat/compat_strcasestr.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o libretro-common/encodings/encoding_utf.o libretro-common/encodings/encoding_utf.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o libretro-common/streams/file_stream.o libretro-common/streams/file_stream.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o libretro-common/streams/file_stream_transforms.o libretro-common/streams/file_stream_transforms.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o libretro-common/time/rtime.o libretro-common/time/rtime.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o libretro-common/string/stdstring.o libretro-common/string/stdstring.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o libretro-common/vfs/vfs_implementation.o libretro-common/vfs/vfs_implementation.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -c -o fMSX/Patch.o fMSX/Patch.c -DGIT_VERSION=\"" 1806eed"\"  -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -DSKIP_STDIO_REDEFINES -DPATCH_Z80 -I. -I./libretro-common/include -I./EMULib -I./Z80 -I./fMSX  
+cc -arch i386 -o fmsx_libretro.dylib -dynamiclib ./libretro.o ./EMULib/Sound.o ./fMSX/MSX.o ./fMSX/V9938.o ./EMULib/SHA1.o ./EMULib/Floppy.o ./EMULib/FDIDisk.o ./EMULib/MCF.o ./Z80/Z80.o ./EMULib/I8255.o ./EMULib/YM2413.o ./EMULib/AY8910.o ./EMULib/SCC.o ./EMULib/WD1793.o ./libretro-common/file/retro_dirent.o ./libretro-common/file/file_path.o ./libretro-common/file/file_path_io.o ./libretro-common/compat/compat_posix_string.o ./libretro-common/compat/compat_strl.o ./libretro-common/compat/compat_snprintf.o ./libretro-common/compat/fopen_utf8.o ./libretro-common/compat/compat_strcasestr.o ./libretro-common/encodings/encoding_utf.o ./libretro-common/streams/file_stream.o ./libretro-common/streams/file_stream_transforms.o ./libretro-common/time/rtime.o ./libretro-common/string/stdstring.o ./libretro-common/vfs/vfs_implementation.o ./fMSX/Patch.o  
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+Undefined symbols for architecture i386:
+  "__DefaultRuneLocale", referenced from:
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+  "___bzero", referenced from:
+      _RefreshBorder in libretro.o
+      _RefreshBorder512 in libretro.o
+      _retro_load_game in libretro.o
+      _ResetMSX in MSX.o
+      _SaveState in MSX.o
+      _DSKCreate in Floppy.o
+      _NewFDI in FDIDisk.o
+      ...
+  "___divdi3", referenced from:
+      _rfread in file_stream_transforms.o
+  "___error", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+  "___maskrune", referenced from:
+      _filestream_vscanf in file_stream.o
+  "___memcpy_chk", referenced from:
+      _PatchZ80 in Patch.o
+  "___memset_chk", referenced from:
+      _RenderAndPlayAudio in Sound.o
+  "___sprintf_chk", referenced from:
+      _ApplyMCFCheat in MSX.o
+  "___stack_chk_fail", referenced from:
+      _RefreshLine4 in libretro.o
+      _RefreshLine5 in libretro.o
+      _RefreshLine8 in libretro.o
+      _RefreshLine10 in libretro.o
+      _RefreshLine12 in libretro.o
+      _RefreshLine6 in libretro.o
+      _RefreshLine7 in libretro.o
+      ...
+  "___stack_chk_guard", referenced from:
+      _RefreshLine4 in libretro.o
+      _RefreshLine5 in libretro.o
+      _RefreshLine8 in libretro.o
+      _RefreshLine10 in libretro.o
+      _RefreshLine12 in libretro.o
+      _RefreshLine6 in libretro.o
+      _RefreshLine7 in libretro.o
+      ...
+      _RefreshLine4 in libretro.o
+      _RefreshLine5 in libretro.o
+      _RefreshLine8 in libretro.o
+      _RefreshLine10 in libretro.o
+      _RefreshLine12 in libretro.o
+      _RefreshLine6 in libretro.o
+      _RefreshLine7 in libretro.o
+      ...
+      _RefreshLine4 in libretro.o
+      _RefreshLine5 in libretro.o
+      _RefreshLine8 in libretro.o
+      _RefreshLine10 in libretro.o
+      _RefreshLine12 in libretro.o
+      _RefreshLine6 in libretro.o
+      _RefreshLine7 in libretro.o
+      ...
+      _RefreshLine4 in libretro.o
+      _RefreshLine5 in libretro.o
+      _RefreshLine8 in libretro.o
+      _RefreshLine10 in libretro.o
+      _RefreshLine12 in libretro.o
+      _RefreshLine6 in libretro.o
+      _RefreshLine7 in libretro.o
+      ...
+      _RefreshLine4 in libretro.o
+      _RefreshLine5 in libretro.o
+      _RefreshLine8 in libretro.o
+      _RefreshLine10 in libretro.o
+      _RefreshLine12 in libretro.o
+      _RefreshLine6 in libretro.o
+      _RefreshLine7 in libretro.o
+      ...
+      _RefreshLine4 in libretro.o
+      _RefreshLine5 in libretro.o
+      _RefreshLine8 in libretro.o
+      _RefreshLine10 in libretro.o
+      _RefreshLine12 in libretro.o
+      _RefreshLine6 in libretro.o
+      _RefreshLine7 in libretro.o
+      ...
+      _RefreshLine4 in libretro.o
+      _RefreshLine5 in libretro.o
+      _RefreshLine8 in libretro.o
+      _RefreshLine10 in libretro.o
+      _RefreshLine12 in libretro.o
+      _RefreshLine6 in libretro.o
+      _RefreshLine7 in libretro.o
+      ...
+      ...
+  "___stdoutp", referenced from:
+      _retro_run in libretro.o
+  "___strcat_chk", referenced from:
+      _custom_keyboard_values in libretro.o
+  "___strcpy_chk", referenced from:
+      _retro_load_game in libretro.o
+      _fill_pathname_abbreviated_or_relative in file_path.o
+  "___strlcat_chk", referenced from:
+      _fill_pathname_abbreviated_or_relative in file_path.o
+  "___strlcpy_chk", referenced from:
+      _path_get_archive_delim in file_path.o
+      _fill_pathname in file_path.o
+  "___tolower", referenced from:
+      _path_is_compressed_file in file_path.o
+      _strcasestr_retro__ in compat_strcasestr.o
+      _string_to_lower in stdstring.o
+  "___toupper", referenced from:
+      _AddCheat in MSX.o
+      _LoadPAL in MSX.o
+      _DSKLoad in Floppy.o
+      _LoadFDI in FDIDisk.o
+      _string_to_upper in stdstring.o
+      _string_ucwords in stdstring.o
+  "_abort", referenced from:
+      _retro_vfs_file_get_path_impl in vfs_implementation.o
+  "_calloc", referenced from:
+      _retro_load_game in libretro.o
+      _StartMSX in MSX.o
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_opendir_impl in vfs_implementation.o
+  "_chdir", referenced from:
+      _StartMSX in MSX.o
+      _ResetMSX in MSX.o
+      _TrashMSX in MSX.o
+      _GuessROM in MSX.o
+  "_close$UNIX2003", referenced from:
+      _retro_vfs_file_close_impl in vfs_implementation.o
+  "_closedir$UNIX2003", referenced from:
+      _retro_vfs_closedir_impl in vfs_implementation.o
+  "_fclose", referenced from:
+      _retro_vfs_file_close_impl in vfs_implementation.o
+  "_ferror", referenced from:
+      _retro_vfs_file_error_impl in vfs_implementation.o
+  "_fflush", referenced from:
+      _retro_run in libretro.o
+      _retro_vfs_file_flush_impl in vfs_implementation.o
+  "_fileno", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fopen$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_fread", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+  "_free", referenced from:
+      _retro_unload_game in libretro.o
+      _retro_get_memory_size in libretro.o
+      _retro_set_environment in libretro.o
+      _StartMSX in MSX.o
+      _ResetMSX in MSX.o
+      _LoadFNT in MSX.o
+      _LoadROM in MSX.o
+      ...
+  "_fseeko", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+  "_ftello", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+  "_ftruncate", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fwrite$UNIX2003", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+  "_getcwd", referenced from:
+      _StartMSX in MSX.o
+  "_localtime", referenced from:
+      _RTCIn in MSX.o
+      _rtime_localtime in rtime.o
+     (maybe you meant: _rtime_localtime)
+  "_lseek", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+  "_malloc", referenced from:
+      _retro_load_game in libretro.o
+      _StartMSX in MSX.o
+      _ResetMSX in MSX.o
+      _LoadFNT in MSX.o
+      _LoadROM in MSX.o
+      _LoadCart in MSX.o
+      _ChangeTape in MSX.o
+      ...
+  "_mbstowcs", referenced from:
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+  "_memchr", referenced from:
+      _AddCheat in MSX.o
+      _LoadPAL in MSX.o
+  "_memcmp", referenced from:
+      _ChangeTape in MSX.o
+      _DSKFile in Floppy.o
+      _LoadFDI in FDIDisk.o
+  "_memcpy", referenced from:
+      _set_image_index in libretro.o
+      _set_input_descriptors in libretro.o
+      _retro_run in libretro.o
+      _LoadCart in MSX.o
+      _SaveState in MSX.o
+      _LoadState in MSX.o
+      _DSKWrite in Floppy.o
+      ...
+  "_memmove", referenced from:
+      _string_trim_whitespace_left in stdstring.o
+      _string_trim_whitespace in stdstring.o
+  "_memset", referenced from:
+      _StartMSX in MSX.o
+      _ResetMSX in MSX.o
+      _LoadROM in MSX.o
+      _LoadCart in MSX.o
+      _DSKLoad in Floppy.o
+      _Write1793 in WD1793.o
+      _PatchZ80 in Patch.o
+      ...
+  "_memset_pattern16", referenced from:
+      _GuessROM in MSX.o
+  "_mkdir", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+     (maybe you meant: _path_mkdir, _retro_vfs_mkdir_impl )
+  "_open$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_opendir$INODE64$UNIX2003", referenced from:
+      _retro_vfs_opendir_impl in vfs_implementation.o
+  "_read$UNIX2003", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+  "_readdir$INODE64", referenced from:
+      _retro_vfs_readdir_impl in vfs_implementation.o
+  "_realloc", referenced from:
+      _filestream_getline in file_stream.o
+  "_remove", referenced from:
+      _retro_vfs_file_remove_impl in vfs_implementation.o
+     (maybe you meant: _path_remove_extension, _retro_vfs_file_remove_impl , _string_remove_all_chars )
+  "_rename", referenced from:
+      _retro_vfs_file_rename_impl in vfs_implementation.o
+     (maybe you meant: _filestream_rename, _retro_vfs_file_rename_impl )
+  "_setvbuf", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_snprintf", referenced from:
+      _keyboard_event in libretro.o
+      _retro_load_game in libretro.o
+      _check_variables in libretro.o
+      _PutImage in libretro.o
+      _retro_reset in libretro.o
+  "_sscanf", referenced from:
+      _GuessROM in MSX.o
+      _LoadCHT in MSX.o
+      _LoadFileMCF in MCF.o
+      _filestream_vscanf in file_stream.o
+  "_stat$INODE64", referenced from:
+      _DSKLoad in Floppy.o
+      _retro_vfs_stat_impl in vfs_implementation.o
+      _retro_vfs_dirent_is_dir_impl in vfs_implementation.o
+  "_strcasecmp", referenced from:
+      _retro_load_game in libretro.o
+      _replace_image_index in libretro.o
+  "_strcat", referenced from:
+      _MakeFileName in MSX.o
+  "_strchr", referenced from:
+      _retro_load_game in libretro.o
+      _LoadFDI in FDIDisk.o
+      _path_get_archive_delim in file_path.o
+      _rfopen in file_stream_transforms.o
+      _string_replace_all_chars in stdstring.o
+  "_strcmp", referenced from:
+      _check_variables in libretro.o
+      _custom_keyboard_values in libretro.o
+      _StartMSX in MSX.o
+      _GuessROM in MSX.o
+      _path_mkdir in file_path_io.o
+  "_strcpy", referenced from:
+      _retro_load_game in libretro.o
+      _replace_image_index in libretro.o
+      _LoadCart in MSX.o
+      _MakeFileName in MSX.o
+      _DSKLoad in Floppy.o
+      _DSKSave in Floppy.o
+      _string_replace_substring in stdstring.o
+      ...
+  "_strdup", referenced from:
+      _custom_keyboard_values in libretro.o
+      _fill_pathname_parent_dir_name in file_path.o
+      _path_mkdir in file_path_io.o
+      _utf8_to_local_string_alloc in encoding_utf.o
+      _local_to_utf8_string_alloc in encoding_utf.o
+      _string_init in stdstring.o
+      _string_set in stdstring.o
+      ...
+  "_strftime$UNIX2003", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+  "_strlcat", referenced from:
+      _fill_pathname in file_path.o
+      _fill_pathname_noext in file_path.o
+      _fill_pathname_slash in file_path.o
+      _fill_pathname_dir in file_path.o
+      _fill_pathname_base_ext in file_path.o
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+      ...
+  "_strlcpy", referenced from:
+      _AddCheat in MSX.o
+      _fill_pathname in file_path.o
+      _fill_pathname_noext in file_path.o
+      _fill_pathname_base in file_path.o
+      _fill_pathname_base_noext in file_path.o
+      _fill_pathname_basedir in file_path.o
+      _path_basedir in file_path.o
+      ...
+  "_strlen", referenced from:
+      _retro_load_game in libretro.o
+      _LoadCart in MSX.o
+      _MakeFileName in MSX.o
+      _AddCheat in MSX.o
+      _DSKLoad in Floppy.o
+      _DSKSave in Floppy.o
+      _fill_pathname_slash in file_path.o
+      ...
+  "_strncpy", referenced from:
+      _set_image_index in libretro.o
+      _retro_load_game in libretro.o
+      _check_variables in libretro.o
+      _DSKCreate in Floppy.o
+      _LoadFileMCF in MCF.o
+  "_strrchr", referenced from:
+      _retro_load_game in libretro.o
+      _replace_image_index in libretro.o
+      _LoadCart in MSX.o
+      _MakeFileName in MSX.o
+      _LoadFDI in FDIDisk.o
+      _path_get_archive_delim in file_path.o
+      _find_last_slash in file_path.o
+      ...
+  "_strstr", referenced from:
+      _string_replace_substring in stdstring.o
+      _string_tokenize in stdstring.o
+  "_strtoul", referenced from:
+      _string_to_unsigned in stdstring.o
+      _string_hex_to_unsigned in stdstring.o
+  "_time", referenced from:
+      _RTCIn in MSX.o
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+  "_unlink", referenced from:
+      _SaveFDI in FDIDisk.o
+  "_vsnprintf", referenced from:
+      _filestream_vprintf in file_stream.o
+      _filestream_printf in file_stream.o
+  "_wcstombs", referenced from:
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+  "_write$UNIX2003", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile:605: fmsx_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-fmsx'
+cp "fmsx_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/fmsx_libretro.dylib"
+cp: fmsx_libretro.dylib: No such file or directory

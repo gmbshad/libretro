@@ -1,0 +1,545 @@
+Building bnes...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-bnes"
+gmake platform="osx" -j4 compiler="clang++ -arch i386 -std=c++11 -stdlib=libc++" clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-bnes'
+rm -f obj/nes-interface.o obj/nes-system.o obj/nes-scheduler.o obj/nes-input.o obj/nes-cartridge.o obj/nes-memory.o obj/nes-cpu.o obj/nes-apu.o obj/nes-ppu.o obj/nes-cheat.o obj/libnes.o obj/libco.o bnes_libretro.dylib
+rm -f BNES_*
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-bnes'
+gmake platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" compiler="clang++ -arch i386 -std=c++11 -stdlib=libc++"
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-bnes'
+c++ -arch i386 -O3 -DNDEBUG -fomit-frame-pointer -fno-tree-vectorize -I. -fPIC -DGIT_VERSION=\"" 8e26e89"\" -c nes/interface/interface.cpp -o obj/nes-interface.o
+c++ -arch i386 -O3 -DNDEBUG -fomit-frame-pointer -fno-tree-vectorize -I. -fPIC -DGIT_VERSION=\"" 8e26e89"\" -c nes/system/system.cpp -o obj/nes-system.o
+c++ -arch i386 -O3 -DNDEBUG -fomit-frame-pointer -fno-tree-vectorize -I. -fPIC -DGIT_VERSION=\"" 8e26e89"\" -c nes/scheduler/scheduler.cpp -o obj/nes-scheduler.o
+c++ -arch i386 -O3 -DNDEBUG -fomit-frame-pointer -fno-tree-vectorize -I. -fPIC -DGIT_VERSION=\"" 8e26e89"\" -c nes/input/input.cpp -o obj/nes-input.o
+In file included from nes/interface/interface.cpp:1:
+In file included from ./nes/nes.hpp:20:
+./nall/platform.hpp:137:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    auto unused = getcwd(path, PATH_MAX);
+    ^
+In file included from nes/scheduler/scheduler.cpp:1:
+In file included from ./nes/nes.hpp:20:
+./nall/platform.hpp:137:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    auto unused = getcwd(path, PATH_MAX);
+    ^
+In file included from nes/system/system.cpp:1:
+In file included from ./nes/nes.hpp:20:
+./nall/platform.hpp:137:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    auto unused = getcwd(path, PATH_MAX);
+    ^
+In file included from nes/input/input.cpp:1:
+In file included from ./nes/nes.hpp:20:
+./nall/platform.hpp:137:5: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+    auto unused = getcwd(path, PATH_MAX);
+    ^
+In file included from nes/scheduler/scheduler.cpp:1:
+In file included from ./nes/nes.hpp:22:
+In file included from ./nall/array.hpp:10:
+./nall/bit.hpp:29:3: error: unknown type name 'constexpr'
+  constexpr inline uintmax_t mask(const char* s, uintmax_t sum = 0) {
+  ^
+./nall/bit.hpp:29:13: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  constexpr inline uintmax_t mask(const char* s, uintmax_t sum = 0) {
+            ^
+./nall/platform.hpp:80:25: note: expanded from macro 'inline'
+  #define inline        inline
+                        ^
+In file included from nes/scheduler/scheduler.cpp:1:
+In file included from ./nes/nes.hpp:22:
+In file included from ./nall/array.hpp:10:
+./nall/bit.hpp:29:29: error: expected ';' after top level declarator
+  constexpr inline uintmax_t mask(const char* s, uintmax_t sum = 0) {
+                            ^
+                            ;
+In file included from nes/input/input.cpp:1:
+In file included from ./nes/nes.hpp:22:
+In file included from In file included from nes/interface/interface.cpp:1:
+./nall/array.hpp:10:
+./nall/bit.hpp:29In file included from ./nes/nes.hpp:22:
+In file included from ./nall/array.hpp:10In file included from nes/system/system.cpp:1:
+In file included from ./nes/nes.hpp:22:3: error: unknown type name 'constexpr'
+  constexpr inline uintmax_t mask(const char* s, uintmax_t sum = 0) {
+  ^
+./nall/bit.hpp:29:13: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  constexpr inline uintmax_t mask(const char* s, uintmax_t sum = 0) {
+            ^
+./nall/platform.hpp:80:25: note: expanded from macro 'inline'
+  #define inline        inline
+                        ^
+:
+In file included from ./nall/array.hpp:10:
+./nall/bit.hpp:29:3:
+./nall/bit.hpp:29:3: error: unknown type name 'constexpr': error: unknown type name 'constexpr'
+  constexpr inline uintmax_t mask(const char* s, uintmax_t sum = 0) {
+  ^
+./nall/bit.hpp:29:13: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  constexpr inline uintmax_t mask(const char* s, uintmax_t sum = 0) {
+            ^
+./nall/platform.hpp:80:25: note: expanded from macro 'inline'
+  #define inline        inline
+                        ^
+
+  constexpr inline uintmax_t mask(const char* s, uintmax_t sum = 0) {
+  ^
+./nall/bit.hpp:29:13: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+In file included from nes/input/input.cpp:1:
+In file included from ./nes/nes.hpp:22:
+In file included from ./nall/array.hpp:10:
+./nall/bit.hpp:29:29: error: expected ';' after top level declarator
+  constexpr inline uintmax_t mask(const char* s, uintmax_t sum = 0) {
+                            ^
+                            ;
+In file included from nes/system/system.cppIn file included from nes/scheduler/scheduler.cpp:1:
+In file included from ./nes/nes.hpp:22:
+./nall/array.hpp:80:16: error: no template named 'initializer_list' in namespace 'std'
+:    array(std::initializer_list<T> list) : pool(nullptr), poolsize(0), buffersize(0) {
+          ~~~~~^
+./nall/array.hpp:103:28: warning: rvalue references are a C++11 extension [-Wc++11-extensions]
+    array& operator=(array &&source) {
+                           ^
+./nall/array.hpp:113:17: warning: rvalue references are a C++11 extension [-Wc++11-extensions]
+    array(array &&source) : pool(nullptr), poolsize(0), buffersize(0) {
+                ^
+1:
+In file included from ./nes/nes.hpp:22:
+In file included from ./nall/array.hpp:10:
+./nall/bit.hpp:29:29: error: expected ';' after top level declarator
+  constexpr inline uintmax_t mask(const char* s, uintmax_t sum = 0) {
+                            ^
+                            ;
+  constexpr inline uintmax_t mask(const char* s, uintmax_t sum = 0) {
+            ^
+./nall/platform.hpp:80:25: note: expanded from macro 'inline'
+  #define inline        inline
+                        ^
+In file included from nes/interface/interface.cpp:1:
+In file included from ./nes/nes.hpp:22:
+In file included from ./nall/array.hpp:10:
+./nall/bit.hpp:29:29: error: expected ';' after top level declarator
+  constexpr inline uintmax_t mask(const char* s, uintmax_t sum = 0) {
+                            ^
+                            ;
+./nall/array.hpp:42:38: error: no member named 'round' in namespace 'nall::bit'; did you mean simply 'round'?
+      if(newsize > poolsize) reserve(bit::round(newsize));  //round reserve size up to power of 2
+                                     ^~~~~~~~~~
+                                     round
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/math.h:1675:1: note: 'round' declared here
+round(_A1 __lcpp_x) _NOEXCEPT
+^
+In file included from nes/scheduler/scheduler.cpp:1:
+In file included from ./nes/nes.hpp:22:
+./nall/array.hpp:69:71: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+      for(unsigned i = 0; i < size(); i++) if(pool[i] == data) return { true, i };
+                                                                      ^~~~~~~~~~~
+./nall/array.hpp:69:71: error: non-aggregate type 'optional<unsigned int>' cannot be initialized with an initializer list
+      for(unsigned i = 0; i < size(); i++) if(pool[i] == data) return { true, i };
+                                                                      ^~~~~~~~~~~
+./nall/array.hpp:70:14: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+      return { false, 0 };
+             ^~~~~~~~~~~~
+./nall/array.hpp:70:14: error: non-aggregate type 'optional<unsigned int>' cannot be initialized with an initializer list
+      return { false, 0 };
+             ^~~~~~~~~~~~
+In file included from nes/interface/interface.cpp:1:
+In file included from ./nes/nes.hpp:22:
+./nall/array.hpp:80:16: error: no template named 'initializer_list' in namespace 'std'
+    array(std::initializer_list<T> list) : pool(nullptr), poolsize(0), buffersize(0) {
+          ~~~~~^
+In file included from nes/scheduler/scheduler.cpp:1:
+In file included from ./nes/nes.hpp:24:
+In file included from ./nall/dl.hpp:6:
+./nall/intrinsics.hpp:5:8: warning: scoped enumerations are a C++11 extension [-Wc++11-extensions]
+  enum class Compiler : unsigned { GCC, VisualC, Unknown };
+       ^
+./nall/intrinsics.hpp:5:8: error: reference to enumeration must use 'enum' not 'enum class' [-Welaborated-enum-class]
+  enum class Compiler : unsigned { GCC, VisualC, Unknown };
+       ^~~~~~
+./nall/intrinsics.hpp:5:34: error: expected '(' for function-style cast or type construction
+  enum class Compiler : unsigned { GCC, VisualC, Unknown };
+                        ~~~~~~~~ ^
+./nall/intrinsics.hpp:6:8: warning: scoped enumerations are a C++11 extension [-Wc++11-extensions]
+  enum class Platform : unsigned { X, OSX, Windows, Unknown };
+       ^
+./nall/intrinsics.hpp:6:8: error: reference to enumeration must use 'enum' not 'enum class' [-Welaborated-enum-class]
+  enum class Platform : unsigned { X, OSX, Windows, Unknown };
+       ^~~~~~
+./nall/intrinsics.hpp:6:34: error: expected '(' for function-style cast or type construction
+  enum class Platform : unsigned { X, OSX, Windows, Unknown };
+                        ~~~~~~~~ ^
+./nall/intrinsics.hpp:7:8: warning: scoped enumerations are a C++11 extension [-Wc++11-extensions]
+  enum class Endian : unsigned { LSB, MSB, Unknown };
+       ^
+./nall/intrinsics.hpp:7:8: error: reference to enumeration must use 'enum' not 'enum class' [-Welaborated-enum-class]
+  enum class Endian : unsigned { LSB, MSB, Unknown };
+       ^~~~~~
+./nall/intrinsics.hpp:7:32: error: expected '(' for function-style cast or type construction
+  enum class Endian : unsigned { LSB, MSB, Unknown };
+                      ~~~~~~~~ ^
+./nall/array.hpp:103:28: warning: rvalue references are a C++11 extension [-Wc++11-extensions]
+    array& operator=(array &&source) {
+                           ^
+./nall/array.hpp:113:17: ./nall/intrinsics.hpp:18:3: error: no type named 'Compiler' in 'Intrinsics'; did you mean simply 'Compiler'?
+  Intrinsics::Compiler Intrinsics::compiler() { return Intrinsics::Compiler::GCC; }
+  ^~~~~~~~~~~~~~~~~~~~
+  Compiler
+./nall/intrinsics.hpp:5:14: note: 'Compiler' declared here
+  enum class Compiler : unsigned { GCC, VisualC, Unknown };
+             ^
+In file included from nes/input/input.cpp:1:
+In file included from ./nes/nes.hpp:22:
+./nall/array.hpp:80:16: error: no template named 'initializer_list' in namespace 'std'
+    array(std::initializer_list<T> list) : pool(nullptr), poolsize(0), buffersize(0) {
+          ~~~~~^
+./nall/intrinsics.hpp:18:68: error: 'Compiler' is not a class, namespace, or enumeration
+  Intrinsics::Compiler Intrinsics::compiler() { return Intrinsics::Compiler::GCC; }
+                                                                   ^
+./nall/array.hpp:103:28: warning: rvalue references are a C++11 extension [-Wc++11-extensions]
+    array& operator=(array &&source) {
+                           ^
+./nall/array.hpp:113:17: warning: rvalue references are a C++11 extension [-Wc++11-extensions]
+    array(array &&source) : pool(nullptr), poolsize(0), buffersize(0) {
+                ^
+warning: rvalue references are a C++11 extension [-Wc++11-extensions]
+    array(array &&source) : pool(nullptr), poolsize(0), buffersize(0) {
+                ^In file included from nes/system/system.cpp:1:
+In file included from ./nes/nes.hpp:22:
+./nall/array.hpp:80:16: error: no template named 'initializer_list' in namespace 'std'
+    array(std::initializer_list<T> list) : pool(nullptr), poolsize(0), buffersize(0) {
+          ~~~~~^
+./nall/array.hpp:103:28: warning: rvalue references are a C++11 extension [-Wc++11-extensions]
+    array& operator=(array &&source) {
+                           ^
+./nall/array.hpp:113:17: warning: rvalue references are a C++11 extension [-Wc++11-extensions]
+./nall/intrinsics.hpp:34:3:     array(array &&source) : pool(nullptr), poolsize(0), buffersize(0) {error: 
+no type named 'Platform' in 'Intrinsics'; did you mean simply 'Platform'?                ^
+
+  Intrinsics::Platform Intrinsics::platform() { return Intrinsics::Platform::OSX; }
+  ^~~~~~~~~~~~~~~~~~~~
+  Platform
+./nall/intrinsics.hpp:6:14: note: 'Platform' declared here
+  enum class Platform : unsigned { X, OSX, Windows, Unknown };
+             ^
+
+./nall/array.hpp:42:38: error: no member named 'round' in namespace 'nall::bit'; did you mean simply 'round'?
+      if(newsize > poolsize) reserve(bit::round(newsize));  //round reserve size up to power of 2
+                                     ^~~~~~~~~~
+                                     round
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/math.h:./nall/intrinsics.hpp:34:68: error: 'Platform' is not a class, namespace, or enumeration
+  Intrinsics::Platform Intrinsics::platform() { return Intrinsics::Platform::OSX; }
+                                                                   ^
+./nall/intrinsics.hpp:49:3: error: no type named 'Endian' in 'Intrinsics'; did you mean simply 'Endian'?
+  Intrinsics::Endian Intrinsics::endian() { return Intrinsics::Endian::LSB; }
+  ^~~~~~~~~~~~~~~~~~
+  Endian
+./nall/intrinsics.hpp:7:14: note: 'Endian' declared here
+  enum class Endian : unsigned { LSB, MSB, Unknown };
+             ^
+1675:1./nall/array.hpp:42:38: note: 'round' declared here
+round(_A1 __lcpp_x) _NOEXCEPT
+^
+: error: In file included from nes/input/input.cpp:1:
+In file included from ./nes/nes.hppno member named 'round' in namespace 'nall::bit'; did you mean simply 'round'?
+      if(newsize > poolsize) reserve(bit::round(newsize));  //round reserve size up to power of 2
+                                     ^~~~~~~~~~
+                                     round
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/math.h:1675:1: note: 'round' declared here
+round(_A1 __lcpp_x) _NOEXCEPT
+^
+./nall/intrinsics.hpp:49:64: error: 'Endian' is not a class, namespace, or enumeration
+  Intrinsics::Endian Intrinsics::endian() { return Intrinsics::Endian::LSB; }
+                                                               ^
+:22:
+./nall/array.hpp:69:71: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+      for(unsigned i = 0; i < size(); i++) if(pool[i] == data) return { true, i };
+                                                                      ^~~~~~~~~~~
+./nall/array.hpp:69:71: error: non-aggregate type 'optional<unsigned int>' cannot be initialized with an initializer list
+      for(unsigned i = 0; i < size(); i++) if(pool[i] == data) return { true, i };
+                                                                      ^~~~~~~~~~~
+./nall/array.hpp:70:14: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+      return { false, 0 };
+             ^~~~~~~~~~~~
+./nall/array.hpp:70:14:In file included from nes/system/system.cpp:1:
+In file included from  error: non-aggregate type 'optional<unsigned int>' cannot be initialized with an initializer list
+      return { false, 0 };
+             ^~~~~~~~~~~~
+./nes/nes.hpp:22:
+./nall/array.hpp:69:71: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+      for(unsigned i = 0; i < size(); i++) if(pool[i] == data) return { true, i };
+                                                                      ^~~~~~~~~~~
+./nall/array.hpp:69:71: error: non-aggregate type 'optional<unsigned int>' cannot be initialized with an initializer list
+      for(unsigned i = 0; i < size(); i++) if(pool[i] == data) return { true, i };
+                                                                      ^~~~~~~~~~~
+./nall/array.hpp:70:14: warning: In file included from nes/scheduler/scheduler.cpp:1:
+In file included from ./nes/nes.hpp:24:
+In file included from ./nall/dl.hpp:8:
+In file included from ./nall/string.hpp:13:
+./nall/atoi.hpp:12:1: error: unknown type name 'constexpr'
+constexpr inline uintmax_t binary_(const char *s, uintmax_t sum = 0) {
+^
+./nall/atoi.hpp:12:11: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+constexpr inline uintmax_t binary_(const char *s, uintmax_t sum = 0) {generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+      return { false, 0 };
+             ^~~~~~~~~~~~
+./nall/array.hpp:70:14: error: non-aggregate type 'optional<unsigned int>' cannot be initialized with an initializer list
+      return { false, 0 };
+             ^~~~~~~~~~~~
+
+          ^
+./nall/platform.hpp:80:25: note: expanded from macro 'inline'
+  #define inline        inline
+                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+In file included from nes/system/system.cpp:1:
+In file included from ./nes/nes.hpp:24:
+In file included from ./nall/dl.hpp:6:
+./nall/intrinsics.hpp:5:8: warning: scoped enumerations are a C++11 extension [-Wc++11-extensions]
+  enum class Compiler : unsigned { GCC, VisualC, Unknown };
+       ^
+./nall/intrinsics.hpp:5:8: error: reference to enumeration must use 'enum' not 'enum class' [-Welaborated-enum-class]
+  enum class Compiler : unsigned { GCC, VisualC, Unknown };
+       ^~~~~~
+./nall/intrinsics.hpp:5:34: error: expected '(' for function-style cast or type construction
+  enum class Compiler : unsigned { GCC, VisualC, Unknown };
+                        ~~~~~~~~ ^
+./nall/intrinsics.hpp:6:8: warning: scoped enumerations are a C++11 extension [-Wc++11-extensions]
+  enum class Platform : unsigned { X, OSX, Windows, Unknown };
+       ^
+./nall/intrinsics.hpp:6:8: error: reference to enumeration must use 'enum' not 'enum class' [-Welaborated-enum-class]
+  enum class Platform : unsigned { X, OSX, Windows, Unknown };
+       ^~~~~~
+./nall/intrinsics.hpp:6:34: error: expected '(' for function-style cast or type construction
+  enum class Platform : unsigned { X, OSX, Windows, Unknown };
+                        ~~~~~~~~ ^
+./nall/intrinsics.hpp:7:8: warning: scoped enumerations are a C++11 extension [-Wc++11-extensions]
+  enum class Endian : unsigned { LSB, MSB, Unknown };
+       ^
+./nall/intrinsics.hpp:7:8: error: reference to enumeration must use 'enum' not 'enum class' [-Welaborated-enum-class]
+  enum class Endian : unsigned { LSB, MSB, Unknown };
+       ^~~~~~
+./nall/intrinsics.hpp:7:32: error: expected '(' for function-style cast or type construction
+  enum class Endian : unsigned { LSB, MSB, Unknown };
+                      ~~~~~~~~ ^
+In file included from nes/input/input.cpp:1:
+In file included from ./nes/nes.hpp:24./nall/array.hpp:42:38: error: no member named 'round' in namespace 'nall::bit'; did you mean simply 'round'?
+:
+In file included from ./nall/dl.hpp:6:
+./nall/intrinsics.hpp:5:8: warning: scoped enumerations are a C++11 extension [-Wc++11-extensions]
+      if(newsize > poolsize) reserve(bit::round(newsize));  //round reserve size up to power of 2
+                                     ^~~~~~~~~~
+                                     round
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/math.h:1675:1: note: 'round' declared here
+round(_A1 __lcpp_x) _NOEXCEPT
+^
+In file included from nes/interface/interface.cpp:1:
+In file included from ./nes/nes.hpp:22:
+./nall/array.hpp:69:71: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+      for(unsigned i = 0; i < size(); i++) if(pool[i] == data) return { true, i };
+                                                                      ^~~~~~~~~~~
+./nall/array.hpp:69:71: error: non-aggregate type 'optional<unsigned int>' cannot be initialized with an initializer list
+      for(unsigned i = 0; i < size(); i++) if(pool[i] == data) return { true, i };
+                                                                      ^~~~~~~~~~~
+./nall/array.hpp:70:14: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+      return { false, 0 };
+             ^~~~~~~~~~~~
+./nall/array.hpp:70:14: error: non-aggregate type 'optional<unsigned int>' cannot be initialized with an initializer list
+      return { false, 0 };
+             ^~~~~~~~~~~~
+./nall/intrinsics.hpp:18:3: error: no type named 'Compiler' in 'Intrinsics'; did you mean simply 'Compiler'?
+  Intrinsics::Compiler Intrinsics::compiler() { return Intrinsics::Compiler::GCC; }
+  ^~~~~~~~~~~~~~~~~~~~
+  Compiler
+./nall/intrinsics.hpp:5:14: note: 'Compiler' declared here
+  enum class Compiler : unsigned { GCC, VisualC, Unknown };
+             ^
+  enum class Compiler : unsigned { GCC, VisualC, Unknown };
+       ^
+./nall/intrinsics.hpp:5:8: error: reference to enumeration must use 'enum' not 'enum class' [-Welaborated-enum-class]
+  enum class Compiler : unsigned { GCC, VisualC, Unknown };
+       ^~~~~~
+./nall/intrinsics.hpp:5:34: error: expected '(' for function-style cast or type construction
+  enum class Compiler : unsigned { GCC, VisualC, Unknown };
+                        ~~~~~~~~ ^
+./nall/intrinsics.hpp:6:8: warning: scoped enumerations are a C++11 extension [-Wc++11-extensions]
+  enum class Platform : unsigned { X, OSX, Windows, Unknown };
+       ^
+./nall/intrinsics.hpp:6:8: error: reference to enumeration must use 'enum' not 'enum class' [-Welaborated-enum-class]
+  enum class Platform : unsigned { X, OSX, Windows, Unknown };
+       ^~~~~~
+In file included from nes/interface/interface.cpp:1:
+./nall/intrinsics.hpp:6:34:In file included from ./nes/nes.hpp:24:
+In file included from ./nall/dl.hpp: 6:
+./nall/intrinsics.hpp:5:8: warning: scoped enumerations are a C++11 extension [-Wc++11-extensions]
+  enum class Compiler : unsigned { GCC, VisualC, Unknown };
+       ^
+./nall/intrinsics.hpp:5:8: error: reference to enumeration must use 'enum' not 'enum class' [-Welaborated-enum-class]
+  enum class Compiler : unsigned { GCC, VisualC, Unknown };
+       ^~~~~~
+./nall/intrinsics.hpp:5:34: error: expected '(' for function-style cast or type construction
+  enum class Compiler : unsigned { GCC, VisualC, Unknown };
+                        ~~~~~~~~ ^
+./nall/intrinsics.hpp:6:8: warning: scoped enumerations are a C++11 extension [-Wc++11-extensions]
+  enum class Platform : unsigned { X, OSX, Windows, Unknown };
+       ^
+./nall/intrinsics.hpp:6:8: error: reference to enumeration must use 'enum' not 'enum class' [-Welaborated-enum-class]
+  enum class Platform : unsigned { X, OSX, Windows, Unknown };
+       ^~~~~~
+./nall/intrinsics.hpp:6:34: error: expected '(' for function-style cast or type construction
+  enum class Platform : unsigned { X, OSX, Windows, Unknown };
+                        ~~~~~~~~ ^
+./nall/intrinsics.hpp:7:8: warning: scoped enumerations are a C++11 extension [-Wc++11-extensions]
+  enum class Endian : unsigned { LSB, MSB, Unknown };
+       ^
+./nall/intrinsics.hpp:7:8: error: reference to enumeration must use 'enum' not 'enum class' [-Welaborated-enum-class]
+  enum class Endian : unsigned { LSB, MSB, Unknown };
+       ^~~~~~
+./nall/intrinsics.hpp:7:32: error: expected '(' for function-style cast or type construction
+  enum class Endian : unsigned { LSB, MSB, Unknown };
+                      ~~~~~~~~ ^
+error: expected '(' for function-style cast or type construction
+  enum class Platform : unsigned { X, OSX, Windows, Unknown };
+                        ~~~~~~~~ ^
+./nall/intrinsics.hpp:7:8: warning: scoped enumerations are a C++11 extension [-Wc++11-extensions]
+  enum class Endian : unsigned { LSB, MSB, Unknown };
+       ^
+./nall/intrinsics.hpp:7:8: error: reference to enumeration must use 'enum' not 'enum class' [-Welaborated-enum-class]
+  enum class Endian : unsigned { LSB, MSB, Unknown };
+       ^~~~~~
+./nall/intrinsics.hpp:7:32: error: expected '(' for function-style cast or type construction
+  enum class Endian : unsigned { LSB, MSB, Unknown };
+                      ~~~~~~~~ ^
+./nall/intrinsics.hpp:18:3: error: no type named 'Compiler' in 'Intrinsics'; did you mean simply 'Compiler'?
+  Intrinsics::Compiler Intrinsics::compiler() { return Intrinsics::Compiler::GCC; }
+  ^~~~~~~~~~~~~~~~~~~~
+  Compiler
+./nall/intrinsics.hpp:5:14: note: 'Compiler' declared here
+  enum class Compiler : unsigned { GCC, VisualC, Unknown };
+             ^
+./nall/intrinsics.hpp:18:68: error: 'Compiler' is not a class, namespace, or enumeration
+  Intrinsics::Compiler Intrinsics::compiler() { return Intrinsics::Compiler::GCC; }
+                                                                   ^
+./nall/intrinsics.hpp:18:3: error: no type named 'Compiler' in 'Intrinsics'; did you mean simply 'Compiler'?
+  Intrinsics::Compiler Intrinsics::compiler() { return Intrinsics::Compiler::GCC; }
+  ^~~~~~~~~~~~~~~~~~~~
+  Compiler
+./nall/intrinsics.hpp:5:14: note: 'Compiler' declared here
+  enum class Compiler : unsigned { GCC, VisualC, Unknown };
+             ^
+./nall/intrinsics.hpp:18:68: error: 'Compiler' is not a class, namespace, or enumeration
+  Intrinsics::Compiler Intrinsics::compiler() { return Intrinsics::Compiler::GCC; }
+                                                                   ^
+./nall/intrinsics.hpp:34:3: error: no type named 'Platform' in 'Intrinsics'; did you mean simply 'Platform'?
+  Intrinsics::Platform Intrinsics::platform() { return Intrinsics::Platform::OSX; }
+  ^~~~~~~~~~~~~~~~~~~~
+  Platform
+./nall/intrinsics.hpp:6:14: note: 'Platform' declared here
+  enum class Platform : unsigned { X, OSX, Windows, Unknown };
+             ^
+./nall/intrinsics.hpp:18:68: error: 'Compiler' is not a class, namespace, or enumeration
+  Intrinsics::Compiler Intrinsics::compiler() { return Intrinsics::Compiler::GCC; }
+                                                                   ^
+./nall/intrinsics.hpp:34:68: error: 'Platform' is not a class, namespace, or enumeration
+  Intrinsics::Platform Intrinsics::platform() { return Intrinsics::Platform::OSX; }
+                                                                   ^
+./nall/intrinsics.hpp:34:3: error: no type named 'Platform' in 'Intrinsics'; did you mean simply 'Platform'?
+  Intrinsics::Platform Intrinsics::platform() { return Intrinsics::Platform::OSX; }
+  ^~~~~~~~~~~~~~~~~~~~
+  Platform
+./nall/intrinsics.hpp:6:14: note: 'Platform' declared here
+  enum class Platform : unsigned { X, OSX, Windows, Unknown };
+             ^
+./nall/intrinsics.hpp:34:3: error: no type named 'Platform' in 'Intrinsics'; did you mean simply 'Platform'?
+  Intrinsics::Platform Intrinsics::platform() { return Intrinsics::Platform::OSX; }
+  ^~~~~~~~~~~~~~~~~~~~
+  Platform
+./nall/intrinsics.hpp:6:14: note: 'Platform' declared here
+  enum class Platform : unsigned { X, OSX, Windows, Unknown };
+             ^
+./nall/intrinsics.hpp:34:68: error: 'Platform' is not a class, namespace, or enumeration
+  Intrinsics::Platform Intrinsics::platform() { return Intrinsics::Platform::OSX; }
+                                                                   ^
+./nall/intrinsics.hpp:49:3: error: no type named 'Endian' in 'Intrinsics'; did you mean simply 'Endian'?
+  Intrinsics::Endian Intrinsics::endian() { return Intrinsics::Endian::LSB; }
+  ^~~~~~~~~~~~~~~~~~
+  Endian
+./nall/intrinsics.hpp:7:14: note: 'Endian' declared here
+  enum class Endian : unsigned { LSB, MSB, Unknown };
+             ^
+./nall/intrinsics.hpp:49:3: error: no type named 'Endian' in 'Intrinsics'; did you mean simply 'Endian'?
+  Intrinsics::Endian Intrinsics::endian() { return Intrinsics::Endian::LSB; }
+  ^~~~~~~~~~~~~~~~~~
+  Endian
+./nall/intrinsics.hpp:7:14: note: 'Endian' declared here
+  enum class Endian : unsigned { LSB, MSB, Unknown };
+             ^
+./nall/intrinsics.hpp:34:68: error: 'Platform' is not a class, namespace, or enumeration
+  Intrinsics::Platform Intrinsics::platform() { return Intrinsics::Platform::OSX; }
+                                                                   ^
+./nall/intrinsics.hpp:49:64: error: 'Endian' is not a class, namespace, or enumeration
+  Intrinsics::Endian Intrinsics::endian() { return Intrinsics::Endian::LSB; }
+                                                               ^
+In file included from nes/system/system.cpp:1:
+In file included from ./nes/nes.hpp:24:
+In file included from ./nall/dl.hpp:8:
+In file included from ./nall/string.hpp:13:
+./nall/atoi.hpp:12:1: error: unknown type name 'constexpr'
+constexpr inline uintmax_t binary_(const char *s, uintmax_t sum = 0) {
+^
+./nall/atoi.hpp:12:11: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+./nall/intrinsics.hpp:49:3: error: no type named 'Endian' in 'Intrinsics'; did you mean simply 'Endian'?
+constexpr inline uintmax_t binary_(const char *s, uintmax_t sum = 0) {
+          ^
+./nall/platform.hpp:80:25: note:   Intrinsics::Endian Intrinsics::endian() { return Intrinsics::Endian::LSB; }
+  ^~~~~~~~~~~~~~~~~~
+  Endianexpanded from macro 'inline'
+
+./nall/intrinsics.hpp:7:  #define inline        inline
+                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+14: note: 'Endian' declared here
+  enum class Endian : unsigned { LSB, MSB, Unknown };
+             ^
+./nall/intrinsics.hpp:49:64: error: 'Endian' is not a class, namespace, or enumeration
+  Intrinsics::Endian Intrinsics::endian() { return Intrinsics::Endian::LSB; }
+                                                               ^
+./nall/intrinsics.hpp:49:64: error: 'Endian' is not a class, namespace, or enumeration
+  Intrinsics::Endian Intrinsics::endian() { return Intrinsics::Endian::LSB; }
+                                                               ^
+In file included from nes/input/input.cpp:1:
+In file included from ./nes/nes.hpp:24:
+In file included from ./nall/dl.hpp:8:
+In file included from ./nall/string.hpp:13:
+./nall/atoi.hpp:12:1: error: unknown type name 'constexpr'
+constexpr inline uintmax_t binary_(const char *s, uintmax_t sum = 0) {
+^
+./nall/atoi.hpp:12:11: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+constexpr inline uintmax_t binary_(const char *s, uintmax_t sum = 0) {
+          ^
+./nall/platform.hpp:80:25: note: expanded from macro 'inline'
+  #define inline        inline
+                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+In file included from nes/interface/interface.cpp:1:
+In file included from ./nes/nes.hpp:24:
+In file included from ./nall/dl.hpp:8:
+In file included from ./nall/string.hpp:13:
+./nall/atoi.hpp:12:1: error: unknown type name 'constexpr'
+constexpr inline uintmax_t binary_(const char *s, uintmax_t sum = 0) {
+^
+./nall/atoi.hpp:12:11: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+constexpr inline uintmax_t binary_(const char *s, uintmax_t sum = 0) {
+          ^
+./nall/platform.hpp:80:25: note: expanded from macro 'inline'
+  #define inline        inline
+                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1010 warnings and 20 errors generated.
+ warnings and 20 errors generated.
+gmake[1]: *** [Makefile:128: obj/nes-scheduler.o] Error 1
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[1]: *** [Makefile:128: obj/nes-input.o] Error 1
+10 warnings and 20 errors generated.
+10 warnings and 20 errors generated.
+gmake[1]: *** [Makefile:128: obj/nes-system.o] Error 1
+gmake[1]: *** [Makefile:128: obj/nes-interface.o] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-bnes'
+cp "bnes_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/bnes_libretro.dylib"
+cp: bnes_libretro.dylib: No such file or directory

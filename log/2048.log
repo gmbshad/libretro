@@ -1,0 +1,319 @@
+Building 2048...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-2048"
+gmake -f Makefile.libretro platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-2048'
+rm -f ./libretro.o ./game_noncairo.o ./game_shared.o ./libretro-common/compat/compat_posix_string.o ./libretro-common/compat/compat_snprintf.o ./libretro-common/compat/compat_strcasestr.o ./libretro-common/compat/compat_strl.o ./libretro-common/compat/fopen_utf8.o ./libretro-common/encodings/encoding_utf.o ./libretro-common/file/file_path.o ./libretro-common/file/file_path_io.o ./libretro-common/streams/file_stream.o ./libretro-common/streams/file_stream_transforms.o ./libretro-common/string/stdstring.o ./libretro-common/time/rtime.o ./libretro-common/vfs/vfs_implementation.o 2048_libretro.dylib
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-2048'
+gmake -f Makefile.libretro platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-2048'
+cc -arch i386 -DGIT_VERSION=\"" 331c1de"\"  -O2 -DNDEBUG -fPIC  -I./libretro-common/include -c -olibretro.o libretro.c
+cc -arch i386 -DGIT_VERSION=\"" 331c1de"\"  -O2 -DNDEBUG -fPIC  -I./libretro-common/include -c -ogame_noncairo.o game_noncairo.c
+cc -arch i386 -DGIT_VERSION=\"" 331c1de"\"  -O2 -DNDEBUG -fPIC  -I./libretro-common/include -c -ogame_shared.o game_shared.c
+cc -arch i386 -DGIT_VERSION=\"" 331c1de"\"  -O2 -DNDEBUG -fPIC  -I./libretro-common/include -c -olibretro-common/compat/compat_posix_string.o libretro-common/compat/compat_posix_string.c
+cc -arch i386 -DGIT_VERSION=\"" 331c1de"\"  -O2 -DNDEBUG -fPIC  -I./libretro-common/include -c -olibretro-common/compat/compat_snprintf.o libretro-common/compat/compat_snprintf.c
+cc -arch i386 -DGIT_VERSION=\"" 331c1de"\"  -O2 -DNDEBUG -fPIC  -I./libretro-common/include -c -olibretro-common/compat/compat_strcasestr.o libretro-common/compat/compat_strcasestr.c
+cc -arch i386 -DGIT_VERSION=\"" 331c1de"\"  -O2 -DNDEBUG -fPIC  -I./libretro-common/include -c -olibretro-common/compat/compat_strl.o libretro-common/compat/compat_strl.c
+cc -arch i386 -DGIT_VERSION=\"" 331c1de"\"  -O2 -DNDEBUG -fPIC  -I./libretro-common/include -c -olibretro-common/compat/fopen_utf8.o libretro-common/compat/fopen_utf8.c
+cc -arch i386 -DGIT_VERSION=\"" 331c1de"\"  -O2 -DNDEBUG -fPIC  -I./libretro-common/include -c -olibretro-common/encodings/encoding_utf.o libretro-common/encodings/encoding_utf.c
+cc -arch i386 -DGIT_VERSION=\"" 331c1de"\"  -O2 -DNDEBUG -fPIC  -I./libretro-common/include -c -olibretro-common/file/file_path.o libretro-common/file/file_path.c
+cc -arch i386 -DGIT_VERSION=\"" 331c1de"\"  -O2 -DNDEBUG -fPIC  -I./libretro-common/include -c -olibretro-common/file/file_path_io.o libretro-common/file/file_path_io.c
+cc -arch i386 -DGIT_VERSION=\"" 331c1de"\"  -O2 -DNDEBUG -fPIC  -I./libretro-common/include -c -olibretro-common/streams/file_stream.o libretro-common/streams/file_stream.c
+cc -arch i386 -DGIT_VERSION=\"" 331c1de"\"  -O2 -DNDEBUG -fPIC  -I./libretro-common/include -c -olibretro-common/streams/file_stream_transforms.o libretro-common/streams/file_stream_transforms.c
+cc -arch i386 -DGIT_VERSION=\"" 331c1de"\"  -O2 -DNDEBUG -fPIC  -I./libretro-common/include -c -olibretro-common/string/stdstring.o libretro-common/string/stdstring.c
+cc -arch i386 -DGIT_VERSION=\"" 331c1de"\"  -O2 -DNDEBUG -fPIC  -I./libretro-common/include -c -olibretro-common/time/rtime.o libretro-common/time/rtime.c
+cc -arch i386 -DGIT_VERSION=\"" 331c1de"\"  -O2 -DNDEBUG -fPIC  -I./libretro-common/include -c -olibretro-common/vfs/vfs_implementation.o libretro-common/vfs/vfs_implementation.c
+cc -arch i386 -fPIC -dynamiclib   -o 2048_libretro.dylib ./libretro.o ./game_noncairo.o ./game_shared.o ./libretro-common/compat/compat_posix_string.o ./libretro-common/compat/compat_snprintf.o ./libretro-common/compat/compat_strcasestr.o ./libretro-common/compat/compat_strl.o ./libretro-common/compat/fopen_utf8.o ./libretro-common/encodings/encoding_utf.o ./libretro-common/file/file_path.o ./libretro-common/file/file_path_io.o ./libretro-common/streams/file_stream.o ./libretro-common/streams/file_stream_transforms.o ./libretro-common/string/stdstring.o ./libretro-common/time/rtime.o ./libretro-common/vfs/vfs_implementation.o   -lm
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+Undefined symbols for architecture i386:
+  "__DefaultRuneLocale", referenced from:
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+  "___bzero", referenced from:
+      _init_game in game_shared.o
+  "___divdi3", referenced from:
+      _rfread in file_stream_transforms.o
+  "___error", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+  "___maskrune", referenced from:
+      _filestream_vscanf in file_stream.o
+  "___sprintf_chk", referenced from:
+      _render_playing in game_noncairo.o
+      _render_win_or_game_over in game_noncairo.o
+      _render_paused in game_noncairo.o
+  "___stack_chk_fail", referenced from:
+      _log_2048 in libretro.o
+      _retro_deinit in libretro.o
+      _retro_run in libretro.o
+      _retro_load_game in libretro.o
+      _Draw_text in game_noncairo.o
+      _render_playing in game_noncairo.o
+      _render_win_or_game_over in game_noncairo.o
+      ...
+  "___stack_chk_guard", referenced from:
+      _log_2048 in libretro.o
+      _retro_deinit in libretro.o
+      _retro_run in libretro.o
+      _retro_load_game in libretro.o
+      _Draw_text in game_noncairo.o
+      _render_playing in game_noncairo.o
+      _render_win_or_game_over in game_noncairo.o
+      ...
+      _log_2048 in libretro.o
+      _retro_deinit in libretro.o
+      _retro_run in libretro.o
+      _retro_load_game in libretro.o
+      _Draw_text in game_noncairo.o
+      _render_playing in game_noncairo.o
+      _render_win_or_game_over in game_noncairo.o
+      ...
+      _log_2048 in libretro.o
+      _retro_deinit in libretro.o
+      _retro_run in libretro.o
+      _retro_load_game in libretro.o
+      _Draw_text in game_noncairo.o
+      _render_playing in game_noncairo.o
+      _render_win_or_game_over in game_noncairo.o
+      ...
+      _log_2048 in libretro.o
+      _retro_deinit in libretro.o
+      _retro_run in libretro.o
+      _retro_load_game in libretro.o
+      _Draw_text in game_noncairo.o
+      _render_playing in game_noncairo.o
+      _render_win_or_game_over in game_noncairo.o
+      ...
+      _log_2048 in libretro.o
+      _retro_deinit in libretro.o
+      _retro_run in libretro.o
+      _retro_load_game in libretro.o
+      _Draw_text in game_noncairo.o
+      _render_playing in game_noncairo.o
+      _render_win_or_game_over in game_noncairo.o
+      ...
+      _log_2048 in libretro.o
+      _retro_deinit in libretro.o
+      _retro_run in libretro.o
+      _retro_load_game in libretro.o
+      _Draw_text in game_noncairo.o
+      _render_playing in game_noncairo.o
+      _render_win_or_game_over in game_noncairo.o
+      ...
+  "___stderrp", referenced from:
+      _log_2048 in libretro.o
+  "___stdoutp", referenced from:
+      _log_2048 in libretro.o
+  "___strcpy_chk", referenced from:
+      _fill_pathname_abbreviated_or_relative in file_path.o
+  "___strlcat_chk", referenced from:
+      _fill_pathname_abbreviated_or_relative in file_path.o
+  "___strlcpy_chk", referenced from:
+      _path_get_archive_delim in file_path.o
+      _fill_pathname in file_path.o
+  "___tolower", referenced from:
+      _strcasestr_retro__ in compat_strcasestr.o
+      _path_is_compressed_file in file_path.o
+      _string_to_lower in stdstring.o
+  "___toupper", referenced from:
+      _string_to_upper in stdstring.o
+      _string_ucwords in stdstring.o
+  "___vsprintf_chk", referenced from:
+      _log_2048 in libretro.o
+      _Draw_text in game_noncairo.o
+  "_abort", referenced from:
+      _retro_vfs_file_get_path_impl in vfs_implementation.o
+  "_atoi", referenced from:
+      _check_variables in libretro.o
+  "_calloc", referenced from:
+      _game_init in game_noncairo.o
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_opendir_impl in vfs_implementation.o
+  "_close$UNIX2003", referenced from:
+      _retro_vfs_file_close_impl in vfs_implementation.o
+  "_closedir$UNIX2003", referenced from:
+      _retro_vfs_closedir_impl in vfs_implementation.o
+  "_cos", referenced from:
+      _cos_interp in game_shared.o
+     (maybe you meant: _cos_interp)
+  "_fclose", referenced from:
+      _retro_vfs_file_close_impl in vfs_implementation.o
+  "_ferror", referenced from:
+      _retro_vfs_file_error_impl in vfs_implementation.o
+  "_fflush", referenced from:
+      _retro_vfs_file_flush_impl in vfs_implementation.o
+  "_fileno", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fopen$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_fprintf", referenced from:
+      _log_2048 in libretro.o
+  "_fread", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+  "_free", referenced from:
+      _retro_deinit in libretro.o
+      _Draw_string in game_noncairo.o
+      _game_deinit in game_noncairo.o
+      _utf16_to_char_string in encoding_utf.o
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+      _fill_pathname_parent_dir_name in file_path.o
+      ...
+  "_fseeko", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+  "_ftello", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+  "_ftruncate", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fwrite$UNIX2003", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+  "_localtime", referenced from:
+      _rtime_localtime in rtime.o
+     (maybe you meant: _rtime_localtime)
+  "_lseek", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+  "_malloc", referenced from:
+      _retro_init in libretro.o
+      _Draw_string in game_noncairo.o
+      _strldup in compat_strl.o
+      _utf16_to_char_string in encoding_utf.o
+      _filestream_open in file_stream.o
+      _filestream_read_file in file_stream.o
+      _filestream_getline in file_stream.o
+      ...
+  "_mbstowcs", referenced from:
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+  "_memcpy", referenced from:
+      _retro_load_game in libretro.o
+      _retro_serialize in libretro.o
+      _retro_unserialize in libretro.o
+      _retro_get_memory_data in libretro.o
+      _utf8cpy in encoding_utf.o
+      _string_replace_substring in stdstring.o
+  "_memmove", referenced from:
+      _string_trim_whitespace_left in stdstring.o
+      _string_trim_whitespace in stdstring.o
+  "_mkdir", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+     (maybe you meant: _retro_vfs_mkdir_impl, _path_mkdir )
+  "_open$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_opendir$INODE64$UNIX2003", referenced from:
+      _retro_vfs_opendir_impl in vfs_implementation.o
+  "_rand", referenced from:
+      _start_game in game_shared.o
+      _game_update in game_shared.o
+  "_read$UNIX2003", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+  "_readdir$INODE64", referenced from:
+      _retro_vfs_readdir_impl in vfs_implementation.o
+  "_realloc", referenced from:
+      _filestream_getline in file_stream.o
+  "_remove", referenced from:
+      _retro_vfs_file_remove_impl in vfs_implementation.o
+     (maybe you meant: _path_remove_extension, _retro_vfs_file_remove_impl , _string_remove_all_chars )
+  "_rename", referenced from:
+      _retro_vfs_file_rename_impl in vfs_implementation.o
+     (maybe you meant: _filestream_rename, _retro_vfs_file_rename_impl )
+  "_setvbuf", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_srand", referenced from:
+      _game_init in game_noncairo.o
+  "_sscanf", referenced from:
+      _filestream_vscanf in file_stream.o
+  "_stat$INODE64", referenced from:
+      _retro_vfs_stat_impl in vfs_implementation.o
+      _retro_vfs_dirent_is_dir_impl in vfs_implementation.o
+  "_strchr", referenced from:
+      _path_get_archive_delim in file_path.o
+      _rfopen in file_stream_transforms.o
+      _string_replace_all_chars in stdstring.o
+  "_strcmp", referenced from:
+      _path_mkdir in file_path_io.o
+  "_strcpy", referenced from:
+      _string_replace_substring in stdstring.o
+      _word_wrap in stdstring.o
+  "_strdup", referenced from:
+      _utf8_to_local_string_alloc in encoding_utf.o
+      _local_to_utf8_string_alloc in encoding_utf.o
+      _fill_pathname_parent_dir_name in file_path.o
+      _path_mkdir in file_path_io.o
+      _string_init in stdstring.o
+      _string_set in stdstring.o
+      _string_replace_substring in stdstring.o
+      ...
+  "_strftime$UNIX2003", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+  "_strlcat", referenced from:
+      _fill_pathname in file_path.o
+      _fill_pathname_noext in file_path.o
+      _fill_pathname_slash in file_path.o
+      _fill_pathname_dir in file_path.o
+      _fill_pathname_base_ext in file_path.o
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+      ...
+  "_strlcpy", referenced from:
+      _strldup in compat_strl.o
+      _utf16_to_char_string in encoding_utf.o
+      _fill_pathname in file_path.o
+      _fill_pathname_noext in file_path.o
+      _fill_pathname_base in file_path.o
+      _fill_pathname_base_noext in file_path.o
+      _fill_pathname_basedir in file_path.o
+      ...
+  "_strlen", referenced from:
+      _render_playing in game_noncairo.o
+      _draw_tile in game_noncairo.o
+      _render_win_or_game_over in game_noncairo.o
+      _render_paused in game_noncairo.o
+      _strcasestr_retro__ in compat_strcasestr.o
+      _fill_pathname_slash in file_path.o
+      _fill_pathname_dir in file_path.o
+      ...
+  "_strncmp", referenced from:
+      _check_variables in libretro.o
+  "_strrchr", referenced from:
+      _path_get_archive_delim in file_path.o
+      _find_last_slash in file_path.o
+      _path_get_extension in file_path.o
+      _path_basename in file_path.o
+      _path_remove_extension in file_path.o
+      _path_is_compressed_file in file_path.o
+      _fill_pathname in file_path.o
+      ...
+  "_strstr", referenced from:
+      _string_replace_substring in stdstring.o
+      _string_tokenize in stdstring.o
+  "_strtoul", referenced from:
+      _string_to_unsigned in stdstring.o
+      _string_hex_to_unsigned in stdstring.o
+  "_time", referenced from:
+      _game_init in game_noncairo.o
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+     (maybe you meant: _game_get_frame_time, _game_get_delta_score_time )
+  "_vsnprintf", referenced from:
+      _filestream_vprintf in file_stream.o
+      _filestream_printf in file_stream.o
+  "_wcstombs", referenced from:
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+  "_write$UNIX2003", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile.libretro:677: 2048_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-2048'
+cp "2048_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/2048_libretro.dylib"
+cp: 2048_libretro.dylib: No such file or directory

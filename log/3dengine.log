@@ -1,0 +1,49 @@
+Building 3dengine...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-3dengine"
+gmake platform="osx-opengl" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-3dengine'
+rm -f ./engine/mesh.o ./engine/texture.o ./engine/object.o ./engine/shader.o ./helpers/collision_detection.o ./program/instancingviewer.o ./program/modelviewer.o ./libretro.o ./utils/rtga.o ./utils/rpng.o ./utils/picojpeg.o ./helpers/location_math.o ./utils/picojpeg-util.o ./libretro-common/string/stdstring.o ./libretro-common/encodings/encoding_crc32.o ./libretro-common/encodings/encoding_utf.o ./libretro-common/compat/compat_strcasestr.o ./libretro-common/vfs/vfs_implementation.o ./libretro-common/streams/trans_stream_zlib.o ./deps/zlib/adler32.o ./deps/zlib/compress.o ./deps/zlib/crc32.o ./deps/zlib/deflate.o ./deps/zlib/gzclose.o ./deps/zlib/gzlib.o ./deps/zlib/gzread.o ./deps/zlib/gzwrite.o ./deps/zlib/inffast.o ./deps/zlib/inflate.o ./deps/zlib/inftrees.o ./deps/zlib/trees.o ./deps/zlib/uncompr.o ./deps/zlib/zutil.o ./libretro-common/compat/compat_strl.o ./libretro-common/compat/compat_posix_string.o ./libretro-common/features/features_cpu.o ./libretro-common/formats/bmp/rbmp.o ./libretro-common/formats/jpeg/rjpeg.o ./libretro-common/formats/tga/rtga.o ./libretro-common/file/nbio/nbio_stdio.o ./libretro-common/file/archive_file.o ./libretro-common/file/archive_file_zlib.o ./libretro-common/file/file_path.o ./libretro-common/streams/file_stream.o ./libretro-common/lists/string_list.o ./libretro-common/glsym/rglgen.o ./libretro-common/glsym/glsym_gl.o 3dengine_libretro.dylib
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-3dengine'
+gmake platform="osx-opengl" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-3dengine'
+c++ -arch i386 -DGIT_VERSION=\"" b880781"\" -DOSX -O2 -DNDEBUG -DINLINE="inline" -Wall -fPIC -fPIC -mmacosx-version-min=10.1 -Iinclude/compat -I. -I./utils -I./helpers -I./include -I./libretro-common/include -I./deps/zlib  -c -oengine/mesh.o engine/mesh.cpp
+c++ -arch i386 -DGIT_VERSION=\"" b880781"\" -DOSX -O2 -DNDEBUG -DINLINE="inline" -Wall -fPIC -fPIC -mmacosx-version-min=10.1 -Iinclude/compat -I. -I./utils -I./helpers -I./include -I./libretro-common/include -I./deps/zlib  -c -oengine/texture.o engine/texture.cpp
+c++ -arch i386 -DGIT_VERSION=\"" b880781"\" -DOSX -O2 -DNDEBUG -DINLINE="inline" -Wall -fPIC -fPIC -mmacosx-version-min=10.1 -Iinclude/compat -I. -I./utils -I./helpers -I./include -I./libretro-common/include -I./deps/zlib  -c -oengine/object.o engine/object.cpp
+c++ -arch i386 -DGIT_VERSION=\"" b880781"\" -DOSX -O2 -DNDEBUG -DINLINE="inline" -Wall -fPIC -fPIC -mmacosx-version-min=10.1 -Iinclude/compat -I. -I./utils -I./helpers -I./include -I./libretro-common/include -I./deps/zlib  -c -oengine/shader.o engine/shader.cpp
+clang: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+clang: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+clang: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+clang: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+In file included from engine/texture.cpp:18:
+In file included from engine/texture.hpp:21:
+./gl.hpp:26:10: fatal error: 'string' file not found
+#include <string>
+         ^~~~~~~~
+In file included from engine/mesh.cpp:18:
+In file included from engine/mesh.hpp:21:
+./gl.hpp:26:10: fatal error: 'string' file not found
+#include <string>
+         ^~~~~~~~
+In file included from engine/shader.cpp:18:
+In file included from engine/shader.hpp:21:
+./gl.hpp:26:10: fatal error: 'string' file not found
+#include <string>
+         ^~~~~~~~
+In file included from engine/object.cpp:18:
+In file included from engine/object.hpp:21:
+In file included from engine/mesh.hpp:21:
+./gl.hpp:26:10: fatal error: 'string' file not found
+#include <string>
+         ^~~~~~~~
+1 error generated.
+gmake[1]: *** [Makefile:269: engine/shader.o] Error 1
+gmake[1]: *** Waiting for unfinished jobs....
+1 error generated.
+1 error generated.
+gmake[1]: *** [Makefile:269: engine/mesh.o] Error 1
+gmake[1]: *** [Makefile:269: engine/object.o] Error 1
+1 error generated.
+gmake[1]: *** [Makefile:269: engine/texture.o] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-3dengine'
+cp "3dengine_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/3dengine_libretro.dylib"
+cp: 3dengine_libretro.dylib: No such file or directory

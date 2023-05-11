@@ -1,0 +1,48 @@
+Building desmume2015...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-desmume2015/desmume"
+gmake -f Makefile.libretro platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-desmume2015/desmume'
+rm -f src/armcpu.o src/arm_instructions.o src/bios.o src/cp15.o src/emufile.o src/encrypt.o src/FIFO.o src/firmware.o src/GPU.o src/mc.o src/path.o src/readwrite.o src/wifi.o src/MMU.o src/NDSSystem.o src/render3D.o src/rtc.o src/saves.o src/slot1.o src/slot2.o src/SPU.o src/matrix.o src/gfx3d.o src/thumb_instructions.o src/utils/advanscene.o src/utils/datetime.o src/utils/emufat.o src/utils/xstring.o src/utils/decrypt/crc.o src/utils/decrypt/decrypt.o src/utils/decrypt/header.o src/utils/vfat.o src/utils/tinyxml/tinystr.o src/utils/tinyxml/tinyxml.o src/utils/tinyxml/tinyxmlerror.o src/utils/tinyxml/tinyxmlparser.o src/addons/slot2_auto.o src/addons/slot2_mpcf.o src/addons/slot2_paddle.o src/addons/slot2_gbagame.o src/addons/slot2_none.o src/addons/slot2_rumblepak.o src/addons/slot2_guitarGrip.o src/addons/slot2_expMemory.o src/addons/slot2_piano.o src/addons/slot2_passme.o src/addons/slot1_none.o src/addons/slot1_r4.o src/addons/slot1comp_mc.o src/addons/slot1comp_rom.o src/addons/slot1comp_protocol.o src/addons/slot1_retail_mcrom.o src/addons/slot1_retail_nand.o src/addons/slot1_retail_auto.o src/cheatSystem.o src/texcache.o src/rasterize.o src/mic.o src/driver.o src/libretro/libretro.o src/libretro/scrc32.o src/addons/slot1_retail_mcrom_debug.o src/utils/fsnitro.o src/utils/task.o src/arm_jit.o src/utils/AsmJit/core/assembler.o src/utils/AsmJit/core/assert.o src/utils/AsmJit/core/buffer.o src/utils/AsmJit/core/compiler.o src/utils/AsmJit/core/compilercontext.o src/utils/AsmJit/core/compilerfunc.o src/utils/AsmJit/core/compileritem.o src/utils/AsmJit/core/context.o src/utils/AsmJit/core/cpuinfo.o src/utils/AsmJit/core/defs.o src/utils/AsmJit/core/func.o src/utils/AsmJit/core/logger.o src/utils/AsmJit/core/memorymanager.o src/utils/AsmJit/core/memorymarker.o src/utils/AsmJit/core/operand.o src/utils/AsmJit/core/stringbuilder.o src/utils/AsmJit/core/stringutil.o src/utils/AsmJit/core/virtualmemory.o src/utils/AsmJit/core/zonememory.o src/utils/AsmJit/x86/x86assembler.o src/utils/AsmJit/x86/x86compiler.o src/utils/AsmJit/x86/x86compilercontext.o src/utils/AsmJit/x86/x86compilerfunc.o src/utils/AsmJit/x86/x86compileritem.o src/utils/AsmJit/x86/x86cpuinfo.o src/utils/AsmJit/x86/x86defs.o src/utils/AsmJit/x86/x86func.o src/utils/AsmJit/x86/x86operand.o src/utils/AsmJit/x86/x86util.o src/utils/libfat/partition.o src/utils/libfat/cache.o src/utils/libfat/directory.o src/utils/libfat/disc.o src/utils/libfat/fatdir.o src/utils/libfat/fatfile.o src/utils/libfat/filetime.o src/utils/libfat/file_allocation_table.o src/utils/libfat/libfat.o src/utils/libfat/libfat_public_api.o src/utils/libfat/lock.o src/libretro-common/rthreads/rthreads.o src/common.o src/utils/dlditool.o src/libretro-common/memmap/memalign.o src/libretro-common/streams/file_stream.o src/libretro-common/features/features_cpu.o src/libretro-common/compat/compat_strl.o src/libretro-common/file/retro_dirent.o src/libretro-common/file/retro_stat.o src/libretro-common/file/file_path.o src/libretro-common/string/stdstring.o src/version.o desmume2015_libretro.dylib
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-desmume2015/desmume'
+gmake -f Makefile.libretro platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-desmume2015/desmume'
+c++ -arch i386 -DGIT_VERSION=\"" af397ff"\"  -DHAVE_JIT -O2 -DNDEBUG -D__LIBRETRO__ -fPIC -mmacosx-version-min=10.2  -Isrc/libretro-common/include -Isrc -Isrc/libretro   -fpermissive -c -osrc/armcpu.o src/armcpu.cpp
+c++ -arch i386 -DGIT_VERSION=\"" af397ff"\"  -DHAVE_JIT -O2 -DNDEBUG -D__LIBRETRO__ -fPIC -mmacosx-version-min=10.2  -Isrc/libretro-common/include -Isrc -Isrc/libretro   -fpermissive -c -osrc/arm_instructions.o src/arm_instructions.cpp
+c++ -arch i386 -DGIT_VERSION=\"" af397ff"\"  -DHAVE_JIT -O2 -DNDEBUG -D__LIBRETRO__ -fPIC -mmacosx-version-min=10.2  -Isrc/libretro-common/include -Isrc -Isrc/libretro   -fpermissive -c -osrc/bios.o src/bios.cpp
+c++ -arch i386 -DGIT_VERSION=\"" af397ff"\"  -DHAVE_JIT -O2 -DNDEBUG -D__LIBRETRO__ -fPIC -mmacosx-version-min=10.2  -Isrc/libretro-common/include -Isrc -Isrc/libretro   -fpermissive -c -osrc/cp15.o src/cp15.cpp
+clang: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+clang: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+clang: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+clang: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+In file included from src/bios.cpp:23:
+In file included from src/armcpu.h:23:
+In file included from src/MMU.h:23:
+src/debug.h:22:10: fatal error: 'vector' file not found
+#include <vector>
+         ^~~~~~~~
+In file included from src/arm_instructions.cpp:35:
+In file included from src/MMU.h:23:
+src/debug.h:22:10: fatal error: 'vector' file not found
+#include <vector>
+         ^~~~~~~~
+In file included from src/cp15.cpp:21:
+In file included from src/armcpu.h:23:
+In file included from src/MMU.h:23:
+src/debug.h:22:10: fatal error: 'vector' file not found
+#include <vector>
+         ^~~~~~~~
+src/armcpu.cpp:22:10: fatal error: 'algorithm' file not found
+#include <algorithm>
+         ^~~~~~~~~~~
+1 error generated.
+1 error generated.
+gmake[1]: *** [Makefile.libretro:366: src/bios.o] Error 1
+gmake[1]: *** Waiting for unfinished jobs....
+1 error generated.
+gmake[1]: *** [Makefile.libretro:366: src/cp15.o] Error 1
+gmake[1]: *** [Makefile.libretro:366: src/armcpu.o] Error 1
+1 error generated.
+gmake[1]: *** [Makefile.libretro:366: src/arm_instructions.o] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-desmume2015/desmume'
+cp "desmume2015_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/desmume2015_libretro.dylib"
+cp: desmume2015_libretro.dylib: No such file or directory

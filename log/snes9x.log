@@ -1,0 +1,1682 @@
+Building snes9x...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-snes9x/libretro"
+gmake platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-snes9x/libretro'
+rm -f ../apu/apu.o ../apu/bapu/dsp/sdsp.o ../apu/bapu/smp/smp.o ../apu/bapu/smp/smp_state.o ../bsx.o ../c4.o ../c4emu.o ../cheats.o ../cheats2.o ../clip.o ../conffile.o ../controls.o ../cpu.o ../cpuexec.o ../cpuops.o ../crosshairs.o ../dma.o ../dsp.o ../dsp1.o ../dsp2.o ../dsp3.o ../dsp4.o ../fxinst.o ../fxemu.o ../gfx.o ../globals.o ../loadzip.o ../memmap.o ../obc1.o ../msu1.o ../ppu.o ../stream.o ../sa1.o ../sa1cpu.o ../screenshot.o ../sdd1.o ../sdd1emu.o ../seta.o ../seta010.o ../seta011.o ../seta018.o ../snapshot.o ../snes9x.o ../spc7110.o ../srtc.o ../tile.o ../tileimpl-n1x1.o ../tileimpl-n2x1.o ../tileimpl-h2x1.o ../sha256.o ../bml.o ../movie.o ../fscompat.o ../libretro/libretro.o ../filter/snes_ntsc.o snes9x_libretro.dylib
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-snes9x/libretro'
+gmake platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-snes9x/libretro'
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../apu/apu.o ../apu/apu.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../apu/bapu/dsp/sdsp.o ../apu/bapu/dsp/sdsp.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../apu/bapu/smp/smp.o ../apu/bapu/smp/smp.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../apu/bapu/smp/smp_state.o ../apu/bapu/smp/smp_state.cpp
+In file included from ../apu/bapu/dsp/sdsp.cpp:1:
+In file included from ../apu/bapu/dsp/../snes/snes.hpp:19:
+../apu/bapu/dsp/../snes/../smp/smp.hpp:53:7: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+      struct { uint8 a, y; } B;
+      ^
+In file included from ../apu/bapu/smp/smp.cpp:7:
+In file included from ../apu/bapu/smp/../snes/snes.hpp:19:
+../apu/bapu/smp/../snes/../smp/smp.hpp:53:7: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+      struct { uint8 a, y; } B;
+      ^
+In file included from ../apu/bapu/smp/smp_state.cpp:1:
+In file included from ../apu/bapu/smp/../snes/snes.hpp:19:
+../apu/bapu/smp/../snes/../smp/smp.hpp:53:7: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+      struct { uint8 a, y; } B;
+      ^
+In file included from ../apu/apu.cpp:16:
+In file included from ../apu/bapu/snes/snes.hpp:19:
+../apu/bapu/snes/../smp/smp.hpp:53:7: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+      struct { uint8 a, y; } B;
+      ^
+1 warning generated.
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../bsx.o ../bsx.cpp
+1 warning generated.
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../c4.o ../c4.cpp
+1 warning generated.
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../c4emu.o ../c4emu.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../cheats.o ../cheats.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../cheats2.o ../cheats2.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../clip.o ../clip.cpp
+../cheats2.cpp:527:9: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(output, "%06x=%02x?%02x", c.address, c.cond_byte, c.byte);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../cheats2.cpp:529:9: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(output, "%06x=%02x", c.address, c.byte);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../cheats2.cpp:645:9: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(code, "%x=%x", c.address, c.byte);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../conffile.o ../conffile.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../controls.o ../controls.cpp
+3 warnings generated.
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../cpu.o ../cpu.cpp
+In file included from ../controls.cpp:19:
+../controls.h:49:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                union
+                ^
+../controls.h:101:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                union
+                ^
+../controls.h:127:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                struct                                                          // Which SNES-pointers to control with this pointer
+                ^
+../controls.cpp:795:8: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                c += sprintf(c, "Port %d: ", port + 1);
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:800:10: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                c += sprintf(c, "<none>. ");
+                                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:804:10: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                c += sprintf(c, "MP5 with pads");
+                                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:808:12: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                c += sprintf(c, " <none>. ");
+                                                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:810:12: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                c += sprintf(c, " #%d. ", mp5[port].pads[i] + 1 - JOYPAD0);
+                                                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:823:10: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                c += sprintf(c, "Pad #%d. ", (int) (newcontrollers[port] - JOYPAD0 + 1));
+                                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:828:10: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                c += sprintf(c, "Mouse #%d. ", (int) (newcontrollers[port] - MOUSE0 + 1));
+                                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:833:11: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                        c += sprintf(c, "Superscope (cannot fire). ");
+                                             ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:835:11: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                        c += sprintf(c, "Superscope. ");
+                                             ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:840:11: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                        c += sprintf(c, "Blue Justifier (cannot fire). ");
+                                             ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:842:11: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                        c += sprintf(c, "Blue Justifier. ");
+                                             ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:847:11: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                        c += sprintf(c, "Blue and Pink Justifiers (cannot fire). ");
+                                             ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:849:11: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                        c += sprintf(c, "Blue and Pink Justifiers. ");
+                                             ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:854:11: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                        c += sprintf(c, "M.A.C.S. Rifle (cannot fire). ");
+                                             ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:856:11: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                        c += sprintf(c, "M.A.C.S. Rifle. ");
+                                             ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:2183:8: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                        sprintf(buf, "Frame skip: %d", Settings.SkipFrames - 1);
+                                                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:2200:8: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                        sprintf(buf, "Frame skip: %d", Settings.SkipFrames - 1);
+                                                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:2212:7: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                sprintf(buf, "Turbo frame skip: %d", Settings.TurboSkipFrames);
+                                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:2222:7: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                sprintf(buf, "Turbo frame skip: %d", Settings.TurboSkipFrames);
+                                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:2228:7: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                sprintf(buf, "Emulated frame time: %dms", Settings.FrameTime / 1000);
+                                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:2235:7: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                sprintf(buf, "Emulated frame time: %dms", Settings.FrameTime / 1000);
+                                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:2243:7: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                sprintf(buf, "Turbo speed: %d", turbo_time);
+                                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:2251:7: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                sprintf(buf, "Turbo speed: %d", turbo_time);
+                                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:2355:7: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                sprintf(buf, "Sound channel %d toggled", i - SoundChannel0);
+                                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:2380:7: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                sprintf(buf, "Setting backdrop to 0x%04x", Settings.ForcedBackdrop);
+                                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:2467:8: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                        sprintf(buf + i, "Joypad%d", newcontrollers[0] - JOYPAD0 + 1);
+                                                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:2476:8: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                        sprintf(buf + i, "Joypad%d", newcontrollers[1] - JOYPAD0 + 1);
+                                                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../controls.cpp:2484:8: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                        sprintf(buf, "Select frame number (current: %d)", S9xMovieGetFrameCounter());
+                                                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../cpuexec.o ../cpuexec.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../cpuops.o ../cpuops.cpp
+31 warnings generated.
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../crosshairs.o ../crosshairs.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../dma.o ../dma.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../dsp.o ../dsp.cpp
+../dma.cpp:202:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                sprintf(String, "SA-1: DMA from non-block address $%02X:%04X", d->ABank, addr);
+                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../dsp1.o ../dsp1.cpp
+1 warning generated.
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../dsp2.o ../dsp2.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../dsp3.o ../dsp3.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../dsp4.o ../dsp4.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../fxinst.o ../fxinst.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../fxemu.o ../fxemu.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../gfx.o ../gfx.cpp
+In file included from ../gfx.cpp:10:
+../controls.h:49:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                union
+                ^
+../controls.h:101:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                union
+                ^
+../controls.h:127:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                struct                                                          // Which SNES-pointers to control with this pointer
+                ^
+../gfx.cpp:1897:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(string, "%02u:%02u", timeinfo->tm_hour, timeinfo->tm_min);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../gfx.cpp:1915:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(string, "%u fps", calcFps);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../gfx.cpp:1923:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(string, "%02d/%02d",      (int) IPPU.DisplayedRenderedFrameCount, (int) Memory.ROMFramesPerSecond);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../gfx.cpp:1953:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                sprintf(string, "#%d %d: (%03d,%03d) %c%c", port + 1, ids[0] + 1, x, y,
+                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../gfx.cpp:1967:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                sprintf(string, "#%d %d: (%03d,%03d) %c%c%c%c", port + 1, ids[0] + 1, x, y,
+                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../gfx.cpp:1986:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                sprintf(string, "#%d %d: (%03d,%03d) %c%c%c / (%03d,%03d) %c%c%c", port + 1, ids[0] + 1,
+                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../gfx.cpp:1995:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                sprintf(string, "#%d %d:                  ", port + 1, ids[0] + 1);
+                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../gfx.cpp:2014:7: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                sprintf(string, "#%d %d:                  ", port + 1, ids[n] + 1);
+                                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../gfx.cpp:2069:4: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                        sprintf(buf, "%s,%du = %u", watches[i].desc, watches[i].size, (unsigned int) displayNumber);
+                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../gfx.cpp:2072:4: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                        sprintf(buf, "%s,%dx = %X", watches[i].desc, watches[i].size, (unsigned int) displayNumber);
+                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../gfx.cpp:2083:4: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                        sprintf(buf, "%s,%ds = %d", watches[i].desc, watches[i].size, (int) displayNumber);
+                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../globals.o ../globals.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../loadzip.o ../loadzip.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../memmap.o ../memmap.cpp
+14 warnings generated.
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../obc1.o ../obc1.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../msu1.o ../msu1.cpp
+In file included from ../memmap.cpp:34:
+../controls.h:49:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                union
+                ^
+../controls.h:101:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                union
+                ^
+../controls.h:127:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                struct                                                          // Which SNES-pointers to control with this pointer
+                ^
+../memmap.cpp:2438:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(String, "\"%s\" [%s] %s, %s, %s, %s, SRAM:%s, ID:%s, CRC32:%08X",
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3272:3: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                sprintf(str, "%d Kbit", 8 * (SRAMMask + 1) / 1024);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3286:3: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                sprintf(str, "%d Mbit", 1 << (ROMSize - 7));
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3295:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(str, "1.%d", HiROM ? ((ExtendedFormat != NOPE) ? ROM[0x40ffdb] : ROM[0xffdb]) : ROM[0x7fdb]);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3335:3: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                sprintf(chip, "+DSP-%d", Settings.DSP);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3340:3: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                sprintf(chip + strlen(chip), "+MSU-1");
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3342:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(str, "%s%s", contents[(ROMType & 0xf) % 3], chip);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3407:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp,   "            Cart Name: %s", ROMName);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3409:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp, "\n            Game Code: %s", ROMId);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3411:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp, "\n             Contents: %s", KartContents());
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3413:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp, "\n                  Map: %s", MapType());
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3415:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp, "\n                Speed: 0x%02X (%s)", ROMSpeed, (ROMSpeed & 0x10) ? "FastROM" : "SlowROM");
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3417:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp, "\n                 Type: 0x%02X", ROMType);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3419:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp, "\n    Size (calculated): %dMbits", CalculatedSize / 0x20000);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3421:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp, "\n        Size (header): %s", Size());
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3423:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp, "\n            SRAM size: %s", StaticRAMSize());
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3425:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp, "\nChecksum (calculated): 0x%04X", CalculatedChecksum);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3427:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp, "\n    Checksum (header): 0x%04X", ROMChecksum);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3429:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp, "\n  Complement (header): 0x%04X", ROMComplementChecksum);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3431:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp, "\n         Video Output: %s", (ROMRegion > 12 || ROMRegion < 2) ? "NTSC 60Hz" : "PAL 50Hz");
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3433:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp, "\n             Revision: %s", Revision());
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3435:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp, "\n             Licensee: %s", PublishingCompany());
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3437:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp, "\n               Region: %s", Country());
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../memmap.cpp:3439:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(temp, "\n                CRC32: 0x%08X", ROMCRC32);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../ppu.o ../ppu.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../stream.o ../stream.cpp
+In file included from ../ppu.cpp:14:
+../controls.h:49:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                union
+                ^
+../controls.h:101:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                union
+                ^
+../controls.h:127:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                struct                                                          // Which SNES-pointers to control with this pointer
+                ^
+3 warnings generated.
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../sa1.o ../sa1.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../sa1cpu.o ../sa1cpu.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../screenshot.o ../screenshot.cpp
+27 warnings generated.
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../sdd1.o ../sdd1.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../sdd1emu.o ../sdd1emu.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../seta.o ../seta.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../seta010.o ../seta010.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../seta011.o ../seta011.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../seta018.o ../seta018.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../snapshot.o ../snapshot.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../snes9x.o ../snes9x.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../spc7110.o ../spc7110.cpp
+In file included from ../snapshot.cpp:17:
+../controls.h:49:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                union
+                ^
+../controls.h:101:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                union
+                ^
+../controls.h:127:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                struct                                                          // Which SNES-pointers to control with this pointer
+                ^
+../snapshot.cpp:1048:4: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                        sprintf(String, MOVIE_INFO_SNAPSHOT " %s", base.c_str());
+                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../snapshot.cpp:1050:4: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                        sprintf(String, SAVE_INFO_SNAPSHOT " %s", base.c_str());
+                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../snapshot.cpp:1094:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+            sprintf(String, SAVE_ERR_ROM_NOT_FOUND, base);
+            ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../snapshot.cpp:1124:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                sprintf(String, MOVIE_INFO_REWIND " %s", base.c_str());
+                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../snapshot.cpp:1126:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                sprintf(String, MOVIE_INFO_RERECORD " %s", base.c_str());
+                                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../snapshot.cpp:1129:4: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                        sprintf(String, SAVE_INFO_LOAD " %s", base.c_str());
+                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../snapshot.cpp:1136:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(String, SAVE_ERR_SAVE_NOT_FOUND, base.c_str());
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../snapshot.cpp:1164:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+    sprintf(String, SAVE_ERR_SAVE_NOT_FOUND, base.c_str());
+    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../snapshot.cpp:1175:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(buffer, "%s:%04d\n", SNAPSHOT_MAGIC, SNAPSHOT_VERSION);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../snapshot.cpp:1178:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(buffer, "NAM:%06d:%s%c", 8, "Removed", 0);
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../snapshot.cpp:2090:3: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                sprintf(buffer, "%s:%06d:", name, size);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../snapshot.cpp:2094:3: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                sprintf(buffer, "%s:------:", name);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+In file included from ../snes9x.cpp:15:
+../controls.h:49:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                union
+                ^
+../controls.h:101:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                union
+                ^
+../controls.h:127:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                struct                                                          // Which SNES-pointers to control with this pointer
+                ^
+3 warnings generated.
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../srtc.o ../srtc.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../tile.o ../tile.cpp
+15 warnings generated.
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../tileimpl-n1x1.o ../tileimpl-n1x1.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../tileimpl-n2x1.o ../tileimpl-n2x1.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../tileimpl-h2x1.o ../tileimpl-h2x1.cpp
+1 warning generated.
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../sha256.o ../sha256.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../bml.o ../bml.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../movie.o ../movie.cpp
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../fscompat.o ../fscompat.cpp
+In file included from ../movie.cpp:15:
+../controls.h:49:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                union
+                ^
+../controls.h:101:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                union
+                ^
+../controls.h:127:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                struct                                                          // Which SNES-pointers to control with this pointer
+                ^
+../movie.cpp:1033:3: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                sprintf(GFX.FrameDisplayString, "Recording frame: %d%s",
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+../movie.cpp:1037:3: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                sprintf(GFX.FrameDisplayString, "Playing frame: %d / %d",
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+5 warnings generated.
+c++ -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -DGIT_VERSION=\"" aded8be7"\" -std=c++14 -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -DHAVE_STRINGS_H -fno-rtti -pedantic  -fno-exceptions -c -o../libretro/libretro.o ../libretro/libretro.cpp
+cc -arch i386 -I../libretro -I../libretro/libretro-common/include -I.. -I../apu/ -I../apu/bapu   -flto -O3 -DNDEBUG -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-missing-field-initializers -fPIC -DRIGHTSHIFT_IS_SAR -D__LIBRETRO__ -DALLOW_CPU_OVERCLOCK -DHAVE_STDINT_H -c -o../filter/snes_ntsc.o ../filter/snes_ntsc.c
+In file included from ../libretro/libretro.cpp:8:
+In file included from ../apu/bapu/snes/snes.hpp:19:
+../apu/bapu/snes/../smp/smp.hpp:53:7: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+      struct { uint8 a, y; } B;
+      ^
+In file included from ../libretro/libretro.cpp:11:
+../controls.h:49:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                union
+                ^
+../controls.h:101:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                union
+                ^
+../controls.h:127:3: warning: anonymous types declared in an anonymous union are an extension [-Wnested-anon-types]
+                struct                                                          // Which SNES-pointers to control with this pointer
+                ^
+../libretro/libretro.cpp:1236:34: warning: comparison of integers of different signs: 'int' and 'unsigned long' [-Wsign-compare]
+            for(int lcv = 0; lcv < sizeof(Memory.RAM); lcv++)
+                             ~~~ ^ ~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+c++ -arch i386 -fPIC -dynamiclib -osnes9x_libretro.dylib ../apu/apu.o ../apu/bapu/dsp/sdsp.o ../apu/bapu/smp/smp.o ../apu/bapu/smp/smp_state.o ../bsx.o ../c4.o ../c4emu.o ../cheats.o ../cheats2.o ../clip.o ../conffile.o ../controls.o ../cpu.o ../cpuexec.o ../cpuops.o ../crosshairs.o ../dma.o ../dsp.o ../dsp1.o ../dsp2.o ../dsp3.o ../dsp4.o ../fxinst.o ../fxemu.o ../gfx.o ../globals.o ../loadzip.o ../memmap.o ../obc1.o ../msu1.o ../ppu.o ../stream.o ../sa1.o ../sa1cpu.o ../screenshot.o ../sdd1.o ../sdd1emu.o ../seta.o ../seta010.o ../seta011.o ../seta018.o ../snapshot.o ../snes9x.o ../spc7110.o ../srtc.o ../tile.o ../tileimpl-n1x1.o ../tileimpl-n2x1.o ../tileimpl-h2x1.o ../sha256.o ../bml.o ../movie.o ../fscompat.o ../libretro/libretro.o ../filter/snes_ntsc.o -flto -lm
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc++.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc++.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+ld: warning: could not create compact unwind for _snes_ntsc_init: stack subl instruction is too different from dwarf stack size
+undef: __DefaultRuneLocale
+undef: __ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4findEcm
+undef: __ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5rfindEcm
+undef: __ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7compareEmmPKcm
+undef: __ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7compareEmmRKS5_mm
+undef: __ZNKSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEE3strEv
+undef: __ZNKSt3__16locale9use_facetERNS0_2idE
+undef: __ZNKSt3__18ios_base6getlocEv
+undef: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE2atEm
+undef: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5eraseEmm
+undef: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKc
+undef: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcm
+undef: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKc
+undef: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKcm
+undef: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignERKS5_mm
+undef: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKc
+undef: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmmc
+undef: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9push_backEc
+undef: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1ERKS5_
+undef: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1ERKS5_mmRKS4_
+undef: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSERKS5_
+undef: __ZNSt3__113basic_filebufIcNS_11char_traitsIcEEE4openEPKcj
+undef: __ZNSt3__113basic_filebufIcNS_11char_traitsIcEEE5closeEv
+undef: __ZNSt3__113basic_filebufIcNS_11char_traitsIcEEEC1Ev
+undef: __ZNSt3__113basic_filebufIcNS_11char_traitsIcEEED1Ev
+undef: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE3getEv
+undef: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE5seekgExNS_8ios_base7seekdirE
+undef: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE5tellgEv
+undef: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEE6sentryC1ERS3_b
+undef: __ZNSt3__113basic_istreamIcNS_11char_traitsIcEEED2Ev
+undef: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryC1ERS3_
+undef: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEE6sentryD1Ev
+undef: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsEj
+undef: __ZNSt3__114basic_ifstreamIcNS_11char_traitsIcEEE4openEPKcj
+undef: __ZNSt3__114basic_iostreamIcNS_11char_traitsIcEEED2Ev
+undef: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEEC2Ev
+undef: __ZNSt3__115basic_streambufIcNS_11char_traitsIcEEED2Ev
+undef: __ZNSt3__15ctypeIcE2idE
+undef: __ZNSt3__16localeD1Ev
+undef: __ZNSt3__18ios_base4initEPv
+undef: __ZNSt3__18ios_base5clearEj
+undef: __ZNSt3__19basic_iosIcNS_11char_traitsIcEEED2Ev
+undef: __ZNSt3__19to_stringEi
+undef: __ZNSt3__1plIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EEPKS6_RKS9_
+undef: __ZTTNSt3__114basic_ifstreamIcNS_11char_traitsIcEEEE
+undef: __ZTTNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+undef: __ZTVNSt3__114basic_ifstreamIcNS_11char_traitsIcEEEE
+undef: __ZTVNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+undef: __ZTVNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+undef: __ZdaPv
+undef: __ZdlPv
+undef: __Znam
+undef: __Znwm
+undef: ___bzero
+undef: ___cxa_atexit
+undef: ___cxa_guard_acquire
+undef: ___cxa_guard_release
+undef: ___cxa_pure_virtual
+undef: ___maskrune
+undef: ___stack_chk_fail
+undef: ___stack_chk_guard
+undef: ___stderrp
+undef: ___stdoutp
+undef: ___toupper
+undef: _abort
+undef: _atan
+undef: _atoi
+undef: _calloc
+undef: _cos
+undef: _ctime
+undef: _exit
+undef: _exp
+undef: _fclose
+undef: _fdopen$UNIX2003
+undef: _ferror
+undef: _fflush
+undef: _fgetc
+undef: _fgets
+undef: _fileno
+undef: _fopen$UNIX2003
+undef: _fprintf
+undef: _fputc
+undef: _fputs$UNIX2003
+undef: _fread
+undef: _free
+undef: _fseek
+undef: _ftell
+undef: _ftruncate
+undef: _fwrite$UNIX2003
+undef: _getc
+undef: _localtime
+undef: _lseek
+undef: _malloc
+undef: _memchr
+undef: _memcmp
+undef: _memcpy
+undef: _memmove
+undef: _memset
+undef: _memset_pattern16
+undef: _perror
+undef: _pow
+undef: _printf
+undef: _putchar
+undef: _puts
+undef: _rand
+undef: _realloc
+undef: _remove
+undef: _sin
+undef: _snprintf
+undef: _sprintf
+undef: _srand
+undef: _sscanf
+undef: _strcasecmp
+undef: _strcat
+undef: _strchr
+undef: _strcmp
+undef: _strcpy
+undef: _strdup
+undef: _strlen
+undef: _strncasecmp
+undef: _strncmp
+undef: _strncpy
+undef: _strrchr
+undef: _strtok
+undef: _strtol
+undef: _strtoul
+undef: _time
+Undefined symbols for architecture i386:
+  "__DefaultRuneLocale", referenced from:
+      S9xSetControllerCrosshair(crosscontrols, signed char, char const*, char const*) in lto.o
+      CMemory::ParseSNESHeader(unsigned char*) in lto.o
+      parse_crosshair_spec(crosscontrols, char const*) in lto.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::find(char, unsigned long) const", referenced from:
+      split_string(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned char) in lto.o
+      ConfigFile::LoadFile(Stream*, char const*) in lto.o
+      ConfigFile::ConfigEntry::trimCommented(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&) in lto.o
+      ConfigFile::SaveTo(char const*) in lto.o
+      makepath(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::rfind(char, unsigned long) const", referenced from:
+      ConfigFile::SaveTo(char const*) in lto.o
+      splitpath(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in lto.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::compare(unsigned long, unsigned long, char const*, unsigned long) const", referenced from:
+      ConfigFile::DeleteSection(char const*) in lto.o
+      ConfigFile::GetSection(char const*) in lto.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::compare(unsigned long, unsigned long, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned long, unsigned long) const", referenced from:
+      ConfigFile::SectionSizes::GetSectionSize(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in lto.o
+  "std::__1::basic_stringbuf<char, std::__1::char_traits<char>, std::__1::allocator<char> >::str() const", referenced from:
+      CMemory::GetMultilineROMInfo() in lto.o
+  "std::__1::locale::use_facet(std::__1::locale::id&) const", referenced from:
+      std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long) in lto.o
+      bml_node::parse(std::__1::basic_ifstream<char, std::__1::char_traits<char> >&) in lto.o
+  "std::__1::ios_base::getloc() const", referenced from:
+      std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long) in lto.o
+      bml_node::parse(std::__1::basic_ifstream<char, std::__1::char_traits<char> >&) in lto.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::at(unsigned long)", referenced from:
+      ConfigFile::ConfigEntry::trimCommented(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&) in lto.o
+      ConfigFile::SaveTo(char const*) in lto.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::erase(unsigned long, unsigned long)", referenced from:
+      ConfigFile::LoadFile(Stream*, char const*) in lto.o
+      ConfigFile::ConfigEntry::trim(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&) in lto.o
+      ConfigFile::ConfigEntry::trimCommented(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&) in lto.o
+      bml_node::parse(std::__1::basic_ifstream<char, std::__1::char_traits<char> >&) in lto.o
+      bml_parse_data(bml_node&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&) in lto.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::append(char const*)", referenced from:
+      S9xBSXSetStream1(unsigned char) in lto.o
+      S9xBSXSetStream2(unsigned char) in lto.o
+      S9xInitBSX() in lto.o
+      S9xCheatGroupToText(SCheatGroup&) in lto.o
+      ConfigFile::SaveTo(char const*) in lto.o
+      S9xGetCommandName(s9xcommand_t) in lto.o
+      CMemory::LoadMultiCartInt() in lto.o
+      ...
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::append(char const*, unsigned long)", referenced from:
+      S9xGameGenieToRaw(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned int&, unsigned char&) in lto.o
+      S9xCheatGroupToText(SCheatGroup&) in lto.o
+      ConfigFile::LoadFile(Stream*, char const*) in lto.o
+      S9xApplyCommand(s9xcommand_t, short, short) in lto.o
+      makepath(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      S9xBasename(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in lto.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::assign(char const*)", referenced from:
+      ConfigFile::SetString(char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, char const*) in lto.o
+      ConfigFile::ConfigEntry::parse_key(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      S9xGetCommandName(s9xcommand_t) in lto.o
+      S9xApplyCommand(s9xcommand_t, short, short) in lto.o
+      S9xSetInfoString(char const*) in lto.o
+      CMemory::FileLoader(unsigned char*, char const*, unsigned int) in lto.o
+      CMemory::LoadROMMem(unsigned char const*, unsigned int, char const*) in lto.o
+      ...
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::assign(char const*, unsigned long)", referenced from:
+      S9xGetCommandT(char const*) in lto.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::assign(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned long, unsigned long)", referenced from:
+      ConfigFile::LoadFile(Stream*, char const*) in lto.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::insert(unsigned long, char const*)", referenced from:
+      AudioOpen() in lto.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::insert(unsigned long, unsigned long, char)", referenced from:
+      ConfigFile::SaveTo(char const*) in lto.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::push_back(char)", referenced from:
+      S9xGetCommandName(s9xcommand_t) in lto.o
+      CMemory::InitROM() in lto.o
+      CMemory::SafeString(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool) in lto.o
+      std::__1::basic_istream<char, std::__1::char_traits<char> >& std::__1::getline<char, std::__1::char_traits<char>, std::__1::allocator<char> >(std::__1::basic_istream<char, std::__1::char_traits<char> >&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&, char) in lto.o
+      makepath(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)", referenced from:
+      S9xAddCheatGroup(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      S9xLoadCheatFile(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      S9xImportCheatsFromDatabase(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      ConfigFile::LoadFile(Stream*, char const*) in lto.o
+      ConfigFile::SectionSizes::IncreaseSectionSize(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in lto.o
+      ConfigFile::SaveTo(char const*) in lto.o
+      ConfigFile::Get(char const*) in lto.o
+      ...
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned long, unsigned long, std::__1::allocator<char> const&)", referenced from:
+      S9xGameGenieToRaw(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned int&, unsigned char&) in lto.o
+      split_string(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned char) in lto.o
+      ConfigFile::LoadFile(Stream*, char const*) in lto.o
+      ConfigFile::ConfigEntry::trimCommented(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&) in lto.o
+      ConfigFile::ConfigEntry::parse_key(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      bml_node::parse(std::__1::basic_ifstream<char, std::__1::char_traits<char> >&) in lto.o
+      splitpath(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in lto.o
+      ...
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::operator=(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)", referenced from:
+      S9xCreateCheatGroup(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      ConfigFile::LoadFile(Stream*, char const*) in lto.o
+      ConfigFile::SaveTo(char const*) in lto.o
+      ConfigFile::ConfigEntry::parse_key(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      CMemory::LoadMultiCartInt() in lto.o
+      S9xLoadCheatsFromBMLNode(bml_node&) in lto.o
+  "std::__1::basic_filebuf<char, std::__1::char_traits<char> >::open(char const*, unsigned int)", referenced from:
+      bml_node::parse_file(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in lto.o
+  "std::__1::basic_filebuf<char, std::__1::char_traits<char> >::close()", referenced from:
+      S9xBSXSetStream1(unsigned char) in lto.o
+      S9xBSXSetStream2(unsigned char) in lto.o
+      S9xResetBSX() in lto.o
+  "std::__1::basic_filebuf<char, std::__1::char_traits<char> >::basic_filebuf()", referenced from:
+      bml_node::parse_file(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in lto.o
+      __GLOBAL__sub_I_globals.cpp in lto.o
+  "std::__1::basic_filebuf<char, std::__1::char_traits<char> >::~basic_filebuf()", referenced from:
+      SBSX::~SBSX() in lto.o
+      bml_node::parse_file(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in lto.o
+  "std::__1::basic_istream<char, std::__1::char_traits<char> >::get()", referenced from:
+      S9xGetBSXPPU(unsigned short) in lto.o
+  "std::__1::basic_istream<char, std::__1::char_traits<char> >::seekg(long long, std::__1::ios_base::seekdir)", referenced from:
+      S9xBSXSetStream1(unsigned char) in lto.o
+      S9xBSXSetStream2(unsigned char) in lto.o
+  "std::__1::basic_istream<char, std::__1::char_traits<char> >::tellg()", referenced from:
+      S9xBSXSetStream1(unsigned char) in lto.o
+      S9xBSXSetStream2(unsigned char) in lto.o
+  "std::__1::basic_istream<char, std::__1::char_traits<char> >::sentry::sentry(std::__1::basic_istream<char, std::__1::char_traits<char> >&, bool)", referenced from:
+      std::__1::basic_istream<char, std::__1::char_traits<char> >& std::__1::getline<char, std::__1::char_traits<char>, std::__1::allocator<char> >(std::__1::basic_istream<char, std::__1::char_traits<char> >&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&, char) in lto.o
+  "std::__1::basic_istream<char, std::__1::char_traits<char> >::~basic_istream()", referenced from:
+      SBSX::~SBSX() in lto.o
+      bml_node::parse_file(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in lto.o
+  "std::__1::basic_ostream<char, std::__1::char_traits<char> >::sentry::sentry(std::__1::basic_ostream<char, std::__1::char_traits<char> >&)", referenced from:
+      std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long) in lto.o
+  "std::__1::basic_ostream<char, std::__1::char_traits<char> >::sentry::~sentry()", referenced from:
+      std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long) in lto.o
+  "std::__1::basic_ostream<char, std::__1::char_traits<char> >::operator<<(unsigned int)", referenced from:
+      CMemory::GetMultilineROMInfo() in lto.o
+  "std::__1::basic_ifstream<char, std::__1::char_traits<char> >::open(char const*, unsigned int)", referenced from:
+      S9xBSXSetStream1(unsigned char) in lto.o
+      S9xBSXSetStream2(unsigned char) in lto.o
+  "std::__1::basic_iostream<char, std::__1::char_traits<char> >::~basic_iostream()", referenced from:
+      CMemory::GetMultilineROMInfo() in lto.o
+  "std::__1::basic_streambuf<char, std::__1::char_traits<char> >::basic_streambuf()", referenced from:
+      CMemory::GetMultilineROMInfo() in lto.o
+  "std::__1::basic_streambuf<char, std::__1::char_traits<char> >::~basic_streambuf()", referenced from:
+      CMemory::GetMultilineROMInfo() in lto.o
+  "std::__1::ctype<char>::id", referenced from:
+      std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long) in lto.o
+      bml_node::parse(std::__1::basic_ifstream<char, std::__1::char_traits<char> >&) in lto.o
+  "std::__1::locale::~locale()", referenced from:
+      std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long) in lto.o
+      bml_node::parse(std::__1::basic_ifstream<char, std::__1::char_traits<char> >&) in lto.o
+  "std::__1::ios_base::init(void*)", referenced from:
+      CMemory::GetMultilineROMInfo() in lto.o
+      bml_node::parse_file(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in lto.o
+      __GLOBAL__sub_I_globals.cpp in lto.o
+  "std::__1::ios_base::clear(unsigned int)", referenced from:
+      S9xBSXSetStream1(unsigned char) in lto.o
+      S9xBSXSetStream2(unsigned char) in lto.o
+      S9xResetBSX() in lto.o
+      std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long) in lto.o
+      bml_node::parse_file(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in lto.o
+      std::__1::basic_istream<char, std::__1::char_traits<char> >& std::__1::getline<char, std::__1::char_traits<char>, std::__1::allocator<char> >(std::__1::basic_istream<char, std::__1::char_traits<char> >&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&, char) in lto.o
+  "std::__1::basic_ios<char, std::__1::char_traits<char> >::~basic_ios()", referenced from:
+      SBSX::~SBSX() in lto.o
+      CMemory::GetMultilineROMInfo() in lto.o
+      bml_node::parse_file(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in lto.o
+  "std::__1::to_string(int)", referenced from:
+      S9xApplyCommand(s9xcommand_t, short, short) in lto.o
+      AudioOpen() in lto.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > std::__1::operator+<char, std::__1::char_traits<char>, std::__1::allocator<char> >(char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)", referenced from:
+      ConfigFile::SaveTo(char const*) in lto.o
+      CMemory::GetMultilineROMInfo() in lto.o
+  "VTT for std::__1::basic_ifstream<char, std::__1::char_traits<char> >", referenced from:
+      SBSX::~SBSX() in lto.o
+      bml_node::parse_file(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in lto.o
+      __GLOBAL__sub_I_globals.cpp in lto.o
+  "VTT for std::__1::basic_stringstream<char, std::__1::char_traits<char>, std::__1::allocator<char> >", referenced from:
+      CMemory::GetMultilineROMInfo() in lto.o
+  "vtable for std::__1::basic_ifstream<char, std::__1::char_traits<char> >", referenced from:
+      bml_node::parse_file(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in lto.o
+      __GLOBAL__sub_I_globals.cpp in lto.o
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+  "vtable for std::__1::basic_stringbuf<char, std::__1::char_traits<char>, std::__1::allocator<char> >", referenced from:
+      CMemory::GetMultilineROMInfo() in lto.o
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+  "vtable for std::__1::basic_stringstream<char, std::__1::char_traits<char>, std::__1::allocator<char> >", referenced from:
+      CMemory::GetMultilineROMInfo() in lto.o
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+  "operator delete[](void*)", referenced from:
+      Resampler::~Resampler() in lto.o
+      S9xInitSound(int) in lto.o
+      SNES::SMP::~SMP() in lto.o
+      SNES::SMP::~SMP() in lto.o
+      S9xDoDMA(unsigned char) in lto.o
+      memStream::closeStream() in lto.o
+      S9xFreezeToStream(Stream*) in lto.o
+      ...
+  "operator delete(void*)", referenced from:
+      std::__1::vector<short, std::__1::allocator<short> >::__append(unsigned long) in lto.o
+      S9xBSXSetStream1(unsigned char) in lto.o
+      S9xBSXSetStream2(unsigned char) in lto.o
+      S9xInitBSX() in lto.o
+      S9xDeleteCheatGroup(unsigned int) in lto.o
+      S9xDeleteCheats() in lto.o
+      S9xGameGenieToRaw(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned int&, unsigned char&) in lto.o
+      ...
+  "operator new[](unsigned long)", referenced from:
+      S9xInitSound(int) in lto.o
+      SNES::SMP::SMP() in lto.o
+      SNES::SMP::SMP() in lto.o
+      S9xDoDMA(unsigned char) in lto.o
+      S9xFreezeToStream(Stream*) in lto.o
+      S9xUnfreezeFromStream(Stream*) in lto.o
+      S9xUnfreezeScreenshotFromStream(Stream*, unsigned short**, int&, int&) in lto.o
+      ...
+  "operator new(unsigned long)", referenced from:
+      std::__1::vector<short, std::__1::allocator<short> >::__append(unsigned long) in lto.o
+      S9xBSXSetStream1(unsigned char) in lto.o
+      S9xBSXSetStream2(unsigned char) in lto.o
+      S9xInitBSX() in lto.o
+      S9xCreateCheatGroup(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      S9xAddCheatGroup(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      S9xCheatToText(SCheat const&) in lto.o
+      ...
+  "___bzero", referenced from:
+      S9xMixSamples(unsigned char*, int) in lto.o
+      S9xClearSamples() in lto.o
+      S9xInitSound(int) in lto.o
+      S9xInitAPU() in lto.o
+      S9xResetAPU() in lto.o
+      S9xSoftResetAPU() in lto.o
+      S9xAPUSaveState(unsigned char*) in lto.o
+      ...
+  "___cxa_atexit", referenced from:
+      S9xLoadConfigFiles(char**, int) in lto.o
+      S9xSyncSpeed() in lto.o
+      __GLOBAL__sub_I_apu.cpp in lto.o
+      __GLOBAL__sub_I_smp.cpp in lto.o
+      __GLOBAL__sub_I_controls.cpp in lto.o
+      __GLOBAL__sub_I_globals.cpp in lto.o
+      __GLOBAL__sub_I_spc7110.cpp in lto.o
+      ...
+  "___cxa_guard_acquire", referenced from:
+      S9xDisplayMessages(unsigned short*, int, int, int, int) in lto.o
+      S9xLoadConfigFiles(char**, int) in lto.o
+      S9xSyncSpeed() in lto.o
+      _retro_run in lto.o
+  "___cxa_guard_release", referenced from:
+      S9xDisplayMessages(unsigned short*, int, int, int, int) in lto.o
+      S9xLoadConfigFiles(char**, int) in lto.o
+      S9xSyncSpeed() in lto.o
+      _retro_run in lto.o
+  "___cxa_pure_virtual", referenced from:
+      vtable for Stream in lto.o
+  "___maskrune", referenced from:
+      S9xSetControllerCrosshair(crosscontrols, signed char, char const*, char const*) in lto.o
+      CMemory::ParseSNESHeader(unsigned char*) in lto.o
+      parse_crosshair_spec(crosscontrols, char const*) in lto.o
+  "___stack_chk_fail", referenced from:
+      S9xAPULoadBlarggState(unsigned char*) in lto.o
+      S9xSPCDump(char const*) in lto.o
+      SNES::SPC_State_Copier::skip(int) in lto.o
+      SNES::SPC_State_Copier::extra() in lto.o
+      SNES::SPC_DSP::copy_state(unsigned char**, void (*)(unsigned char**, void*, unsigned long)) in lto.o
+      SNES::SMP::save_spc(unsigned char*) in lto.o
+      S9xBSXSetStream1(unsigned char) in lto.o
+      ...
+  "___stack_chk_guard", referenced from:
+      S9xAPULoadBlarggState(unsigned char*) in lto.o
+      S9xSPCDump(char const*) in lto.o
+      SNES::SPC_State_Copier::skip(int) in lto.o
+      SNES::SPC_State_Copier::extra() in lto.o
+      SNES::SPC_DSP::copy_state(unsigned char**, void (*)(unsigned char**, void*, unsigned long)) in lto.o
+      SNES::SMP::save_spc(unsigned char*) in lto.o
+      S9xBSXSetStream1(unsigned char) in lto.o
+      ...
+  "___stderrp", referenced from:
+      S9xSPCDump(char const*) in lto.o
+      ConfigFile::LoadFile(char const*) in lto.o
+      ConfigFile::LoadFile(Stream*, char const*) in lto.o
+      ConfigFile::SaveTo(char const*) in lto.o
+      S9xSetController(int, controllers, signed char, signed char, signed char, signed char) in lto.o
+      S9xGetCommandT(char const*) in lto.o
+      S9xMapButton(unsigned int, s9xcommand_t, bool) in lto.o
+      ...
+  "___stdoutp", referenced from:
+      S9xLoadConfigFiles(char**, int) in lto.o
+  "___toupper", referenced from:
+      S9xGameGenieToRaw(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned int&, unsigned char&) in lto.o
+      CMemory::ParseSNESHeader(unsigned char*) in lto.o
+  "_abort", referenced from:
+      std::__1::__vector_base<short, std::__1::allocator<short> >::__throw_length_error() const in lto.o
+      std::__1::__throw_length_error(char const*) in lto.o
+      std::__1::__vector_base<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >::__throw_length_error() const in lto.o
+      std::__1::__throw_length_error(char const*) (.56) in lto.o
+      std::__1::__vector_base<SCheat, std::__1::allocator<SCheat> >::__throw_length_error() const in lto.o
+      std::__1::__vector_base<SCheatGroup, std::__1::allocator<SCheatGroup> >::__throw_length_error() const in lto.o
+      std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__throw_length_error() const in lto.o
+      ...
+  "_atan", referenced from:
+      C4Op1F() in lto.o
+      S9xSetC4(unsigned char, unsigned short) in lto.o
+  "_atoi", referenced from:
+      S9xApplyCommand(s9xcommand_t, short, short) in lto.o
+      S9xUnfreezeFromStream(Stream*) in lto.o
+      S9xUnfreezeScreenshotFromStream(Stream*, unsigned short**, int&, int&) in lto.o
+      S9xParseArgs(char**, int) in lto.o
+      UnfreezeBlock(Stream*, char const*, unsigned char*, int) in lto.o
+      update_variables() in lto.o
+  "_calloc", referenced from:
+      S9xGetCommandT(char const*) in lto.o
+      S9xLoadCrosshairFile(int, char const*) in lto.o
+      _retro_set_environment in lto.o
+      _retro_init in lto.o
+  "_cos", referenced from:
+      C4TransfWireFrame() in lto.o
+      C4TransfWireFrame2() in lto.o
+      S9xSetC4(unsigned char, unsigned short) in lto.o
+      _snes_ntsc_init in lto.o
+      C4DrawWireFrame() in lto.o
+  "_ctime", referenced from:
+      ConfigFile::SaveTo(char const*) in lto.o
+  "_exit", referenced from:
+      S9xUsage() in lto.o
+      _retro_init in lto.o
+  "_exp", referenced from:
+      _snes_ntsc_init in lto.o
+  "_fclose", referenced from:
+      S9xSPCDump(char const*) in lto.o
+      S9xInitBSX() in lto.o
+      S9xSaveCheatFile(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      ConfigFile::LoadFile(char const*) in lto.o
+      ConfigFile::SaveTo(char const*) in lto.o
+      S9xLoadCrosshairFile(int, char const*) in lto.o
+      CMemory::LoadMultiCartInt() in lto.o
+      ...
+  "_fdopen$UNIX2003", referenced from:
+      reopenStreamFromFd(int, char const*) in lto.o
+      S9xMovieOpen(char const*, unsigned char) in lto.o
+  "_ferror", referenced from:
+      ConfigFile::SaveTo(char const*) in lto.o
+  "_fflush", referenced from:
+      S9xMovieOpen(char const*, unsigned char) in lto.o
+  "_fgetc", referenced from:
+      fStream::get_char() in lto.o
+  "_fgets", referenced from:
+      fStream::gets(char*, unsigned long) in lto.o
+  "_fileno", referenced from:
+      S9xMovieOpen(char const*, unsigned char) in lto.o
+      change_state(MovieState) in lto.o
+  "_fopen$UNIX2003", referenced from:
+      S9xSPCDump(char const*) in lto.o
+      S9xInitBSX() in lto.o
+      S9xSaveCheatFile(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      ConfigFile::LoadFile(char const*) in lto.o
+      ConfigFile::SaveTo(char const*) in lto.o
+      S9xLoadCrosshairFile(int, char const*) in lto.o
+      CMemory::FileLoader(unsigned char*, char const*, unsigned int) in lto.o
+      ...
+  "_fprintf", referenced from:
+      S9xSPCDump(char const*) in lto.o
+      S9xSaveCheatFile(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      ConfigFile::LoadFile(Stream*, char const*) in lto.o
+      ConfigFile::SaveTo(char const*) in lto.o
+      S9xSetController(int, controllers, signed char, signed char, signed char, signed char) in lto.o
+      S9xMapButton(unsigned int, s9xcommand_t, bool) in lto.o
+      S9xReportButton(unsigned int, bool) in lto.o
+      ...
+  "_fputc", referenced from:
+      ConfigFile::SaveTo(char const*) in lto.o
+      S9xMovieCreate(char const*, unsigned char, unsigned char, wchar_t const*, int) in lto.o
+  "_fputs$UNIX2003", referenced from:
+      ConfigFile::SaveTo(char const*) in lto.o
+  "_fread", referenced from:
+      S9xInitBSX() in lto.o
+      S9xLoadCrosshairFile(int, char const*) in lto.o
+      CMemory::LoadMultiCartInt() in lto.o
+      CMemory::LoadSRTC() in lto.o
+      CMemory::LoadSRAM(char const*) in lto.o
+      fStream::read(void*, unsigned long) in lto.o
+      S9xMovieOpen(char const*, unsigned char) in lto.o
+      ...
+  "_free", referenced from:
+      S9xUnmapAllControls() in lto.o
+      S9xGetCommandT(char const*) in lto.o
+      S9xLoadCrosshairFile(int, char const*) in lto.o
+      S9xGraphicsInit() in lto.o
+      S9xGraphicsDeinit() in lto.o
+      CMemory::Deinit() in lto.o
+      CMemory::LoadROMInt(int) in lto.o
+      ...
+  "_fseek", referenced from:
+      fStream::size() in lto.o
+      fStream::revert(unsigned char, int) in lto.o
+      S9xMovieUnfreeze(unsigned char*, unsigned int) in lto.o
+      S9xMovieOpen(char const*, unsigned char) in lto.o
+      S9xMovieCreate(char const*, unsigned char, unsigned char, wchar_t const*, int) in lto.o
+      S9xMovieGetInfo(char const*, MovieInfo*) in lto.o
+      flush_movie() in lto.o
+      ...
+  "_ftell", referenced from:
+      fStream::pos() in lto.o
+      fStream::size() in lto.o
+      S9xMovieCreate(char const*, unsigned char, unsigned char, wchar_t const*, int) in lto.o
+  "_ftruncate", referenced from:
+      change_state(MovieState) in lto.o
+  "_fwrite$UNIX2003", referenced from:
+      S9xSPCDump(char const*) in lto.o
+      ConfigFile::LoadFile(char const*) in lto.o
+      ConfigFile::LoadFile(Stream*, char const*) in lto.o
+      ConfigFile::SaveTo(char const*) in lto.o
+      S9xGetCommandT(char const*) in lto.o
+      S9xMapButton(unsigned int, s9xcommand_t, bool) in lto.o
+      S9xMapPointer(unsigned int, s9xcommand_t, bool) in lto.o
+      ...
+  "_getc", referenced from:
+      S9xLoadCrosshairFile(int, char const*) in lto.o
+  "_localtime", referenced from:
+      S9xBSXGetRTC() in lto.o
+      S9xGetBSXPPU(unsigned short) in lto.o
+      S9xDisplayMessages(unsigned short*, int, int, int, int) in lto.o
+  "_lseek", referenced from:
+      S9xMovieOpen(char const*, unsigned char) in lto.o
+  "_malloc", referenced from:
+      S9xGraphicsInit() in lto.o
+      CMemory::Init() in lto.o
+      CMemory::LoadROMInt(int) in lto.o
+      S9xUnfreezeScreenshotFromStream(Stream*, unsigned short**, int&, int&) in lto.o
+      S9xDeinterleaveType1(int, unsigned char*) in lto.o
+  "_memchr", referenced from:
+      split_string(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned char) in lto.o
+      ConfigFile::ConfigEntry::trim(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&) in lto.o
+      ConfigFile::ConfigEntry::trimCommented(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&) in lto.o
+      ConfigFile::ConfigEntry::parse_key(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      bml_node::parse(std::__1::basic_ifstream<char, std::__1::char_traits<char> >&) in lto.o
+  "_memcmp", referenced from:
+      ConfigFile::SaveTo(char const*) in lto.o
+      ConfigFile::SectionSizes::GetSectionSize(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in lto.o
+      ConfigFile::ConfigEntry::section_then_key_less::operator()(ConfigFile::ConfigEntry const&, ConfigFile::ConfigEntry const&) const in lto.o
+      std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int>, std::__1::__tree_node<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int>, void*>*, int> std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int>, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int> > >::find<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      std::__1::__tree_node_base<void*>*& std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int>, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int> > >::__find_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >(std::__1::__tree_end_node<std::__1::__tree_node_base<void*>*>*&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      ConfigFile::ConfigEntry::key_less::operator()(ConfigFile::ConfigEntry const&, ConfigFile::ConfigEntry const&) const in lto.o
+      ConfigFile::ConfigEntry::line_less::operator()(ConfigFile::ConfigEntry const&, ConfigFile::ConfigEntry const&) const in lto.o
+      ...
+  "_memcpy", referenced from:
+      Resampler::read(short*, int) in lto.o
+      std::__1::vector<short, std::__1::allocator<short> >::__append(unsigned long) in lto.o
+      SNES::SMP::save_spc(unsigned char*) in lto.o
+      SNES::SMP::save_state(unsigned char**) in lto.o
+      SNES::SMP::load_state(unsigned char**) in lto.o
+      S9xBSXSetStream1(unsigned char) in lto.o
+      S9xBSXSetStream2(unsigned char) in lto.o
+      ...
+  "_memmove", referenced from:
+      S9xInitBSX() in lto.o
+      S9xSetC4(unsigned char, unsigned short) in lto.o
+      S9xStartCheatSearch(SCheatData*) in lto.o
+      S9xUpdateScreen() in lto.o
+      CMemory::HeaderRemove(unsigned int, unsigned char*) in lto.o
+      CMemory::LoadROMInt(int) in lto.o
+      CMemory::LoadMultiCartInt() in lto.o
+      ...
+  "_memset", referenced from:
+      S9xSetBSX(unsigned char, unsigned int) in lto.o
+      S9xStartCheatSearch(SCheatData*) in lto.o
+      S9xReset() in lto.o
+      CMemory::LoadMultiCartInt() in lto.o
+      CMemory::LoadBSCart() in lto.o
+      CMemory::ClearSRAM(unsigned char) in lto.o
+      CMemory::LoadSRAM(char const*) in lto.o
+      ...
+  "_memset_pattern16", referenced from:
+      CMemory::InitROM() in lto.o
+      CMemory::Map_Initialize() in lto.o
+      CMemory::Map_SPC7110HiROMMap() in lto.o
+      CMemory::Map_BSSA1LoROMMap() in lto.o
+      CMemory::Map_SA1LoROMMap() in lto.o
+      BSX_Map() in lto.o
+  "_perror", referenced from:
+      ConfigFile::LoadFile(char const*) in lto.o
+      ConfigFile::SaveTo(char const*) in lto.o
+      S9xGetCommandT(char const*) in lto.o
+      S9xLoadCrosshairFile(int, char const*) in lto.o
+  "_pow", referenced from:
+      _snes_ntsc_init in lto.o
+  "_printf", referenced from:
+      S9xAPUTimingSetSpeedup(int) in lto.o
+      S9xOutputCheatSearchResults(SCheatData*) in lto.o
+      ConfigFile::SaveTo(char const*) in lto.o
+      CMemory::ApplyROMFixes() in lto.o
+      S9xMSU1OpenFile(char const*, bool) in lto.o
+      S9xUnfreezeFromStream(Stream*) in lto.o
+      _retro_cheat_set in lto.o
+      ...
+  "_putchar", referenced from:
+      bml_print_node(bml_node&, int) in lto.o
+  "_puts", referenced from:
+      CMemory::SaveSRTC() in lto.o
+      CMemory::SaveSRAM(char const*) in lto.o
+      CMemory::ParseSNESHeader(unsigned char*) in lto.o
+      CMemory::Map_SPC7110HiROMMap() in lto.o
+      CMemory::Map_ExtendedHiROMMap() in lto.o
+      CMemory::Map_BSCartHiROMMap() in lto.o
+      CMemory::Map_HiROMMap() in lto.o
+      ...
+  "_rand", referenced from:
+      _retro_load_game in lto.o
+     (maybe you meant: _randomize_memory)
+  "_realloc", referenced from:
+      S9xMovieUnfreeze(unsigned char*, unsigned int) in lto.o
+      S9xMovieOpen(char const*, unsigned char) in lto.o
+      S9xMovieUpdateOnReset() in lto.o
+      write_frame_controller_data() in lto.o
+  "_remove", referenced from:
+      S9xSaveCheatFile(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+     (maybe you meant: void std::__1::__tree_remove<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*))
+  "_sin", referenced from:
+      C4TransfWireFrame() in lto.o
+      C4TransfWireFrame2() in lto.o
+      S9xSetC4(unsigned char, unsigned short) in lto.o
+      _snes_ntsc_init in lto.o
+      C4DrawWireFrame() in lto.o
+  "_snprintf", referenced from:
+      S9xBSXSetStream1(unsigned char) in lto.o
+      S9xBSXSetStream2(unsigned char) in lto.o
+      ConfigFile::SetInt(char const*, int, char const*) in lto.o
+      ConfigFile::SetUInt(char const*, unsigned int, int, char const*) in lto.o
+      S9xVerifyControllers() in lto.o
+      S9xGetCommandName(s9xcommand_t) in lto.o
+      S9xApplyCommand(s9xcommand_t, short, short) in lto.o
+      ...
+  "_sprintf", referenced from:
+      S9xCheatToText(SCheat const&) in lto.o
+      S9xReportControllers() in lto.o
+      S9xApplyCommand(s9xcommand_t, short, short) in lto.o
+      S9xDoDMA(unsigned char) in lto.o
+      S9xDisplayMessages(unsigned short*, int, int, int, int) in lto.o
+      CMemory::InitROM() in lto.o
+      CMemory::Size() in lto.o
+      ...
+  "_srand", referenced from:
+      _retro_load_game in lto.o
+  "_sscanf", referenced from:
+      S9xTextToCheat(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      update_variables() in lto.o
+  "_strcasecmp", referenced from:
+      S9xImportCheatsFromDatabase(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+      ConfigFile::GetBool(char const*, bool, bool*) in lto.o
+      CMemory::FileLoader(unsigned char*, char const*, unsigned int) in lto.o
+      S9xUnfreezeGame(char const*) in lto.o
+      S9xLoadConfigFiles(char**, int) in lto.o
+      S9xParseArgsForCheats(char**, int) in lto.o
+      S9xParseArgs(char**, int) in lto.o
+      ...
+  "_strcat", referenced from:
+      CMemory::MakeRomInfoText(char*) in lto.o
+      _makepath(char*, char const*, char const*, char const*, char const*) in lto.o
+      _retro_set_environment in lto.o
+      LoadBIOS(unsigned char*, char const*, int) in lto.o
+  "_strchr", referenced from:
+      _makepath(char*, char const*, char const*, char const*, char const*) in lto.o
+  "_strcmp", referenced from:
+      S9xGetCommandT(char const*) in lto.o
+      CMemory::ApplyROMFixes() in lto.o
+      CMemory::match_na(char const*) in lto.o
+      _retro_set_environment in lto.o
+      get_cursor_color(char const*) in lto.o
+      update_variables() in lto.o
+  "_strcpy", referenced from:
+      CMemory::InitROM() in lto.o
+      CMemory::LoadMultiCart(char const*, char const*) in lto.o
+      _splitpath(char const*, char*, char*, char*, char*) in lto.o
+      _makepath(char*, char const*, char const*, char const*, char const*) in lto.o
+      _retro_set_environment in lto.o
+      _retro_cheat_set in lto.o
+      LoadBIOS(unsigned char*, char const*, int) in lto.o
+      ...
+  "_strdup", referenced from:
+      ConfigFile::GetStringDup(char const*, char const*) in lto.o
+      S9xGetCommandName(s9xcommand_t) in lto.o
+      Stream::getline() in lto.o
+      S9xLoadConfigFiles(char**, int) in lto.o
+  "_strlen", referenced from:
+      S9xBSXSetStream1(unsigned char) in lto.o
+      S9xBSXSetStream2(unsigned char) in lto.o
+      S9xInitBSX() in lto.o
+      S9xCheatToText(SCheat const&) in lto.o
+      ConfigFile::Get(char const*) in lto.o
+      ConfigFile::Has(char const*) in lto.o
+      ConfigFile::GetString(char const*, char const*) in lto.o
+      ...
+  "_strncasecmp", referenced from:
+      CMemory::match_nc(char const*) in lto.o
+      parse_controller_spec(int, char const*) in lto.o
+  "_strncmp", referenced from:
+      S9xInitBSX() in lto.o
+      S9xGetCommandT(char const*) in lto.o
+      CMemory::HeaderRemove(unsigned int, unsigned char*) in lto.o
+      CMemory::LoadROMInt(int) in lto.o
+      CMemory::InitROM() in lto.o
+      CMemory::LoadMultiCartMem(unsigned char const*, unsigned int, unsigned char const*, unsigned int, unsigned char const*, unsigned int) in lto.o
+      CMemory::LoadMultiCartInt() in lto.o
+      ...
+  "_strncpy", referenced from:
+      CMemory::ParseSNESHeader(unsigned char*) in lto.o
+      S9xParseArgs(char**, int) in lto.o
+      S9xMovieOpen(char const*, unsigned char) in lto.o
+      S9xMovieCreate(char const*, unsigned char, unsigned char, wchar_t const*, int) in lto.o
+      S9xMovieGetInfo(char const*, MovieInfo*) in lto.o
+      _retro_load_game in lto.o
+  "_strrchr", referenced from:
+      ConfigFile::LoadFile(char const*) in lto.o
+      _splitpath(char const*, char*, char*, char*, char*) in lto.o
+      _retro_load_game in lto.o
+  "_strtok", referenced from:
+      _retro_cheat_set in lto.o
+  "_strtol", referenced from:
+      ConfigFile::GetInt(char const*, int, bool*) in lto.o
+      ConfigFile::GetUInt(char const*, unsigned int, int, bool*) in lto.o
+      S9xGetCommandT(char const*) in lto.o
+  "_strtoul", referenced from:
+      S9xProActionReplayToRaw(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned int&, unsigned char&) in lto.o
+      S9xGameGenieToRaw(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned int&, unsigned char&) in lto.o
+      S9xTextToCheat(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in lto.o
+  "_time", referenced from:
+      S9xBSXGetRTC() in lto.o
+      S9xGetBSXPPU(unsigned short) in lto.o
+      ConfigFile::SaveTo(char const*) in lto.o
+      S9xDisplayMessages(unsigned short*, int, int, int, int) in lto.o
+      S9xResetSaveTimer(unsigned char) in lto.o
+      S9xFreezeGame(char const*) in lto.o
+      S9xUnfreezeGame(char const*) in lto.o
+      ...
+     (maybe you meant: SPC7110::update_time(int), SRTC::update_time() )
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile:711: snes9x_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-snes9x/libretro'
+cp "snes9x_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/snes9x_libretro.dylib"
+cp: snes9x_libretro.dylib: No such file or directory

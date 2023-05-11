@@ -1,0 +1,48 @@
+Building dosbox...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-dosbox"
+gmake platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-dosbox'
+rm -f ./libretro-common/file/retro_dirent.o ./libretro-common/file/retro_stat.o ./libretro-common/libco/libco.o ./libretro/dos_gfx.o ./libretro/dosbox.o ./libretro/libretro.o ./libretro/mapper.o ./libretro/mixer-retro.o ./libretro/nonlibc/snprintf.o ./libretro/render.o ./libretro/render_scalers.o ./src/cpu/callback.o ./src/cpu/core_dyn_x86.o ./src/cpu/core_dynrec.o ./src/cpu/core_full.o ./src/cpu/core_normal.o ./src/cpu/core_prefetch.o ./src/cpu/core_simple.o ./src/cpu/cpu.o ./src/cpu/flags.o ./src/cpu/mmx.o ./src/cpu/modrm.o ./src/cpu/paging.o ./src/dos/cdrom.o ./src/dos/cdrom_image.o ./src/dos/dos.o ./src/dos/dos_classes.o ./src/dos/dos_devices.o ./src/dos/dos_execute.o ./src/dos/dos_files.o ./src/dos/dos_ioctl.o ./src/dos/dos_keyboard_layout.o ./src/dos/dos_memory.o ./src/dos/dos_misc.o ./src/dos/dos_mscdex.o ./src/dos/dos_programs.o ./src/dos/dos_tables.o ./src/dos/drive_cache.o ./src/dos/drive_fat.o ./src/dos/drive_iso.o ./src/dos/drive_local.o ./src/dos/drive_virtual.o ./src/dos/drives.o ./src/fpu/fpu.o ./src/hardware/adlib.o ./src/hardware/cmos.o ./src/hardware/dbopl.o ./src/hardware/disney.o ./src/hardware/dma.o ./src/hardware/gameblaster.o ./src/hardware/gus.o ./src/hardware/hardware.o ./src/hardware/iohandler.o ./src/hardware/joystick.o ./src/hardware/keyboard.o ./src/hardware/memory.o ./src/hardware/mpu401.o ./src/hardware/pci_bus.o ./src/hardware/pcspeaker.o ./src/hardware/pic.o ./src/hardware/sblaster.o ./src/hardware/serialport/directserial.o ./src/hardware/serialport/libserial.o ./src/hardware/serialport/misc_util.o ./src/hardware/serialport/nullmodem.o ./src/hardware/serialport/serialdummy.o ./src/hardware/serialport/serialport.o ./src/hardware/serialport/softmodem.o ./src/hardware/tandy_sound.o ./src/hardware/timer.o ./src/hardware/vga.o ./src/hardware/vga_attr.o ./src/hardware/vga_crtc.o ./src/hardware/vga_dac.o ./src/hardware/vga_draw.o ./src/hardware/vga_gfx.o ./src/hardware/vga_memory.o ./src/hardware/vga_misc.o ./src/hardware/vga_other.o ./src/hardware/vga_paradise.o ./src/hardware/vga_s3.o ./src/hardware/vga_seq.o ./src/hardware/vga_tseng.o ./src/hardware/vga_xga.o ./src/ints/bios.o ./src/ints/bios_disk.o ./src/ints/bios_keyboard.o ./src/ints/ems.o ./src/ints/int10.o ./src/ints/int10_char.o ./src/ints/int10_memory.o ./src/ints/int10_misc.o ./src/ints/int10_modes.o ./src/ints/int10_pal.o ./src/ints/int10_put_pixel.o ./src/ints/int10_vesa.o ./src/ints/int10_video_state.o ./src/ints/int10_vptable.o ./src/ints/mouse.o ./src/ints/xms.o ./src/midi/midi.o ./src/midi/munt/Analog.o ./src/midi/munt/BReverbModel.o ./src/midi/munt/File.o ./src/midi/munt/FileStream.o ./src/midi/munt/LA32Ramp.o ./src/midi/munt/LA32WaveGenerator.o ./src/midi/munt/MidiStreamParser.o ./src/midi/munt/Part.o ./src/midi/munt/Partial.o ./src/midi/munt/PartialManager.o ./src/midi/munt/Poly.o ./src/midi/munt/ROMInfo.o ./src/midi/munt/Synth.o ./src/midi/munt/TVA.o ./src/midi/munt/TVF.o ./src/midi/munt/TVP.o ./src/midi/munt/Tables.o ./src/midi/munt/sha1/sha1.o ./src/misc/cross.o ./src/misc/messages.o ./src/misc/programs.o ./src/misc/setup.o ./src/misc/support.o ./src/shell/shell.o ./src/shell/shell_batch.o ./src/shell/shell_cmds.o ./src/shell/shell_misc.o dosbox_libretro.dylib
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-dosbox'
+gmake platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-dosbox'
+cc -arch i386  -D__LIBRETRO__ -fPIC -mmacosx-version-min=10.1 -I./src -I./libretro -I./libretro-common/include -I./include -I./src/midi/munt -DC_HAVE_MPROTECT="1" -O3 -DNDEBUG -DGIT_VERSION=\"" b7b2426"\" -DSVN_VERSION=\"\" -c libretro-common/file/retro_dirent.c -o libretro-common/file/retro_dirent.o
+cc -arch i386  -D__LIBRETRO__ -fPIC -mmacosx-version-min=10.1 -I./src -I./libretro -I./libretro-common/include -I./include -I./src/midi/munt -DC_HAVE_MPROTECT="1" -O3 -DNDEBUG -DGIT_VERSION=\"" b7b2426"\" -DSVN_VERSION=\"\" -c libretro-common/file/retro_stat.c -o libretro-common/file/retro_stat.o
+cc -arch i386  -D__LIBRETRO__ -fPIC -mmacosx-version-min=10.1 -I./src -I./libretro -I./libretro-common/include -I./include -I./src/midi/munt -DC_HAVE_MPROTECT="1" -O3 -DNDEBUG -DGIT_VERSION=\"" b7b2426"\" -DSVN_VERSION=\"\" -c libretro-common/libco/libco.c -o libretro-common/libco/libco.o
+c++ -arch i386  -D__LIBRETRO__ -fPIC -mmacosx-version-min=10.1 -I./src -I./libretro -I./libretro-common/include -I./include -I./src/midi/munt -DC_HAVE_MPROTECT="1" -O3 -DNDEBUG -DGIT_VERSION=\"" b7b2426"\" -DSVN_VERSION=\"\" -c libretro/dos_gfx.cpp -o libretro/dos_gfx.o
+clang: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+c++ -arch i386  -D__LIBRETRO__ -fPIC -mmacosx-version-min=10.1 -I./src -I./libretro -I./libretro-common/include -I./include -I./src/midi/munt -DC_HAVE_MPROTECT="1" -O3 -DNDEBUG -DGIT_VERSION=\"" b7b2426"\" -DSVN_VERSION=\"\" -c libretro/dosbox.cpp -o libretro/dosbox.o
+c++ -arch i386  -D__LIBRETRO__ -fPIC -mmacosx-version-min=10.1 -I./src -I./libretro -I./libretro-common/include -I./include -I./src/midi/munt -DC_HAVE_MPROTECT="1" -O3 -DNDEBUG -DGIT_VERSION=\"" b7b2426"\" -DSVN_VERSION=\"\" -c libretro/libretro.cpp -o libretro/libretro.o
+c++ -arch i386  -D__LIBRETRO__ -fPIC -mmacosx-version-min=10.1 -I./src -I./libretro -I./libretro-common/include -I./include -I./src/midi/munt -DC_HAVE_MPROTECT="1" -O3 -DNDEBUG -DGIT_VERSION=\"" b7b2426"\" -DSVN_VERSION=\"\" -c libretro/mapper.cpp -o libretro/mapper.o
+clang: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+clang: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+clang: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+libretro/libretro.cpp:21:10: fatal error: 'algorithm' file not found
+#include <algorithm>
+         ^~~~~~~~~~~
+libretro/mapper.cpp:1:10: fatal error: 'vector' file not found
+#include <vector>
+         ^~~~~~~~
+c++ -arch i386  -D__LIBRETRO__ -fPIC -mmacosx-version-min=10.1 -I./src -I./libretro -I./libretro-common/include -I./include -I./src/midi/munt -DC_HAVE_MPROTECT="1" -O3 -DNDEBUG -DGIT_VERSION=\"" b7b2426"\" -DSVN_VERSION=\"\" -c libretro/mixer-retro.cpp -o libretro/mixer-retro.o
+clang: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+1 error generated.
+gmake[1]: *** [Makefile.libretro:249: libretro/mapper.o] Error 1
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from libretro/dosbox.cpp:37:
+In file included from ./include/dos_inc.h:26:
+./include/dos_system.h:25:10: fatal error: 'vector' file not found
+#include <vector>
+         ^~~~~~~~
+In file included from libretro/mixer-retro.cpp:39:
+./include/setup.h:33:10: fatal error: 'list' file not found
+#include <list>
+         ^~~~~~
+1 error generated.
+gmake[1]: *** [Makefile.libretro:249: libretro/libretro.o] Error 1
+1 error generated.
+gmake[1]: *** [Makefile.libretro:249: libretro/dosbox.o] Error 1
+1 error generated.
+gmake[1]: *** [Makefile.libretro:249: libretro/mixer-retro.o] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-dosbox'
+cp "dosbox_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/dosbox_libretro.dylib"
+cp: dosbox_libretro.dylib: No such file or directory

@@ -1,0 +1,524 @@
+Building gambatte...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-gambatte"
+gmake -f Makefile.libretro platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-gambatte'
+rm -f libgambatte/src/bootloader.o libgambatte/src/cpu.o libgambatte/src/gambatte.o libgambatte/src/initstate.o libgambatte/src/interrupter.o libgambatte/src/interruptrequester.o libgambatte/src/gambatte-memory.o libgambatte/src/sound.o libgambatte/src/statesaver.o libgambatte/src/tima.o libgambatte/src/video.o libgambatte/src/video_libretro.o libgambatte/src/mem/cartridge.o libgambatte/src/mem/cartridge_libretro.o libgambatte/src/mem/huc3.o libgambatte/src/mem/memptrs.o libgambatte/src/mem/rtc.o libgambatte/src/sound/channel1.o libgambatte/src/sound/channel2.o libgambatte/src/sound/channel3.o libgambatte/src/sound/channel4.o libgambatte/src/sound/duty_unit.o libgambatte/src/sound/envelope_unit.o libgambatte/src/sound/length_counter.o libgambatte/src/video/ly_counter.o libgambatte/src/video/lyc_irq.o libgambatte/src/video/next_m0_time.o libgambatte/src/video/ppu.o libgambatte/src/video/sprite_mapper.o libgambatte/src/../libretro/libretro.o libgambatte/src/../libretro/net_serial.o libgambatte/src/../libretro/gambatte_log.o libgambatte/src/../libretro/blipper.o libgambatte/src/../libretro-common/compat/compat_posix_string.o libgambatte/src/../libretro-common/compat/compat_snprintf.o libgambatte/src/../libretro-common/compat/compat_strcasestr.o libgambatte/src/../libretro-common/compat/compat_strl.o libgambatte/src/../libretro-common/compat/fopen_utf8.o libgambatte/src/../libretro-common/encodings/encoding_utf.o libgambatte/src/../libretro-common/file/file_path.o libgambatte/src/../libretro-common/file/file_path_io.o libgambatte/src/../libretro-common/streams/file_stream.o libgambatte/src/../libretro-common/streams/file_stream_transforms.o libgambatte/src/../libretro-common/string/stdstring.o libgambatte/src/../libretro-common/time/rtime.o libgambatte/src/../libretro-common/vfs/vfs_implementation.o gambatte_libretro.dylib
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-gambatte'
+gmake -f Makefile.libretro platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-gambatte'
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/bootloader.o libgambatte/src/bootloader.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/cpu.o libgambatte/src/cpu.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/gambatte.o libgambatte/src/gambatte.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/initstate.o libgambatte/src/initstate.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/interrupter.o libgambatte/src/interrupter.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/interruptrequester.o libgambatte/src/interruptrequester.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/gambatte-memory.o libgambatte/src/gambatte-memory.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/sound.o libgambatte/src/sound.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/statesaver.o libgambatte/src/statesaver.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/tima.o libgambatte/src/tima.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/video.o libgambatte/src/video.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/video_libretro.o libgambatte/src/video_libretro.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/mem/cartridge.o libgambatte/src/mem/cartridge.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/mem/cartridge_libretro.o libgambatte/src/mem/cartridge_libretro.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/mem/huc3.o libgambatte/src/mem/huc3.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/mem/memptrs.o libgambatte/src/mem/memptrs.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/mem/rtc.o libgambatte/src/mem/rtc.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/sound/channel1.o libgambatte/src/sound/channel1.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/sound/channel2.o libgambatte/src/sound/channel2.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/sound/channel3.o libgambatte/src/sound/channel3.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/sound/channel4.o libgambatte/src/sound/channel4.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/sound/duty_unit.o libgambatte/src/sound/duty_unit.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/sound/envelope_unit.o libgambatte/src/sound/envelope_unit.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/sound/length_counter.o libgambatte/src/sound/length_counter.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/video/ly_counter.o libgambatte/src/video/ly_counter.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/video/lyc_irq.o libgambatte/src/video/lyc_irq.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/video/next_m0_time.o libgambatte/src/video/next_m0_time.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/video/ppu.o libgambatte/src/video/ppu.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/video/sprite_mapper.o libgambatte/src/video/sprite_mapper.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro/libretro.o libgambatte/src/../libretro/libretro.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 9574b6e"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro/net_serial.o libgambatte/src/../libretro/net_serial.cpp
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro/gambatte_log.o libgambatte/src/../libretro/gambatte_log.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro/blipper.o libgambatte/src/../libretro/blipper.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro-common/compat/compat_posix_string.o libgambatte/src/../libretro-common/compat/compat_posix_string.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro-common/compat/compat_snprintf.o libgambatte/src/../libretro-common/compat/compat_snprintf.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro-common/compat/compat_strcasestr.o libgambatte/src/../libretro-common/compat/compat_strcasestr.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro-common/compat/compat_strl.o libgambatte/src/../libretro-common/compat/compat_strl.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro-common/compat/fopen_utf8.o libgambatte/src/../libretro-common/compat/fopen_utf8.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro-common/encodings/encoding_utf.o libgambatte/src/../libretro-common/encodings/encoding_utf.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro-common/file/file_path.o libgambatte/src/../libretro-common/file/file_path.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro-common/file/file_path_io.o libgambatte/src/../libretro-common/file/file_path_io.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro-common/streams/file_stream.o libgambatte/src/../libretro-common/streams/file_stream.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro-common/streams/file_stream_transforms.o libgambatte/src/../libretro-common/streams/file_stream_transforms.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro-common/string/stdstring.o libgambatte/src/../libretro-common/string/stdstring.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro-common/time/rtime.o libgambatte/src/../libretro-common/time/rtime.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DCC_RESAMPLER_NO_HIGHPASS -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibgambatte/src -Ilibgambatte/src/../include -Ilibgambatte/src/../../common -Ilibgambatte/src/../../common/resample -Ilibgambatte/src/../libretro -Ilibgambatte/src/../libretro-common/include -c -olibgambatte/src/../libretro-common/vfs/vfs_implementation.o libgambatte/src/../libretro-common/vfs/vfs_implementation.c
+libgambatte/src/../libretro/libretro.cpp:1212:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+            sprintf(key, "%s%u",
+            ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libgambatte/src/../libretro/libretro.cpp:2215:10: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+         sprintf(key, "%s%u",
+         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libgambatte/src/../libretro/libretro.cpp:2230:7: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+      sprintf(tmp, "%u", atoi(octet.c_str()));
+      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+3 warnings generated.
+c++ -arch i386 -fPIC -dynamiclib   -o gambatte_libretro.dylib libgambatte/src/bootloader.o libgambatte/src/cpu.o libgambatte/src/gambatte.o libgambatte/src/initstate.o libgambatte/src/interrupter.o libgambatte/src/interruptrequester.o libgambatte/src/gambatte-memory.o libgambatte/src/sound.o libgambatte/src/statesaver.o libgambatte/src/tima.o libgambatte/src/video.o libgambatte/src/video_libretro.o libgambatte/src/mem/cartridge.o libgambatte/src/mem/cartridge_libretro.o libgambatte/src/mem/huc3.o libgambatte/src/mem/memptrs.o libgambatte/src/mem/rtc.o libgambatte/src/sound/channel1.o libgambatte/src/sound/channel2.o libgambatte/src/sound/channel3.o libgambatte/src/sound/channel4.o libgambatte/src/sound/duty_unit.o libgambatte/src/sound/envelope_unit.o libgambatte/src/sound/length_counter.o libgambatte/src/video/ly_counter.o libgambatte/src/video/lyc_irq.o libgambatte/src/video/next_m0_time.o libgambatte/src/video/ppu.o libgambatte/src/video/sprite_mapper.o libgambatte/src/../libretro/libretro.o libgambatte/src/../libretro/net_serial.o libgambatte/src/../libretro/gambatte_log.o libgambatte/src/../libretro/blipper.o libgambatte/src/../libretro-common/compat/compat_posix_string.o libgambatte/src/../libretro-common/compat/compat_snprintf.o libgambatte/src/../libretro-common/compat/compat_strcasestr.o libgambatte/src/../libretro-common/compat/compat_strl.o libgambatte/src/../libretro-common/compat/fopen_utf8.o libgambatte/src/../libretro-common/encodings/encoding_utf.o libgambatte/src/../libretro-common/file/file_path.o libgambatte/src/../libretro-common/file/file_path_io.o libgambatte/src/../libretro-common/streams/file_stream.o libgambatte/src/../libretro-common/streams/file_stream_transforms.o libgambatte/src/../libretro-common/string/stdstring.o libgambatte/src/../libretro-common/time/rtime.o libgambatte/src/../libretro-common/vfs/vfs_implementation.o  
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc++.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc++.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+Undefined symbols for architecture i386:
+  "__DefaultRuneLocale", referenced from:
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::find(char, unsigned long) const", referenced from:
+      gambatte::Interrupter::setGameShark(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in interrupter.o
+      gambatte::Cartridge::setGameGenie(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in cartridge.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::append(char const*)", referenced from:
+      check_variables(bool) in libretro.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::append(char const*, unsigned long)", referenced from:
+      check_variables(bool) in libretro.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::assign(char const*)", referenced from:
+      _retro_load_game in libretro.o
+      check_variables(bool) in libretro.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned long, unsigned long, std::__1::allocator<char> const&)", referenced from:
+      gambatte::Interrupter::setGameShark(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in interrupter.o
+      gambatte::Cartridge::setGameGenie(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in cartridge.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::~basic_string()", referenced from:
+      __GLOBAL__sub_I_libretro.cpp in libretro.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::operator=(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)", referenced from:
+      gambatte::Interrupter::setGameShark(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in interrupter.o
+      gambatte::Cartridge::setGameGenie(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in cartridge.o
+      check_variables(bool) in libretro.o
+      NetSerial::start(bool, int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in net_serial.o
+  "operator delete[](void*)", referenced from:
+      gambatte::StateSaver::loadState(gambatte::SaveState&, void const*) in statesaver.o
+      gambatte::MemPtrs::~MemPtrs() in memptrs.o
+      gambatte::MemPtrs::~MemPtrs() in memptrs.o
+      gambatte::MemPtrs::reset(unsigned int, unsigned int, unsigned int) in memptrs.o
+      _retro_reset in libretro.o
+  "operator delete(void*)", referenced from:
+      gambatte::CPU::CPU() in cpu.o
+      gambatte::CPU::CPU() in cpu.o
+      gambatte::GB::~GB() in gambatte.o
+      gambatte::GB::~GB() in gambatte.o
+      gambatte::Interrupter::setGameShark(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in interrupter.o
+      gambatte::pushSaver(std::__1::vector<(anonymous namespace)::Saver, std::__1::allocator<(anonymous namespace)::Saver> >&, char const*, void (*)(omemstream&, gambatte::SaveState const&), void (*)(imemstream&, gambatte::SaveState&), unsigned int) in statesaver.o
+      gambatte::SaverList::~SaverList() in statesaver.o
+      ...
+  "operator new[](unsigned long)", referenced from:
+      gambatte::StateSaver::loadState(gambatte::SaveState&, void const*) in statesaver.o
+      gambatte::MemPtrs::reset(unsigned int, unsigned int, unsigned int) in memptrs.o
+      _retro_reset in libretro.o
+  "operator new(unsigned long)", referenced from:
+      gambatte::GB::GB() in gambatte.o
+      gambatte::GB::GB() in gambatte.o
+      gambatte::Interrupter::setGameShark(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in interrupter.o
+      gambatte::Memory::Memory(gambatte::Interrupter const&) in gambatte-memory.o
+      gambatte::pushSaver(std::__1::vector<(anonymous namespace)::Saver, std::__1::allocator<(anonymous namespace)::Saver> >&, char const*, void (*)(omemstream&, gambatte::SaveState const&), void (*)(imemstream&, gambatte::SaveState&), unsigned int) in statesaver.o
+      gambatte::Cartridge::loadROM(void const*, unsigned int, unsigned int, bool) in cartridge.o
+      gambatte::Cartridge::applyGameGenie(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in cartridge.o
+      ...
+  "___bzero", referenced from:
+      gambatte::setInitState(gambatte::SaveState&, bool, bool) in initstate.o
+      gambatte::Memory::loadState(gambatte::SaveState const&) in gambatte-memory.o
+      gambatte::PSG::accumulateChannels(unsigned long) in sound.o
+      gambatte::PSG::generateSamples(unsigned long, bool) in sound.o
+      check_variables(bool) in libretro.o
+      _blipper_reset_fixed in blipper.o
+      _blipper_read_fixed in blipper.o
+      ...
+  "___cxa_atexit", referenced from:
+      __GLOBAL__sub_I_statesaver.cpp in statesaver.o
+      __GLOBAL__sub_I_libretro.cpp in libretro.o
+  "___darwin_check_fd_set_overflow", referenced from:
+      NetSerial::acceptClient() in net_serial.o
+  "___divdi3", referenced from:
+      _rfread in file_stream_transforms.o
+  "___error", referenced from:
+      NetSerial::startServerSocket() in net_serial.o
+      NetSerial::acceptClient() in net_serial.o
+      NetSerial::startClientSocket() in net_serial.o
+      NetSerial::send(unsigned char, bool) in net_serial.o
+      NetSerial::check(unsigned char, unsigned char&, bool&) in net_serial.o
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+  "___maskrune", referenced from:
+      _filestream_vscanf in file_stream.o
+  "___stack_chk_fail", referenced from:
+      gambatte::GB::Priv::full_init() in gambatte.o
+      gambatte::GB::loadState(void const*) in gambatte.o
+      gambatte::GB::saveState(void*) in gambatte.o
+      gambatte::GB::stateSize() const in gambatte.o
+      gambatte::Cartridge::loadROM(void const*, unsigned int, unsigned int, bool) in cartridge.o
+      gambatte::PPU::loadState(gambatte::SaveState const&, unsigned char const*) in ppu.o
+      (anonymous namespace)::M3Loop::Tile::f0(gambatte::PPUPriv&) in ppu.o
+      ...
+  "___stack_chk_guard", referenced from:
+      gambatte::GB::Priv::full_init() in gambatte.o
+      gambatte::GB::loadState(void const*) in gambatte.o
+      gambatte::GB::saveState(void*) in gambatte.o
+      gambatte::GB::stateSize() const in gambatte.o
+      gambatte::Cartridge::loadROM(void const*, unsigned int, unsigned int, bool) in cartridge.o
+      gambatte::PPU::loadState(gambatte::SaveState const&, unsigned char const*) in ppu.o
+      (anonymous namespace)::M3Loop::Tile::f0(gambatte::PPUPriv&) in ppu.o
+      ...
+      gambatte::GB::Priv::full_init() in gambatte.o
+      gambatte::GB::loadState(void const*) in gambatte.o
+      gambatte::GB::saveState(void*) in gambatte.o
+      gambatte::GB::stateSize() const in gambatte.o
+      gambatte::Cartridge::loadROM(void const*, unsigned int, unsigned int, bool) in cartridge.o
+      gambatte::PPU::loadState(gambatte::SaveState const&, unsigned char const*) in ppu.o
+      (anonymous namespace)::M3Loop::Tile::f0(gambatte::PPUPriv&) in ppu.o
+      ...
+      gambatte::GB::Priv::full_init() in gambatte.o
+      gambatte::GB::loadState(void const*) in gambatte.o
+      gambatte::GB::saveState(void*) in gambatte.o
+      gambatte::GB::stateSize() const in gambatte.o
+      gambatte::Cartridge::loadROM(void const*, unsigned int, unsigned int, bool) in cartridge.o
+      gambatte::PPU::loadState(gambatte::SaveState const&, unsigned char const*) in ppu.o
+      (anonymous namespace)::M3Loop::Tile::f0(gambatte::PPUPriv&) in ppu.o
+      ...
+      gambatte::GB::Priv::full_init() in gambatte.o
+      gambatte::GB::loadState(void const*) in gambatte.o
+      gambatte::GB::saveState(void*) in gambatte.o
+      gambatte::GB::stateSize() const in gambatte.o
+      gambatte::Cartridge::loadROM(void const*, unsigned int, unsigned int, bool) in cartridge.o
+      gambatte::PPU::loadState(gambatte::SaveState const&, unsigned char const*) in ppu.o
+      (anonymous namespace)::M3Loop::Tile::f0(gambatte::PPUPriv&) in ppu.o
+      ...
+      gambatte::GB::Priv::full_init() in gambatte.o
+      gambatte::GB::loadState(void const*) in gambatte.o
+      gambatte::GB::saveState(void*) in gambatte.o
+      gambatte::GB::stateSize() const in gambatte.o
+      gambatte::Cartridge::loadROM(void const*, unsigned int, unsigned int, bool) in cartridge.o
+      gambatte::PPU::loadState(gambatte::SaveState const&, unsigned char const*) in ppu.o
+      (anonymous namespace)::M3Loop::Tile::f0(gambatte::PPUPriv&) in ppu.o
+      ...
+      gambatte::GB::Priv::full_init() in gambatte.o
+      gambatte::GB::loadState(void const*) in gambatte.o
+      gambatte::GB::saveState(void*) in gambatte.o
+      gambatte::GB::stateSize() const in gambatte.o
+      gambatte::Cartridge::loadROM(void const*, unsigned int, unsigned int, bool) in cartridge.o
+      gambatte::PPU::loadState(gambatte::SaveState const&, unsigned char const*) in ppu.o
+      (anonymous namespace)::M3Loop::Tile::f0(gambatte::PPUPriv&) in ppu.o
+      ...
+      gambatte::GB::Priv::full_init() in gambatte.o
+      gambatte::GB::loadState(void const*) in gambatte.o
+      gambatte::GB::saveState(void*) in gambatte.o
+      gambatte::GB::stateSize() const in gambatte.o
+      gambatte::Cartridge::loadROM(void const*, unsigned int, unsigned int, bool) in cartridge.o
+      gambatte::PPU::loadState(gambatte::SaveState const&, unsigned char const*) in ppu.o
+      (anonymous namespace)::M3Loop::Tile::f0(gambatte::PPUPriv&) in ppu.o
+      ...
+      ...
+  "___stderrp", referenced from:
+      _gambatte_log in gambatte_log.o
+  "___stdoutp", referenced from:
+      _gambatte_log in gambatte_log.o
+  "___strcpy_chk", referenced from:
+      _fill_pathname_abbreviated_or_relative in file_path.o
+  "___strlcat_chk", referenced from:
+      _fill_pathname_abbreviated_or_relative in file_path.o
+  "___strlcpy_chk", referenced from:
+      _path_get_archive_delim in file_path.o
+      _fill_pathname in file_path.o
+  "___tolower", referenced from:
+      _strcasestr_retro__ in compat_strcasestr.o
+      _path_is_compressed_file in file_path.o
+      _string_to_lower in stdstring.o
+  "___toupper", referenced from:
+      _string_to_upper in stdstring.o
+      _string_ucwords in stdstring.o
+  "___vsprintf_chk", referenced from:
+      _gambatte_log in gambatte_log.o
+  "_abort", referenced from:
+      std::__1::__vector_base<gambatte::GsCode, std::__1::allocator<gambatte::GsCode> >::__throw_length_error() const in interrupter.o
+      std::__1::__throw_length_error(char const*) in interrupter.o
+      std::__1::__vector_base<gambatte::GsCode, std::__1::allocator<gambatte::GsCode> >::__throw_length_error() const in gambatte-memory.o
+      std::__1::__vector_base<(anonymous namespace)::Saver, std::__1::allocator<(anonymous namespace)::Saver> >::__throw_length_error() const in statesaver.o
+      std::__1::__throw_length_error(char const*) in statesaver.o
+      std::__1::__vector_base<gambatte::Cartridge::AddrData, std::__1::allocator<gambatte::Cartridge::AddrData> >::__throw_length_error() const in cartridge.o
+      std::__1::__throw_length_error(char const*) in cartridge.o
+      ...
+  "_accept$UNIX2003", referenced from:
+      NetSerial::acceptClient() in net_serial.o
+  "_atoi", referenced from:
+      check_variables(bool) in libretro.o
+  "_bind$UNIX2003", referenced from:
+      NetSerial::startServerSocket() in net_serial.o
+  "_calloc", referenced from:
+      _retro_set_environment in libretro.o
+      rhmap__grow(void*, unsigned long, unsigned long) in libretro.o
+      _blipper_new_fixed in blipper.o
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_opendir_impl in vfs_implementation.o
+      ...
+  "_clock$UNIX2003", referenced from:
+      NetSerial::start(bool, int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in net_serial.o
+      NetSerial::checkAndRestoreConnection(bool) in net_serial.o
+      NetSerial::send(unsigned char, bool) in net_serial.o
+      NetSerial::check(unsigned char, unsigned char&, bool&) in net_serial.o
+  "_close$UNIX2003", referenced from:
+      NetSerial::~NetSerial() in net_serial.o
+      NetSerial::stop() in net_serial.o
+      NetSerial::~NetSerial() in net_serial.o
+      NetSerial::~NetSerial() in net_serial.o
+      NetSerial::start(bool, int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in net_serial.o
+      NetSerial::startServerSocket() in net_serial.o
+      NetSerial::startClientSocket() in net_serial.o
+      ...
+  "_closedir$UNIX2003", referenced from:
+      _retro_vfs_closedir_impl in vfs_implementation.o
+  "_connect$UNIX2003", referenced from:
+      NetSerial::startClientSocket() in net_serial.o
+  "_fclose", referenced from:
+      _retro_vfs_file_close_impl in vfs_implementation.o
+  "_ferror", referenced from:
+      _retro_vfs_file_error_impl in vfs_implementation.o
+  "_fflush", referenced from:
+      _retro_vfs_file_flush_impl in vfs_implementation.o
+  "_fileno", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fopen$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_fprintf", referenced from:
+      _gambatte_log in gambatte_log.o
+  "_fread", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+  "_free", referenced from:
+      _audio_out_buffer_write in libretro.o
+      _retro_deinit in libretro.o
+      _retro_set_environment in libretro.o
+      check_variables(bool) in libretro.o
+      audio_resampler_init(bool) in libretro.o
+      CC_renderaudio(audio_frame*, unsigned int) in libretro.o
+      audio_out_buffer_read_blipper(unsigned long) in libretro.o
+      ...
+     (maybe you meant: _blipper_free_fixed)
+  "_fseeko", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+  "_ftello", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+  "_ftruncate", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fwrite$UNIX2003", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+  "_gethostbyname", referenced from:
+      NetSerial::startClientSocket() in net_serial.o
+  "_ioctl", referenced from:
+      NetSerial::check(unsigned char, unsigned char&, bool&) in net_serial.o
+  "_listen$UNIX2003", referenced from:
+      NetSerial::startServerSocket() in net_serial.o
+  "_localtime", referenced from:
+      _rtime_localtime in rtime.o
+     (maybe you meant: _rtime_localtime)
+  "_lseek", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+  "_malloc", referenced from:
+      _audio_out_buffer_write in libretro.o
+      _retro_init in libretro.o
+      check_variables(bool) in libretro.o
+      audio_resampler_init(bool) in libretro.o
+      CC_renderaudio(audio_frame*, unsigned int) in libretro.o
+      audio_out_buffer_read_blipper(unsigned long) in libretro.o
+      rhmap__grow(void*, unsigned long, unsigned long) in libretro.o
+      ...
+  "_mbstowcs", referenced from:
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+  "_memchr", referenced from:
+      _retro_cheat_set in libretro.o
+  "_memcpy", referenced from:
+      gambatte::Bootloader::load(bool, bool) in bootloader.o
+      gambatte::Bootloader::choosebank(bool) in bootloader.o
+      gambatte::Bootloader::uncall_FF50() in bootloader.o
+      gambatte::Bootloader::call_FF50() in bootloader.o
+      gambatte::setInitState(gambatte::SaveState&, bool, bool) in initstate.o
+      gambatte::Interrupter::setGameShark(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in interrupter.o
+      gambatte::Memory::Memory(gambatte::Interrupter const&) in gambatte-memory.o
+      ...
+  "_memmove", referenced from:
+      NetSerial::startClientSocket() in net_serial.o
+      _blipper_read_fixed in blipper.o
+      _string_trim_whitespace_left in stdstring.o
+      _string_trim_whitespace in stdstring.o
+  "_memset", referenced from:
+      gambatte::setInitState(gambatte::SaveState&, bool, bool) in initstate.o
+      gambatte::Cartridge::loadROM(void const*, unsigned int, unsigned int, bool) in cartridge.o
+      gambatte::MemPtrs::reset(unsigned int, unsigned int, unsigned int) in memptrs.o
+  "_mkdir", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+     (maybe you meant: _path_mkdir, _retro_vfs_mkdir_impl )
+  "_open$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_opendir$INODE64$UNIX2003", referenced from:
+      _retro_vfs_opendir_impl in vfs_implementation.o
+  "_powf", referenced from:
+      gambatte::LCD::gbcToRgb32(unsigned int) in video_libretro.o
+  "_read$UNIX2003", referenced from:
+      NetSerial::send(unsigned char, bool) in net_serial.o
+      NetSerial::check(unsigned char, unsigned char&, bool&) in net_serial.o
+      _retro_vfs_file_read_impl in vfs_implementation.o
+  "_readdir$INODE64", referenced from:
+      _retro_vfs_readdir_impl in vfs_implementation.o
+  "_realloc", referenced from:
+      _blipper_create_filter_bank_fixed in blipper.o
+      _filestream_getline in file_stream.o
+  "_remove", referenced from:
+      _retro_vfs_file_remove_impl in vfs_implementation.o
+     (maybe you meant: _path_remove_extension, _retro_vfs_file_remove_impl , _string_remove_all_chars )
+  "_rename", referenced from:
+      _retro_vfs_file_rename_impl in vfs_implementation.o
+     (maybe you meant: _filestream_rename, _retro_vfs_file_rename_impl )
+  "_select$UNIX2003", referenced from:
+      NetSerial::acceptClient() in net_serial.o
+  "_setvbuf", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_sin", referenced from:
+      _blipper_create_filter_bank_fixed in blipper.o
+  "_socket", referenced from:
+      NetSerial::startServerSocket() in net_serial.o
+      NetSerial::startClientSocket() in net_serial.o
+  "_sprintf", referenced from:
+      update_option_visibility() in libretro.o
+      check_variables(bool) in libretro.o
+  "_sscanf", referenced from:
+      _filestream_vscanf in file_stream.o
+  "_stat$INODE64", referenced from:
+      _retro_vfs_stat_impl in vfs_implementation.o
+      _retro_vfs_dirent_is_dir_impl in vfs_implementation.o
+  "_strcat", referenced from:
+      _retro_set_environment in libretro.o
+  "_strchr", referenced from:
+      check_variables(bool) in libretro.o
+      _path_get_archive_delim in file_path.o
+      _rfopen in file_stream_transforms.o
+      _string_replace_all_chars in stdstring.o
+  "_strcmp", referenced from:
+      gambatte::StateSaver::loadState(gambatte::SaveState&, void const*) in statesaver.o
+      void std::__1::__sort<std::__1::__less<(anonymous namespace)::Saver, (anonymous namespace)::Saver>&, (anonymous namespace)::Saver*>((anonymous namespace)::Saver*, (anonymous namespace)::Saver*, std::__1::__less<(anonymous namespace)::Saver, (anonymous namespace)::Saver>&) in statesaver.o
+      unsigned int std::__1::__sort3<std::__1::__less<(anonymous namespace)::Saver, (anonymous namespace)::Saver>&, (anonymous namespace)::Saver*>((anonymous namespace)::Saver*, (anonymous namespace)::Saver*, (anonymous namespace)::Saver*, std::__1::__less<(anonymous namespace)::Saver, (anonymous namespace)::Saver>&) in statesaver.o
+      unsigned int std::__1::__sort4<std::__1::__less<(anonymous namespace)::Saver, (anonymous namespace)::Saver>&, (anonymous namespace)::Saver*>((anonymous namespace)::Saver*, (anonymous namespace)::Saver*, (anonymous namespace)::Saver*, (anonymous namespace)::Saver*, std::__1::__less<(anonymous namespace)::Saver, (anonymous namespace)::Saver>&) in statesaver.o
+      unsigned int std::__1::__sort5<std::__1::__less<(anonymous namespace)::Saver, (anonymous namespace)::Saver>&, (anonymous namespace)::Saver*>((anonymous namespace)::Saver*, (anonymous namespace)::Saver*, (anonymous namespace)::Saver*, (anonymous namespace)::Saver*, (anonymous namespace)::Saver*, std::__1::__less<(anonymous namespace)::Saver, (anonymous namespace)::Saver>&) in statesaver.o
+      bool std::__1::__insertion_sort_incomplete<std::__1::__less<(anonymous namespace)::Saver, (anonymous namespace)::Saver>&, (anonymous namespace)::Saver*>((anonymous namespace)::Saver*, (anonymous namespace)::Saver*, std::__1::__less<(anonymous namespace)::Saver, (anonymous namespace)::Saver>&) in statesaver.o
+      _retro_init in libretro.o
+      ...
+  "_strcpy", referenced from:
+      _retro_set_environment in libretro.o
+      _string_replace_substring in stdstring.o
+      _word_wrap in stdstring.o
+  "_strdup", referenced from:
+      _utf8_to_local_string_alloc in encoding_utf.o
+      _local_to_utf8_string_alloc in encoding_utf.o
+      _fill_pathname_parent_dir_name in file_path.o
+      _path_mkdir in file_path_io.o
+      _string_init in stdstring.o
+      _string_set in stdstring.o
+      _string_replace_substring in stdstring.o
+      ...
+  "_strerror$UNIX2003", referenced from:
+      NetSerial::startServerSocket() in net_serial.o
+      NetSerial::acceptClient() in net_serial.o
+      NetSerial::startClientSocket() in net_serial.o
+      NetSerial::send(unsigned char, bool) in net_serial.o
+      NetSerial::check(unsigned char, unsigned char&, bool&) in net_serial.o
+  "_strftime$UNIX2003", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+  "_strlcat", referenced from:
+      _fill_pathname in file_path.o
+      _fill_pathname_noext in file_path.o
+      _fill_pathname_slash in file_path.o
+      _fill_pathname_dir in file_path.o
+      _fill_pathname_base_ext in file_path.o
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+      ...
+  "_strlcpy", referenced from:
+      check_variables(bool) in libretro.o
+      _strldup in compat_strl.o
+      _utf16_to_char_string in encoding_utf.o
+      _fill_pathname in file_path.o
+      _fill_pathname_noext in file_path.o
+      _fill_pathname_base in file_path.o
+      _fill_pathname_base_noext in file_path.o
+      ...
+  "_strlen", referenced from:
+      _retro_init in libretro.o
+      _retro_set_environment in libretro.o
+      _retro_cheat_set in libretro.o
+      check_variables(bool) in libretro.o
+      parse_internal_palette_values(char const*, retro_core_option_v2_definition*, unsigned long, unsigned long, retro_core_option_value**, unsigned long**) in libretro.o
+      _strcasestr_retro__ in compat_strcasestr.o
+      _fill_pathname_slash in file_path.o
+      ...
+  "_strncmp", referenced from:
+      check_variables(bool) in libretro.o
+      find_internal_palette(unsigned short const**, bool*) in libretro.o
+  "_strncpy", referenced from:
+      _retro_load_game in libretro.o
+  "_strrchr", referenced from:
+      _path_get_archive_delim in file_path.o
+      _find_last_slash in file_path.o
+      _path_get_extension in file_path.o
+      _path_basename in file_path.o
+      _path_remove_extension in file_path.o
+      _path_is_compressed_file in file_path.o
+      _fill_pathname in file_path.o
+      ...
+  "_strstr", referenced from:
+      _string_replace_substring in stdstring.o
+      _string_tokenize in stdstring.o
+  "_strtoul", referenced from:
+      _string_to_unsigned in stdstring.o
+      _string_hex_to_unsigned in stdstring.o
+  "_time", referenced from:
+      gambatte::setInitState(gambatte::SaveState&, bool, bool) in initstate.o
+      gambatte::HuC3Chip::doLatch() in huc3.o
+      gambatte::HuC3Chip::write(unsigned int, unsigned int) in huc3.o
+      gambatte::HuC3Chip::updateTime() in huc3.o
+      gambatte::Rtc::doLatch() in rtc.o
+      gambatte::Rtc::setS(unsigned int) in rtc.o
+      gambatte::Rtc::setM(unsigned int) in rtc.o
+      ...
+  "_vsnprintf", referenced from:
+      _filestream_vprintf in file_stream.o
+      _filestream_printf in file_stream.o
+  "_wcstombs", referenced from:
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+  "_write$UNIX2003", referenced from:
+      NetSerial::send(unsigned char, bool) in net_serial.o
+      NetSerial::check(unsigned char, unsigned char&, bool&) in net_serial.o
+      _retro_vfs_file_write_impl in vfs_implementation.o
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile.libretro:733: gambatte_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-gambatte'
+cp "gambatte_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/gambatte_libretro.dylib"
+cp: gambatte_libretro.dylib: No such file or directory

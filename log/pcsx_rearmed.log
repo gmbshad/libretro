@@ -1,0 +1,810 @@
+Building pcsx_rearmed...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-pcsx_rearmed"
+gmake -f Makefile.libretro platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-pcsx_rearmed'
+TARGET:      pcsx_rearmed_libretro.dylib
+platform:    osx
+ARCH:        x86_64
+DYNAREC:     0
+BUILTIN_GPU: neon
+CC:          cc
+CFLAGS:      -DGIT_VERSION=\"" 4373e29"\"  -fPIC -mssse3 
+MAIN_LDLIBS: -lpthread -lm -ldl 
+
+rm -f pcsx_rearmed_libretro.dylib libpcsxcore/cdriso.o libpcsxcore/cdrom.o libpcsxcore/cheat.o libpcsxcore/database.o libpcsxcore/decode_xa.o libpcsxcore/mdec.o libpcsxcore/misc.o libpcsxcore/plugins.o libpcsxcore/ppf.o libpcsxcore/psxbios.o libpcsxcore/psxcommon.o libpcsxcore/psxcounters.o libpcsxcore/psxdma.o libpcsxcore/psxhle.o libpcsxcore/psxhw.o libpcsxcore/psxinterpreter.o libpcsxcore/psxmem.o libpcsxcore/r3000a.o libpcsxcore/sio.o libpcsxcore/spu.o libpcsxcore/gte.o libpcsxcore/gte_nf.o libpcsxcore/gte_divider.o deps/libchdr/deps/zlib-1.2.11/adler32.o deps/libchdr/deps/zlib-1.2.11/compress.o deps/libchdr/deps/zlib-1.2.11/crc32.o deps/libchdr/deps/zlib-1.2.11/deflate.o deps/libchdr/deps/zlib-1.2.11/gzclose.o deps/libchdr/deps/zlib-1.2.11/gzlib.o deps/libchdr/deps/zlib-1.2.11/gzread.o deps/libchdr/deps/zlib-1.2.11/gzwrite.o deps/libchdr/deps/zlib-1.2.11/infback.o deps/libchdr/deps/zlib-1.2.11/inffast.o deps/libchdr/deps/zlib-1.2.11/inflate.o deps/libchdr/deps/zlib-1.2.11/inftrees.o deps/libchdr/deps/zlib-1.2.11/trees.o deps/libchdr/deps/zlib-1.2.11/uncompr.o deps/libchdr/deps/zlib-1.2.11/zutil.o libpcsxcore/new_dynarec/emu_if.o plugins/dfsound/dma.o plugins/dfsound/freeze.o plugins/dfsound/registers.o plugins/dfsound/spu.o plugins/dfsound/out.o plugins/dfsound/nullsnd.o plugins/gpulib/gpu.o plugins/gpulib/vout_pl.o plugins/gpu_neon/psx_gpu_if.o plugins/gpu_neon/psx_gpu/psx_gpu_simd.o plugins/cdrcimg/cdrcimg.o deps/libchdr/deps/lzma-19.00/src/Alloc.o deps/libchdr/deps/lzma-19.00/src/Bra86.o deps/libchdr/deps/lzma-19.00/src/BraIA64.o deps/libchdr/deps/lzma-19.00/src/CpuArch.o deps/libchdr/deps/lzma-19.00/src/Delta.o deps/libchdr/deps/lzma-19.00/src/LzFind.o deps/libchdr/deps/lzma-19.00/src/Lzma86Dec.o deps/libchdr/deps/lzma-19.00/src/LzmaDec.o deps/libchdr/deps/lzma-19.00/src/LzmaEnc.o deps/libchdr/deps/lzma-19.00/src/Sort.o deps/libchdr/src/libchdr_bitstream.o deps/libchdr/src/libchdr_cdrom.o deps/libchdr/src/libchdr_chd.o deps/libchdr/src/libchdr_flac.o deps/libchdr/src/libchdr_huffman.o frontend/cspace.o frontend/libretro.o frontend/main.o frontend/plugin.o pcsx_rearmed_libretro.dylib.map frontend/revision.h
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-pcsx_rearmed'
+gmake -f Makefile.libretro platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-pcsx_rearmed'
+TARGET:      pcsx_rearmed_libretro.dylib
+platform:    osx
+ARCH:        i386
+DYNAREC:     0
+BUILTIN_GPU: peops
+CC:          cc -arch i386
+CFLAGS:      -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64
+MAIN_LDLIBS: -lpthread -lm -ldl 
+
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/cdriso.o libpcsxcore/cdriso.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/cdrom.o libpcsxcore/cdrom.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/cheat.o libpcsxcore/cheat.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/database.o libpcsxcore/database.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/decode_xa.o libpcsxcore/decode_xa.c
+libpcsxcore/decode_xa.c:113:22: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                XACLAMP( x0, -32768<<SH, 32767<<SH ); *destp = x0 >> SH; destp += inc;
+                             ~~~~~~^
+libpcsxcore/decode_xa.c:29:40: note: expanded from macro 'XACLAMP'
+#define XACLAMP(_X_,_MI_,_MA_)  {if(_X_<_MI_)_X_=_MI_;if(_X_>_MA_)_X_=_MA_;}
+                                        ^~~~
+libpcsxcore/decode_xa.c:113:22: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                XACLAMP( x0, -32768<<SH, 32767<<SH ); *destp = x0 >> SH; destp += inc;
+                             ~~~~~~^
+libpcsxcore/decode_xa.c:29:49: note: expanded from macro 'XACLAMP'
+#define XACLAMP(_X_,_MI_,_MA_)  {if(_X_<_MI_)_X_=_MI_;if(_X_>_MA_)_X_=_MA_;}
+                                                 ^~~~
+libpcsxcore/decode_xa.c:114:22: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                XACLAMP( x1, -32768<<SH, 32767<<SH ); *destp = x1 >> SH; destp += inc;
+                             ~~~~~~^
+libpcsxcore/decode_xa.c:29:40: note: expanded from macro 'XACLAMP'
+#define XACLAMP(_X_,_MI_,_MA_)  {if(_X_<_MI_)_X_=_MI_;if(_X_>_MA_)_X_=_MA_;}
+                                        ^~~~
+libpcsxcore/decode_xa.c:114:22: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                XACLAMP( x1, -32768<<SH, 32767<<SH ); *destp = x1 >> SH; destp += inc;
+                             ~~~~~~^
+libpcsxcore/decode_xa.c:29:49: note: expanded from macro 'XACLAMP'
+#define XACLAMP(_X_,_MI_,_MA_)  {if(_X_<_MI_)_X_=_MI_;if(_X_>_MA_)_X_=_MA_;}
+                                                 ^~~~
+libpcsxcore/decode_xa.c:115:22: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                XACLAMP( x2, -32768<<SH, 32767<<SH ); *destp = x2 >> SH; destp += inc;
+                             ~~~~~~^
+libpcsxcore/decode_xa.c:29:40: note: expanded from macro 'XACLAMP'
+#define XACLAMP(_X_,_MI_,_MA_)  {if(_X_<_MI_)_X_=_MI_;if(_X_>_MA_)_X_=_MA_;}
+                                        ^~~~
+libpcsxcore/decode_xa.c:115:22: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                XACLAMP( x2, -32768<<SH, 32767<<SH ); *destp = x2 >> SH; destp += inc;
+                             ~~~~~~^
+libpcsxcore/decode_xa.c:29:49: note: expanded from macro 'XACLAMP'
+#define XACLAMP(_X_,_MI_,_MA_)  {if(_X_<_MI_)_X_=_MI_;if(_X_>_MA_)_X_=_MA_;}
+                                                 ^~~~
+libpcsxcore/decode_xa.c:116:22: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                XACLAMP( x3, -32768<<SH, 32767<<SH ); *destp = x3 >> SH; destp += inc;
+                             ~~~~~~^
+libpcsxcore/decode_xa.c:29:40: note: expanded from macro 'XACLAMP'
+#define XACLAMP(_X_,_MI_,_MA_)  {if(_X_<_MI_)_X_=_MI_;if(_X_>_MA_)_X_=_MA_;}
+                                        ^~~~
+libpcsxcore/decode_xa.c:116:22: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                XACLAMP( x3, -32768<<SH, 32767<<SH ); *destp = x3 >> SH; destp += inc;
+                             ~~~~~~^
+libpcsxcore/decode_xa.c:29:49: note: expanded from macro 'XACLAMP'
+#define XACLAMP(_X_,_MI_,_MA_)  {if(_X_<_MI_)_X_=_MI_;if(_X_>_MA_)_X_=_MA_;}
+                                                 ^~~~
+8 warnings generated.
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/mdec.o libpcsxcore/mdec.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/misc.o libpcsxcore/misc.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/plugins.o libpcsxcore/plugins.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/ppf.o libpcsxcore/ppf.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-nonnull -c -o libpcsxcore/psxbios.o libpcsxcore/psxbios.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/psxcommon.o libpcsxcore/psxcommon.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/psxcounters.o libpcsxcore/psxcounters.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/psxdma.o libpcsxcore/psxdma.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/psxhle.o libpcsxcore/psxhle.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/psxhw.o libpcsxcore/psxhw.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/psxinterpreter.o libpcsxcore/psxinterpreter.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/psxmem.o libpcsxcore/psxmem.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/r3000a.o libpcsxcore/r3000a.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/sio.o libpcsxcore/sio.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/spu.o libpcsxcore/spu.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/gte.o libpcsxcore/gte.c
+cc -arch i386 -c -o libpcsxcore/gte_nf.o libpcsxcore/gte.c -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -DFLAGLESS
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/gte_divider.o libpcsxcore/gte_divider.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/zlib-1.2.11/adler32.o deps/libchdr/deps/zlib-1.2.11/adler32.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/zlib-1.2.11/compress.o deps/libchdr/deps/zlib-1.2.11/compress.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/zlib-1.2.11/crc32.o deps/libchdr/deps/zlib-1.2.11/crc32.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/zlib-1.2.11/deflate.o deps/libchdr/deps/zlib-1.2.11/deflate.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/zlib-1.2.11/gzclose.o deps/libchdr/deps/zlib-1.2.11/gzclose.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/zlib-1.2.11/gzlib.o deps/libchdr/deps/zlib-1.2.11/gzlib.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/zlib-1.2.11/gzread.o deps/libchdr/deps/zlib-1.2.11/gzread.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/zlib-1.2.11/gzwrite.o deps/libchdr/deps/zlib-1.2.11/gzwrite.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/zlib-1.2.11/infback.o deps/libchdr/deps/zlib-1.2.11/infback.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/zlib-1.2.11/inffast.o deps/libchdr/deps/zlib-1.2.11/inffast.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/zlib-1.2.11/inflate.o deps/libchdr/deps/zlib-1.2.11/inflate.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/zlib-1.2.11/inftrees.o deps/libchdr/deps/zlib-1.2.11/inftrees.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/zlib-1.2.11/trees.o deps/libchdr/deps/zlib-1.2.11/trees.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/zlib-1.2.11/uncompr.o deps/libchdr/deps/zlib-1.2.11/uncompr.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/zlib-1.2.11/zutil.o deps/libchdr/deps/zlib-1.2.11/zutil.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o libpcsxcore/new_dynarec/emu_if.o libpcsxcore/new_dynarec/emu_if.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o plugins/dfsound/dma.o plugins/dfsound/dma.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o plugins/dfsound/freeze.o plugins/dfsound/freeze.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o plugins/dfsound/registers.o plugins/dfsound/registers.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o plugins/dfsound/spu.o plugins/dfsound/spu.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -DHAVE_LIBRETRO -c -o plugins/dfsound/out.o plugins/dfsound/out.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o plugins/dfsound/nullsnd.o plugins/dfsound/nullsnd.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o plugins/gpulib/gpu.o plugins/gpulib/gpu.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o plugins/gpulib/vout_pl.o plugins/gpulib/vout_pl.c
+plugins/dfsound/spu.c:974:15: warning: variable 'decode_dirty_ch' set but not used [-Wunused-but-set-variable]
+ unsigned int decode_dirty_ch = 0;
+              ^
+plugins/dfsound/spu.c:1415:8: warning: 'sem_init' is deprecated [-Wdeprecated-declarations]
+ ret = sem_init(&t.sem_avail, 0, 0);
+       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/semaphore.h:55:42: note: 'sem_init' has been explicitly marked deprecated here
+int sem_init(sem_t *, int, unsigned int) __deprecated;
+                                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:211:40: note: expanded from macro '__deprecated'
+#define __deprecated    __attribute__((__deprecated__))
+                                       ^
+plugins/dfsound/spu.c:1418:8: warning: 'sem_init' is deprecated [-Wdeprecated-declarations]
+ ret = sem_init(&t.sem_done, 0, 0);
+       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/semaphore.h:55:42: note: 'sem_init' has been explicitly marked deprecated here
+int sem_init(sem_t *, int, unsigned int) __deprecated;
+                                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:211:40: note: expanded from macro '__deprecated'
+#define __deprecated    __attribute__((__deprecated__))
+                                       ^
+plugins/dfsound/spu.c:1430:2: warning: 'sem_destroy' is deprecated [-Wdeprecated-declarations]
+ sem_destroy(&t.sem_done);
+ ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/semaphore.h:53:26: note: 'sem_destroy' has been explicitly marked deprecated here
+int sem_destroy(sem_t *) __deprecated;
+                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:211:40: note: expanded from macro '__deprecated'
+#define __deprecated    __attribute__((__deprecated__))
+                                       ^
+plugins/dfsound/spu.c:1432:2: warning: 'sem_destroy' is deprecated [-Wdeprecated-declarations]
+ sem_destroy(&t.sem_avail);
+ ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/semaphore.h:53:26: note: 'sem_destroy' has been explicitly marked deprecated here
+int sem_destroy(sem_t *) __deprecated;
+                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:211:40: note: expanded from macro '__deprecated'
+#define __deprecated    __attribute__((__deprecated__))
+                                       ^
+plugins/dfsound/spu.c:1446:2: warning: 'sem_destroy' is deprecated [-Wdeprecated-declarations]
+ sem_destroy(&t.sem_done);
+ ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/semaphore.h:53:26: note: 'sem_destroy' has been explicitly marked deprecated here
+int sem_destroy(sem_t *) __deprecated;
+                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:211:40: note: expanded from macro '__deprecated'
+#define __deprecated    __attribute__((__deprecated__))
+                                       ^
+plugins/dfsound/spu.c:1447:2: warning: 'sem_destroy' is deprecated [-Wdeprecated-declarations]
+ sem_destroy(&t.sem_avail);
+ ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/semaphore.h:53:26: note: 'sem_destroy' has been explicitly marked deprecated here
+int sem_destroy(sem_t *) __deprecated;
+                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:211:40: note: expanded from macro '__deprecated'
+#define __deprecated    __attribute__((__deprecated__))
+                                       ^
+plugins/gpulib/gpu.c:835:23: warning: assigning to 'int *' from 'const int *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  gpu.frameskip.dirty = &cbs->fskip_dirty;
+                      ^ ~~~~~~~~~~~~~~~~~
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -fno-strict-aliasing -c -o plugins/dfxvideo/gpulib_if.o plugins/dfxvideo/gpulib_if.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o plugins/cdrcimg/cdrcimg.o plugins/cdrcimg/cdrcimg.c
+1 warning generated.
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/lzma-19.00/src/Alloc.o deps/libchdr/deps/lzma-19.00/src/Alloc.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/lzma-19.00/src/Bra86.o deps/libchdr/deps/lzma-19.00/src/Bra86.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/lzma-19.00/src/BraIA64.o deps/libchdr/deps/lzma-19.00/src/BraIA64.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/lzma-19.00/src/CpuArch.o deps/libchdr/deps/lzma-19.00/src/CpuArch.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/lzma-19.00/src/Delta.o deps/libchdr/deps/lzma-19.00/src/Delta.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/lzma-19.00/src/LzFind.o deps/libchdr/deps/lzma-19.00/src/LzFind.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/lzma-19.00/src/Lzma86Dec.o deps/libchdr/deps/lzma-19.00/src/Lzma86Dec.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/lzma-19.00/src/LzmaDec.o deps/libchdr/deps/lzma-19.00/src/LzmaDec.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/lzma-19.00/src/LzmaEnc.o deps/libchdr/deps/lzma-19.00/src/LzmaEnc.c
+7 warnings generated.
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/deps/lzma-19.00/src/Sort.o deps/libchdr/deps/lzma-19.00/src/Sort.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/src/libchdr_bitstream.o deps/libchdr/src/libchdr_bitstream.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/src/libchdr_cdrom.o deps/libchdr/src/libchdr_cdrom.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/src/libchdr_chd.o deps/libchdr/src/libchdr_chd.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/src/libchdr_flac.o deps/libchdr/src/libchdr_flac.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -Wno-unused -Wno-unused-function -c -o deps/libchdr/src/libchdr_huffman.o deps/libchdr/src/libchdr_huffman.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o frontend/cspace.o frontend/cspace.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o frontend/plugin.o frontend/plugin.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o frontend/libretro.o frontend/libretro.c
+cc -arch i386 -DGIT_VERSION=\"" 4373e29"\"  -fPIC -D_FILE_OFFSET_BITS=64 -Wall -Iinclude -ffast-math -O2 -DNDEBUG -Ideps/libchdr/deps/zlib-1.2.11 -DDRC_DISABLE -DGPU_PEOPS -Ideps/libchdr/include -Ideps/libchdr/include/libchdr -Ideps/libchdr/deps/lzma-19.00/include -DHAVE_CHD -D_7ZIP_ST -Ilibretro-common/include -DFRONTEND_SUPPORTS_RGB565 -DHAVE_LIBRETRO -DNO_FRONTEND -c -o frontend/main.o frontend/main.c
+frontend/libretro.c:2979:4: warning: 'syscall' is deprecated: first deprecated in macOS 10.12 - syscall(2) is unsupported; please switch to a supported interface. For SYS_kdebug_trace use kdebug_signpost(). [-Wdeprecated-declarations]
+   syscall(SYS_ptrace, 0 /*PTRACE_TRACEME*/, 0, 0, 0);
+   ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/unistd.h:746:6: note: 'syscall' has been explicitly marked deprecated here
+int      syscall(int, ...);
+         ^
+1 warning generated.
+cc -arch i386 -o pcsx_rearmed_libretro.dylib libpcsxcore/cdriso.o libpcsxcore/cdrom.o libpcsxcore/cheat.o libpcsxcore/database.o libpcsxcore/decode_xa.o libpcsxcore/mdec.o libpcsxcore/misc.o libpcsxcore/plugins.o libpcsxcore/ppf.o libpcsxcore/psxbios.o libpcsxcore/psxcommon.o libpcsxcore/psxcounters.o libpcsxcore/psxdma.o libpcsxcore/psxhle.o libpcsxcore/psxhw.o libpcsxcore/psxinterpreter.o libpcsxcore/psxmem.o libpcsxcore/r3000a.o libpcsxcore/sio.o libpcsxcore/spu.o libpcsxcore/gte.o libpcsxcore/gte_nf.o libpcsxcore/gte_divider.o deps/libchdr/deps/zlib-1.2.11/adler32.o deps/libchdr/deps/zlib-1.2.11/compress.o deps/libchdr/deps/zlib-1.2.11/crc32.o deps/libchdr/deps/zlib-1.2.11/deflate.o deps/libchdr/deps/zlib-1.2.11/gzclose.o deps/libchdr/deps/zlib-1.2.11/gzlib.o deps/libchdr/deps/zlib-1.2.11/gzread.o deps/libchdr/deps/zlib-1.2.11/gzwrite.o deps/libchdr/deps/zlib-1.2.11/infback.o deps/libchdr/deps/zlib-1.2.11/inffast.o deps/libchdr/deps/zlib-1.2.11/inflate.o deps/libchdr/deps/zlib-1.2.11/inftrees.o deps/libchdr/deps/zlib-1.2.11/trees.o deps/libchdr/deps/zlib-1.2.11/uncompr.o deps/libchdr/deps/zlib-1.2.11/zutil.o libpcsxcore/new_dynarec/emu_if.o plugins/dfsound/dma.o plugins/dfsound/freeze.o plugins/dfsound/registers.o plugins/dfsound/spu.o plugins/dfsound/out.o plugins/dfsound/nullsnd.o plugins/gpulib/gpu.o plugins/gpulib/vout_pl.o plugins/dfxvideo/gpulib_if.o plugins/cdrcimg/cdrcimg.o deps/libchdr/deps/lzma-19.00/src/Alloc.o deps/libchdr/deps/lzma-19.00/src/Bra86.o deps/libchdr/deps/lzma-19.00/src/BraIA64.o deps/libchdr/deps/lzma-19.00/src/CpuArch.o deps/libchdr/deps/lzma-19.00/src/Delta.o deps/libchdr/deps/lzma-19.00/src/LzFind.o deps/libchdr/deps/lzma-19.00/src/Lzma86Dec.o deps/libchdr/deps/lzma-19.00/src/LzmaDec.o deps/libchdr/deps/lzma-19.00/src/LzmaEnc.o deps/libchdr/deps/lzma-19.00/src/Sort.o deps/libchdr/src/libchdr_bitstream.o deps/libchdr/src/libchdr_cdrom.o deps/libchdr/src/libchdr_chd.o deps/libchdr/src/libchdr_flac.o deps/libchdr/src/libchdr_huffman.o frontend/cspace.o frontend/libretro.o frontend/main.o frontend/plugin.o  -shared -lm -lpthread -lm -ldl  
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libdl.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libdl.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libpthread.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libpthread.tbd (3 slices)
+Undefined symbols for architecture i386:
+  "__DefaultRuneLocale", referenced from:
+      _CheckCdrom in misc.o
+  "___assert_rtn", referenced from:
+      ___cpu_indicator_init.cold.1 in libclang_rt.osx.a(cpu_model.c.o)
+      ___cpu_indicator_init.cold.2 in libclang_rt.osx.a(cpu_model.c.o)
+  "___bzero", referenced from:
+      _ISOreadCDDA in cdriso.o
+      _ISOopen in cdriso.o
+      _ISOclose in cdriso.o
+      _parsetoc in cdriso.o
+      _cdrReset in cdrom.o
+      _mdecInit in mdec.o
+      _rl2blk in mdec.o
+      ...
+  "___divdi3", referenced from:
+      _SetupSections_FT in gpulib_if.o
+      _drawPoly3Gi in gpulib_if.o
+      _SetupSections_GT in gpulib_if.o
+  "___error", referenced from:
+      _ISOopen in cdriso.o
+      _cdread_sub_sub_mixed in cdriso.o
+      _gz_read in gzread.o
+      _gz_fetch in gzread.o
+      _gz_look in gzread.o
+      _gz_decomp in gzread.o
+      _gz_comp in gzwrite.o
+      ...
+  "___maskrune", referenced from:
+      _CheckCdrom in misc.o
+  "___memcpy_chk", referenced from:
+      _do_samples in spu.o
+      _spu_worker_thread in spu.o
+      _GPUdmaChain in gpu.o
+  "___memmove_chk", referenced from:
+      _GPUwriteDataMem in gpu.o
+      _GPUwriteData in gpu.o
+      _GPUdmaChain in gpu.o
+      _GPUreadDataMem in gpu.o
+      _GPUreadData in gpu.o
+      _GPUreadStatus in gpu.o
+      _GPUfreeze in gpu.o
+      ...
+  "___memset_chk", referenced from:
+      _do_samples in spu.o
+      _spu_worker_thread in spu.o
+  "___sprintf_chk", referenced from:
+      _ISOopen in cdriso.o
+      _LoadPlugins in plugins.o
+      _ReloadCdromPlugin in plugins.o
+      _BuildPPFCache in ppf.o
+      _psxMemReset in psxmem.o
+      _chd_get_metadata in libchdr_chd.o
+      _OpenPlugins in main.o
+      ...
+  "___stack_chk_fail", referenced from:
+      _ISOopen in cdriso.o
+      _ISOgetBufferSub in cdriso.o
+      _parsetoc in cdriso.o
+      _LoadCheats in cheat.o
+      _xa_decode_sector in decode_xa.o
+      _psxDma1 in mdec.o
+      _GetCdromFile in misc.o
+      ...
+  "___stack_chk_guard", referenced from:
+      _ISOopen in cdriso.o
+      _ISOgetBufferSub in cdriso.o
+      _parsetoc in cdriso.o
+      _LoadCheats in cheat.o
+      _xa_decode_sector in decode_xa.o
+      _psxDma1 in mdec.o
+      _GetCdromFile in misc.o
+      ...
+      _ISOopen in cdriso.o
+      _ISOgetBufferSub in cdriso.o
+      _parsetoc in cdriso.o
+      _LoadCheats in cheat.o
+      _xa_decode_sector in decode_xa.o
+      _psxDma1 in mdec.o
+      _GetCdromFile in misc.o
+      ...
+      _ISOopen in cdriso.o
+      _ISOgetBufferSub in cdriso.o
+      _parsetoc in cdriso.o
+      _LoadCheats in cheat.o
+      _xa_decode_sector in decode_xa.o
+      _psxDma1 in mdec.o
+      _GetCdromFile in misc.o
+      ...
+      _ISOopen in cdriso.o
+      _ISOgetBufferSub in cdriso.o
+      _parsetoc in cdriso.o
+      _LoadCheats in cheat.o
+      _xa_decode_sector in decode_xa.o
+      _psxDma1 in mdec.o
+      _GetCdromFile in misc.o
+      ...
+      _ISOopen in cdriso.o
+      _ISOgetBufferSub in cdriso.o
+      _parsetoc in cdriso.o
+      _LoadCheats in cheat.o
+      _xa_decode_sector in decode_xa.o
+      _psxDma1 in mdec.o
+      _GetCdromFile in misc.o
+      ...
+      _ISOopen in cdriso.o
+      _ISOgetBufferSub in cdriso.o
+      _parsetoc in cdriso.o
+      _LoadCheats in cheat.o
+      _xa_decode_sector in decode_xa.o
+      _psxDma1 in mdec.o
+      _GetCdromFile in misc.o
+      ...
+      _ISOopen in cdriso.o
+      _ISOgetBufferSub in cdriso.o
+      _parsetoc in cdriso.o
+      _LoadCheats in cheat.o
+      _xa_decode_sector in decode_xa.o
+      _psxDma1 in mdec.o
+      _GetCdromFile in misc.o
+      ...
+      ...
+  "___stderrp", referenced from:
+      _GPUinit in gpu.o
+      _GPUrearmedCallbacks in gpu.o
+      _CDRinit in cdrcimg.o
+      _CDRopen in cdrcimg.o
+      _CDRreadTrack in cdrcimg.o
+      _CDRopen.cold.1 in cdrcimg.o
+      _CDRopen.cold.2 in cdrcimg.o
+      ...
+      _GPUinit in gpu.o
+      _GPUrearmedCallbacks in gpu.o
+      _CDRinit in cdrcimg.o
+      _CDRopen in cdrcimg.o
+      _CDRreadTrack in cdrcimg.o
+      _CDRopen.cold.1 in cdrcimg.o
+      _CDRopen.cold.2 in cdrcimg.o
+      ...
+      _GPUinit in gpu.o
+      _GPUrearmedCallbacks in gpu.o
+      _CDRinit in cdrcimg.o
+      _CDRopen in cdrcimg.o
+      _CDRreadTrack in cdrcimg.o
+      _CDRopen.cold.1 in cdrcimg.o
+      _CDRopen.cold.2 in cdrcimg.o
+      ...
+      _GPUinit in gpu.o
+      _GPUrearmedCallbacks in gpu.o
+      _CDRinit in cdrcimg.o
+      _CDRopen in cdrcimg.o
+      _CDRreadTrack in cdrcimg.o
+      _CDRopen.cold.1 in cdrcimg.o
+      _CDRopen.cold.2 in cdrcimg.o
+      ...
+  "___stdoutp", referenced from:
+      _emu_core_preinit in main.o
+      _SysClose in main.o
+  "___strcat_chk", referenced from:
+      _ISOopen in cdriso.o
+  "___strcpy_chk", referenced from:
+      _parsetoc in cdriso.o
+      _buopen in psxbios.o
+      _psxBios_firstfile in psxbios.o
+      _OpenPlugins in main.o
+  "___toupper", referenced from:
+      _BuildPPFCache in ppf.o
+  "___vsprintf_chk", referenced from:
+      _SysPrintf in libretro.o
+      _SysDLog in libretro.o
+  "_abort", referenced from:
+      _SetupSound.cold.1 in out.o
+  "_atof", referenced from:
+      _update_variables in libretro.o
+  "_atoi", referenced from:
+      _ISOopen in cdriso.o
+      _parsetoc in cdriso.o
+      _tok2msf in cdriso.o
+      _update_variables in libretro.o
+     (maybe you meant: _psxBios_atoi)
+  "_calloc", referenced from:
+      _ISOopen in cdriso.o
+      _LoadSBI in ppf.o
+      _SPUinit in spu.o
+      _GPUinit in gpu.o
+      _GPUrearmedCallbacks in gpu.o
+      _chd_open_file in libchdr_chd.o
+      _retro_set_environment in libretro.o
+      ...
+     (maybe you meant: _psxBios_calloc)
+  "_close$UNIX2003", referenced from:
+      _gzclose_r in gzread.o
+      _gzclose_w in gzwrite.o
+  "_closedir$UNIX2003", referenced from:
+      _retro_init in libretro.o
+  "_dlclose", referenced from:
+      _CDRinit in cdrcimg.o
+      _SysCloseLibrary in main.o
+  "_dlerror", referenced from:
+      _CDRinit in cdrcimg.o
+      _SysLoadLibrary in main.o
+      _SysLibError in main.o
+  "_dlopen", referenced from:
+      _CDRinit in cdrcimg.o
+      _SysLoadLibrary in main.o
+  "_dlsym", referenced from:
+      _CDRinit in cdrcimg.o
+      _SysLoadSym in main.o
+  "_exit", referenced from:
+      _GPUinit in gpu.o
+      _retro_init in libretro.o
+     (maybe you meant: _emu_core_ask_exit)
+  "_fclose", referenced from:
+      _ISOopen in cdriso.o
+      _ISOclose in cdriso.o
+      _parsetoc in cdriso.o
+      _LoadCheats in cheat.o
+      _SaveCheats in cheat.o
+      _Load in misc.o
+      _BuildPPFCache in ppf.o
+      ...
+  "_feof", referenced from:
+      _emu_on_new_cd in main.o
+  "_fgetc", referenced from:
+      _ISOopen in cdriso.o
+      _BuildPPFCache in ppf.o
+  "_fgets", referenced from:
+      _ISOopen in cdriso.o
+      _parsetoc in cdriso.o
+      _LoadCheats in cheat.o
+      _retro_load_game in libretro.o
+      _emu_on_new_cd in main.o
+  "_fopen$UNIX2003", referenced from:
+      _ISOopen in cdriso.o
+      _parsetoc in cdriso.o
+      _LoadCheats in cheat.o
+      _SaveCheats in cheat.o
+      _Load in misc.o
+      _BuildPPFCache in ppf.o
+      _LoadSBI in ppf.o
+      ...
+  "_fprintf", referenced from:
+      _SaveCheats in cheat.o
+      _CDRinit in cdrcimg.o
+      _CDRopen in cdrcimg.o
+      _CDRreadTrack in cdrcimg.o
+      _CDRopen.cold.1 in cdrcimg.o
+      _CDRopen.cold.2 in cdrcimg.o
+      _CDRopen.cold.3 in cdrcimg.o
+      ...
+  "_fputc", referenced from:
+      _CreateMcd in sio.o
+      _ConvertMcd in sio.o
+  "_fread", referenced from:
+      _ISOopen in cdriso.o
+      _ISOgetBufferSub in cdriso.o
+      _cdread_normal in cdriso.o
+      _cdread_compressed in cdriso.o
+      _cdread_sub_mixed in cdriso.o
+      _cdread_sub_sub_mixed in cdriso.o
+      _cdread_2048 in cdriso.o
+      ...
+     (maybe you meant: _fread_to_ram)
+  "_free", referenced from:
+      _ISOopen in cdriso.o
+      _ISOclose in cdriso.o
+      _ClearAllCheats in cheat.o
+      _LoadCheats in cheat.o
+      _RemoveCheat in cheat.o
+      _EditCheat in cheat.o
+      _FreeCheatSearchResults in cheat.o
+      ...
+     (maybe you meant: _SPU_freeze, _drflac_free , _GPU_freeze , _new_dyna_freeze , _psxBios_free , _flac_decoder_free )
+  "_fseek", referenced from:
+      _ISOopen in cdriso.o
+      _ISOgetBufferSub in cdriso.o
+      _cdread_normal in cdriso.o
+      _parsetoc in cdriso.o
+      _cdread_sub_mixed in cdriso.o
+      _cdread_sub_sub_mixed in cdriso.o
+      _cdread_2048 in cdriso.o
+      ...
+  "_fseeko", referenced from:
+      _ISOopen in cdriso.o
+      _cdread_compressed in cdriso.o
+      _chd_open_file in libchdr_chd.o
+      _header_read in libchdr_chd.o
+      _chd_precache in libchdr_chd.o
+      _hunk_read_into_memory in libchdr_chd.o
+      _chd_get_metadata in libchdr_chd.o
+      ...
+  "_ftell", referenced from:
+      _ISOopen in cdriso.o
+      _Load in misc.o
+      _BuildPPFCache in ppf.o
+      _CDRopen in cdrcimg.o
+      _try_use_bios in libretro.o
+  "_ftello", referenced from:
+      _ISOopen in cdriso.o
+      _chd_open_file in libchdr_chd.o
+      _chd_precache in libchdr_chd.o
+  "_fwrite$UNIX2003", referenced from:
+      _SaveCheats in cheat.o
+      _SaveMcd in sio.o
+      _ConvertMcd in sio.o
+      _GPUinit in gpu.o
+      _GPUrearmedCallbacks in gpu.o
+      _CDRinit in cdrcimg.o
+      _CDRopen in cdrcimg.o
+      ...
+  "_getchar", referenced from:
+      _psxBios_getchar in psxbios.o
+     (maybe you meant: _psxBios_getchar)
+  "_lseek", referenced from:
+      _gz_open in gzlib.o
+      _gzrewind in gzlib.o
+      _gzseek64 in gzlib.o
+      _gzoffset64 in gzlib.o
+      _gzoffset in gzlib.o
+     (maybe you meant: _psxBios_lseek)
+  "_malloc", referenced from:
+      _ISOopen in cdriso.o
+      _LoadCheats in cheat.o
+      _AddCheat in cheat.o
+      _EditCheat in cheat.o
+      _CheatSearchEqual8 in cheat.o
+      _CheatSearchEqual16 in cheat.o
+      _CheatSearchEqual32 in cheat.o
+      ...
+     (maybe you meant: _psxBios_malloc)
+  "_memchr", referenced from:
+      _gzgets in gzread.o
+     (maybe you meant: _psxBios_memchr)
+  "_memcmp", referenced from:
+      _ISOopen in cdriso.o
+      _Apply_Hacks_Cdrom in database.o
+      _CheckCdrom in misc.o
+      _LoadState in misc.o
+      _CheckState in misc.o
+      _LoadPlugins in plugins.o
+      _CDRopen in cdrcimg.o
+      ...
+     (maybe you meant: _psxBios_memcmp)
+  "_memcpy", referenced from:
+      _cdread_compressed in cdriso.o
+      _cdread_chd in cdriso.o
+      _cdrPlayReadInterrupt in cdrom.o
+      _cdrInterrupt in cdrom.o
+      _psxDma3 in cdrom.o
+      _CheatSearchBackupMemory in cheat.o
+      _CheatSearchEqual8 in cheat.o
+      ...
+     (maybe you meant: _psxBios_memcpy)
+  "_memmove", referenced from:
+      _CheckCdrom in misc.o
+      _MatchFinder_MoveBlock in LzFind.o
+      _MatchFinder_CheckLimits in LzFind.o
+      _huffman_build_tree in libchdr_huffman.o
+     (maybe you meant: _psxBios_memmove)
+  "_memset", referenced from:
+      _psxDma3 in cdrom.o
+      _intNotify in psxinterpreter.o
+      _intReset in psxinterpreter.o
+      _psxMemReset in psxmem.o
+      _LzmaEnc_Construct in LzmaEnc.o
+     (maybe you meant: _psxBios_memset)
+  "_memset_pattern16", referenced from:
+      _LzmaDec_DecodeToDic in LzmaDec.o
+      _LzmaEnc_Init in LzmaEnc.o
+      _retro_load_game in libretro.o
+  "_mmap$UNIX2003", referenced from:
+      _psxMap in psxmem.o
+      _psxMemInit in psxmem.o
+  "_munmap$UNIX2003", referenced from:
+      _psxMap in psxmem.o
+      _psxUnmap in psxmem.o
+      _psxMemInit in psxmem.o
+      _psxMemShutdown in psxmem.o
+  "_open$UNIX2003", referenced from:
+      _gz_open in gzlib.o
+  "_opendir$INODE64$UNIX2003", referenced from:
+      _retro_init in libretro.o
+  "_perror", referenced from:
+      _cdread_compressed in cdriso.o
+      _CDRreadTrack in cdrcimg.o
+      _CDRopen.cold.1 in cdrcimg.o
+      _CDRopen.cold.2 in cdrcimg.o
+      _CDRopen.cold.3 in cdrcimg.o
+  "_printf", referenced from:
+      _psxBios_getc in psxbios.o
+      _psxBios_putc in psxbios.o
+      _psxBios_malloc in psxbios.o
+      _psxBios_free in psxbios.o
+      _psxBios_realloc in psxbios.o
+      _psxBios_InitHeap in psxbios.o
+      _psxBios_SetMem in psxbios.o
+      ...
+     (maybe you meant: _psxBios_printf)
+  "_pthread_create", referenced from:
+      _SPUinit in spu.o
+  "_pthread_join$UNIX2003", referenced from:
+      _SPUshutdown in spu.o
+  "_putchar", referenced from:
+      _psxBios_putc in psxbios.o
+      _psxBios_write in psxbios.o
+      _psxBios_putchar in psxbios.o
+      _psxBios_write_psxout in psxbios.o
+      _psxBios_putchar_psxout in psxbios.o
+     (maybe you meant: _psxBios_putchar)
+  "_puts", referenced from:
+      _psxBios_SetMem in psxbios.o
+      _SetupSound.cold.1 in out.o
+      _GPUinit in gpu.o
+      _SysRunGui in main.o
+     (maybe you meant: _psxBios_puts)
+  "_qsort", referenced from:
+      _huffman_build_tree in libchdr_huffman.o
+     (maybe you meant: _psxBios_qsort)
+  "_read$UNIX2003", referenced from:
+      _gz_read in gzread.o
+      _gz_fetch in gzread.o
+      _gz_look in gzread.o
+      _gz_decomp in gzread.o
+  "_readdir$INODE64", referenced from:
+      _retro_init in libretro.o
+  "_realloc", referenced from:
+      _LoadCheats in cheat.o
+      _AddCheat in cheat.o
+      _EditCheat in cheat.o
+      _CheatSearchEqual8 in cheat.o
+      _CheatSearchEqual16 in cheat.o
+      _CheatSearchEqual32 in cheat.o
+      _CheatSearchNotEqual8 in cheat.o
+      ...
+     (maybe you meant: _psxBios_realloc)
+  "_sem_destroy", referenced from:
+      _SPUinit in spu.o
+      _SPUshutdown in spu.o
+  "_sem_init", referenced from:
+      _SPUinit in spu.o
+  "_sem_post", referenced from:
+      _do_samples in spu.o
+      _SPUshutdown in spu.o
+      _spu_worker_thread in spu.o
+  "_sem_wait$UNIX2003", referenced from:
+      _do_samples in spu.o
+      _spu_worker_thread in spu.o
+  "_snprintf", referenced from:
+      _ISOopen in cdriso.o
+      _gz_open in gzlib.o
+      _gzdopen in gzlib.o
+      _gz_error in gzlib.o
+      _CDRopen in cdrcimg.o
+      _retro_load_game in libretro.o
+      _retro_run in libretro.o
+      ...
+  "_sprintf", referenced from:
+      _psxBios_printf_psxout in psxbios.o
+  "_sscanf", referenced from:
+      _ISOopen in cdriso.o
+      _parsetoc in cdriso.o
+      _LoadCheats in cheat.o
+      _AddCheat in cheat.o
+      _EditCheat in cheat.o
+      _LoadCdrom in misc.o
+      _LoadCdromFile in misc.o
+      ...
+  "_stat$INODE64", referenced from:
+      _SaveMcd in sio.o
+      _LoadMcd in sio.o
+      _CreateMcd in sio.o
+  "_strcasecmp", referenced from:
+      _ISOopen in cdriso.o
+      _CDRopen in cdrcimg.o
+      _set_cd_image in main.o
+  "_strcasestr", referenced from:
+      _retro_load_game in libretro.o
+  "_strcat", referenced from:
+      _retro_set_environment in libretro.o
+     (maybe you meant: _psxBios_strcat)
+  "_strchr", referenced from:
+      _parsetoc in cdriso.o
+      _retro_load_game in libretro.o
+     (maybe you meant: _psxBios_strchr)
+  "_strcmp", referenced from:
+      _ISOopen in cdriso.o
+      _parsetoc in cdriso.o
+      _psxBios_format in psxbios.o
+      _buopen in psxbios.o
+      _psxBios_rename in psxbios.o
+      _psxBios_delete in psxbios.o
+      _SaveMcd in sio.o
+      ...
+     (maybe you meant: _psxBios_strcmp)
+  "_strcpy", referenced from:
+      _ISOopen in cdriso.o
+      _buopen in psxbios.o
+      _psxBios_firstfile in psxbios.o
+      _psxBios_nextfile in psxbios.o
+      _retro_set_environment in libretro.o
+     (maybe you meant: _psxBios_strcpy)
+  "_strdup", referenced from:
+      _LoadCheats in cheat.o
+      _AddCheat in cheat.o
+      _EditCheat in cheat.o
+      _retro_load_game in libretro.o
+      _disk_replace_image_index in libretro.o
+      _emu_on_new_cd in main.o
+  "_strerror$UNIX2003", referenced from:
+      _ISOopen in cdriso.o
+      _gz_read in gzread.o
+      _gz_fetch in gzread.o
+      _gz_look in gzread.o
+      _gz_decomp in gzread.o
+      _gz_comp in gzwrite.o
+  "_strlen", referenced from:
+      _ISOopen in cdriso.o
+      _parsetoc in cdriso.o
+      _LoadCheats in cheat.o
+      _GetCdromFile in misc.o
+      _CheckCdrom in misc.o
+      _psxBios_rename in psxbios.o
+      _gz_open in gzlib.o
+      ...
+     (maybe you meant: _psxBios_strlen)
+  "_strncasecmp", referenced from:
+      _ISOopen in cdriso.o
+      _GetCdromFile in misc.o
+      _retro_init in libretro.o
+  "_strncmp", referenced from:
+      _parsetoc in cdriso.o
+      _psxBios_open in psxbios.o
+      _psxBios_firstfile in psxbios.o
+      _psxBios_rename in psxbios.o
+      _psxBios_delete in psxbios.o
+     (maybe you meant: _psxBios_strncmp)
+  "_strncpy", referenced from:
+      _ISOopen in cdriso.o
+      _parsetoc in cdriso.o
+      _LoadCdrom in misc.o
+      _CheckCdrom in misc.o
+      _SetIsoFile in plugins.o
+      _psxBios_firstfile in psxbios.o
+      _psxBios_nextfile in psxbios.o
+      ...
+     (maybe you meant: _psxBios_strncpy)
+  "_strrchr", referenced from:
+      _ISOopen in cdriso.o
+      _CDRopen in cdrcimg.o
+      _retro_load_game in libretro.o
+      _try_use_bios in libretro.o
+      _disk_replace_image_index in libretro.o
+      _set_cd_image in main.o
+      _SysLoadLibrary in main.o
+      ...
+     (maybe you meant: _psxBios_strrchr)
+  "_strstr", referenced from:
+      _ISOopen in cdriso.o
+      _LoadCdrom in misc.o
+      _CheckCdrom in misc.o
+      _CreateMcd in sio.o
+      _ConvertMcd in sio.o
+     (maybe you meant: _psxBios_strstr)
+  "_strtok", referenced from:
+      _ISOopen in cdriso.o
+      _parsetoc in cdriso.o
+      _tok2msf in cdriso.o
+      _psxBios_strtok in psxbios.o
+     (maybe you meant: _psxBios_strtok)
+  "_strtol", referenced from:
+      _update_variables in libretro.o
+  "_syscall", referenced from:
+      _retro_init in libretro.o
+  "_sysconf", referenced from:
+      _SPUinit in spu.o
+  "_time", referenced from:
+      _CDR__getStatus in plugins.o
+      _disk_set_eject_state in libretro.o
+      _disk_set_image_index in libretro.o
+  "_vfprintf", referenced from:
+      ___Log in psxcommon.o
+  "_vsnprintf", referenced from:
+      _gzvprintf in gzwrite.o
+      _SysMessage in main.o
+  "_write$UNIX2003", referenced from:
+      _gz_comp in gzwrite.o
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile:407: pcsx_rearmed_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-pcsx_rearmed'
+cp "pcsx_rearmed_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/pcsx_rearmed_libretro.dylib"
+cp: pcsx_rearmed_libretro.dylib: No such file or directory

@@ -1,0 +1,557 @@
+Building opera...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-opera"
+gmake platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-opera'
+rm -f opera_libretro.dylib ./cuefile.o ./libretro.o ./libretro_core_options.o ./opera_lr_nvram.o ./opera_lr_callbacks.o ./opera_lr_opts.o ./opera_lr_dsp.o ./lr_input.o ./lr_input_crosshair.o ./lr_input_descs.o ./retro_cdimage.o ./libopera/opera_3do.o ./libopera/opera_arm.o ./libopera/opera_bios.o ./libopera/opera_bitop.o ./libopera/opera_cdrom.o ./libopera/opera_clio.o ./libopera/opera_clock.o ./libopera/opera_diag_port.o ./libopera/opera_dsp.o ./libopera/opera_fixedpoint_math.o ./libopera/opera_madam.o ./libopera/opera_nvram.o ./libopera/opera_pbus.o ./libopera/opera_region.o ./libopera/opera_sport.o ./libopera/opera_vdlp.o ./libopera/opera_xbus.o ./libopera/opera_xbus_cdrom_plugin.o ./libretro-common/streams/file_stream.o ./libretro-common/streams/file_stream_transforms.o ./libretro-common/streams/memory_stream.o ./libretro-common/streams/interface_stream.o ./libretro-common/encodings/encoding_utf.o ./libretro-common/vfs/vfs_implementation.o ./libretro-common/compat/compat_strcasestr.o ./libretro-common/compat/compat_posix_string.o ./libretro-common/compat/compat_strl.o ./libretro-common/compat/compat_snprintf.o ./libretro-common/compat/fopen_utf8.o ./libretro-common/memmap/memmap.o ./libretro-common/string/stdstring.o ./libretro-common/file/file_path.o ./libretro-common/file/retro_dirent.o ./libretro-common/lists/dir_list.o ./libretro-common/lists/string_list.o ./libretro-common/memmap/memalign.o ./libretro-common/streams/chd_stream.o ./libretro-common/rthreads/rthreads.o ./deps/lzma-19.00/src/Alloc.o ./deps/lzma-19.00/src/Bra86.o ./deps/lzma-19.00/src/BraIA64.o ./deps/lzma-19.00/src/CpuArch.o ./deps/lzma-19.00/src/Delta.o ./deps/lzma-19.00/src/LzFind.o ./deps/lzma-19.00/src/Lzma86Dec.o ./deps/lzma-19.00/src/Lzma86Enc.o ./deps/lzma-19.00/src/LzmaDec.o ./deps/lzma-19.00/src/LzmaEnc.o ./deps/lzma-19.00/src/Sort.o ./deps/libchdr/src/libchdr_bitstream.o ./deps/libchdr/src/libchdr_cdrom.o ./deps/libchdr/src/libchdr_chd.o ./deps/libchdr/src/libchdr_flac.o ./deps/libchdr/src/libchdr_huffman.o ./deps/zlib-1.2.11/adler32.o ./deps/zlib-1.2.11/crc32.o ./deps/zlib-1.2.11/inffast.o ./deps/zlib-1.2.11/inflate.o ./deps/zlib-1.2.11/inftrees.o ./deps/zlib-1.2.11/zutil.o
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-opera'
+gmake platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-opera'
+cc -arch i386 -c -ocuefile.o cuefile.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro.o libretro.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro_core_options.o libretro_core_options.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -oopera_lr_nvram.o opera_lr_nvram.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -oopera_lr_callbacks.o opera_lr_callbacks.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -oopera_lr_opts.o opera_lr_opts.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -oopera_lr_dsp.o opera_lr_dsp.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olr_input.o lr_input.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olr_input_crosshair.o lr_input_crosshair.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olr_input_descs.o lr_input_descs.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -oretro_cdimage.o retro_cdimage.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_3do.o libopera/opera_3do.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_arm.o libopera/opera_arm.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_bios.o libopera/opera_bios.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_bitop.o libopera/opera_bitop.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_cdrom.o libopera/opera_cdrom.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+libopera/opera_bios.c:128:10: warning: trigraph ignored [-Wtrigraphs]
+      "????-??-??",
+         ^
+libopera/opera_bios.c:128:13: warning: trigraph ignored [-Wtrigraphs]
+      "????-??-??",
+            ^
+libopera/opera_bios.c:172:13: warning: trigraph ignored [-Wtrigraphs]
+      "1995-??-??",
+            ^
+3 warnings generated.
+cc -arch i386 -c -olibopera/opera_clio.o libopera/opera_clio.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_clock.o libopera/opera_clock.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_diag_port.o libopera/opera_diag_port.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_dsp.o libopera/opera_dsp.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_fixedpoint_math.o libopera/opera_fixedpoint_math.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_madam.o libopera/opera_madam.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_nvram.o libopera/opera_nvram.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_pbus.o libopera/opera_pbus.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_region.o libopera/opera_region.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_sport.o libopera/opera_sport.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_vdlp.o libopera/opera_vdlp.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_xbus.o libopera/opera_xbus.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibopera/opera_xbus_cdrom_plugin.o libopera/opera_xbus_cdrom_plugin.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/streams/file_stream.o libretro-common/streams/file_stream.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/streams/file_stream_transforms.o libretro-common/streams/file_stream_transforms.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/streams/memory_stream.o libretro-common/streams/memory_stream.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/streams/interface_stream.o libretro-common/streams/interface_stream.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/encodings/encoding_utf.o libretro-common/encodings/encoding_utf.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/vfs/vfs_implementation.o libretro-common/vfs/vfs_implementation.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/compat/compat_strcasestr.o libretro-common/compat/compat_strcasestr.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/compat/compat_posix_string.o libretro-common/compat/compat_posix_string.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/compat/compat_strl.o libretro-common/compat/compat_strl.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/compat/compat_snprintf.o libretro-common/compat/compat_snprintf.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/compat/fopen_utf8.o libretro-common/compat/fopen_utf8.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/memmap/memmap.o libretro-common/memmap/memmap.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/string/stdstring.o libretro-common/string/stdstring.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/file/file_path.o libretro-common/file/file_path.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/file/retro_dirent.o libretro-common/file/retro_dirent.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/lists/dir_list.o libretro-common/lists/dir_list.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/lists/string_list.o libretro-common/lists/string_list.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/memmap/memalign.o libretro-common/memmap/memalign.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/streams/chd_stream.o libretro-common/streams/chd_stream.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -olibretro-common/rthreads/rthreads.o libretro-common/rthreads/rthreads.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/lzma-19.00/src/Alloc.o deps/lzma-19.00/src/Alloc.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/lzma-19.00/src/Bra86.o deps/lzma-19.00/src/Bra86.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/lzma-19.00/src/BraIA64.o deps/lzma-19.00/src/BraIA64.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/lzma-19.00/src/CpuArch.o deps/lzma-19.00/src/CpuArch.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/lzma-19.00/src/Delta.o deps/lzma-19.00/src/Delta.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/lzma-19.00/src/LzFind.o deps/lzma-19.00/src/LzFind.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/lzma-19.00/src/Lzma86Dec.o deps/lzma-19.00/src/Lzma86Dec.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/lzma-19.00/src/Lzma86Enc.o deps/lzma-19.00/src/Lzma86Enc.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/lzma-19.00/src/LzmaDec.o deps/lzma-19.00/src/LzmaDec.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/lzma-19.00/src/LzmaEnc.o deps/lzma-19.00/src/LzmaEnc.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/lzma-19.00/src/Sort.o deps/lzma-19.00/src/Sort.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/libchdr/src/libchdr_bitstream.o deps/libchdr/src/libchdr_bitstream.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/libchdr/src/libchdr_cdrom.o deps/libchdr/src/libchdr_cdrom.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/libchdr/src/libchdr_chd.o deps/libchdr/src/libchdr_chd.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+deps/libchdr/src/libchdr_chd.c:1162:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+        int result = 0;
+            ^
+deps/libchdr/src/libchdr_chd.c:2271:37: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+                                int result;
+                                    ^
+cc -arch i386 -c -odeps/libchdr/src/libchdr_flac.o deps/libchdr/src/libchdr_flac.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/libchdr/src/libchdr_huffman.o deps/libchdr/src/libchdr_huffman.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/zlib-1.2.11/adler32.o deps/zlib-1.2.11/adler32.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+2 warnings generated.
+cc -arch i386 -c -odeps/zlib-1.2.11/crc32.o deps/zlib-1.2.11/crc32.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/zlib-1.2.11/inffast.o deps/zlib-1.2.11/inffast.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/zlib-1.2.11/inflate.o deps/zlib-1.2.11/inflate.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/zlib-1.2.11/inftrees.o deps/zlib-1.2.11/inftrees.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -c -odeps/zlib-1.2.11/zutil.o deps/zlib-1.2.11/zutil.c -DGIT_VERSION=\"" 8a49bb8"\" -DNDEBUG -O2  -DHAVE_STDINT_H -DHAVE_STDLIB_H -DHAVE_SYS_PARAM_H -DINLINE="inline" -DTHREADED_DSP -DHAVE_CHD -D_7ZIP_ST -DDR_FLAC_NO_STDIO -fPIC -I. -I./libopera -I./libretro-common/include -I./deps -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11 -I./deps/zlib-1.2.11   -D__LIBRETRO__ -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow
+cc -arch i386 -fPIC -o opera_libretro.dylib cuefile.o libretro.o libretro_core_options.o opera_lr_nvram.o opera_lr_callbacks.o opera_lr_opts.o opera_lr_dsp.o lr_input.o lr_input_crosshair.o lr_input_descs.o retro_cdimage.o libopera/opera_3do.o libopera/opera_arm.o libopera/opera_bios.o libopera/opera_bitop.o libopera/opera_cdrom.o libopera/opera_clio.o libopera/opera_clock.o libopera/opera_diag_port.o libopera/opera_dsp.o libopera/opera_fixedpoint_math.o libopera/opera_madam.o libopera/opera_nvram.o libopera/opera_pbus.o libopera/opera_region.o libopera/opera_sport.o libopera/opera_vdlp.o libopera/opera_xbus.o libopera/opera_xbus_cdrom_plugin.o libretro-common/streams/file_stream.o libretro-common/streams/file_stream_transforms.o libretro-common/streams/memory_stream.o libretro-common/streams/interface_stream.o libretro-common/encodings/encoding_utf.o libretro-common/vfs/vfs_implementation.o libretro-common/compat/compat_strcasestr.o libretro-common/compat/compat_posix_string.o libretro-common/compat/compat_strl.o libretro-common/compat/compat_snprintf.o libretro-common/compat/fopen_utf8.o libretro-common/memmap/memmap.o libretro-common/string/stdstring.o libretro-common/file/file_path.o libretro-common/file/retro_dirent.o libretro-common/lists/dir_list.o libretro-common/lists/string_list.o libretro-common/memmap/memalign.o libretro-common/streams/chd_stream.o libretro-common/rthreads/rthreads.o deps/lzma-19.00/src/Alloc.o deps/lzma-19.00/src/Bra86.o deps/lzma-19.00/src/BraIA64.o deps/lzma-19.00/src/CpuArch.o deps/lzma-19.00/src/Delta.o deps/lzma-19.00/src/LzFind.o deps/lzma-19.00/src/Lzma86Dec.o deps/lzma-19.00/src/Lzma86Enc.o deps/lzma-19.00/src/LzmaDec.o deps/lzma-19.00/src/LzmaEnc.o deps/lzma-19.00/src/Sort.o deps/libchdr/src/libchdr_bitstream.o deps/libchdr/src/libchdr_cdrom.o deps/libchdr/src/libchdr_chd.o deps/libchdr/src/libchdr_flac.o deps/libchdr/src/libchdr_huffman.o deps/zlib-1.2.11/adler32.o deps/zlib-1.2.11/crc32.o deps/zlib-1.2.11/inffast.o deps/zlib-1.2.11/inflate.o deps/zlib-1.2.11/inftrees.o deps/zlib-1.2.11/zutil.o  -fPIC -dynamiclib 
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+Undefined symbols for architecture i386:
+  "__DefaultRuneLocale", referenced from:
+      _filestream_scanf in file_stream.o
+      _string_trim_whitespace_left in stdstring.o
+      _string_trim_whitespace_right in stdstring.o
+      _string_trim_whitespace in stdstring.o
+      _filestream_scanf in file_stream.o
+      _string_trim_whitespace_left in stdstring.o
+      _string_trim_whitespace_right in stdstring.o
+      _string_trim_whitespace in stdstring.o
+  "___bzero", referenced from:
+      _retro_load_game in libretro.o
+      _retro_reset in libretro.o
+      _opera_clio_init in opera_clio.o
+      _opera_clio_reset in opera_clio.o
+      _opera_madam_init in opera_madam.o
+      _opera_madam_reset in opera_madam.o
+      _vdlp_render_line_XRGB8888 in opera_vdlp.o
+      ...
+  "___divdi3", referenced from:
+      _MulVec3Mat33DivZ_F16 in opera_fixedpoint_math.o
+      _opera_madam_poke in opera_madam.o
+      _scond_wait_timeout in rthreads.o
+  "___error", referenced from:
+      _filestream_read_file in file_stream.o
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+  "___maskrune", referenced from:
+      _filestream_scanf in file_stream.o
+      _string_trim_whitespace_left in stdstring.o
+      _string_trim_whitespace_right in stdstring.o
+      _string_trim_whitespace in stdstring.o
+  "___sprintf_chk", referenced from:
+      _cue_get in cuefile.o
+      _chd_get_metadata in libchdr_chd.o
+  "___stack_chk_fail", referenced from:
+      _cue_get in cuefile.o
+      _retro_load_game in libretro.o
+      _retro_reset in libretro.o
+      _libretro_init_core_options in libretro_core_options.o
+      _opera_lr_nvram_save in opera_lr_nvram.o
+      _opera_lr_nvram_load in opera_lr_nvram.o
+      _nvram_save in opera_lr_nvram.o
+      ...
+  "___stack_chk_guard", referenced from:
+      _cue_get in cuefile.o
+      _retro_load_game in libretro.o
+      _retro_reset in libretro.o
+      _libretro_init_core_options in libretro_core_options.o
+      _opera_lr_nvram_save in opera_lr_nvram.o
+      _opera_lr_nvram_load in opera_lr_nvram.o
+      _nvram_save in opera_lr_nvram.o
+      ...
+      _cue_get in cuefile.o
+      _retro_load_game in libretro.o
+      _retro_reset in libretro.o
+      _libretro_init_core_options in libretro_core_options.o
+      _opera_lr_nvram_save in opera_lr_nvram.o
+      _opera_lr_nvram_load in opera_lr_nvram.o
+      _nvram_save in opera_lr_nvram.o
+      ...
+      _cue_get in cuefile.o
+      _retro_load_game in libretro.o
+      _retro_reset in libretro.o
+      _libretro_init_core_options in libretro_core_options.o
+      _opera_lr_nvram_save in opera_lr_nvram.o
+      _opera_lr_nvram_load in opera_lr_nvram.o
+      _nvram_save in opera_lr_nvram.o
+      ...
+      _cue_get in cuefile.o
+      _retro_load_game in libretro.o
+      _retro_reset in libretro.o
+      _libretro_init_core_options in libretro_core_options.o
+      _opera_lr_nvram_save in opera_lr_nvram.o
+      _opera_lr_nvram_load in opera_lr_nvram.o
+      _nvram_save in opera_lr_nvram.o
+      ...
+      _cue_get in cuefile.o
+      _retro_load_game in libretro.o
+      _retro_reset in libretro.o
+      _libretro_init_core_options in libretro_core_options.o
+      _opera_lr_nvram_save in opera_lr_nvram.o
+      _opera_lr_nvram_load in opera_lr_nvram.o
+      _nvram_save in opera_lr_nvram.o
+      ...
+      _cue_get in cuefile.o
+      _retro_load_game in libretro.o
+      _retro_reset in libretro.o
+      _libretro_init_core_options in libretro_core_options.o
+      _opera_lr_nvram_save in opera_lr_nvram.o
+      _opera_lr_nvram_load in opera_lr_nvram.o
+      _nvram_save in opera_lr_nvram.o
+      ...
+      _cue_get in cuefile.o
+      _retro_load_game in libretro.o
+      _retro_reset in libretro.o
+      _libretro_init_core_options in libretro_core_options.o
+      _opera_lr_nvram_save in opera_lr_nvram.o
+      _opera_lr_nvram_load in opera_lr_nvram.o
+      _nvram_save in opera_lr_nvram.o
+      ...
+      ...
+  "___stderrp", referenced from:
+      _opera_madam_poke in opera_madam.o
+      _filestream_read_file in file_stream.o
+      _huffman_tree_node_compare in libchdr_huffman.o
+      _opera_madam_poke in opera_madam.o
+      _filestream_read_file in file_stream.o
+      _huffman_tree_node_compare in libchdr_huffman.o
+      _opera_madam_poke in opera_madam.o
+      _filestream_read_file in file_stream.o
+      _huffman_tree_node_compare in libchdr_huffman.o
+  "___strcat_chk", referenced from:
+      _cue_get in cuefile.o
+  "___strcpy_chk", referenced from:
+      _cue_get in cuefile.o
+  "___strlcat_chk", referenced from:
+      _opera_lr_nvram_load in opera_lr_nvram.o
+      _nvram_save in opera_lr_nvram.o
+      _fill_short_pathname_representation in file_path.o
+      _string_list_find_elem_prefix in string_list.o
+  "___strlcpy_chk", referenced from:
+      _opera_lr_nvram_save in opera_lr_nvram.o
+      _opera_lr_nvram_load in opera_lr_nvram.o
+      _nvram_save in opera_lr_nvram.o
+      _fill_pathname in file_path.o
+      _fill_pathname_slash in file_path.o
+      _fill_pathname_dir in file_path.o
+      _fill_pathname_join in file_path.o
+      ...
+  "___strncat_chk", referenced from:
+      _opera_lr_opts_is_enabled in opera_lr_opts.o
+      _opera_lr_opts_get_bios in opera_lr_opts.o
+      _opera_lr_opts_get_font in opera_lr_opts.o
+      _opera_lr_opts_is_nvram_shared in opera_lr_opts.o
+      _opera_lr_opts_nvram_version in opera_lr_opts.o
+      _opera_lr_opts_process_region in opera_lr_opts.o
+      _opera_lr_opts_process_cpu_overlock in opera_lr_opts.o
+      ...
+  "___tolower", referenced from:
+      _strcasestr_retro__ in compat_strcasestr.o
+      _string_to_lower in stdstring.o
+      _string_list_find_elem in string_list.o
+      _string_list_find_elem_prefix in string_list.o
+  "___toupper", referenced from:
+      _cue_get in cuefile.o
+      _string_to_upper in stdstring.o
+      _string_ucwords in stdstring.o
+  "___vsprintf_chk", referenced from:
+      _filestream_vprintf in file_stream.o
+      _filestream_printf in file_stream.o
+  "_abort", referenced from:
+      _retro_vfs_file_get_path_impl in vfs_implementation.o
+  "_atof", referenced from:
+      _opera_lr_opts_process_cpu_overlock in opera_lr_opts.o
+  "_atoi", referenced from:
+      _opera_lr_opts_nvram_version in opera_lr_opts.o
+      _opera_lr_opts_process_active_devices in opera_lr_opts.o
+  "_calloc", referenced from:
+      _retro_load_game in libretro.o
+      _retro_reset in libretro.o
+      _libretro_set_core_options in libretro_core_options.o
+      _opera_arm_init in opera_arm.o
+      _memstream_open in memory_stream.o
+      _intfstream_init in interface_stream.o
+      _intfstream_open_file in interface_stream.o
+      ...
+  "_clock_get_time", referenced from:
+      _scond_wait_timeout in rthreads.o
+  "_close$UNIX2003", referenced from:
+      _retro_vfs_file_close_impl in vfs_implementation.o
+  "_closedir$UNIX2003", referenced from:
+      _retro_vfs_closedir_impl in vfs_implementation.o
+  "_fclose", referenced from:
+      _retro_vfs_file_close_impl in vfs_implementation.o
+      _chd_close in libchdr_chd.o
+      _chd_open in libchdr_chd.o
+  "_ferror", referenced from:
+      _retro_vfs_file_error_impl in vfs_implementation.o
+  "_fflush", referenced from:
+      _retro_vfs_file_flush_impl in vfs_implementation.o
+  "_fileno", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fopen$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _chd_open in libchdr_chd.o
+  "_fprintf", referenced from:
+      _filestream_read_file in file_stream.o
+  "_fputc", referenced from:
+      _opera_madam_poke in opera_madam.o
+  "_fread", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+      _chd_open_file in libchdr_chd.o
+      _chd_precache in libchdr_chd.o
+      _hunk_read_into_memory in libchdr_chd.o
+      _chd_get_metadata in libchdr_chd.o
+  "_free", referenced from:
+      _cue_get in cuefile.o
+      _retro_load_game in libretro.o
+      _retro_unload_game in libretro.o
+      _libretro_set_core_options in libretro_core_options.o
+      _retro_cdimage_open_cue in retro_cdimage.o
+      _opera_arm_destroy in opera_arm.o
+      _filestream_close in file_stream.o
+      ...
+     (maybe you meant: _dir_list_free, _drflac_free , _string_list_free , _slock_free , _scond_free , _memalign_free , _flac_decoder_free )
+  "_fseeko", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+      _chd_open_file in libchdr_chd.o
+      _chd_precache in libchdr_chd.o
+      _hunk_read_into_memory in libchdr_chd.o
+      _chd_get_metadata in libchdr_chd.o
+      ...
+  "_ftell", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+  "_ftello", referenced from:
+      _chd_open_file in libchdr_chd.o
+      _chd_precache in libchdr_chd.o
+  "_ftruncate", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fwrite$UNIX2003", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+      _huffman_tree_node_compare in libchdr_huffman.o
+  "_host_get_clock_service", referenced from:
+      _scond_wait_timeout in rthreads.o
+  "_localtime", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+  "_lseek", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+  "_mach_host_self", referenced from:
+      _scond_wait_timeout in rthreads.o
+  "_mach_port_deallocate", referenced from:
+      _scond_wait_timeout in rthreads.o
+  "_mach_task_self_", referenced from:
+      _scond_wait_timeout in rthreads.o
+  "_malloc", referenced from:
+      _cue_get in cuefile.o
+      _filestream_open in file_stream.o
+      _filestream_read_file in file_stream.o
+      _filestream_getline in file_stream.o
+      _utf16_to_char_string in encoding_utf.o
+      _strldup in compat_strl.o
+      _string_replace_substring in stdstring.o
+      ...
+  "_mbstowcs", referenced from:
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+  "_memcmp", referenced from:
+      _chdstream_open in chd_stream.o
+      _chd_open_file in libchdr_chd.o
+  "_memcpy", referenced from:
+      _opera_arm_state_save in opera_arm.o
+      _opera_arm_state_load in opera_arm.o
+      _opera_clio_state_save in opera_clio.o
+      _opera_clio_state_load in opera_clio.o
+      _opera_dsp_state_save in opera_dsp.o
+      _opera_dsp_state_load in opera_dsp.o
+      _opera_madam_state_save in opera_madam.o
+      ...
+  "_memmove", referenced from:
+      _opera_cdrom_fifo_get_status in opera_cdrom.o
+      _string_trim_whitespace_left in stdstring.o
+      _string_trim_whitespace in stdstring.o
+      _MatchFinder_MoveBlock in LzFind.o
+      _MatchFinder_CheckLimits in LzFind.o
+      _huffman_build_tree in libchdr_huffman.o
+  "_memset", referenced from:
+      _LzmaEnc_Construct in LzmaEnc.o
+  "_memset_pattern16", referenced from:
+      _opera_dsp_init in opera_dsp.o
+      _LzmaDec_DecodeToDic in LzmaDec.o
+      _LzmaEnc_Init in LzmaEnc.o
+  "_mkdir", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+     (maybe you meant: _path_mkdir, _retro_vfs_mkdir_impl )
+  "_mprotect$UNIX2003", referenced from:
+      _memprotect in memmap.o
+  "_msync$UNIX2003", referenced from:
+      _memsync in memmap.o
+  "_open$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_opendir$INODE64$UNIX2003", referenced from:
+      _retro_vfs_opendir_impl in vfs_implementation.o
+  "_pthread_attr_destroy", referenced from:
+      _sthread_create_with_priority in rthreads.o
+  "_pthread_attr_init", referenced from:
+      _sthread_create_with_priority in rthreads.o
+  "_pthread_attr_setschedparam", referenced from:
+      _sthread_create_with_priority in rthreads.o
+  "_pthread_attr_setschedpolicy", referenced from:
+      _sthread_create_with_priority in rthreads.o
+  "_pthread_cond_broadcast", referenced from:
+      _scond_broadcast in rthreads.o
+  "_pthread_cond_destroy", referenced from:
+      _scond_free in rthreads.o
+  "_pthread_cond_init$UNIX2003", referenced from:
+      _scond_new in rthreads.o
+  "_pthread_cond_signal", referenced from:
+      _scond_signal in rthreads.o
+  "_pthread_cond_timedwait$UNIX2003", referenced from:
+      _scond_wait_timeout in rthreads.o
+  "_pthread_cond_wait$UNIX2003", referenced from:
+      _scond_wait in rthreads.o
+  "_pthread_create", referenced from:
+      _sthread_create_with_priority in rthreads.o
+  "_pthread_detach", referenced from:
+      _sthread_detach in rthreads.o
+  "_pthread_equal", referenced from:
+      _sthread_isself in rthreads.o
+  "_pthread_join$UNIX2003", referenced from:
+      _sthread_join in rthreads.o
+  "_pthread_mutex_destroy", referenced from:
+      _slock_free in rthreads.o
+  "_pthread_mutex_init", referenced from:
+      _slock_new in rthreads.o
+  "_pthread_mutex_lock", referenced from:
+      _slock_lock in rthreads.o
+  "_pthread_mutex_trylock", referenced from:
+      _slock_try_lock in rthreads.o
+  "_pthread_mutex_unlock", referenced from:
+      _slock_unlock in rthreads.o
+  "_pthread_self", referenced from:
+      _sthread_isself in rthreads.o
+      _sthread_get_current_thread_id in rthreads.o
+  "_qsort", referenced from:
+      _dir_list_sort in dir_list.o
+      _huffman_build_tree in libchdr_huffman.o
+  "_read$UNIX2003", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+  "_readdir$INODE64", referenced from:
+      _retro_vfs_readdir_impl in vfs_implementation.o
+  "_realloc", referenced from:
+      _filestream_getline in file_stream.o
+      _string_list_append in string_list.o
+      _string_list_append_n in string_list.o
+      _string_split in string_list.o
+      _drflac__realloc_default in libchdr_flac.o
+  "_remove", referenced from:
+      _retro_vfs_file_remove_impl in vfs_implementation.o
+     (maybe you meant: _bitstream_remove, _path_remove_extension , _retro_vfs_file_remove_impl )
+  "_rename", referenced from:
+      _retro_vfs_file_rename_impl in vfs_implementation.o
+     (maybe you meant: _filestream_rename, _retro_vfs_file_rename_impl )
+  "_setvbuf", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_snprintf", referenced from:
+      _opera_lr_nvram_save in opera_lr_nvram.o
+      _opera_lr_nvram_load in opera_lr_nvram.o
+      _path_parent_dir in file_path.o
+      _fill_pathname_basedir in file_path.o
+      _path_basedir in file_path.o
+      _fill_pathname_basedir_noext in file_path.o
+      _fill_pathname_resolve_relative in file_path.o
+      ...
+  "_sscanf", referenced from:
+      _filestream_scanf in file_stream.o
+      _chdstream_find_track_number in chd_stream.o
+      _header_guess_unitbytes in libchdr_chd.o
+  "_stat$INODE64", referenced from:
+      _retro_vfs_stat_impl in vfs_implementation.o
+      _retro_vfs_dirent_is_dir_impl in vfs_implementation.o
+  "_strcasecmp", referenced from:
+      _retro_cdimage_open_cue in retro_cdimage.o
+      _retro_cdimage_open in retro_cdimage.o
+      _qstrcmp_dir in dir_list.o
+      _qstrcmp_plain in dir_list.o
+  "_strcat", referenced from:
+      _libretro_set_core_options in libretro_core_options.o
+  "_strchr", referenced from:
+      _cue_get in cuefile.o
+      _rfopen in file_stream_transforms.o
+  "_strcmp", referenced from:
+      _cue_get in cuefile.o
+      _cue_is_cue_path in cuefile.o
+      _libretro_init_core_options in libretro_core_options.o
+      _libretro_set_core_options in libretro_core_options.o
+      _opera_lr_opts_is_enabled in opera_lr_opts.o
+      _opera_lr_opts_get_bios in opera_lr_opts.o
+      _opera_lr_opts_get_font in opera_lr_opts.o
+      ...
+  "_strcpy", referenced from:
+      _libretro_set_core_options in libretro_core_options.o
+      _string_replace_substring in stdstring.o
+      _string_list_clone in string_list.o
+  "_strdup", referenced from:
+      _cue_get in cuefile.o
+      _retro_load_game in libretro.o
+      _utf8_to_local_string_alloc in encoding_utf.o
+      _local_to_utf8_string_alloc in encoding_utf.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_opendir_impl in vfs_implementation.o
+      _string_replace_substring in stdstring.o
+      ...
+  "_strerror$UNIX2003", referenced from:
+      _filestream_read_file in file_stream.o
+  "_strftime$UNIX2003", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+  "_strlcat", referenced from:
+      _fill_pathname in file_path.o
+      _fill_pathname_noext in file_path.o
+      _fill_pathname_slash in file_path.o
+      _fill_pathname_dir in file_path.o
+      _fill_pathname_base_ext in file_path.o
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+      ...
+  "_strlcpy", referenced from:
+      _utf16_to_char_string in encoding_utf.o
+      _strldup in compat_strl.o
+      _fill_pathname in file_path.o
+      _fill_pathname_noext in file_path.o
+      _fill_pathname_base in file_path.o
+      _fill_pathname_base_noext in file_path.o
+      _fill_pathname_base_ext in file_path.o
+      ...
+  "_strlen", referenced from:
+      _libretro_set_core_options in libretro_core_options.o
+      _strcasestr_retro__ in compat_strcasestr.o
+      _string_replace_substring in stdstring.o
+      _string_trim_whitespace_left in stdstring.o
+      _string_trim_whitespace_right in stdstring.o
+      _string_trim_whitespace in stdstring.o
+      _word_wrap in stdstring.o
+      ...
+  "_strrchr", referenced from:
+      _cue_get in cuefile.o
+      _cue_is_cue_path in cuefile.o
+      _path_parent_dir in file_path.o
+      _path_get_archive_delim in file_path.o
+      _find_last_slash in file_path.o
+      _path_get_extension in file_path.o
+      _path_basename in file_path.o
+      ...
+  "_strstr", referenced from:
+      _cue_get in cuefile.o
+      _string_replace_substring in stdstring.o
+  "_strtok_r", referenced from:
+      _string_split in string_list.o
+  "_time", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+     (maybe you meant: _opera_clock_timer_queued, _opera_clio_timer_clear , _opera_clock_timer_set_delay , _opera_clio_timer_execute , _opera_clio_timer_get_delay , _scond_wait_timeout , _opera_clio_timer_set )
+  "_wcstombs", referenced from:
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+  "_write$UNIX2003", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile:637: opera_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-opera'
+cp "opera_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/opera_libretro.dylib"
+cp: opera_libretro.dylib: No such file or directory

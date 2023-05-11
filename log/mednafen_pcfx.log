@@ -1,0 +1,923 @@
+Building mednafen_pcfx...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mednafen_pcfx"
+gmake platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mednafen_pcfx'
+rm -f mednafen_pcfx_libretro.dylib ./mednafen/pcfx/king.o ./mednafen/pcfx/soundbox.o ./mednafen/pcfx/interrupt.o ./mednafen/pcfx/huc6273.o ./mednafen/pcfx/input.o ./mednafen/pcfx/timer.o ./mednafen/pcfx/rainbow.o ./mednafen/pcfx/input/gamepad.o ./mednafen/pcfx/input/mouse.o ./mednafen/sound/OwlResampler.o ./mednafen/hw_cpu/v810/v810_cpu.o ./mednafen/hw_cpu/v810/v810_fp_ops.o ./mednafen/hw_sound/pce_psg/pce_psg.o ./mednafen/hw_video/huc6270/vdc_video.o ./mednafen/cdrom/CDAccess.o ./mednafen/cdrom/CDAccess_Image.o ./mednafen/cdrom/CDAccess_CCD.o ./mednafen/cdrom/CDAFReader.o ./mednafen/cdrom/CDAFReader_Vorbis.o ./mednafen/cdrom/cdromif.o ./mednafen/cdrom/CDUtility.o ./mednafen/cdrom/lec.o ./mednafen/cdrom/galois.o ./mednafen/cdrom/recover-raw.o ./mednafen/cdrom/l-ec.o ./mednafen/cdrom/scsicd.o ./mednafen/cdrom/edc_crc32.o ./mednafen/cdrom/CDAccess_CHD.o ./mednafen/general.o ./mednafen/FileStream.o ./mednafen/MemoryStream.o ./mednafen/Stream.o ./mednafen/mempatcher.o ./libretro.o ./mednafen/pcfx/jrevdct.o ./libretro-common/rthreads/rthreads.o ./deps/zlib-1.2.11/adler32.o ./deps/zlib-1.2.11/crc32.o ./deps/zlib-1.2.11/inffast.o ./deps/zlib-1.2.11/inflate.o ./deps/zlib-1.2.11/inftrees.o ./deps/lzma-19.00/src/Alloc.o ./deps/lzma-19.00/src/Bra86.o ./deps/lzma-19.00/src/BraIA64.o ./deps/lzma-19.00/src/CpuArch.o ./deps/lzma-19.00/src/Delta.o ./deps/lzma-19.00/src/LzFind.o ./deps/lzma-19.00/src/Lzma86Dec.o ./deps/lzma-19.00/src/LzmaDec.o ./deps/lzma-19.00/src/LzmaEnc.o ./deps/libchdr/src/libchdr_bitstream.o ./deps/libchdr/src/libchdr_cdrom.o ./deps/libchdr/src/libchdr_chd.o ./deps/libchdr/src/libchdr_flac.o ./deps/libchdr/src/libchdr_huffman.o ./mednafen/tremor/bitwise.o ./mednafen/tremor/block.o ./mednafen/tremor/codebook.o ./mednafen/tremor/floor0.o ./mednafen/tremor/floor1.o ./mednafen/tremor/framing.o ./mednafen/tremor/info.o ./mednafen/tremor/mapping0.o ./mednafen/tremor/mdct.o ./mednafen/tremor/registry.o ./mednafen/tremor/res012.o ./mednafen/tremor/sharedbook.o ./mednafen/tremor/synthesis.o ./mednafen/tremor/vorbisfile.o ./mednafen/tremor/window.o ./mednafen/file.o ./mednafen/settings.o ./mednafen/mednafen-endian.o ./mednafen/state.o ./mednafen/mednafen_md5.o ./libretro-common/streams/file_stream.o ./libretro-common/streams/file_stream_transforms.o ./libretro-common/file/file_path.o ./libretro-common/file/retro_dirent.o ./libretro-common/lists/string_list.o ./libretro-common/lists/dir_list.o ./libretro-common/compat/compat_strl.o ./libretro-common/compat/compat_snprintf.o ./libretro-common/compat/compat_posix_string.o ./libretro-common/compat/compat_strcasestr.o ./libretro-common/compat/fopen_utf8.o ./libretro-common/encodings/encoding_utf.o ./libretro-common/encodings/encoding_crc32.o ./libretro-common/vfs/vfs_implementation.o ./libretro-common/memmap/memalign.o ./libretro-common/string/stdstring.o ./libretro-common/time/rtime.o
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mednafen_pcfx'
+gmake platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mednafen_pcfx'
+c++ -arch i386 -c -o mednafen/pcfx/king.o mednafen/pcfx/king.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/pcfx/soundbox.o mednafen/pcfx/soundbox.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/pcfx/interrupt.o mednafen/pcfx/interrupt.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/pcfx/huc6273.o mednafen/pcfx/huc6273.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+mednafen/pcfx/soundbox.cpp:203:67: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                     if(sbox.ResetAntiClick[ch] < ((int64)-0x4000 << 32))
+                                                   ~~~~~~~~~~~~~~ ^
+mednafen/pcfx/soundbox.cpp:204:66: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                        sbox.ResetAntiClick[ch] = (int64)-0x4000 << 32;
+                                                  ~~~~~~~~~~~~~~ ^
+mednafen/pcfx/soundbox.cpp:533:80: warning: implicit conversion from 'int64' (aka 'long long') to 'size_t' (aka 'unsigned long') changes value from 70364449210368 to 0 [-Wconstant-conversion]
+         clamp(&sbox.ResetAntiClick[ch], -((int64)0x4000 << 32), (int64)0x3FFF << 32);
+         ~~~~~                                                   ~~~~~~~~~~~~~~^~~~~
+mednafen/pcfx/soundbox.cpp:533:42: warning: implicit conversion from 'int64' (aka 'long long') to 'size_t' (aka 'unsigned long') changes value from -70368744177664 to 0 [-Wconstant-conversion]
+         clamp(&sbox.ResetAntiClick[ch], -((int64)0x4000 << 32), (int64)0x3FFF << 32);
+         ~~~~~                           ^~~~~~~~~~~~~~~~~~~~~~
+c++ -arch i386 -c -o mednafen/pcfx/input.o mednafen/pcfx/input.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/pcfx/timer.o mednafen/pcfx/timer.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+4 warnings generated.
+c++ -arch i386 -c -o mednafen/pcfx/rainbow.o mednafen/pcfx/rainbow.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/pcfx/input/gamepad.o mednafen/pcfx/input/gamepad.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/pcfx/input/mouse.o mednafen/pcfx/input/mouse.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/sound/OwlResampler.o mednafen/sound/OwlResampler.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+mednafen/pcfx/input/gamepad.cpp:71:8: warning: variable 'mode_changed' set but not used [-Wunused-but-set-variable]
+  bool mode_changed = false;
+       ^
+1 warning generated.
+c++ -arch i386 -c -o mednafen/hw_cpu/v810/v810_cpu.o mednafen/hw_cpu/v810/v810_cpu.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/hw_cpu/v810/v810_fp_ops.o mednafen/hw_cpu/v810/v810_fp_ops.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+mednafen/sound/OwlResampler.cpp:783:10: warning: variable 'sum_d' set but not used [-Wunused-but-set-variable]
+  double sum_d = 0;
+         ^
+c++ -arch i386 -c -o mednafen/hw_sound/pce_psg/pce_psg.o mednafen/hw_sound/pce_psg/pce_psg.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/hw_video/huc6270/vdc_video.o mednafen/hw_video/huc6270/vdc_video.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+1 warning generated.
+c++ -arch i386 -c -o mednafen/cdrom/CDAccess.o mednafen/cdrom/CDAccess.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/cdrom/CDAccess_Image.o mednafen/cdrom/CDAccess_Image.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/cdrom/CDAccess_CCD.o mednafen/cdrom/CDAccess_CCD.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+mednafen/cdrom/CDAccess_Image.cpp:818:15: warning: assigning field to itself [-Wself-assign-field]
+   FirstTrack = FirstTrack;
+              ^
+c++ -arch i386 -c -o mednafen/cdrom/CDAFReader.o mednafen/cdrom/CDAFReader.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/cdrom/CDAFReader_Vorbis.o mednafen/cdrom/CDAFReader_Vorbis.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/cdrom/cdromif.o mednafen/cdrom/cdromif.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+mednafen/cdrom/CDAFReader_Vorbis.cpp:40:15: warning: private field 'fw' is not used [-Wunused-private-field]
+      Stream *fw;
+              ^
+1 warning generated.
+c++ -arch i386 -c -o mednafen/cdrom/CDUtility.o mednafen/cdrom/CDUtility.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+1 warning generated.
+c++ -arch i386 -c -o mednafen/cdrom/lec.o mednafen/cdrom/lec.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/cdrom/galois.o mednafen/cdrom/galois.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/cdrom/recover-raw.o mednafen/cdrom/recover-raw.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/cdrom/l-ec.o mednafen/cdrom/l-ec.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/cdrom/scsicd.o mednafen/cdrom/scsicd.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/cdrom/edc_crc32.o mednafen/cdrom/edc_crc32.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/cdrom/CDAccess_CHD.o mednafen/cdrom/CDAccess_CHD.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/general.o mednafen/general.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+mednafen/cdrom/scsicd.cpp:1818:5: warning: logical not is only applied to the left hand side of this bitwise operator [-Wlogical-not-parentheses]
+ if(!(toc.tracks[track].control) & 0x4)
+    ^                            ~
+mednafen/cdrom/scsicd.cpp:1818:5: note: add parentheses after the '!' to evaluate the bitwise operator first
+ if(!(toc.tracks[track].control) & 0x4)
+    ^
+     (                                )
+mednafen/cdrom/scsicd.cpp:1818:5: note: add parentheses around left hand side expression to silence this warning
+ if(!(toc.tracks[track].control) & 0x4)
+    ^
+    (                           )
+c++ -arch i386 -c -o mednafen/FileStream.o mednafen/FileStream.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/MemoryStream.o mednafen/MemoryStream.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/Stream.o mednafen/Stream.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o mednafen/mempatcher.o mednafen/mempatcher.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -c -o libretro.o libretro.cpp -DGIT_VERSION=\"" 51fc3b7"\"  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/pcfx/jrevdct.o mednafen/pcfx/jrevdct.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/rthreads/rthreads.o libretro-common/rthreads/rthreads.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/zlib-1.2.11/adler32.o deps/zlib-1.2.11/adler32.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+1 warning generated.
+cc -arch i386 -c -o deps/zlib-1.2.11/crc32.o deps/zlib-1.2.11/crc32.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/zlib-1.2.11/inffast.o deps/zlib-1.2.11/inffast.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/zlib-1.2.11/inflate.o deps/zlib-1.2.11/inflate.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/zlib-1.2.11/inftrees.o deps/zlib-1.2.11/inftrees.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/lzma-19.00/src/Alloc.o deps/lzma-19.00/src/Alloc.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/lzma-19.00/src/Bra86.o deps/lzma-19.00/src/Bra86.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/lzma-19.00/src/BraIA64.o deps/lzma-19.00/src/BraIA64.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/lzma-19.00/src/CpuArch.o deps/lzma-19.00/src/CpuArch.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/lzma-19.00/src/Delta.o deps/lzma-19.00/src/Delta.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/lzma-19.00/src/LzFind.o deps/lzma-19.00/src/LzFind.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/lzma-19.00/src/Lzma86Dec.o deps/lzma-19.00/src/Lzma86Dec.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/lzma-19.00/src/LzmaDec.o deps/lzma-19.00/src/LzmaDec.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/lzma-19.00/src/LzmaEnc.o deps/lzma-19.00/src/LzmaEnc.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/libchdr/src/libchdr_bitstream.o deps/libchdr/src/libchdr_bitstream.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/libchdr/src/libchdr_cdrom.o deps/libchdr/src/libchdr_cdrom.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/libchdr/src/libchdr_chd.o deps/libchdr/src/libchdr_chd.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o deps/libchdr/src/libchdr_flac.o deps/libchdr/src/libchdr_flac.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+deps/libchdr/src/libchdr_chd.c:1162:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+        int result = 0;
+            ^
+deps/libchdr/src/libchdr_chd.c:2271:37: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+                                int result;
+                                    ^
+cc -arch i386 -c -o deps/libchdr/src/libchdr_huffman.o deps/libchdr/src/libchdr_huffman.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/tremor/bitwise.o mednafen/tremor/bitwise.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/tremor/block.o mednafen/tremor/block.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+2 warnings generated.
+cc -arch i386 -c -o mednafen/tremor/codebook.o mednafen/tremor/codebook.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/tremor/floor0.o mednafen/tremor/floor0.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/tremor/floor1.o mednafen/tremor/floor1.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/tremor/framing.o mednafen/tremor/framing.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/tremor/info.o mednafen/tremor/info.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/tremor/mapping0.o mednafen/tremor/mapping0.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/tremor/mdct.o mednafen/tremor/mdct.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/tremor/registry.o mednafen/tremor/registry.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/tremor/res012.o mednafen/tremor/res012.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/tremor/sharedbook.o mednafen/tremor/sharedbook.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/tremor/synthesis.o mednafen/tremor/synthesis.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/tremor/vorbisfile.o mednafen/tremor/vorbisfile.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/tremor/window.o mednafen/tremor/window.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/file.o mednafen/file.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/settings.o mednafen/settings.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/mednafen-endian.o mednafen/mednafen-endian.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/state.o mednafen/state.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o mednafen/mednafen_md5.o mednafen/mednafen_md5.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/streams/file_stream.o libretro-common/streams/file_stream.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/streams/file_stream_transforms.o libretro-common/streams/file_stream_transforms.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/file/file_path.o libretro-common/file/file_path.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/file/retro_dirent.o libretro-common/file/retro_dirent.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/lists/string_list.o libretro-common/lists/string_list.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/lists/dir_list.o libretro-common/lists/dir_list.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/compat/compat_strl.o libretro-common/compat/compat_strl.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/compat/compat_snprintf.o libretro-common/compat/compat_snprintf.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/compat/compat_posix_string.o libretro-common/compat/compat_posix_string.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/compat/compat_strcasestr.o libretro-common/compat/compat_strcasestr.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/compat/fopen_utf8.o libretro-common/compat/fopen_utf8.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/encodings/encoding_utf.o libretro-common/encodings/encoding_utf.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/encodings/encoding_crc32.o libretro-common/encodings/encoding_crc32.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/vfs/vfs_implementation.o libretro-common/vfs/vfs_implementation.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/memmap/memalign.o libretro-common/memmap/memalign.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/string/stdstring.o libretro-common/string/stdstring.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/time/rtime.o libretro-common/time/rtime.c  -DHAVE_THREADS -DWANT_32BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -DNEED_CD -DHAVE_CHD -D_7ZIP_ST -DNEED_TREMOR -O2 -DNDEBUG  -fPIC -stdlib=libc++  -I. -I./mednafen -I./mednafen/include -I./mednafen/intl -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include -I./libretro-common/include -I./deps/lzma-19.00/include -I./deps/libchdr/include -I./deps/zlib-1.2.11  -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=9365 -DMPC_FIXED_POINT -DWANT_PCFX_EMU -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_   -DINLINE="inline"
+c++ -arch i386 -o mednafen_pcfx_libretro.dylib mednafen/pcfx/king.o mednafen/pcfx/soundbox.o mednafen/pcfx/interrupt.o mednafen/pcfx/huc6273.o mednafen/pcfx/input.o mednafen/pcfx/timer.o mednafen/pcfx/rainbow.o mednafen/pcfx/input/gamepad.o mednafen/pcfx/input/mouse.o mednafen/sound/OwlResampler.o mednafen/hw_cpu/v810/v810_cpu.o mednafen/hw_cpu/v810/v810_fp_ops.o mednafen/hw_sound/pce_psg/pce_psg.o mednafen/hw_video/huc6270/vdc_video.o mednafen/cdrom/CDAccess.o mednafen/cdrom/CDAccess_Image.o mednafen/cdrom/CDAccess_CCD.o mednafen/cdrom/CDAFReader.o mednafen/cdrom/CDAFReader_Vorbis.o mednafen/cdrom/cdromif.o mednafen/cdrom/CDUtility.o mednafen/cdrom/lec.o mednafen/cdrom/galois.o mednafen/cdrom/recover-raw.o mednafen/cdrom/l-ec.o mednafen/cdrom/scsicd.o mednafen/cdrom/edc_crc32.o mednafen/cdrom/CDAccess_CHD.o mednafen/general.o mednafen/FileStream.o mednafen/MemoryStream.o mednafen/Stream.o mednafen/mempatcher.o libretro.o mednafen/pcfx/jrevdct.o libretro-common/rthreads/rthreads.o deps/zlib-1.2.11/adler32.o deps/zlib-1.2.11/crc32.o deps/zlib-1.2.11/inffast.o deps/zlib-1.2.11/inflate.o deps/zlib-1.2.11/inftrees.o deps/lzma-19.00/src/Alloc.o deps/lzma-19.00/src/Bra86.o deps/lzma-19.00/src/BraIA64.o deps/lzma-19.00/src/CpuArch.o deps/lzma-19.00/src/Delta.o deps/lzma-19.00/src/LzFind.o deps/lzma-19.00/src/Lzma86Dec.o deps/lzma-19.00/src/LzmaDec.o deps/lzma-19.00/src/LzmaEnc.o deps/libchdr/src/libchdr_bitstream.o deps/libchdr/src/libchdr_cdrom.o deps/libchdr/src/libchdr_chd.o deps/libchdr/src/libchdr_flac.o deps/libchdr/src/libchdr_huffman.o mednafen/tremor/bitwise.o mednafen/tremor/block.o mednafen/tremor/codebook.o mednafen/tremor/floor0.o mednafen/tremor/floor1.o mednafen/tremor/framing.o mednafen/tremor/info.o mednafen/tremor/mapping0.o mednafen/tremor/mdct.o mednafen/tremor/registry.o mednafen/tremor/res012.o mednafen/tremor/sharedbook.o mednafen/tremor/synthesis.o mednafen/tremor/vorbisfile.o mednafen/tremor/window.o mednafen/file.o mednafen/settings.o mednafen/mednafen-endian.o mednafen/state.o mednafen/mednafen_md5.o libretro-common/streams/file_stream.o libretro-common/streams/file_stream_transforms.o libretro-common/file/file_path.o libretro-common/file/retro_dirent.o libretro-common/lists/string_list.o libretro-common/lists/dir_list.o libretro-common/compat/compat_strl.o libretro-common/compat/compat_snprintf.o libretro-common/compat/compat_posix_string.o libretro-common/compat/compat_strcasestr.o libretro-common/compat/fopen_utf8.o libretro-common/encodings/encoding_utf.o libretro-common/encodings/encoding_crc32.o libretro-common/vfs/vfs_implementation.o libretro-common/memmap/memalign.o libretro-common/string/stdstring.o libretro-common/time/rtime.o  -fPIC -stdlib=libc++ -dynamiclib 
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc++.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc++.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+Undefined symbols for architecture i386:
+  "__DefaultRuneLocale", referenced from:
+      _filestream_scanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+      _filestream_scanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+  "__Unwind_Resume", referenced from:
+      SoundBox_SetSoundRate(unsigned int) in soundbox.o
+      SoundBox_Init(bool, bool) in soundbox.o
+      SoundBox_Kill() in soundbox.o
+      PCFX_Input_Gamepad::~PCFX_Input_Gamepad() in gamepad.o
+      PCFX_Input_Mouse::~PCFX_Input_Mouse() in mouse.o
+      OwlResampler::OwlResampler(double, double, double, double, int) in OwlResampler.o
+      std::__1::__throw_length_error(char const*) in OwlResampler.o
+      ...
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::find(char, unsigned long) const", referenced from:
+      CDAccess_CCD::Load(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_CCD.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::rfind(char, unsigned long) const", referenced from:
+      CDAccess_CCD::Load(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_CCD.o
+      MDFN_GetFilePathComponents(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*) in general.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::compare(unsigned long, unsigned long, char const*, unsigned long) const", referenced from:
+      FXTIMER_GetRegister(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned int&) in timer.o
+      CDAccess_Image::ImageOpen(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_Image.o
+      ReadM3U(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int) in libretro.o
+  "std::__1::__vector_base_common<true>::__throw_length_error() const", referenced from:
+      std::__1::__vector_base<int, std::__1::allocator<int> >::__throw_length_error() const in OwlResampler.o
+      std::__1::__vector_base<void*, std::__1::allocator<void*> >::__throw_length_error() const in v810_cpu.o
+      std::__1::__vector_base<unsigned char, std::__1::allocator<unsigned char> >::__throw_length_error() const in vdc_video.o
+      std::__1::__vector_base<__SUBCHEAT, std::__1::allocator<__SUBCHEAT> >::__throw_length_error() const in mempatcher.o
+      std::__1::__vector_base<__CHEATF, std::__1::allocator<__CHEATF> >::__throw_length_error() const in mempatcher.o
+      std::__1::__vector_base<CDIF*, std::__1::allocator<CDIF*> >::__throw_length_error() const in libretro.o
+      std::__1::__vector_base<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >::__throw_length_error() const in libretro.o
+      ...
+  "std::__1::__basic_string_common<true>::__throw_length_error() const", referenced from:
+      std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__throw_length_error() const in CDAccess_Image.o
+      std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__throw_length_error() const in CDAccess_CCD.o
+      std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__throw_length_error() const in general.o
+      std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__throw_length_error() const in libretro.o
+  "std::logic_error::logic_error(char const*)", referenced from:
+      std::length_error::length_error(char const*) in OwlResampler.o
+      std::length_error::length_error(char const*) in v810_cpu.o
+      std::out_of_range::out_of_range(char const*) in vdc_video.o
+      std::length_error::length_error(char const*) in cdromif.o
+      std::length_error::length_error(char const*) in mempatcher.o
+      std::length_error::length_error(char const*) in libretro.o
+  "std::length_error::~length_error()", referenced from:
+      std::__1::__throw_length_error(char const*) in OwlResampler.o
+      std::__1::__throw_length_error(char const*) in v810_cpu.o
+      std::__1::__throw_length_error(char const*) in cdromif.o
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+      std::__1::__throw_length_error(char const*) in libretro.o
+      std::__1::__throw_length_error(char const*) in OwlResampler.o
+      std::__1::__throw_length_error(char const*) in v810_cpu.o
+      std::__1::__throw_length_error(char const*) in cdromif.o
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+      std::__1::__throw_length_error(char const*) in libretro.o
+      std::__1::__throw_length_error(char const*) in OwlResampler.o
+      std::__1::__throw_length_error(char const*) in v810_cpu.o
+      std::__1::__throw_length_error(char const*) in cdromif.o
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+      std::__1::__throw_length_error(char const*) in libretro.o
+      std::__1::__throw_length_error(char const*) in OwlResampler.o
+      std::__1::__throw_length_error(char const*) in v810_cpu.o
+      std::__1::__throw_length_error(char const*) in cdromif.o
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+      std::__1::__throw_length_error(char const*) in libretro.o
+      std::__1::__throw_length_error(char const*) in OwlResampler.o
+      std::__1::__throw_length_error(char const*) in v810_cpu.o
+      std::__1::__throw_length_error(char const*) in cdromif.o
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+      std::__1::__throw_length_error(char const*) in libretro.o
+  "std::out_of_range::~out_of_range()", referenced from:
+      void MDFN::LEPacker::operator^<unsigned int>(unsigned int&) in vdc_video.o
+      void MDFN::LEPacker::operator^<unsigned char>(unsigned char&) in vdc_video.o
+      void MDFN::LEPacker::operator^<unsigned short>(unsigned short&) in vdc_video.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::append(char const*, unsigned long)", referenced from:
+      std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > std::__1::operator+<char, std::__1::char_traits<char>, std::__1::allocator<char> >(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in CDAccess_Image.o
+      std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > std::__1::operator+<char, std::__1::char_traits<char>, std::__1::allocator<char> >(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in CDAccess_CCD.o
+      std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > std::__1::operator+<char, std::__1::char_traits<char>, std::__1::allocator<char> >(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in general.o
+      _retro_load_game in libretro.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::assign(char const*)", referenced from:
+      _retro_init in libretro.o
+      disk_set_initial_image(unsigned int, char const*) in libretro.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::resize(unsigned long, char)", referenced from:
+      CDAccess_Image::ImageOpen(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_Image.o
+      MDFN_ltrim(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&) in general.o
+      MDFN_rtrim(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&) in general.o
+      MDFN_trim(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&) in general.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::reserve(unsigned long)", referenced from:
+      CDAccess_Image::ImageOpen(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_Image.o
+      CDAccess_CCD::Load(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_CCD.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::push_back(char)", referenced from:
+      UnQuotify(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned long, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&, bool) in CDAccess_Image.o
+      std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > std::__1::operator+<char, std::__1::char_traits<char>, std::__1::allocator<char> >(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, char) in general.o
+      MemoryStream::get_line(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&) in MemoryStream.o
+      Stream::get_line(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&) in Stream.o
+      std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > std::__1::operator+<char, std::__1::char_traits<char>, std::__1::allocator<char> >(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, char) in libretro.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)", referenced from:
+      std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, Stream*, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const, Stream*> > >::operator[](std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in CDAccess_Image.o
+      std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > >, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const, std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > > > > >::operator[](std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in CDAccess_CCD.o
+      std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > >::operator[](std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in CDAccess_CCD.o
+      CDIF_Queue::Write(CDIF_Message const&) in cdromif.o
+      MDFN_EvalFIP(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in general.o
+      _retro_init in libretro.o
+      ReadM3U(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int) in libretro.o
+      ...
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned long, unsigned long, std::__1::allocator<char> const&)", referenced from:
+      CDAccess_CCD::Load(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_CCD.o
+      MDFN_GetFilePathComponents(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*) in general.o
+      _retro_init in libretro.o
+      ReadM3U(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int) in libretro.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::~basic_string()", referenced from:
+      __GLOBAL__sub_I_libretro.cpp in libretro.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::operator=(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)", referenced from:
+      CDAccess_Image::ParseTOCFileLineInfo(CDRFILE_TRACK_INFO*, int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, char const*, char const*, char const*, bool, std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, Stream*, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const, Stream*> > >&) in CDAccess_Image.o
+      CDAccess_Image::ImageOpen(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_Image.o
+      CDAccess_CCD::Load(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_CCD.o
+      CDIF_Message::CDIF_Message(unsigned int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in cdromif.o
+      CDIF_Message::CDIF_Message(unsigned int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in cdromif.o
+      CDIF_Queue::Read(CDIF_Message*, bool) in cdromif.o
+      MDFN_GetFilePathComponents(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*) in general.o
+      ...
+  "std::terminate()", referenced from:
+      ___clang_call_terminate in CDAccess_Image.o
+      ___clang_call_terminate in CDAccess_CCD.o
+      ___clang_call_terminate in CDAFReader_Vorbis.o
+      ___clang_call_terminate in cdromif.o
+      ___clang_call_terminate in CDAccess_CHD.o
+      ___clang_call_terminate in FileStream.o
+      ___clang_call_terminate in MemoryStream.o
+      ...
+  "typeinfo for std::length_error", referenced from:
+      std::__1::__throw_length_error(char const*) in OwlResampler.o
+      std::__1::__throw_length_error(char const*) in v810_cpu.o
+      std::__1::__throw_length_error(char const*) in cdromif.o
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+      std::__1::__throw_length_error(char const*) in libretro.o
+      std::__1::__throw_length_error(char const*) in OwlResampler.o
+      std::__1::__throw_length_error(char const*) in v810_cpu.o
+      std::__1::__throw_length_error(char const*) in cdromif.o
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+      std::__1::__throw_length_error(char const*) in libretro.o
+      std::__1::__throw_length_error(char const*) in OwlResampler.o
+      std::__1::__throw_length_error(char const*) in v810_cpu.o
+      std::__1::__throw_length_error(char const*) in cdromif.o
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+      std::__1::__throw_length_error(char const*) in libretro.o
+      std::__1::__throw_length_error(char const*) in OwlResampler.o
+      std::__1::__throw_length_error(char const*) in v810_cpu.o
+      std::__1::__throw_length_error(char const*) in cdromif.o
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+      std::__1::__throw_length_error(char const*) in libretro.o
+      std::__1::__throw_length_error(char const*) in OwlResampler.o
+      std::__1::__throw_length_error(char const*) in v810_cpu.o
+      std::__1::__throw_length_error(char const*) in cdromif.o
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+      std::__1::__throw_length_error(char const*) in libretro.o
+  "typeinfo for std::out_of_range", referenced from:
+      void MDFN::LEPacker::operator^<unsigned int>(unsigned int&) in vdc_video.o
+      void MDFN::LEPacker::operator^<unsigned char>(unsigned char&) in vdc_video.o
+      void MDFN::LEPacker::operator^<unsigned short>(unsigned short&) in vdc_video.o
+  "typeinfo for int", referenced from:
+      CDAFReader_Vorbis::CDAFReader_Vorbis(Stream*) in CDAFReader_Vorbis.o
+  "vtable for __cxxabiv1::__class_type_info", referenced from:
+      typeinfo for PCFX_Input_Device in input.o
+      typeinfo for CDAccess in CDAccess.o
+      typeinfo for CDAFReader in CDAFReader.o
+      typeinfo for CDIF in cdromif.o
+      typeinfo for Stream in Stream.o
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+  "vtable for __cxxabiv1::__si_class_type_info", referenced from:
+      typeinfo for PCFX_Input_Gamepad in gamepad.o
+      typeinfo for PCFX_Input_Mouse in mouse.o
+      typeinfo for CDAccess_Image in CDAccess_Image.o
+      typeinfo for CDAccess_CCD in CDAccess_CCD.o
+      typeinfo for CDAFReader_Vorbis in CDAFReader_Vorbis.o
+      typeinfo for CDIF_MT in cdromif.o
+      typeinfo for CDIF_ST in cdromif.o
+      ...
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+  "vtable for std::length_error", referenced from:
+      std::length_error::length_error(char const*) in OwlResampler.o
+      std::length_error::length_error(char const*) in v810_cpu.o
+      std::length_error::length_error(char const*) in cdromif.o
+      std::length_error::length_error(char const*) in mempatcher.o
+      std::length_error::length_error(char const*) in libretro.o
+      std::length_error::length_error(char const*) in OwlResampler.o
+      std::length_error::length_error(char const*) in v810_cpu.o
+      std::length_error::length_error(char const*) in cdromif.o
+      std::length_error::length_error(char const*) in mempatcher.o
+      std::length_error::length_error(char const*) in libretro.o
+      std::length_error::length_error(char const*) in OwlResampler.o
+      std::length_error::length_error(char const*) in v810_cpu.o
+      std::length_error::length_error(char const*) in cdromif.o
+      std::length_error::length_error(char const*) in mempatcher.o
+      std::length_error::length_error(char const*) in libretro.o
+      std::length_error::length_error(char const*) in OwlResampler.o
+      std::length_error::length_error(char const*) in v810_cpu.o
+      std::length_error::length_error(char const*) in cdromif.o
+      std::length_error::length_error(char const*) in mempatcher.o
+      std::length_error::length_error(char const*) in libretro.o
+      std::length_error::length_error(char const*) in OwlResampler.o
+      std::length_error::length_error(char const*) in v810_cpu.o
+      std::length_error::length_error(char const*) in cdromif.o
+      std::length_error::length_error(char const*) in mempatcher.o
+      std::length_error::length_error(char const*) in libretro.o
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+  "vtable for std::out_of_range", referenced from:
+      std::out_of_range::out_of_range(char const*) in vdc_video.o
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+  "operator delete[](void*)", referenced from:
+      CDAccess_CCD::~CDAccess_CCD() in CDAccess_CCD.o
+  "operator delete(void*)", referenced from:
+      SoundBox_SetSoundRate(unsigned int) in soundbox.o
+      SoundBox_Init(bool, bool) in soundbox.o
+      SoundBox_Kill() in soundbox.o
+      PCFX_Input_Device::~PCFX_Input_Device() in input.o
+      PCFX_Input_Gamepad::~PCFX_Input_Gamepad() in gamepad.o
+      PCFX_Input_Mouse::~PCFX_Input_Mouse() in mouse.o
+      OwlResampler::~OwlResampler() in OwlResampler.o
+      ...
+  "operator new[](unsigned long)", referenced from:
+      CDAccess_CCD::Load(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_CCD.o
+      MDFN_DispMessage(char const*, ...) in libretro.o
+  "operator new(unsigned long)", referenced from:
+      SoundBox_SetSoundRate(unsigned int) in soundbox.o
+      SoundBox_Init(bool, bool) in soundbox.o
+      FXINPUT_Init() in input.o
+      FXINPUT_SetInput(int, char const*, void*) in input.o
+      PCFXINPUT_MakeGamepad(int) in gamepad.o
+      PCFXINPUT_MakeMouse(int) in mouse.o
+      std::__1::vector<int, std::__1::allocator<int> >::__append(unsigned long) in OwlResampler.o
+      ...
+  "___bzero", referenced from:
+      KING_RunGfx(int) in king.o
+      KING_Reset(int) in king.o
+      MixVDC() in king.o
+      RAINBOW_DecodeBlock(bool, bool) in rainbow.o
+      RAINBOW_FetchRaster(unsigned int*, unsigned int, unsigned int*) in rainbow.o
+      RAINBOW_Reset() in rainbow.o
+      OwlBuffer::OwlBuffer() in OwlResampler.o
+      ...
+  "___cxa_allocate_exception", referenced from:
+      std::__1::__throw_length_error(char const*) in OwlResampler.o
+      std::__1::__throw_length_error(char const*) in v810_cpu.o
+      void MDFN::LEPacker::operator^<unsigned int>(unsigned int&) in vdc_video.o
+      void MDFN::LEPacker::operator^<unsigned char>(unsigned char&) in vdc_video.o
+      void MDFN::LEPacker::operator^<unsigned short>(unsigned short&) in vdc_video.o
+      CDAFReader_Vorbis::CDAFReader_Vorbis(Stream*) in CDAFReader_Vorbis.o
+      std::__1::__throw_length_error(char const*) in cdromif.o
+      ...
+  "___cxa_atexit", referenced from:
+      __GLOBAL__sub_I_mempatcher.cpp in mempatcher.o
+      __GLOBAL__sub_I_libretro.cpp in libretro.o
+  "___cxa_begin_catch", referenced from:
+      ___clang_call_terminate in CDAccess_Image.o
+      ___clang_call_terminate in CDAccess_CCD.o
+      ___clang_call_terminate in CDAFReader_Vorbis.o
+      ___clang_call_terminate in cdromif.o
+      ___clang_call_terminate in CDAccess_CHD.o
+      ___clang_call_terminate in FileStream.o
+      ___clang_call_terminate in MemoryStream.o
+      ...
+  "___cxa_call_unexpected", referenced from:
+      FXTIMER_GetRegister(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned int&) in timer.o
+      CDAccess_Image::ImageOpen(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_Image.o
+      ReadM3U(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int) in libretro.o
+  "___cxa_free_exception", referenced from:
+      std::__1::__throw_length_error(char const*) in OwlResampler.o
+      std::__1::__throw_length_error(char const*) in v810_cpu.o
+      void MDFN::LEPacker::operator^<unsigned int>(unsigned int&) in vdc_video.o
+      void MDFN::LEPacker::operator^<unsigned char>(unsigned char&) in vdc_video.o
+      void MDFN::LEPacker::operator^<unsigned short>(unsigned short&) in vdc_video.o
+      std::__1::__throw_length_error(char const*) in cdromif.o
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+      ...
+  "___cxa_pure_virtual", referenced from:
+      vtable for CDAccess in CDAccess.o
+      vtable for CDAFReader in CDAFReader.o
+      vtable for CDIF in cdromif.o
+      vtable for Stream in Stream.o
+  "___cxa_throw", referenced from:
+      std::__1::__throw_length_error(char const*) in OwlResampler.o
+      std::__1::__throw_length_error(char const*) in v810_cpu.o
+      void MDFN::LEPacker::operator^<unsigned int>(unsigned int&) in vdc_video.o
+      void MDFN::LEPacker::operator^<unsigned char>(unsigned char&) in vdc_video.o
+      void MDFN::LEPacker::operator^<unsigned short>(unsigned short&) in vdc_video.o
+      CDAFReader_Vorbis::CDAFReader_Vorbis(Stream*) in CDAFReader_Vorbis.o
+      std::__1::__throw_length_error(char const*) in cdromif.o
+      ...
+  "___divdi3", referenced from:
+      CDAccess_Image::GetSectorCount(CDRFILE_TRACK_INFO*) in CDAccess_Image.o
+      CDAccess_Image::ParseTOCFileLineInfo(CDRFILE_TRACK_INFO*, int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, char const*, char const*, char const*, bool, std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, Stream*, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const, Stream*> > >&) in CDAccess_Image.o
+      CDAccess_Image::ImageOpen(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_Image.o
+      _scond_wait_timeout in rthreads.o
+      _ov_time_total in vorbisfile.o
+      _rfread in file_stream_transforms.o
+  "___error", referenced from:
+      __get_next_page in vorbisfile.o
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+  "___gxx_personality_v0", referenced from:
+      SoundBox_SetSoundRate(unsigned int) in soundbox.o
+      SoundBox_Init(bool, bool) in soundbox.o
+      SoundBox_Kill() in soundbox.o
+      Dwarf Exception Unwind Info (__eh_frame) in soundbox.o
+      Dwarf Exception Unwind Info (__eh_frame) in timer.o
+      Dwarf Exception Unwind Info (__eh_frame) in gamepad.o
+      Dwarf Exception Unwind Info (__eh_frame) in mouse.o
+      Dwarf Exception Unwind Info (__eh_frame) in OwlResampler.o
+      Dwarf Exception Unwind Info (__eh_frame) in v810_cpu.o
+      Dwarf Exception Unwind Info (__eh_frame) in vdc_video.o
+      ...
+      FXTIMER_GetRegister(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned int&) in timer.o
+      Dwarf Exception Unwind Info (__eh_frame) in soundbox.o
+      Dwarf Exception Unwind Info (__eh_frame) in timer.o
+      Dwarf Exception Unwind Info (__eh_frame) in gamepad.o
+      Dwarf Exception Unwind Info (__eh_frame) in mouse.o
+      Dwarf Exception Unwind Info (__eh_frame) in OwlResampler.o
+      Dwarf Exception Unwind Info (__eh_frame) in v810_cpu.o
+      Dwarf Exception Unwind Info (__eh_frame) in vdc_video.o
+      ...
+      PCFX_Input_Gamepad::~PCFX_Input_Gamepad() in gamepad.o
+      ...
+  "___maskrune", referenced from:
+      _filestream_scanf in file_stream.o
+  "___memcpy_chk", referenced from:
+      _MDFNSS_StateAction in state.o
+  "___sprintf_chk", referenced from:
+      _chd_get_metadata in libchdr_chd.o
+  "___stack_chk_fail", referenced from:
+      KING_RunGfx(int) in king.o
+      KING_StateAction(StateMem*, int, int) in king.o
+      MixVDC() in king.o
+      SoundBox_ADPCMUpdate(int) in soundbox.o
+      SoundBox_StateAction(StateMem*, int, int) in soundbox.o
+      PCFXIRQ_StateAction(StateMem*, int, int) in interrupt.o
+      FXINPUT_StateAction(StateMem*, int, int) in input.o
+      ...
+  "___stack_chk_guard", referenced from:
+      KING_RunGfx(int) in king.o
+      KING_StateAction(StateMem*, int, int) in king.o
+      MixVDC() in king.o
+      SoundBox_ADPCMUpdate(int) in soundbox.o
+      SoundBox_StateAction(StateMem*, int, int) in soundbox.o
+      PCFXIRQ_StateAction(StateMem*, int, int) in interrupt.o
+      FXINPUT_StateAction(StateMem*, int, int) in input.o
+      ...
+      KING_RunGfx(int) in king.o
+      KING_StateAction(StateMem*, int, int) in king.o
+      MixVDC() in king.o
+      SoundBox_ADPCMUpdate(int) in soundbox.o
+      SoundBox_StateAction(StateMem*, int, int) in soundbox.o
+      PCFXIRQ_StateAction(StateMem*, int, int) in interrupt.o
+      FXINPUT_StateAction(StateMem*, int, int) in input.o
+      ...
+      KING_RunGfx(int) in king.o
+      KING_StateAction(StateMem*, int, int) in king.o
+      MixVDC() in king.o
+      SoundBox_ADPCMUpdate(int) in soundbox.o
+      SoundBox_StateAction(StateMem*, int, int) in soundbox.o
+      PCFXIRQ_StateAction(StateMem*, int, int) in interrupt.o
+      FXINPUT_StateAction(StateMem*, int, int) in input.o
+      ...
+      KING_RunGfx(int) in king.o
+      KING_StateAction(StateMem*, int, int) in king.o
+      MixVDC() in king.o
+      SoundBox_ADPCMUpdate(int) in soundbox.o
+      SoundBox_StateAction(StateMem*, int, int) in soundbox.o
+      PCFXIRQ_StateAction(StateMem*, int, int) in interrupt.o
+      FXINPUT_StateAction(StateMem*, int, int) in input.o
+      ...
+      KING_RunGfx(int) in king.o
+      KING_StateAction(StateMem*, int, int) in king.o
+      MixVDC() in king.o
+      SoundBox_ADPCMUpdate(int) in soundbox.o
+      SoundBox_StateAction(StateMem*, int, int) in soundbox.o
+      PCFXIRQ_StateAction(StateMem*, int, int) in interrupt.o
+      FXINPUT_StateAction(StateMem*, int, int) in input.o
+      ...
+      KING_RunGfx(int) in king.o
+      KING_StateAction(StateMem*, int, int) in king.o
+      MixVDC() in king.o
+      SoundBox_ADPCMUpdate(int) in soundbox.o
+      SoundBox_StateAction(StateMem*, int, int) in soundbox.o
+      PCFXIRQ_StateAction(StateMem*, int, int) in interrupt.o
+      FXINPUT_StateAction(StateMem*, int, int) in input.o
+      ...
+      KING_RunGfx(int) in king.o
+      KING_StateAction(StateMem*, int, int) in king.o
+      MixVDC() in king.o
+      SoundBox_ADPCMUpdate(int) in soundbox.o
+      SoundBox_StateAction(StateMem*, int, int) in soundbox.o
+      PCFXIRQ_StateAction(StateMem*, int, int) in interrupt.o
+      FXINPUT_StateAction(StateMem*, int, int) in input.o
+      ...
+      ...
+  "___stderrp", referenced from:
+      _huffman_tree_node_compare in libchdr_huffman.o
+  "___strcpy_chk", referenced from:
+      _fill_pathname_abbreviated_or_relative in file_path.o
+  "___strlcat_chk", referenced from:
+      _fill_pathname_abbreviated_or_relative in file_path.o
+      _string_list_find_elem_prefix in string_list.o
+  "___strlcpy_chk", referenced from:
+      _SubWrite in state.o
+      _path_get_archive_delim in file_path.o
+      _fill_pathname in file_path.o
+      _string_list_find_elem_prefix in string_list.o
+  "___tolower", referenced from:
+      _path_is_compressed_file in file_path.o
+      _string_list_find_elem in string_list.o
+      _string_list_find_elem_prefix in string_list.o
+      _strcasestr_retro__ in compat_strcasestr.o
+      _string_to_lower in stdstring.o
+  "___toupper", referenced from:
+      MDFNI_DecodeGBGG(char const*, unsigned int*, unsigned char*, unsigned char*, char*) in mempatcher.o
+      GGtobin(char) in mempatcher.o
+      _string_to_upper in stdstring.o
+      _string_ucwords in stdstring.o
+  "_abort", referenced from:
+      PCE_PSG::PCE_PSG(int*, int*, int) in pce_psg.o
+      _retro_vfs_file_get_path_impl in vfs_implementation.o
+  "_atof", referenced from:
+      check_variables(bool) in libretro.o
+  "_atoi", referenced from:
+      CDAccess_Image::ImageOpen(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_Image.o
+      check_variables(bool) in libretro.o
+  "_calloc", referenced from:
+      KING_Init() in king.o
+      RAINBOW_Init(bool) in rainbow.o
+      BuildHuffmanLUT(HuffmanTable const*, HuffmanQuickLUT*, int) in rainbow.o
+      OwlResampler::OwlResampler(double, double, double, double, int) in OwlResampler.o
+      CreateGaloisTables(int) in galois.o
+      CreateReedSolomonTables(_GaloisTables*, int, int, int) in galois.o
+      MDFNMP_Init(unsigned int, unsigned int) in mempatcher.o
+      ...
+  "_clock_get_time", referenced from:
+      _scond_wait_timeout in rthreads.o
+  "_close$UNIX2003", referenced from:
+      _retro_vfs_file_close_impl in vfs_implementation.o
+  "_closedir$UNIX2003", referenced from:
+      _retro_vfs_closedir_impl in vfs_implementation.o
+  "_exp2f", referenced from:
+      SoundBox_Init(bool, bool) in soundbox.o
+      PCE_PSG::SetVolume(double) in pce_psg.o
+      PCE_PSG::PCE_PSG(int*, int*, int) in pce_psg.o
+  "_fclose", referenced from:
+      _chd_close in libchdr_chd.o
+      _chd_open in libchdr_chd.o
+      _retro_vfs_file_close_impl in vfs_implementation.o
+  "_ferror", referenced from:
+      _retro_vfs_file_error_impl in vfs_implementation.o
+  "_fflush", referenced from:
+      _retro_vfs_file_flush_impl in vfs_implementation.o
+  "_fileno", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fopen$UNIX2003", referenced from:
+      _chd_open in libchdr_chd.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_fread", referenced from:
+      _chd_open_file in libchdr_chd.o
+      _chd_precache in libchdr_chd.o
+      _hunk_read_into_memory in libchdr_chd.o
+      _chd_get_metadata in libchdr_chd.o
+      _retro_vfs_file_read_impl in vfs_implementation.o
+  "_free", referenced from:
+      KING_Close() in king.o
+      RAINBOW_Close() in rainbow.o
+      OwlResampler::~OwlResampler() in OwlResampler.o
+      OwlResampler::OwlResampler(double, double, double, double, int) in OwlResampler.o
+      V810::~V810() in v810_cpu.o
+      V810::Kill() in v810_cpu.o
+      V810::~V810() in v810_cpu.o
+      ...
+     (maybe you meant: _dir_list_free, _drflac_free , _string_list_free , _slock_free , _scond_free , _res0_free_info , _res0_free_look , _memalign_free , _flac_decoder_free )
+  "_fseeko", referenced from:
+      _chd_open_file in libchdr_chd.o
+      _chd_precache in libchdr_chd.o
+      _hunk_read_into_memory in libchdr_chd.o
+      _chd_get_metadata in libchdr_chd.o
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+      ...
+  "_ftello", referenced from:
+      _chd_open_file in libchdr_chd.o
+      _chd_precache in libchdr_chd.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+  "_ftruncate", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fwrite$UNIX2003", referenced from:
+      _huffman_tree_node_compare in libchdr_huffman.o
+      _retro_vfs_file_write_impl in vfs_implementation.o
+  "_host_get_clock_service", referenced from:
+      _scond_wait_timeout in rthreads.o
+  "_localtime", referenced from:
+      _rtime_localtime in rtime.o
+     (maybe you meant: _rtime_localtime_lock, _rtime_localtime )
+  "_lseek", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+  "_mach_host_self", referenced from:
+      _scond_wait_timeout in rthreads.o
+  "_mach_port_deallocate", referenced from:
+      _scond_wait_timeout in rthreads.o
+  "_mach_task_self_", referenced from:
+      _scond_wait_timeout in rthreads.o
+  "_malloc", referenced from:
+      OwlResampler::OwlResampler(double, double, double, double, int) in OwlResampler.o
+      V810::SetFastMap(unsigned int*, unsigned int, unsigned int, char const*) in v810_cpu.o
+      V810::StateAction(StateMem*, int, int) in v810_cpu.o
+      CDAccess_CHD::Load(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_CHD.o
+      MemoryStream::MemoryStream() in MemoryStream.o
+      MemoryStream::MemoryStream() in MemoryStream.o
+      MemoryStream::MemoryStream(unsigned long long) in MemoryStream.o
+      ...
+  "_mbstowcs", referenced from:
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+  "_memchr", referenced from:
+      CDAccess_Image::ImageOpen(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_Image.o
+      _retro_init in libretro.o
+      _ogg_sync_pageseek in framing.o
+  "_memcmp", referenced from:
+      std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, Stream*>, std::__1::__tree_node<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, Stream*>, void*>*, int> std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, Stream*>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, Stream*>, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, Stream*> > >::find<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in CDAccess_Image.o
+      std::__1::__tree_node_base<void*>*& std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, Stream*>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, Stream*>, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, Stream*> > >::__find_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >(std::__1::__tree_end_node<std::__1::__tree_node_base<void*>*>*&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in CDAccess_Image.o
+      std::__1::__tree_node_base<void*>*& std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > > >, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > > >, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > > > > >::__find_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >(std::__1::__tree_end_node<std::__1::__tree_node_base<void*>*>*&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in CDAccess_CCD.o
+      std::__1::__tree_node_base<void*>*& std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > >::__find_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >(std::__1::__tree_end_node<std::__1::__tree_node_base<void*>*>*&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in CDAccess_CCD.o
+      std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::__tree_node<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, void*>*, int> std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > >::find<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in CDAccess_CCD.o
+      CDAccess_CHD::Load(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_CHD.o
+      _retro_run in libretro.o
+      ...
+  "_memcpy", referenced from:
+      RAINBOW_DecodeBlock(bool, bool) in rainbow.o
+      std::__1::vector<int, std::__1::allocator<int> >::__append(unsigned long) in OwlResampler.o
+      V810::SetFastMap(unsigned int*, unsigned int, unsigned int, char const*) in v810_cpu.o
+      VDC::Run(int, unsigned short*, bool) in vdc_video.o
+      std::__1::vector<unsigned char, std::__1::allocator<unsigned char> >::resize(unsigned long) in vdc_video.o
+      CDAccess_Image::ImageOpen(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_Image.o
+      std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > std::__1::operator+<char, std::__1::char_traits<char>, std::__1::allocator<char> >(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) in CDAccess_Image.o
+      ...
+  "_memmove", referenced from:
+      OwlResampler::Resample(OwlBuffer*, unsigned int, short*, unsigned int) in OwlResampler.o
+      std::__1::deque<CDIF_Message, std::__1::allocator<CDIF_Message> >::__add_back_capacity() in cdromif.o
+      std::__1::__split_buffer<CDIF_Message*, std::__1::allocator<CDIF_Message*> >::push_back(CDIF_Message*&&) in cdromif.o
+      std::__1::__split_buffer<CDIF_Message*, std::__1::allocator<CDIF_Message*> >::push_front(CDIF_Message*&&) in cdromif.o
+      std::__1::__split_buffer<CDIF_Message*, std::__1::allocator<CDIF_Message*>&>::push_front(CDIF_Message* const&) in cdromif.o
+      MemoryStream::read(void*, unsigned long long) in MemoryStream.o
+      MemoryStream::write(void const*, unsigned long long) in MemoryStream.o
+      ...
+  "_memset", referenced from:
+      KING_Reset(int) in king.o
+      CDAccess_Image::ImageOpen(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_Image.o
+      _LzmaEnc_Construct in LzmaEnc.o
+  "_memset_pattern16", referenced from:
+      VDC::DrawBG(unsigned short*, int) in vdc_video.o
+      _inflate in inflate.o
+      _LzmaDec_DecodeToDic in LzmaDec.o
+      _LzmaEnc_Init in LzmaEnc.o
+  "_mkdir", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+     (maybe you meant: _retro_vfs_mkdir_impl)
+  "_open$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_opendir$INODE64$UNIX2003", referenced from:
+      _retro_vfs_opendir_impl in vfs_implementation.o
+  "_pthread_attr_destroy", referenced from:
+      _sthread_create_with_priority in rthreads.o
+  "_pthread_attr_init", referenced from:
+      _sthread_create_with_priority in rthreads.o
+  "_pthread_attr_setschedparam", referenced from:
+      _sthread_create_with_priority in rthreads.o
+  "_pthread_attr_setschedpolicy", referenced from:
+      _sthread_create_with_priority in rthreads.o
+  "_pthread_cond_broadcast", referenced from:
+      _scond_broadcast in rthreads.o
+  "_pthread_cond_destroy", referenced from:
+      _scond_free in rthreads.o
+  "_pthread_cond_init$UNIX2003", referenced from:
+      _scond_new in rthreads.o
+  "_pthread_cond_signal", referenced from:
+      _scond_signal in rthreads.o
+  "_pthread_cond_timedwait$UNIX2003", referenced from:
+      _scond_wait_timeout in rthreads.o
+  "_pthread_cond_wait$UNIX2003", referenced from:
+      _scond_wait in rthreads.o
+  "_pthread_create", referenced from:
+      _sthread_create_with_priority in rthreads.o
+  "_pthread_detach", referenced from:
+      _sthread_detach in rthreads.o
+  "_pthread_equal", referenced from:
+      _sthread_isself in rthreads.o
+  "_pthread_join$UNIX2003", referenced from:
+      _sthread_join in rthreads.o
+  "_pthread_mutex_destroy", referenced from:
+      _slock_free in rthreads.o
+  "_pthread_mutex_init", referenced from:
+      _slock_new in rthreads.o
+  "_pthread_mutex_lock", referenced from:
+      _slock_lock in rthreads.o
+  "_pthread_mutex_trylock", referenced from:
+      _slock_try_lock in rthreads.o
+  "_pthread_mutex_unlock", referenced from:
+      _slock_unlock in rthreads.o
+  "_pthread_self", referenced from:
+      _sthread_isself in rthreads.o
+      _sthread_get_current_thread_id in rthreads.o
+  "_qsort", referenced from:
+      _huffman_build_tree in libchdr_huffman.o
+      _floor1_unpack in floor1.o
+      _floor1_look in floor1.o
+      _vorbis_book_init_decode in sharedbook.o
+      _dir_list_sort in dir_list.o
+  "_rand", referenced from:
+      void MDFN::LEPacker::operator^<unsigned int>(unsigned int&) in vdc_video.o
+      void MDFN::LEPacker::operator^<unsigned char>(unsigned char&) in vdc_video.o
+      void MDFN::LEPacker::operator^<unsigned short>(unsigned short&) in vdc_video.o
+  "_read$UNIX2003", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+  "_readdir$INODE64", referenced from:
+      _retro_vfs_readdir_impl in vfs_implementation.o
+  "_realloc", referenced from:
+      MemoryStream::MemoryStream(Stream*) in MemoryStream.o
+      MemoryStream::write(void const*, unsigned long long) in MemoryStream.o
+      MemoryStream::seek(long long, int) in MemoryStream.o
+      MDFNI_SetCheat(unsigned int, char const*, unsigned int, unsigned long long, unsigned long long, int, char, unsigned int, bool) in mempatcher.o
+      _drflac__realloc_default in libchdr_flac.o
+      _oggpack_write in bitwise.o
+      _oggpackB_write in bitwise.o
+      ...
+  "_remove", referenced from:
+      _retro_vfs_file_remove_impl in vfs_implementation.o
+     (maybe you meant: _bitstream_remove, _path_remove_extension , _retro_vfs_file_remove_impl , _string_remove_all_chars )
+  "_rename", referenced from:
+      _retro_vfs_file_rename_impl in vfs_implementation.o
+     (maybe you meant: _filestream_rename, _retro_vfs_file_rename_impl )
+  "_setvbuf", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_sin", referenced from:
+      OwlResampler::OwlResampler(double, double, double, double, int) in OwlResampler.o
+  "_snprintf", referenced from:
+      FXINPUT_StateAction(StateMem*, int, int) in input.o
+      CDAccess_CCD::Load(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_CCD.o
+  "_sscanf", referenced from:
+      CDAccess_Image::ParseTOCFileLineInfo(CDRFILE_TRACK_INFO*, int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, char const*, char const*, char const*, bool, std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, Stream*, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const, Stream*> > >&) in CDAccess_Image.o
+      CDAccess_Image::ImageOpen(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_Image.o
+      CDAccess_CHD::Load(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_CHD.o
+      MDFNMP_ApplyPeriodicCheats() in mempatcher.o
+      MDFNI_DecodePAR(char const*, unsigned int*, unsigned char*, unsigned char*, char*) in mempatcher.o
+      _header_guess_unitbytes in libchdr_chd.o
+      _filestream_scanf in file_stream.o
+      ...
+  "_stat$INODE64", referenced from:
+      _retro_vfs_stat_impl in vfs_implementation.o
+      _retro_vfs_dirent_is_dir_impl in vfs_implementation.o
+  "_strcasecmp", referenced from:
+      CDAccess_Open(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess.o
+      CDAccess_Image::ParseTOCFileLineInfo(CDRFILE_TRACK_INFO*, int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, char const*, char const*, char const*, bool, std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, Stream*, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const, Stream*> > >&) in CDAccess_Image.o
+      CDAccess_Image::ImageOpen(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_Image.o
+      _retro_load_game in libretro.o
+      _qstrcmp_dir in dir_list.o
+      _qstrcmp_plain in dir_list.o
+  "_strcat", referenced from:
+      _retro_set_environment in libretro.o
+  "_strchr", referenced from:
+      MDFNMP_ApplyPeriodicCheats() in mempatcher.o
+      _rfopen in file_stream_transforms.o
+      _path_get_archive_delim in file_path.o
+      _string_replace_all_chars in stdstring.o
+  "_strcmp", referenced from:
+      FXINPUT_SetInput(int, char const*, void*) in input.o
+      _retro_load_game in libretro.o
+      check_variables(bool) in libretro.o
+      _retro_set_environment in libretro.o
+      _MDFN_GetSettingUI in settings.o
+      _MDFN_GetSettingI in settings.o
+      _MDFN_GetSettingF in settings.o
+      ...
+  "_strcpy", referenced from:
+      MDFNI_SetCheat(unsigned int, char const*, unsigned int, unsigned long long, unsigned long long, int, char, unsigned int, bool) in mempatcher.o
+      _retro_set_environment in libretro.o
+      _string_list_clone in string_list.o
+      _string_replace_substring in stdstring.o
+      _word_wrap in stdstring.o
+  "_strdup", referenced from:
+      MDFNI_AddCheat(char const*, unsigned int, unsigned long long, unsigned long long, char, unsigned int, bool) in mempatcher.o
+      _file_open in file.o
+      _fill_pathname_parent_dir_name in file_path.o
+      _string_list_append in string_list.o
+      _string_list_set in string_list.o
+      _string_split in string_list.o
+      _string_split_noalloc in string_list.o
+      ...
+  "_strftime$UNIX2003", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+  "_strlcat", referenced from:
+      _fill_pathname in file_path.o
+      _fill_pathname_noext in file_path.o
+      _fill_pathname_slash in file_path.o
+      _fill_pathname_dir in file_path.o
+      _fill_pathname_base_ext in file_path.o
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+      ...
+  "_strlcpy", referenced from:
+      disk_get_image_path(unsigned int, char*, unsigned long) in libretro.o
+      disk_get_image_label(unsigned int, char*, unsigned long) in libretro.o
+      _fill_pathname in file_path.o
+      _fill_pathname_noext in file_path.o
+      _fill_pathname_base in file_path.o
+      _fill_pathname_base_noext in file_path.o
+      _fill_pathname_basedir in file_path.o
+      ...
+  "_strlen", referenced from:
+      CDAccess_Image::ImageOpen(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_Image.o
+      CDAccess_CCD::Load(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_CCD.o
+      MDFNI_DecodeGBGG(char const*, unsigned int*, unsigned char*, unsigned char*, char*) in mempatcher.o
+      MDFNI_DecodeGG(char const*, unsigned int*, unsigned char*, unsigned char*, char*) in mempatcher.o
+      MDFNI_DecodePAR(char const*, unsigned int*, unsigned char*, unsigned char*, char*) in mempatcher.o
+      MDFNI_SetCheat(unsigned int, char const*, unsigned int, unsigned long long, unsigned long long, int, char, unsigned int, bool) in mempatcher.o
+      _retro_init in libretro.o
+      ...
+  "_strncmp", referenced from:
+      _MDFNSS_StateAction in state.o
+  "_strncpy", referenced from:
+      extract_basename(char*, char const*, unsigned long) in libretro.o
+  "_strrchr", referenced from:
+      extract_basename(char*, char const*, unsigned long) in libretro.o
+      _file_open in file.o
+      _path_get_archive_delim in file_path.o
+      _find_last_slash in file_path.o
+      _path_get_extension in file_path.o
+      _path_basename in file_path.o
+      _path_remove_extension in file_path.o
+      ...
+  "_strstr", referenced from:
+      _string_replace_substring in stdstring.o
+      _string_tokenize in stdstring.o
+  "_strtok_r", referenced from:
+      _string_split in string_list.o
+      _string_split_noalloc in string_list.o
+  "_strtol", referenced from:
+      CDAccess_Image::ParseTOCFileLineInfo(CDRFILE_TRACK_INFO*, int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, char const*, char const*, char const*, bool, std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, Stream*, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const, Stream*> > >&) in CDAccess_Image.o
+      CDAccess_CCD::Load(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_CCD.o
+  "_strtoul", referenced from:
+      CDAccess_CCD::Load(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool) in CDAccess_CCD.o
+      _string_to_unsigned in stdstring.o
+      _string_hex_to_unsigned in stdstring.o
+  "_strtoull", referenced from:
+      MDFNMP_ApplyPeriodicCheats() in mempatcher.o
+  "_time", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+     (maybe you meant: _ov_time_total, _scond_wait_timeout )
+  "_vsnprintf", referenced from:
+      MDFN_DispMessage(char const*, ...) in libretro.o
+      _filestream_vprintf in file_stream.o
+      _filestream_printf in file_stream.o
+  "_wcstombs", referenced from:
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+  "_write$UNIX2003", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile:631: mednafen_pcfx_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mednafen_pcfx'
+cp "mednafen_pcfx_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/mednafen_pcfx_libretro.dylib"
+cp: mednafen_pcfx_libretro.dylib: No such file or directory

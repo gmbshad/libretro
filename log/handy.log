@@ -1,0 +1,474 @@
+Building handy...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-handy"
+gmake platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-handy'
+rm -f ./lynx/lynxdec.o ./lynx/cart.o ./lynx/memmap.o ./lynx/mikie.o ./lynx/ram.o ./lynx/rom.o ./lynx/susie.o ./lynx/system.o ./lynx/eeprom.o ./libretro/libretro.o ./blip/Blip_Buffer.o ./blip/Stereo_Buffer.o ./libretro-common/compat/compat_posix_string.o ./libretro-common/compat/compat_snprintf.o ./libretro-common/compat/compat_strcasestr.o ./libretro-common/compat/compat_strl.o ./libretro-common/compat/fopen_utf8.o ./libretro-common/encodings/encoding_utf.o ./libretro-common/file/file_path.o ./libretro-common/file/file_path_io.o ./libretro-common/streams/file_stream.o ./libretro-common/streams/file_stream_transforms.o ./libretro-common/string/stdstring.o ./libretro-common/time/rtime.o ./libretro-common/vfs/vfs_implementation.o
+rm -f handy_libretro.dylib
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-handy'
+gmake platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-handy'
+c++ -arch i386 -c -olynx/lynxdec.o lynx/lynxdec.cpp -DGIT_VERSION=\"" 63db085"\" -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+c++ -arch i386 -c -olynx/cart.o lynx/cart.cpp -DGIT_VERSION=\"" 63db085"\" -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+c++ -arch i386 -c -olynx/memmap.o lynx/memmap.cpp -DGIT_VERSION=\"" 63db085"\" -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+c++ -arch i386 -c -olynx/mikie.o lynx/mikie.cpp -DGIT_VERSION=\"" 63db085"\" -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+c++ -arch i386 -c -olynx/ram.o lynx/ram.cpp -DGIT_VERSION=\"" 63db085"\" -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+lynx/mikie.cpp:63:4: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+   sprintf(addr,"Runtime Error - System Halted\nCMikie::Poke() - Read/Write to counter clocks at PC=$%04x.",regs.PC);
+   ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+lynx/mikie.cpp:1788:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+            sprintf(addr,"Runtime Alert - System Halted\nCMikie::Poke(SYSCTL1) - Lynx power down occured at PC=$%04x.\nResetting system.",regs.PC);
+            ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+c++ -arch i386 -c -olynx/rom.o lynx/rom.cpp -DGIT_VERSION=\"" 63db085"\" -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+c++ -arch i386 -c -olynx/susie.o lynx/susie.cpp -DGIT_VERSION=\"" 63db085"\" -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+c++ -arch i386 -c -olynx/system.o lynx/system.cpp -DGIT_VERSION=\"" 63db085"\" -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+c++ -arch i386 -c -olynx/eeprom.o lynx/eeprom.cpp -DGIT_VERSION=\"" 63db085"\" -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+lynx/susie.cpp:862:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+            sprintf(message,"CSusie:PaintSprites() - Rendered Sprite %03d",sprcount);
+            ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+c++ -arch i386 -c -olibretro/libretro.o libretro/libretro.cpp -DGIT_VERSION=\"" 63db085"\" -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+c++ -arch i386 -c -oblip/Blip_Buffer.o blip/Blip_Buffer.cpp -DGIT_VERSION=\"" 63db085"\" -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+libretro/libretro.cpp:483:4: warning: 'vsprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead. [-Wdeprecated-declarations]
+   vsprintf(msg, format, ap);
+   ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:207:1: note: 'vsprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+1 warning generated.
+c++ -arch i386 -c -oblip/Stereo_Buffer.o blip/Stereo_Buffer.cpp -DGIT_VERSION=\"" 63db085"\" -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+2 warnings generated.
+cc -arch i386 -c -olibretro-common/compat/compat_posix_string.o libretro-common/compat/compat_posix_string.c -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+cc -arch i386 -c -olibretro-common/compat/compat_snprintf.o libretro-common/compat/compat_snprintf.c -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+cc -arch i386 -c -olibretro-common/compat/compat_strcasestr.o libretro-common/compat/compat_strcasestr.c -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+cc -arch i386 -c -olibretro-common/compat/compat_strl.o libretro-common/compat/compat_strl.c -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+cc -arch i386 -c -olibretro-common/compat/fopen_utf8.o libretro-common/compat/fopen_utf8.c -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+cc -arch i386 -c -olibretro-common/encodings/encoding_utf.o libretro-common/encodings/encoding_utf.c -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+cc -arch i386 -c -olibretro-common/file/file_path.o libretro-common/file/file_path.c -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+cc -arch i386 -c -olibretro-common/file/file_path_io.o libretro-common/file/file_path_io.c -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+cc -arch i386 -c -olibretro-common/streams/file_stream.o libretro-common/streams/file_stream.c -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+cc -arch i386 -c -olibretro-common/streams/file_stream_transforms.o libretro-common/streams/file_stream_transforms.c -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+cc -arch i386 -c -olibretro-common/string/stdstring.o libretro-common/string/stdstring.c -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+cc -arch i386 -c -olibretro-common/time/rtime.o libretro-common/time/rtime.c -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+cc -arch i386 -c -olibretro-common/vfs/vfs_implementation.o libretro-common/vfs/vfs_implementation.c -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -fomit-frame-pointer -I. -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -DWANT_CRC32 -I./lynx -I./libretro -I. -I./libretro-common/include  
+1 warning generated.
+c++ -arch i386 -o handy_libretro.dylib -dynamiclib ./lynx/lynxdec.o ./lynx/cart.o ./lynx/memmap.o ./lynx/mikie.o ./lynx/ram.o ./lynx/rom.o ./lynx/susie.o ./lynx/system.o ./lynx/eeprom.o ./libretro/libretro.o ./blip/Blip_Buffer.o ./blip/Stereo_Buffer.o ./libretro-common/compat/compat_posix_string.o ./libretro-common/compat/compat_snprintf.o ./libretro-common/compat/compat_strcasestr.o ./libretro-common/compat/compat_strl.o ./libretro-common/compat/fopen_utf8.o ./libretro-common/encodings/encoding_utf.o ./libretro-common/file/file_path.o ./libretro-common/file/file_path_io.o ./libretro-common/streams/file_stream.o ./libretro-common/streams/file_stream_transforms.o ./libretro-common/string/stdstring.o ./libretro-common/time/rtime.o ./libretro-common/vfs/vfs_implementation.o  
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: could not create compact unwind for _retro_load_game: stack subl instruction is too different from dwarf stack size
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc++.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc++.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+Undefined symbols for architecture i386:
+  "__DefaultRuneLocale", referenced from:
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+  "__Unwind_Resume", referenced from:
+      CMikie::CMikie(CSystem&) in mikie.o
+      CMikie::~CMikie() in mikie.o
+      CSystem::CSystem(char const*, unsigned char const*, unsigned int, char const*, bool, char const*) in system.o
+      CSystem::~CSystem() in system.o
+      _retro_load_game in libretro.o
+      Stereo_Buffer::Stereo_Buffer() in Stereo_Buffer.o
+      Stereo_Buffer::Stereo_Buffer() in Stereo_Buffer.o
+      ...
+  "std::terminate()", referenced from:
+      ___clang_call_terminate in mikie.o
+      ___clang_call_terminate in Stereo_Buffer.o
+  "vtable for __cxxabiv1::__class_type_info", referenced from:
+      typeinfo for CLynxBase in cart.o
+      typeinfo for CLynxBase in memmap.o
+      typeinfo for CLynxBase in mikie.o
+      typeinfo for CLynxBase in ram.o
+      typeinfo for CLynxBase in rom.o
+      typeinfo for CLynxBase in susie.o
+      typeinfo for CSystemBase in system.o
+      ...
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+  "vtable for __cxxabiv1::__si_class_type_info", referenced from:
+      typeinfo for CCart in cart.o
+      typeinfo for CMemMap in memmap.o
+      typeinfo for CMikie in mikie.o
+      typeinfo for CRam in ram.o
+      typeinfo for CRom in rom.o
+      typeinfo for CSusie in susie.o
+      typeinfo for CSystem in system.o
+      ...
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+  "operator delete[](void*)", referenced from:
+      CCart::CCart(unsigned char const*, unsigned int) in cart.o
+      CCart::~CCart() in cart.o
+      CCart::~CCart() in cart.o
+      CCart::~CCart() in cart.o
+      CCart::ContextLoad(lssfile*) in cart.o
+      CCart::ContextLoadLegacy(lssfile*) in cart.o
+      CRam::~CRam() in ram.o
+      ...
+  "operator delete(void*)", referenced from:
+      CCart::~CCart() in cart.o
+      CMemMap::~CMemMap() in memmap.o
+      CMikie::~CMikie() in mikie.o
+      CRam::~CRam() in ram.o
+      CRom::~CRom() in rom.o
+      CSusie::~CSusie() in susie.o
+      CSystem::CSystem(char const*, unsigned char const*, unsigned int, char const*, bool, char const*) in system.o
+      ...
+  "operator new[](unsigned long)", referenced from:
+      CCart::CCart(unsigned char const*, unsigned int) in cart.o
+      CCart::ContextLoad(lssfile*) in cart.o
+      CCart::ContextLoadLegacy(lssfile*) in cart.o
+      CRam::CRam(unsigned char const*, unsigned int) in ram.o
+      CRam::CRam(unsigned char const*, unsigned int) in ram.o
+      CSystem::CSystem(char const*, unsigned char const*, unsigned int, char const*, bool, char const*) in system.o
+  "operator new(unsigned long)", referenced from:
+      CSystem::CSystem(char const*, unsigned char const*, unsigned int, char const*, bool, char const*) in system.o
+      _retro_load_game in libretro.o
+  "___bzero", referenced from:
+      lynx_mont(unsigned char*, unsigned char const*, unsigned char const*, unsigned char const*, int) in lynxdec.o
+      CMikie::CMikie(CSystem&) in mikie.o
+      CMikie::Reset() in mikie.o
+      CRam::Reset() in ram.o
+      CRam::Clear() in ram.o
+      CSystem::Reset() in system.o
+      lcd_ghosting_init() in libretro.o
+      ...
+  "___cxa_begin_catch", referenced from:
+      ___clang_call_terminate in mikie.o
+      ___clang_call_terminate in Stereo_Buffer.o
+  "___divdi3", referenced from:
+      Blip_Buffer::set_sample_rate(long, int) in Blip_Buffer.o
+      _rfread in file_stream_transforms.o
+  "___error", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+  "___gxx_personality_v0", referenced from:
+      Dwarf Exception Unwind Info (__eh_frame) in mikie.o
+      Dwarf Exception Unwind Info (__eh_frame) in system.o
+      Dwarf Exception Unwind Info (__eh_frame) in libretro.o
+      Dwarf Exception Unwind Info (__eh_frame) in Stereo_Buffer.o
+      CSystem::~CSystem() in system.o
+      Dwarf Exception Unwind Info (__eh_frame) in mikie.o
+      Dwarf Exception Unwind Info (__eh_frame) in system.o
+      Dwarf Exception Unwind Info (__eh_frame) in libretro.o
+      Dwarf Exception Unwind Info (__eh_frame) in Stereo_Buffer.o
+      Dwarf Exception Unwind Info (__eh_frame) in mikie.o
+      Dwarf Exception Unwind Info (__eh_frame) in system.o
+      Dwarf Exception Unwind Info (__eh_frame) in libretro.o
+      Dwarf Exception Unwind Info (__eh_frame) in Stereo_Buffer.o
+      Stereo_Buffer::Stereo_Buffer() in Stereo_Buffer.o
+      Stereo_Buffer::Stereo_Buffer() in Stereo_Buffer.o
+      Stereo_Buffer::~Stereo_Buffer() in Stereo_Buffer.o
+      ...
+  "___maskrune", referenced from:
+      _filestream_vscanf in file_stream.o
+  "___stack_chk_fail", referenced from:
+      CCart::CCart(unsigned char const*, unsigned int) in cart.o
+      CCart::ContextLoad(lssfile*) in cart.o
+      CCart::ContextLoadLegacy(lssfile*) in cart.o
+      CMemMap::ContextLoad(lssfile*) in memmap.o
+      CMikie::BlowOut() in mikie.o
+      CMikie::ContextLoad(lssfile*) in mikie.o
+      CMikie::Poke(unsigned int, unsigned char) in mikie.o
+      ...
+  "___stack_chk_guard", referenced from:
+      CCart::CCart(unsigned char const*, unsigned int) in cart.o
+      CCart::ContextLoad(lssfile*) in cart.o
+      CCart::ContextLoadLegacy(lssfile*) in cart.o
+      CMemMap::ContextLoad(lssfile*) in memmap.o
+      CMikie::BlowOut() in mikie.o
+      CMikie::ContextLoad(lssfile*) in mikie.o
+      CMikie::Poke(unsigned int, unsigned char) in mikie.o
+      ...
+      CCart::CCart(unsigned char const*, unsigned int) in cart.o
+      CCart::ContextLoad(lssfile*) in cart.o
+      CCart::ContextLoadLegacy(lssfile*) in cart.o
+      CMemMap::ContextLoad(lssfile*) in memmap.o
+      CMikie::BlowOut() in mikie.o
+      CMikie::ContextLoad(lssfile*) in mikie.o
+      CMikie::Poke(unsigned int, unsigned char) in mikie.o
+      ...
+      CCart::CCart(unsigned char const*, unsigned int) in cart.o
+      CCart::ContextLoad(lssfile*) in cart.o
+      CCart::ContextLoadLegacy(lssfile*) in cart.o
+      CMemMap::ContextLoad(lssfile*) in memmap.o
+      CMikie::BlowOut() in mikie.o
+      CMikie::ContextLoad(lssfile*) in mikie.o
+      CMikie::Poke(unsigned int, unsigned char) in mikie.o
+      ...
+      CCart::CCart(unsigned char const*, unsigned int) in cart.o
+      CCart::ContextLoad(lssfile*) in cart.o
+      CCart::ContextLoadLegacy(lssfile*) in cart.o
+      CMemMap::ContextLoad(lssfile*) in memmap.o
+      CMikie::BlowOut() in mikie.o
+      CMikie::ContextLoad(lssfile*) in mikie.o
+      CMikie::Poke(unsigned int, unsigned char) in mikie.o
+      ...
+      CCart::CCart(unsigned char const*, unsigned int) in cart.o
+      CCart::ContextLoad(lssfile*) in cart.o
+      CCart::ContextLoadLegacy(lssfile*) in cart.o
+      CMemMap::ContextLoad(lssfile*) in memmap.o
+      CMikie::BlowOut() in mikie.o
+      CMikie::ContextLoad(lssfile*) in mikie.o
+      CMikie::Poke(unsigned int, unsigned char) in mikie.o
+      ...
+      CCart::CCart(unsigned char const*, unsigned int) in cart.o
+      CCart::ContextLoad(lssfile*) in cart.o
+      CCart::ContextLoadLegacy(lssfile*) in cart.o
+      CMemMap::ContextLoad(lssfile*) in memmap.o
+      CMikie::BlowOut() in mikie.o
+      CMikie::ContextLoad(lssfile*) in mikie.o
+      CMikie::Poke(unsigned int, unsigned char) in mikie.o
+      ...
+      CCart::CCart(unsigned char const*, unsigned int) in cart.o
+      CCart::ContextLoad(lssfile*) in cart.o
+      CCart::ContextLoadLegacy(lssfile*) in cart.o
+      CMemMap::ContextLoad(lssfile*) in memmap.o
+      CMikie::BlowOut() in mikie.o
+      CMikie::ContextLoad(lssfile*) in mikie.o
+      CMikie::Poke(unsigned int, unsigned char) in mikie.o
+      ...
+      ...
+  "___stderrp", referenced from:
+      handy_log(retro_log_level, char const*, ...) in libretro.o
+  "___stdoutp", referenced from:
+      handy_log(retro_log_level, char const*, ...) in libretro.o
+  "___strcpy_chk", referenced from:
+      _fill_pathname_abbreviated_or_relative in file_path.o
+  "___tolower", referenced from:
+      _strcasestr_retro__ in compat_strcasestr.o
+      _path_is_compressed_file in file_path.o
+      _string_to_lower in stdstring.o
+  "___toupper", referenced from:
+      _string_to_upper in stdstring.o
+      _string_ucwords in stdstring.o
+  "_abort", referenced from:
+      _retro_vfs_file_get_path_impl in vfs_implementation.o
+  "_calloc", referenced from:
+      minus_equals_value(unsigned char*, unsigned char const*, int) in lynxdec.o
+      lynx_mont(unsigned char*, unsigned char const*, unsigned char const*, unsigned char const*, int) in lynxdec.o
+      decrypt_block(int, unsigned char*, unsigned char const*, unsigned char const*, unsigned char const*, int) in lynxdec.o
+      _retro_set_environment in libretro.o
+      _retro_load_game in libretro.o
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+      ...
+  "_close$UNIX2003", referenced from:
+      _retro_vfs_file_close_impl in vfs_implementation.o
+  "_closedir$UNIX2003", referenced from:
+      _retro_vfs_closedir_impl in vfs_implementation.o
+  "_fclose", referenced from:
+      _retro_vfs_file_close_impl in vfs_implementation.o
+  "_ferror", referenced from:
+      _retro_vfs_file_error_impl in vfs_implementation.o
+  "_fflush", referenced from:
+      _retro_vfs_file_flush_impl in vfs_implementation.o
+  "_fileno", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_floor", referenced from:
+      Blip_Buffer::set_sample_rate(long, int) in Blip_Buffer.o
+      Blip_Buffer::clock_rate_factor(long) const in Blip_Buffer.o
+  "_fopen$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_fprintf", referenced from:
+      handy_log(retro_log_level, char const*, ...) in libretro.o
+  "_fread", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+  "_free", referenced from:
+      minus_equals_value(unsigned char*, unsigned char const*, int) in lynxdec.o
+      lynx_mont(unsigned char*, unsigned char const*, unsigned char const*, unsigned char const*, int) in lynxdec.o
+      decrypt_block(int, unsigned char*, unsigned char const*, unsigned char const*, unsigned char const*, int) in lynxdec.o
+      _retro_deinit in libretro.o
+      _retro_set_environment in libretro.o
+      _retro_load_game in libretro.o
+      Blip_Buffer::~Blip_Buffer() in Blip_Buffer.o
+      ...
+  "_fseeko", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+  "_ftello", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+  "_ftruncate", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fwrite$UNIX2003", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+  "_localtime", referenced from:
+      _rtime_localtime in rtime.o
+     (maybe you meant: _rtime_localtime)
+  "_lseek", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+  "_malloc", referenced from:
+      lcd_ghosting_init() in libretro.o
+      _strldup in compat_strl.o
+      _utf16_to_char_string in encoding_utf.o
+      _filestream_open in file_stream.o
+      _filestream_read_file in file_stream.o
+      _filestream_getline in file_stream.o
+      _string_replace_substring in stdstring.o
+      ...
+  "_mbstowcs", referenced from:
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+  "_memcpy", referenced from:
+      minus_equals_value(unsigned char*, unsigned char const*, int) in lynxdec.o
+      lynx_mont(unsigned char*, unsigned char const*, unsigned char const*, unsigned char const*, int) in lynxdec.o
+      decrypt_block(int, unsigned char*, unsigned char const*, unsigned char const*, unsigned char const*, int) in lynxdec.o
+      CCart::CCart(unsigned char const*, unsigned int) in cart.o
+      CRam::CRam(unsigned char const*, unsigned int) in ram.o
+      CRam::CRam(unsigned char const*, unsigned int) in ram.o
+      CRam::Reset() in ram.o
+      ...
+  "_memmove", referenced from:
+      Blip_Buffer::remove_samples(long) in Blip_Buffer.o
+      Blip_Buffer::read_samples(short*, long, int) in Blip_Buffer.o
+      _string_trim_whitespace_left in stdstring.o
+      _string_trim_whitespace in stdstring.o
+  "_memset", referenced from:
+      CCart::CCart(unsigned char const*, unsigned int) in cart.o
+      CRam::Reset() in ram.o
+      CRom::CRom(char const*, bool) in rom.o
+      CEEPROM::CEEPROM() in eeprom.o
+      CEEPROM::CEEPROM() in eeprom.o
+      CEEPROM::Load() in eeprom.o
+  "_mkdir", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+     (maybe you meant: _path_mkdir, _retro_vfs_mkdir_impl )
+  "_open$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_opendir$INODE64$UNIX2003", referenced from:
+      _retro_vfs_opendir_impl in vfs_implementation.o
+  "_read$UNIX2003", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+  "_readdir$INODE64", referenced from:
+      _retro_vfs_readdir_impl in vfs_implementation.o
+  "_realloc", referenced from:
+      Blip_Buffer::set_sample_rate(long, int) in Blip_Buffer.o
+      _filestream_getline in file_stream.o
+  "_remove", referenced from:
+      _retro_vfs_file_remove_impl in vfs_implementation.o
+     (maybe you meant: _path_remove_extension, _retro_vfs_file_remove_impl , _string_remove_all_chars )
+  "_rename", referenced from:
+      _retro_vfs_file_rename_impl in vfs_implementation.o
+     (maybe you meant: _filestream_rename, _retro_vfs_file_rename_impl )
+  "_setvbuf", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_sprintf", referenced from:
+      CMikie::BlowOut() in mikie.o
+      CMikie::Poke(unsigned int, unsigned char) in mikie.o
+      CSusie::PaintSprites() in susie.o
+  "_sscanf", referenced from:
+      _filestream_vscanf in file_stream.o
+  "_stat$INODE64", referenced from:
+      _retro_vfs_stat_impl in vfs_implementation.o
+      _retro_vfs_dirent_is_dir_impl in vfs_implementation.o
+  "_strcat", referenced from:
+      _retro_set_environment in libretro.o
+  "_strchr", referenced from:
+      _path_get_archive_delim in file_path.o
+      _rfopen in file_stream_transforms.o
+      _string_replace_all_chars in stdstring.o
+  "_strcmp", referenced from:
+      _retro_set_environment in libretro.o
+      check_variables() in libretro.o
+      _path_mkdir in file_path_io.o
+  "_strcpy", referenced from:
+      _retro_set_environment in libretro.o
+      _string_replace_substring in stdstring.o
+      _word_wrap in stdstring.o
+  "_strdup", referenced from:
+      _retro_load_game in libretro.o
+      _utf8_to_local_string_alloc in encoding_utf.o
+      _local_to_utf8_string_alloc in encoding_utf.o
+      _fill_pathname_parent_dir_name in file_path.o
+      _path_mkdir in file_path_io.o
+      _string_init in stdstring.o
+      _string_set in stdstring.o
+      ...
+  "_strftime$UNIX2003", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+  "_strlcat", referenced from:
+      CEEPROM::SetEEPROMType(unsigned char) in eeprom.o
+      _retro_load_game in libretro.o
+      _fill_pathname in file_path.o
+      _fill_pathname_noext in file_path.o
+      _fill_pathname_slash in file_path.o
+      _fill_pathname_dir in file_path.o
+      _fill_pathname_base_ext in file_path.o
+      ...
+  "_strlcpy", referenced from:
+      CSystem::CSystem(char const*, unsigned char const*, unsigned int, char const*, bool, char const*) in system.o
+      CEEPROM::SetEEPROMType(unsigned char) in eeprom.o
+      _strldup in compat_strl.o
+      _utf16_to_char_string in encoding_utf.o
+      _path_get_archive_delim in file_path.o
+      _fill_pathname in file_path.o
+      _fill_pathname_noext in file_path.o
+      ...
+  "_strlen", referenced from:
+      lss_printf(lssfile*, char const*) in system.o
+      _retro_set_environment in libretro.o
+      _strcasestr_retro__ in compat_strcasestr.o
+      _fill_pathname_slash in file_path.o
+      _fill_pathname_dir in file_path.o
+      _fill_pathname_basedir in file_path.o
+      _path_basedir in file_path.o
+      ...
+  "_strncpy", referenced from:
+      CCart::CCart(unsigned char const*, unsigned int) in cart.o
+  "_strrchr", referenced from:
+      _path_get_archive_delim in file_path.o
+      _find_last_slash in file_path.o
+      _path_get_extension in file_path.o
+      _path_basename in file_path.o
+      _path_remove_extension in file_path.o
+      _path_is_compressed_file in file_path.o
+      _fill_pathname in file_path.o
+      ...
+  "_strstr", referenced from:
+      _string_replace_substring in stdstring.o
+      _string_tokenize in stdstring.o
+  "_strtol", referenced from:
+      check_variables() in libretro.o
+  "_strtoul", referenced from:
+      _string_to_unsigned in stdstring.o
+      _string_hex_to_unsigned in stdstring.o
+  "_time", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+  "_vsnprintf", referenced from:
+      _filestream_vprintf in file_stream.o
+      _filestream_printf in file_stream.o
+  "_vsprintf", referenced from:
+      handy_log(retro_log_level, char const*, ...) in libretro.o
+  "_wcstombs", referenced from:
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+  "_write$UNIX2003", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile:646: handy_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-handy'
+cp "handy_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/handy_libretro.dylib"
+cp: handy_libretro.dylib: No such file or directory

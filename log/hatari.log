@@ -1,0 +1,1160 @@
+Building hatari...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-hatari"
+gmake -f Makefile.libretro platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-hatari'
+rm -f ./libretro/uae-cpu-pregen/cpudefs.o ./libretro/uae-cpu-pregen/cpuemu.o ./libretro/uae-cpu-pregen/cpustbl.o ./src/uae-cpu/hatari-glue.o ./src/uae-cpu/memory.o ./src/uae-cpu/newcpu.o ./src/uae-cpu/readcpu.o ./src/uae-cpu/fpp.o ./libretro/gui-retro/dlgAbout.o ./libretro/gui-retro/dlgDevice.o ./libretro/gui-retro/dlgFileSelect.o ./libretro/gui-retro/dlgFloppy.o ./libretro/gui-retro/dlgHardDisk.o ./libretro/gui-retro/dlgJoystick.o ./libretro/gui-retro/dlgKeyboard.o ./libretro/gui-retro/dlgMain.o ./libretro/gui-retro/dlgMemory.o ./libretro/gui-retro/dlgNewDisk.o ./libretro/gui-retro/dlgRom.o ./libretro/gui-retro/dlgScreen.o ./libretro/gui-retro/dlgSound.o ./libretro/gui-retro/dlgSystem.o ./libretro/gui-retro/sdlgui.o ./src/falcon/crossbar.o ./src/falcon/dsp.o ./src/falcon/dsp_core.o ./src/falcon/dsp_cpu.o ./src/falcon/dsp_disasm.o ./src/falcon/hostscreen.o ./src/falcon/microphone.o ./src/falcon/nvram.o ./src/falcon/videl.o ./src/debug/log.o ./src/debug/debugui.o ./src/debug/breakcond.o ./src/debug/debugcpu.o ./src/debug/debugInfo.o ./src/debug/debugdsp.o ./src/debug/evaluate.o ./src/debug/history.o ./src/debug/symbols.o ./src/debug/profile.o ./src/debug/profilecpu.o ./src/debug/profiledsp.o ./src/debug/natfeats.o ./src/debug/console.o ./src/debug/68kDisass.o ./src/createBlankImage.o ./src/dim.o ./src/msa.o ./src/st.o ./src/zip.o ./src/acia.o ./src/audio.o ./src/avi_record.o ./src/bios.o ./src/blitter.o ./src/cart.o ./src/cfgopts.o ./src/clocks_timings.o ./src/configuration.o ./src/options.o ./src/change.o ./src/control.o ./src/cycInt.o ./src/cycles.o ./src/dialog.o ./src/dmaSnd.o ./src/fdc.o ./src/file.o ./src/floppy.o ./src/floppy_ipf.o ./src/floppy_stx.o ./src/gemdos.o ./src/hd6301_cpu.o ./src/hdc.o ./src/ide.o ./src/ikbd.o ./src/ioMem.o ./src/ioMemTabST.o ./src/ioMemTabSTE.o ./src/ioMemTabTT.o ./src/ioMemTabFalcon.o ./src/joy.o ./src/keymap.o ./src/m68000.o ./src/main.o ./src/midi.o ./src/memorySnapShot.o ./src/mfp.o ./src/paths.o ./src/psg.o ./src/printer.o ./src/resolution.o ./src/rs232.o ./src/reset.o ./src/rtc.o ./src/scandir.o ./src/stMemory.o ./src/screen.o ./src/screenSnapShot.o ./src/shortcut.o ./src/sound.o ./src/spec512.o ./src/statusbar.o ./src/str.o ./src/tos.o ./src/unzip.o ./src/utils.o ./src/vdi.o ./src/video.o ./src/wavFormat.o ./src/xbios.o ./src/ymFormat.o ./libretro/libretro-common/libco/libco.o ./libretro/libretro.o ./libretro/hatari-mapper.o ./libretro/vkbd.o ./libretro/graph.o ./libretro/bmp.o ./libretro/retro_strings.o ./libretro/retro_files.o ./libretro/retro_disk_control.o ./libretro/stub/dlgAlert.o hatari_libretro.dylib 
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-hatari'
+gmake -f Makefile.libretro platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-hatari'
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/uae-cpu-pregen/cpudefs.o libretro/uae-cpu-pregen/cpudefs.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/uae-cpu-pregen/cpuemu.o libretro/uae-cpu-pregen/cpuemu.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/uae-cpu-pregen/cpustbl.o libretro/uae-cpu-pregen/cpustbl.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/uae-cpu/hatari-glue.o src/uae-cpu/hatari-glue.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/uae-cpu/memory.o src/uae-cpu/memory.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/uae-cpu/newcpu.o src/uae-cpu/newcpu.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/uae-cpu/readcpu.o src/uae-cpu/readcpu.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/uae-cpu/fpp.o src/uae-cpu/fpp.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/gui-retro/dlgAbout.o libretro/gui-retro/dlgAbout.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/gui-retro/dlgDevice.o libretro/gui-retro/dlgDevice.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/gui-retro/dlgFileSelect.o libretro/gui-retro/dlgFileSelect.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/gui-retro/dlgFloppy.o libretro/gui-retro/dlgFloppy.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/gui-retro/dlgHardDisk.o libretro/gui-retro/dlgHardDisk.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/gui-retro/dlgJoystick.o libretro/gui-retro/dlgJoystick.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/gui-retro/dlgKeyboard.o libretro/gui-retro/dlgKeyboard.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/gui-retro/dlgMain.o libretro/gui-retro/dlgMain.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/gui-retro/dlgMemory.o libretro/gui-retro/dlgMemory.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/gui-retro/dlgNewDisk.o libretro/gui-retro/dlgNewDisk.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/gui-retro/dlgRom.o libretro/gui-retro/dlgRom.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/gui-retro/dlgScreen.o libretro/gui-retro/dlgScreen.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/gui-retro/dlgSound.o libretro/gui-retro/dlgSound.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/gui-retro/dlgSystem.o libretro/gui-retro/dlgSystem.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/gui-retro/sdlgui.o libretro/gui-retro/sdlgui.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/falcon/crossbar.o src/falcon/crossbar.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/falcon/dsp.o src/falcon/dsp.c
+libretro/gui-retro/sdlgui.c:434:10: warning: implicit conversion from 'int' to 'char' changes value from 219 to -37 [-Wconstant-conversion]
+                str[0]=SGRADIOBUTTON_SELECTED;
+                      ~^~~~~~~~~~~~~~~~~~~~~~
+./libretro/include/gui-retro.h:10:32: note: expanded from macro 'SGRADIOBUTTON_SELECTED'
+#define SGRADIOBUTTON_SELECTED 219//13
+                               ^~~
+libretro/gui-retro/sdlgui.c:457:10: warning: implicit conversion from 'int' to 'char' changes value from 197 to -59 [-Wconstant-conversion]
+                str[0]=SGCHECKBOX_SELECTED;
+                      ~^~~~~~~~~~~~~~~~~~~
+./libretro/include/gui-retro.h:12:29: note: expanded from macro 'SGCHECKBOX_SELECTED'
+#define SGCHECKBOX_SELECTED 197//15
+                            ^~~
+libretro/gui-retro/sdlgui.c:459:10: warning: implicit conversion from 'int' to 'char' changes value from 196 to -60 [-Wconstant-conversion]
+                str[0]=SGCHECKBOX_NORMAL;
+                      ~^~~~~~~~~~~~~~~~~
+./libretro/include/gui-retro.h:11:27: note: expanded from macro 'SGCHECKBOX_NORMAL'
+#define SGCHECKBOX_NORMAL 196//14
+                          ^~~
+3 warnings generated.
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/falcon/dsp_core.o src/falcon/dsp_core.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/falcon/dsp_cpu.o src/falcon/dsp_cpu.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/falcon/dsp_disasm.o src/falcon/dsp_disasm.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/falcon/hostscreen.o src/falcon/hostscreen.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/falcon/microphone.o src/falcon/microphone.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/falcon/nvram.o src/falcon/nvram.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/falcon/videl.o src/falcon/videl.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/debug/log.o src/debug/log.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/debug/debugui.o src/debug/debugui.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/debug/breakcond.o src/debug/breakcond.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/debug/debugcpu.o src/debug/debugcpu.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/debug/debugInfo.o src/debug/debugInfo.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/debug/debugdsp.o src/debug/debugdsp.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/debug/evaluate.o src/debug/evaluate.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/debug/history.o src/debug/history.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/debug/symbols.o src/debug/symbols.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/debug/profile.o src/debug/profile.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/debug/profilecpu.o src/debug/profilecpu.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/debug/profiledsp.o src/debug/profiledsp.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/debug/natfeats.o src/debug/natfeats.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/debug/console.o src/debug/console.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/debug/68kDisass.o src/debug/68kDisass.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/createBlankImage.o src/createBlankImage.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/dim.o src/dim.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/msa.o src/msa.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/st.o src/st.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/zip.o src/zip.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/acia.o src/acia.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/audio.o src/audio.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/avi_record.o src/avi_record.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/bios.o src/bios.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/blitter.o src/blitter.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/cart.o src/cart.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/cfgopts.o src/cfgopts.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/clocks_timings.o src/clocks_timings.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/configuration.o src/configuration.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/options.o src/options.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/change.o src/change.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/control.o src/control.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/cycInt.o src/cycInt.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/cycles.o src/cycles.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/dialog.o src/dialog.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/dmaSnd.o src/dmaSnd.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/fdc.o src/fdc.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/file.o src/file.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/floppy.o src/floppy.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/floppy_ipf.o src/floppy_ipf.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/floppy_stx.o src/floppy_stx.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/gemdos.o src/gemdos.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/hd6301_cpu.o src/hd6301_cpu.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/hdc.o src/hdc.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/ide.o src/ide.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/ikbd.o src/ikbd.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/ioMem.o src/ioMem.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/ioMemTabST.o src/ioMemTabST.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/ioMemTabSTE.o src/ioMemTabSTE.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/ioMemTabTT.o src/ioMemTabTT.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/ioMemTabFalcon.o src/ioMemTabFalcon.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/joy.o src/joy.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/keymap.o src/keymap.c
+src/joy.c:158:35: warning: expression result unused [-Wunused-value]
+                        SDL_JoystickClose(sdlJoystick[i]);
+                                          ~~~~~~~~~~~ ~^
+1 warning generated.
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/m68000.o src/m68000.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/main.o src/main.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/midi.o src/midi.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/memorySnapShot.o src/memorySnapShot.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/mfp.o src/mfp.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/paths.o src/paths.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/psg.o src/psg.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/printer.o src/printer.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/resolution.o src/resolution.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/rs232.o src/rs232.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/reset.o src/reset.c
+In file included from src/rs232.c:28:
+./libretro/include/SDL_thread.h:1854:8: warning: 'sem_init' is deprecated [-Wdeprecated-declarations]
+                if ( sem_init(&sem->sem, 0, initial_value) < 0 ) {
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/semaphore.h:55:42: note: 'sem_init' has been explicitly marked deprecated here
+int sem_init(sem_t *, int, unsigned int) __deprecated;
+                                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:211:40: note: expanded from macro '__deprecated'
+#define __deprecated    __attribute__((__deprecated__))
+                                       ^
+In file included from src/rs232.c:28:
+./libretro/include/SDL_thread.h:1868:3: warning: 'sem_destroy' is deprecated [-Wdeprecated-declarations]
+                sem_destroy(&sem->sem);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/semaphore.h:53:26: note: 'sem_destroy' has been explicitly marked deprecated here
+int sem_destroy(sem_t *) __deprecated;
+                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:211:40: note: expanded from macro '__deprecated'
+#define __deprecated    __attribute__((__deprecated__))
+                                       ^
+In file included from src/rs232.c:28:
+./libretro/include/SDL_thread.h:1940:3: warning: 'sem_getvalue' is deprecated [-Wdeprecated-declarations]
+                sem_getvalue(&sem->sem, &ret);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/semaphore.h:54:56: note: 'sem_getvalue' has been explicitly marked deprecated here
+int sem_getvalue(sem_t * __restrict, int * __restrict) __deprecated;
+                                                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:211:40: note: expanded from macro '__deprecated'
+#define __deprecated    __attribute__((__deprecated__))
+                                       ^
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/rtc.o src/rtc.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/scandir.o src/scandir.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/stMemory.o src/stMemory.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/screen.o src/screen.c
+3 warnings generated.
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/screenSnapShot.o src/screenSnapShot.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/shortcut.o src/shortcut.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/sound.o src/sound.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/spec512.o src/spec512.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/statusbar.o src/statusbar.c
+src/statusbar.c:219:1: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+else LEDB=0;
+^
+1 warning generated.
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/str.o src/str.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/tos.o src/tos.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/unzip.o src/unzip.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/utils.o src/utils.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/vdi.o src/vdi.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/video.o src/video.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/wavFormat.o src/wavFormat.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/xbios.o src/xbios.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o src/ymFormat.o src/ymFormat.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/libretro-common/libco/libco.o libretro/libretro-common/libco/libco.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/libretro.o libretro/libretro.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/hatari-mapper.o libretro/hatari-mapper.c
+In file included from libretro/libretro.c:33:
+./libretro/cmdline.c:32:35: warning: format string contains '\0' within the string body [-Wformat]
+   sprintf(XARGV[PARAMCOUNT++],"%s\0",option);
+                               ~~~^~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h:47:56: note: expanded from macro 'sprintf'
+  __builtin___sprintf_chk (str, 0, __darwin_obsz(str), __VA_ARGS__)
+                                                       ^~~~~~~~~~~
+In file included from libretro/libretro.c:33:
+./libretro/cmdline.c:80:1: warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+libretro/libretro.c:590:58: warning: format string contains '\0' within the string body [-Wformat]
+   if(retro_system_directory==NULL)sprintf(RETRO_DIR, "%s\0",".");
+                                                      ~~~^~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h:47:56: note: expanded from macro 'sprintf'
+  __builtin___sprintf_chk (str, 0, __darwin_obsz(str), __VA_ARGS__)
+                                                       ^~~~~~~~~~~
+libretro/libretro.c:591:31: warning: format string contains '\0' within the string body [-Wformat]
+   else sprintf(RETRO_DIR, "%s\0", retro_system_directory);
+                           ~~~^~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h:47:56: note: expanded from macro 'sprintf'
+  __builtin___sprintf_chk (str, 0, __darwin_obsz(str), __VA_ARGS__)
+                                                       ^~~~~~~~~~~
+libretro/libretro.c:741:24: warning: multiple unsequenced modifications to 'p' [-Wunsequenced]
+            audio_cb(*p++,*p++);
+                       ^    ~~
+5 warnings generated.
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/vkbd.o libretro/vkbd.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/graph.o libretro/graph.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/bmp.o libretro/bmp.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/retro_strings.o libretro/retro_strings.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/retro_files.o libretro/retro_files.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/retro_disk_control.o libretro/retro_disk_control.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen -c -o libretro/stub/dlgAlert.o libretro/stub/dlgAlert.c
+cc -arch i386 -DGIT_VERSION=\"" 1ebf0a0"\" -funroll-loops -ffast-math -fomit-frame-pointer -O3 -fsigned-char -D__LIBRETRO__ -fno-builtin -fPIC -DLSB_FIRST -DALIGN_DWORD -I./src -I./src/uae-cpu -I./src/falcon -I./src/includes -I./src/debug -I./src -I./libretro -I./libretro/libretro-common/include -I./libretro/libretro-common/include/compat/zlib -I./libretro/include -I./libretro/utils -I./libretro/uae-cpu-pregen  ./libretro/uae-cpu-pregen/cpudefs.o ./libretro/uae-cpu-pregen/cpuemu.o ./libretro/uae-cpu-pregen/cpustbl.o ./src/uae-cpu/hatari-glue.o ./src/uae-cpu/memory.o ./src/uae-cpu/newcpu.o ./src/uae-cpu/readcpu.o ./src/uae-cpu/fpp.o ./libretro/gui-retro/dlgAbout.o ./libretro/gui-retro/dlgDevice.o ./libretro/gui-retro/dlgFileSelect.o ./libretro/gui-retro/dlgFloppy.o ./libretro/gui-retro/dlgHardDisk.o ./libretro/gui-retro/dlgJoystick.o ./libretro/gui-retro/dlgKeyboard.o ./libretro/gui-retro/dlgMain.o ./libretro/gui-retro/dlgMemory.o ./libretro/gui-retro/dlgNewDisk.o ./libretro/gui-retro/dlgRom.o ./libretro/gui-retro/dlgScreen.o ./libretro/gui-retro/dlgSound.o ./libretro/gui-retro/dlgSystem.o ./libretro/gui-retro/sdlgui.o ./src/falcon/crossbar.o ./src/falcon/dsp.o ./src/falcon/dsp_core.o ./src/falcon/dsp_cpu.o ./src/falcon/dsp_disasm.o ./src/falcon/hostscreen.o ./src/falcon/microphone.o ./src/falcon/nvram.o ./src/falcon/videl.o ./src/debug/log.o ./src/debug/debugui.o ./src/debug/breakcond.o ./src/debug/debugcpu.o ./src/debug/debugInfo.o ./src/debug/debugdsp.o ./src/debug/evaluate.o ./src/debug/history.o ./src/debug/symbols.o ./src/debug/profile.o ./src/debug/profilecpu.o ./src/debug/profiledsp.o ./src/debug/natfeats.o ./src/debug/console.o ./src/debug/68kDisass.o ./src/createBlankImage.o ./src/dim.o ./src/msa.o ./src/st.o ./src/zip.o ./src/acia.o ./src/audio.o ./src/avi_record.o ./src/bios.o ./src/blitter.o ./src/cart.o ./src/cfgopts.o ./src/clocks_timings.o ./src/configuration.o ./src/options.o ./src/change.o ./src/control.o ./src/cycInt.o ./src/cycles.o ./src/dialog.o ./src/dmaSnd.o ./src/fdc.o ./src/file.o ./src/floppy.o ./src/floppy_ipf.o ./src/floppy_stx.o ./src/gemdos.o ./src/hd6301_cpu.o ./src/hdc.o ./src/ide.o ./src/ikbd.o ./src/ioMem.o ./src/ioMemTabST.o ./src/ioMemTabSTE.o ./src/ioMemTabTT.o ./src/ioMemTabFalcon.o ./src/joy.o ./src/keymap.o ./src/m68000.o ./src/main.o ./src/midi.o ./src/memorySnapShot.o ./src/mfp.o ./src/paths.o ./src/psg.o ./src/printer.o ./src/resolution.o ./src/rs232.o ./src/reset.o ./src/rtc.o ./src/scandir.o ./src/stMemory.o ./src/screen.o ./src/screenSnapShot.o ./src/shortcut.o ./src/sound.o ./src/spec512.o ./src/statusbar.o ./src/str.o ./src/tos.o ./src/unzip.o ./src/utils.o ./src/vdi.o ./src/video.o ./src/wavFormat.o ./src/xbios.o ./src/ymFormat.o ./libretro/libretro-common/libco/libco.o ./libretro/libretro.o ./libretro/hatari-mapper.o ./libretro/vkbd.o ./libretro/graph.o ./libretro/bmp.o ./libretro/retro_strings.o ./libretro/retro_files.o ./libretro/retro_disk_control.o ./libretro/stub/dlgAlert.o -o hatari_libretro.dylib -lm -lz -dynamiclib
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: could not create compact unwind for _input_config: stack subl instruction is too different from dwarf stack size
+ld: warning: could not create compact unwind for _update_config: stack subl instruction is too different from dwarf stack size
+ld: warning: could not create compact unwind for _Dialog_DoProperty: stack subl instruction is too different from dwarf stack size
+ld: warning: could not create compact unwind for _Keymap_LoadRemapFile: stack subl instruction is too different from dwarf stack size
+ld: warning: could not create compact unwind for _ShortCut_ActKey: stack subl instruction is too different from dwarf stack size
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libz.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libz.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd (3 slices)
+Undefined symbols for architecture i386:
+  "__DefaultRuneLocale", referenced from:
+      _read_table68k in readcpu.o
+      _DebugUI_EvaluateExpressions in debugui.o
+      _BreakCond_Command in breakcond.o
+      _BreakCond_ParseValue in breakcond.o
+      _DebugCpu_MemDump in debugcpu.o
+      _DebugInfo_RegAddrArgs in debugInfo.o
+      _getNumber in evaluate.o
+      ...
+      _read_table68k in readcpu.o
+      _DebugUI_EvaluateExpressions in debugui.o
+      _BreakCond_Command in breakcond.o
+      _BreakCond_ParseValue in breakcond.o
+      _DebugCpu_MemDump in debugcpu.o
+      _DebugInfo_RegAddrArgs in debugInfo.o
+      _getNumber in evaluate.o
+      ...
+      _read_table68k in readcpu.o
+      _DebugUI_EvaluateExpressions in debugui.o
+      _BreakCond_Command in breakcond.o
+      _BreakCond_ParseValue in breakcond.o
+      _DebugCpu_MemDump in debugcpu.o
+      _DebugInfo_RegAddrArgs in debugInfo.o
+      _getNumber in evaluate.o
+      ...
+      _read_table68k in readcpu.o
+      _DebugUI_EvaluateExpressions in debugui.o
+      _BreakCond_Command in breakcond.o
+      _BreakCond_ParseValue in breakcond.o
+      _DebugCpu_MemDump in debugcpu.o
+      _DebugInfo_RegAddrArgs in debugInfo.o
+      _getNumber in evaluate.o
+      ...
+      _read_table68k in readcpu.o
+      _DebugUI_EvaluateExpressions in debugui.o
+      _BreakCond_Command in breakcond.o
+      _BreakCond_ParseValue in breakcond.o
+      _DebugCpu_MemDump in debugcpu.o
+      _DebugInfo_RegAddrArgs in debugInfo.o
+      _getNumber in evaluate.o
+      ...
+      _read_table68k in readcpu.o
+      _DebugUI_EvaluateExpressions in debugui.o
+      _BreakCond_Command in breakcond.o
+      _BreakCond_ParseValue in breakcond.o
+      _DebugCpu_MemDump in debugcpu.o
+      _DebugInfo_RegAddrArgs in debugInfo.o
+      _getNumber in evaluate.o
+      ...
+      _read_table68k in readcpu.o
+      _DebugUI_EvaluateExpressions in debugui.o
+      _BreakCond_Command in breakcond.o
+      _BreakCond_ParseValue in breakcond.o
+      _DebugCpu_MemDump in debugcpu.o
+      _DebugInfo_RegAddrArgs in debugInfo.o
+      _getNumber in evaluate.o
+      ...
+      ...
+  "___assert_rtn", referenced from:
+      _intlev.cold.1 in hatari-glue.o
+      _do_specialties_interrupt.cold.1 in newcpu.o
+      _DebugUI_MemorySnapShot_Capture.cold.1 in debugui.o
+      _DebugUI_ParseFile.cold.1 in debugui.o
+      _DebugUI_Init.cold.1 in debugui.o
+      _DebugUI.cold.1 in debugui.o
+      _BreakCond_Command.cold.1 in breakcond.o
+      ...
+  "___bzero", referenced from:
+      _SDLGui_SetScreen in sdlgui.o
+      _SDLGui_DrawDialog in sdlgui.o
+      _Crossbar_Reset in crossbar.o
+      _dsp_core_init in dsp_core.o
+      _dsp_core_reset in dsp_core.o
+      _Profile_CallStart in profile.o
+      _CreateBlankImage_CreateFile in createBlankImage.o
+      ...
+  "___divdi3", referenced from:
+      _m68k_divl in newcpu.o
+      _Crossbar_Recalculate_Clocks_Cycles in crossbar.o
+      _Crossbar_Compute_Ratio in crossbar.o
+      _operation in evaluate.o
+      _Avi_StartRecording in avi_record.o
+      _ClocksTimings_GetSamplesPerVBL in clocks_timings.o
+      _CycInt_FindCyclesPassed in cycInt.o
+      ...
+  "___error", referenced from:
+      _getNumber in evaluate.o
+      _History_Parse in history.o
+      _File_Open in file.o
+      _GemDOS_OpCode in gemdos.o
+      _MemorySnapShot_OpenFile in memorySnapShot.o
+      _SDL_SemWait in rs232.o
+      _SDL_SemWaitTimeout in rs232.o
+      ...
+  "___maskrune", referenced from:
+      _read_table68k in readcpu.o
+      _DebugUI_EvaluateExpressions in debugui.o
+      _BreakCond_Command in breakcond.o
+      _BreakCond_ParseValue in breakcond.o
+      _DebugCpu_MemDump in debugcpu.o
+      _getValue in evaluate.o
+      _Symbols_Load in symbols.o
+      ...
+  "___memcpy_chk", referenced from:
+      _getValue in evaluate.o
+      _Avi_RecordVideoStream_BMP in avi_record.o
+      _Avi_RecordAudioStream in avi_record.o
+      _Avi_StartRecording in avi_record.o
+      _Avi_StopRecording in avi_record.o
+      _Cart_ResetImage in cart.o
+      _STX_BuildStruct in floppy_stx.o
+      ...
+  "___memset_chk", referenced from:
+      _Profile_CpuStop in profilecpu.o
+      _Profile_DspStop in profiledsp.o
+      _HDC_Cmd_RequestSense in hdc.o
+  "___snprintf_chk", referenced from:
+      _Dialog_JoyDlg in dlgJoystick.o
+      _nf_name in natfeats.o
+      _Avi_StartRecording in avi_record.o
+      _FDC_Get_Statusbar_Text in fdc.o
+      _GemDOS_OpCode in gemdos.o
+      _GemDOS_SNext in gemdos.o
+      _Ide_Mem_bput in ide.o
+      ...
+  "___sprintf_chk", referenced from:
+      _ShowEA in newcpu.o
+      _fpp_opp in fpp.o
+      _DlgNewDisk_Main in dlgNewDisk.o
+      _Dialog_MonitorDlg in dlgScreen.o
+      _Dialog_WindowDlg in dlgScreen.o
+      _Crossbar_Info in crossbar.o
+      _dsp56k_disasm in dsp_disasm.o
+      ...
+  "___stack_chk_fail", referenced from:
+      _ShowEA in newcpu.o
+      _m68k_disasm in newcpu.o
+      _read_table68k in readcpu.o
+      _fpp_opp in fpp.o
+      _DlgFloppy_Main in dlgFloppy.o
+      _DlgHardDisk_Main in dlgHardDisk.o
+      _Dialog_KeyboardDlg in dlgKeyboard.o
+      ...
+  "___stack_chk_guard", referenced from:
+      _ShowEA in newcpu.o
+      _m68k_disasm in newcpu.o
+      _read_table68k in readcpu.o
+      _fpp_opp in fpp.o
+      _DlgFloppy_Main in dlgFloppy.o
+      _DlgHardDisk_Main in dlgHardDisk.o
+      _Dialog_KeyboardDlg in dlgKeyboard.o
+      ...
+      _ShowEA in newcpu.o
+      _m68k_disasm in newcpu.o
+      _read_table68k in readcpu.o
+      _fpp_opp in fpp.o
+      _DlgFloppy_Main in dlgFloppy.o
+      _DlgHardDisk_Main in dlgHardDisk.o
+      _Dialog_KeyboardDlg in dlgKeyboard.o
+      ...
+      _ShowEA in newcpu.o
+      _m68k_disasm in newcpu.o
+      _read_table68k in readcpu.o
+      _fpp_opp in fpp.o
+      _DlgFloppy_Main in dlgFloppy.o
+      _DlgHardDisk_Main in dlgHardDisk.o
+      _Dialog_KeyboardDlg in dlgKeyboard.o
+      ...
+      _ShowEA in newcpu.o
+      _m68k_disasm in newcpu.o
+      _read_table68k in readcpu.o
+      _fpp_opp in fpp.o
+      _DlgFloppy_Main in dlgFloppy.o
+      _DlgHardDisk_Main in dlgHardDisk.o
+      _Dialog_KeyboardDlg in dlgKeyboard.o
+      ...
+      _ShowEA in newcpu.o
+      _m68k_disasm in newcpu.o
+      _read_table68k in readcpu.o
+      _fpp_opp in fpp.o
+      _DlgFloppy_Main in dlgFloppy.o
+      _DlgHardDisk_Main in dlgHardDisk.o
+      _Dialog_KeyboardDlg in dlgKeyboard.o
+      ...
+      _ShowEA in newcpu.o
+      _m68k_disasm in newcpu.o
+      _read_table68k in readcpu.o
+      _fpp_opp in fpp.o
+      _DlgFloppy_Main in dlgFloppy.o
+      _DlgHardDisk_Main in dlgHardDisk.o
+      _Dialog_KeyboardDlg in dlgKeyboard.o
+      ...
+      _ShowEA in newcpu.o
+      _m68k_disasm in newcpu.o
+      _read_table68k in readcpu.o
+      _fpp_opp in fpp.o
+      _DlgFloppy_Main in dlgFloppy.o
+      _DlgHardDisk_Main in dlgHardDisk.o
+      _Dialog_KeyboardDlg in dlgKeyboard.o
+      ...
+      ...
+  "___stderrp", referenced from:
+      _Exception in newcpu.o
+      _build_cpufunctbl.cold.1 in newcpu.o
+      _m68k_go.cold.1 in newcpu.o
+      _cctrue.cold.1 in newcpu.o
+      _read_table68k in readcpu.o
+      _read_table68k.cold.1 in readcpu.o
+      _read_table68k.cold.2 in readcpu.o
+      ...
+      _Exception in newcpu.o
+      _build_cpufunctbl.cold.1 in newcpu.o
+      _m68k_go.cold.1 in newcpu.o
+      _cctrue.cold.1 in newcpu.o
+      _read_table68k in readcpu.o
+      _read_table68k.cold.1 in readcpu.o
+      _read_table68k.cold.2 in readcpu.o
+      ...
+      _Exception in newcpu.o
+      _build_cpufunctbl.cold.1 in newcpu.o
+      _m68k_go.cold.1 in newcpu.o
+      _cctrue.cold.1 in newcpu.o
+      _read_table68k in readcpu.o
+      _read_table68k.cold.1 in readcpu.o
+      _read_table68k.cold.2 in readcpu.o
+      ...
+      _Exception in newcpu.o
+      _build_cpufunctbl.cold.1 in newcpu.o
+      _m68k_go.cold.1 in newcpu.o
+      _cctrue.cold.1 in newcpu.o
+      _read_table68k in readcpu.o
+      _read_table68k.cold.1 in readcpu.o
+      _read_table68k.cold.2 in readcpu.o
+      ...
+      _Exception in newcpu.o
+      _build_cpufunctbl.cold.1 in newcpu.o
+      _m68k_go.cold.1 in newcpu.o
+      _cctrue.cold.1 in newcpu.o
+      _read_table68k in readcpu.o
+      _read_table68k.cold.1 in readcpu.o
+      _read_table68k.cold.2 in readcpu.o
+      ...
+      _Exception in newcpu.o
+      _build_cpufunctbl.cold.1 in newcpu.o
+      _m68k_go.cold.1 in newcpu.o
+      _cctrue.cold.1 in newcpu.o
+      _read_table68k in readcpu.o
+      _read_table68k.cold.1 in readcpu.o
+      _read_table68k.cold.2 in readcpu.o
+      ...
+      _Exception in newcpu.o
+      _build_cpufunctbl.cold.1 in newcpu.o
+      _m68k_go.cold.1 in newcpu.o
+      _cctrue.cold.1 in newcpu.o
+      _read_table68k in readcpu.o
+      _read_table68k.cold.1 in readcpu.o
+      _read_table68k.cold.2 in readcpu.o
+      ...
+      ...
+  "___stdinp", referenced from:
+      _DebugUI in debugui.o
+      _File_Open in file.o
+      _HFile_Close in file.o
+      _DebugUI in debugui.o
+      _File_Open in file.o
+      _HFile_Close in file.o
+  "___stdoutp", referenced from:
+      _Profile_Command in profile.o
+      _Profile_CpuShowCycles in profilecpu.o
+      _Profile_CpuShowCounts in profilecpu.o
+      _File_Open in file.o
+      _HFile_Close in file.o
+      _Profile_Command in profile.o
+      _Profile_CpuShowCycles in profilecpu.o
+      _Profile_CpuShowCounts in profilecpu.o
+      _File_Open in file.o
+      _HFile_Close in file.o
+      _Profile_Command in profile.o
+      _Profile_CpuShowCycles in profilecpu.o
+      _Profile_CpuShowCounts in profilecpu.o
+      _File_Open in file.o
+      _HFile_Close in file.o
+  "___strcat_chk", referenced from:
+      _ShowEA in newcpu.o
+      _SDLGui_FileSelect in dlgFileSelect.o
+      _DebugUI_MemorySnapShot_Capture in debugui.o
+      _Disass68k_loop in 68kDisass.o
+      _Disass68k in 68kDisass.o
+      _Disass68kEA in 68kDisass.o
+      _File_MakePath in file.o
+      ...
+  "___strcpy_chk", referenced from:
+      _m68k_disasm in newcpu.o
+      _SDLGui_FileSelect in dlgFileSelect.o
+      _DlgFloppy_Main in dlgFloppy.o
+      _DlgHardDisk_Main in dlgHardDisk.o
+      _Dialog_JoyDlg in dlgJoystick.o
+      _Dialog_MainDlg in dlgMain.o
+      _Dialog_SoundDlg in dlgSound.o
+      ...
+  "___strncat_chk", referenced from:
+      _GemDOS_CreateHardDriveFileName in gemdos.o
+      _add_path_component in gemdos.o
+      _GemDOS_OpCode in gemdos.o
+  "___strncpy_chk", referenced from:
+      _m68k_disasm in newcpu.o
+      _SDLGui_FileSelect in dlgFileSelect.o
+      _SDLGui_FileConfSelect in dlgFileSelect.o
+      _DebugUI_ParseCommand in debugui.o
+      _ZIP_GetFilesDir in zip.o
+      _ZIP_ReadDisk in zip.o
+      _ZIP_FirstFile in zip.o
+      ...
+  "___tolower", referenced from:
+      _Log_ParseOptions in log.o
+      _Disass68k in 68kDisass.o
+      _Disass68kEA in 68kDisass.o
+      _Disass68kSpecialRegister in 68kDisass.o
+      _Opt_Bool in options.o
+      _GemDOS_InitDrives in gemdos.o
+      _Keymap_SimulateCharacter in keymap.o
+      ...
+  "___toupper", referenced from:
+      _DSP_GetRegisterAddress in dsp.o
+      _BreakCond_ParseValue in breakcond.o
+      _BreakCond_ParseRegister in breakcond.o
+      _DebugCpu_GetRegisterAddress in debugcpu.o
+      _DebugCpu_Register in debugcpu.o
+      _DebugInfo_DspMemArgs in debugInfo.o
+      _DebugInfo_RegAddrArgs in debugInfo.o
+      ...
+  "___vsnprintf_chk", referenced from:
+      _Log_AlertDlg in log.o
+  "___vsprintf_chk", referenced from:
+      _Draw_text in graph.o
+  "_abort", referenced from:
+      _build_cpufunctbl.cold.1 in newcpu.o
+      _m68k_go.cold.1 in newcpu.o
+      _cctrue.cold.1 in newcpu.o
+      _read_table68k.cold.1 in readcpu.o
+      _read_table68k.cold.2 in readcpu.o
+      _read_table68k.cold.3 in readcpu.o
+      _read_table68k.cold.4 in readcpu.o
+      ...
+  "_abs", referenced from:
+      _getDivs68kCycles in newcpu.o
+  "_access", referenced from:
+      _GemDOS_InitDrives in gemdos.o
+  "_acos", referenced from:
+      _fpp_opp in fpp.o
+  "_alphasort$INODE64", referenced from:
+      _SDLGui_FileSelect in dlgFileSelect.o
+      _GemDOS_InitDrives in gemdos.o
+      _GemDOS_OpCode in gemdos.o
+      _SDLGui_FileSelect in dlgFileSelect.o
+      _GemDOS_InitDrives in gemdos.o
+      _GemDOS_OpCode in gemdos.o
+  "_asin", referenced from:
+      _fpp_opp in fpp.o
+  "_atan", referenced from:
+      _fpp_opp in fpp.o
+  "_atoi", referenced from:
+      _DebugUI_QuitEmu in debugui.o
+      _BreakCond_Command in breakcond.o
+      _DebugCpu_Continue in debugcpu.o
+      _DebugDsp_Continue in debugdsp.o
+      _History_Parse in history.o
+      _Profile_Command in profile.o
+      _Disasm_ParseOption in 68kDisass.o
+      ...
+  "_atol", referenced from:
+      _Disass68kLoadSymbols in 68kDisass.o
+      _Opt_ParseParameters in options.o
+  "_calloc", referenced from:
+      _History_Parse in history.o
+      _Symbols_Load in symbols.o
+      _symbols_load_dri in symbols.o
+      _Profile_CallStart in profile.o
+      _Profile_AllocCallinfo in profile.o
+      _Profile_CpuStart in profilecpu.o
+      _Profile_CpuStop in profilecpu.o
+      ...
+  "_ceil", referenced from:
+      _fpp_opp in fpp.o
+  "_chdir", referenced from:
+      _DebugUI_ParseFile in debugui.o
+      _DebugUI_ChangeDir in debugui.o
+  "_chmod$UNIX2003", referenced from:
+      _GemDOS_OpCode in gemdos.o
+  "_clearerr", referenced from:
+      _RS232_ThreadFunc in rs232.o
+  "_closedir$UNIX2003", referenced from:
+      _GemDOS_OpCode in gemdos.o
+      _match_host_dir_entry in gemdos.o
+      _ScreenSnapShot_SaveScreen in screenSnapShot.o
+  "_cos", referenced from:
+      _fpp_opp in fpp.o
+      _DrawCircle in graph.o
+  "_cosh", referenced from:
+      _fpp_opp in fpp.o
+  "_crc32", referenced from:
+      _unzReadCurrentFile in unzip.o
+     (maybe you meant: _crc32_reset, _crc32_add_byte )
+  "_exit", referenced from:
+      _Opt_ParseParameters in options.o
+      _hd6301_execute_one_instruction in hd6301_cpu.o
+      _hd6301_disasm in hd6301_cpu.o
+      _hd6301_undefined in hd6301_cpu.o
+      _hd6301_bra in hd6301_cpu.o
+      _hd6301_bhi in hd6301_cpu.o
+      _hd6301_bls in hd6301_cpu.o
+      ...
+     (maybe you meant: _exitgui)
+  "_exp", referenced from:
+      _fpp_opp in fpp.o
+  "_fclose", referenced from:
+      _NvRam_Init in nvram.o
+      _NvRam_UnInit in nvram.o
+      _DebugUI_ParseFile in debugui.o
+      _BreakCond_Save in breakcond.o
+      _DebugCpu_LoadBin in debugcpu.o
+      _DebugCpu_SaveBin in debugcpu.o
+      _History_Parse in history.o
+      ...
+  "_feof", referenced from:
+      _DebugCpu_LoadBin in debugcpu.o
+      _input_config in cfgopts.o
+      _update_config in cfgopts.o
+      _Keymap_LoadRemapFile in keymap.o
+  "_ferror", referenced from:
+      _update_config in cfgopts.o
+      _GemDOS_OpCode in gemdos.o
+      _unzOpen in unzip.o
+      _unzlocal_GetCurrentFileInfoInternal in unzip.o
+      _unzOpenCurrentFile in unzip.o
+  "_fflush", referenced from:
+      _DebugCpu_DisAsm in debugcpu.o
+      _DebugCpu_Register in debugcpu.o
+      _DebugCpu_MemDump in debugcpu.o
+      _Profile_CpuStop in profilecpu.o
+      _Profile_DspUpdate in profiledsp.o
+      _Profile_DspStop in profiledsp.o
+      _nf_stderr in natfeats.o
+      ...
+  "_fgetc", referenced from:
+      _DebugCpu_LoadBin in debugcpu.o
+      _RS232_ThreadFunc in rs232.o
+  "_fgets", referenced from:
+      _DebugUI_ParseFile in debugui.o
+      _DebugUI in debugui.o
+      _Symbols_Load in symbols.o
+      _input_config in cfgopts.o
+      _update_config in cfgopts.o
+      _Keymap_LoadRemapFile in keymap.o
+      _dc_parse_m3u in retro_disk_control.o
+      ...
+  "_floor", referenced from:
+      _fpp_opp in fpp.o
+  "_fopen$UNIX2003", referenced from:
+      _NvRam_Init in nvram.o
+      _NvRam_UnInit in nvram.o
+      _DebugUI_ParseFile in debugui.o
+      _BreakCond_Save in breakcond.o
+      _DebugCpu_LoadBin in debugcpu.o
+      _DebugCpu_SaveBin in debugcpu.o
+      _History_Parse in history.o
+      ...
+  "_fprintf", referenced from:
+      _ShowEA in newcpu.o
+      _Exception in newcpu.o
+      _m68k_disasm in newcpu.o
+      _m68k_dumpstate in newcpu.o
+      _build_cpufunctbl.cold.1 in newcpu.o
+      _m68k_go.cold.1 in newcpu.o
+      _cctrue.cold.1 in newcpu.o
+      ...
+  "_fputc", referenced from:
+      _DebugUI_Evaluate in debugui.o
+      _DebugCpu_SaveBin in debugcpu.o
+      _Profile_ShowCallers in profile.o
+      _Console_Check in console.o
+      _Printer_TransferByteTo in printer.o
+  "_fputs$UNIX2003", referenced from:
+      _DSP_Info in dsp.o
+      _Log_Printf in log.o
+      _Log_AlertDlg in log.o
+      _DebugUI in debugui.o
+      _DebugUI_Evaluate in debugui.o
+      _BreakCond_Command in breakcond.o
+      _DebugInfo_FileParse in debugInfo.o
+      ...
+  "_fread", referenced from:
+      _NvRam_Init in nvram.o
+      _Symbols_ChangeCurrentProgram in symbols.o
+      _Symbols_Load in symbols.o
+      _symbols_load_dri in symbols.o
+      _Disass68kLoadTextFile in 68kDisass.o
+      _Avi_StopRecording in avi_record.o
+      _update_config in cfgopts.o
+      ...
+  "_free", referenced from:
+      _Exit680x0 in hatari-glue.o
+      _memory_uninit in memory.o
+      _SDLGui_FileSelect in dlgFileSelect.o
+      _SDLGui_FileConfSelect in dlgFileSelect.o
+      _DlgFloppy_Main in dlgFloppy.o
+      _DlgDisk_BrowseDisk in dlgFloppy.o
+      _DlgHardDisk_Main in dlgHardDisk.o
+      ...
+     (maybe you meant: _dc_free)
+  "_frexp", referenced from:
+      _fpp_opp in fpp.o
+      _save_fpu in fpp.o
+  "_fseek", referenced from:
+      _Symbols_ChangeCurrentProgram in symbols.o
+      _Symbols_Load in symbols.o
+      _Disass68kLoadTextFile in 68kDisass.o
+      _Avi_StopRecording in avi_record.o
+      _update_config in cfgopts.o
+      _HFile_Read in file.o
+      _File_Length in file.o
+      ...
+  "_ftell", referenced from:
+      _Symbols_ChangeCurrentProgram in symbols.o
+      _Symbols_Load in symbols.o
+      _Disass68kLoadTextFile in 68kDisass.o
+      _Avi_StartRecording in avi_record.o
+      _Avi_StopRecording in avi_record.o
+      _HFile_Read in file.o
+      _File_Length in file.o
+      ...
+  "_fwrite$UNIX2003", referenced from:
+      _NvRam_UnInit in nvram.o
+      _Avi_RecordVideoStream_BMP in avi_record.o
+      _Avi_RecordAudioStream in avi_record.o
+      _Avi_StartRecording in avi_record.o
+      _Avi_StopRecording in avi_record.o
+      _update_config in cfgopts.o
+      _File_Save in file.o
+      ...
+  "_getchar", referenced from:
+      _Symbols_Command in symbols.o
+  "_getcwd", referenced from:
+      _SDLGui_FileSelect in dlgFileSelect.o
+      _DebugUI_ParseFile in debugui.o
+      _File_MakeAbsoluteName in file.o
+      _Paths_Init in paths.o
+  "_getenv", referenced from:
+      _Paths_Init in paths.o
+  "_gettimeofday", referenced from:
+      _GetTicks in hatari-mapper.o
+  "_gzclose", referenced from:
+      _HFile_Read in file.o
+      _File_Save in file.o
+  "_gzeof", referenced from:
+      _HFile_Read in file.o
+  "_gzopen", referenced from:
+      _HFile_Read in file.o
+      _File_Save in file.o
+  "_gzread", referenced from:
+      _HFile_Read in file.o
+  "_gzrewind", referenced from:
+      _HFile_Read in file.o
+  "_gztell", referenced from:
+      _HFile_Read in file.o
+  "_gzwrite", referenced from:
+      _File_Save in file.o
+  "_inflate", referenced from:
+      _unzReadCurrentFile in unzip.o
+  "_inflateEnd", referenced from:
+      _unzClose in unzip.o
+      _unzCloseCurrentFile in unzip.o
+      _unzOpenCurrentFile in unzip.o
+  "_inflateInit2_", referenced from:
+      _unzOpenCurrentFile in unzip.o
+  "_ldexp", referenced from:
+      _fpp_opp in fpp.o
+      _restore_fpu in fpp.o
+  "_localtime", referenced from:
+      _NvRam_Data_ReadByte in nvram.o
+      _GemDOS_OpCode in gemdos.o
+      _GemDOS_SNext in gemdos.o
+      _Rtc_SecondsUnits_ReadByte in rtc.o
+      _Rtc_SecondsTens_ReadByte in rtc.o
+      _Rtc_MinutesUnits_ReadByte in rtc.o
+      _Rtc_MinutesTens_ReadByte in rtc.o
+      ...
+  "_log", referenced from:
+      _fpp_opp in fpp.o
+     (maybe you meant: _log_cb)
+  "_log10", referenced from:
+      _fpp_opp in fpp.o
+  "_malloc", referenced from:
+      _memory_init in memory.o
+      _read_table68k in readcpu.o
+      _SDLGui_FileSelect in dlgFileSelect.o
+      _VIDEL_ConvertScreenZoom in videl.o
+      _Log_AlertDlg in log.o
+      _DebugUI_MemorySnapShot_Capture in debugui.o
+      _DebugUI_ParseFile in debugui.o
+      ...
+  "_memcmp", referenced from:
+      _BreakCond_Command in breakcond.o
+      _input_config in cfgopts.o
+      _update_config in cfgopts.o
+  "_memcpy", referenced from:
+      _DSP_GetNextPC in dsp.o
+      _dsp56k_execute_one_disasm_instruction in dsp_cpu.o
+      _dsp56k_disasm_reg_save in dsp_disasm.o
+      _VIDEL_ConvertScreenZoom in videl.o
+      _VIDEL_ConvertScreenNoZoom in videl.o
+      _DebugUI_Init in debugui.o
+      _DebugUI_EvaluateExpressions in debugui.o
+      ...
+  "_memmove", referenced from:
+      _DebugUI_EvaluateExpressions in debugui.o
+      _BreakCond_Remove in breakcond.o
+      _ZIP_ReadDisk in zip.o
+      _File_SplitPath in file.o
+      _add_path_component in gemdos.o
+      _Str_Trim in str.o
+      _Str_Filename2TOSname in str.o
+      ...
+  "_memset", referenced from:
+      _VIDEL_ConvertScreenZoom in videl.o
+      _VIDEL_ConvertScreenNoZoom in videl.o
+      _Cart_ResetImage in cart.o
+  "_mkdir", referenced from:
+      _GemDOS_OpCode in gemdos.o
+      _Paths_Init in paths.o
+  "_mktime$UNIX2003", referenced from:
+      _GemDOS_OpCode in gemdos.o
+  "_mprotect$UNIX2003", referenced from:
+      _co_create in libco.o
+  "_opendir$INODE64$UNIX2003", referenced from:
+      _GemDOS_OpCode in gemdos.o
+      _match_host_dir_entry in gemdos.o
+      _ScreenSnapShot_SaveScreen in screenSnapShot.o
+  "_perror", referenced from:
+      _SDLGui_FileSelect in dlgFileSelect.o
+      _Log_AlertDlg in log.o
+      _DebugUI_ParseFile in debugui.o
+      _DebugUI_EvaluateExpressions in debugui.o
+      _DebugUI_ChangeDir in debugui.o
+      _DebugUI_Rename in debugui.o
+      _BreakCond_Save in breakcond.o
+      ...
+  "_posix_memalign", referenced from:
+      _ide_init2 in ide.o
+  "_pow", referenced from:
+      _fpp_opp in fpp.o
+  "_powf", referenced from:
+      _DmaSnd_Init_Bass_and_Treble_Tables in dmaSnd.o
+  "_printf", referenced from:
+      _memory_init in memory.o
+      _dummy_lget in memory.o
+      _dummy_wget in memory.o
+      _dummy_bget in memory.o
+      _dummy_lput in memory.o
+      _dummy_wput in memory.o
+      _dummy_bput in memory.o
+      ...
+  "_pthread_attr_init", referenced from:
+      _SDL_SYS_CreateThread in rs232.o
+      _SDL_CreateThread in rs232.o
+  "_pthread_attr_setdetachstate", referenced from:
+      _SDL_SYS_CreateThread in rs232.o
+      _SDL_CreateThread in rs232.o
+  "_pthread_create", referenced from:
+      _SDL_SYS_CreateThread in rs232.o
+      _SDL_CreateThread in rs232.o
+  "_pthread_exit", referenced from:
+      _RunThread in rs232.o
+  "_pthread_join$UNIX2003", referenced from:
+      _SDL_SYS_WaitThread in rs232.o
+      _SDL_WaitThread in rs232.o
+  "_pthread_self", referenced from:
+      _SDL_ThreadID in rs232.o
+      _SDL_mutexP in rs232.o
+      _SDL_mutexV in rs232.o
+      _SDL_GetErrBuf in rs232.o
+      _SDL_RunThread in rs232.o
+      _SDL_CreateThread in rs232.o
+      _SDL_GetThreadID in rs232.o
+      ...
+  "_putc", referenced from:
+      _SDL_SaveBMP in bmp.o
+  "_qsort", referenced from:
+      _Symbols_Load in symbols.o
+      _Profile_ShowCallers in profile.o
+      _Profile_CpuShowCycles in profilecpu.o
+      _Profile_CpuShowCounts in profilecpu.o
+      _Profile_DspShowCycles in profiledsp.o
+      _Profile_DspShowCounts in profiledsp.o
+  "_rand", referenced from:
+      _CreateBlankImage_CreateFile in createBlankImage.o
+      _FDC_InsertFloppy in fdc.o
+      _FDC_SetDriveSide in fdc.o
+      _FDC_InterruptHandler_Update in fdc.o
+      _FDC_UpdateAll in fdc.o
+      _FDC_Set_MotorON in fdc.o
+      _FDC_ReadSector_STX in floppy_stx.o
+      ...
+  "_readdir$INODE64", referenced from:
+      _match_host_dir_entry in gemdos.o
+      _ScreenSnapShot_SaveScreen in screenSnapShot.o
+  "_realloc", referenced from:
+      _BreakCond_Command in breakcond.o
+      _BreakCond_Remove in breakcond.o
+      _BreakCond_ParseCondition in breakcond.o
+      _Symbols_Load in symbols.o
+      _Profile_CallStart in profile.o
+      _Disass68kLoadStructInfo in 68kDisass.o
+      _Disass68kLoadSymbols in 68kDisass.o
+      ...
+  "_remove", referenced from:
+      _BreakCond_Save in breakcond.o
+  "_rename", referenced from:
+      _DebugUI_Rename in debugui.o
+      _GemDOS_OpCode in gemdos.o
+  "_rint", referenced from:
+      _FDC_InsertFloppy in fdc.o
+      _FDC_SetDriveSide in fdc.o
+      _FDC_IndexPulse_GetCurrentPos_FdcCycles in fdc.o
+      _FDC_InterruptHandler_Update in fdc.o
+      _FDC_UpdateAll in fdc.o
+      _FDC_DiskController_WriteWord in fdc.o
+      _FDC_Set_MotorON in fdc.o
+      ...
+  "_rmdir", referenced from:
+      _GemDOS_OpCode in gemdos.o
+  "_scandir$INODE64", referenced from:
+      _SDLGui_FileSelect in dlgFileSelect.o
+      _GemDOS_InitDrives in gemdos.o
+      _GemDOS_OpCode in gemdos.o
+  "_sem_destroy", referenced from:
+      _SDL_DestroySemaphore in rs232.o
+      _SDL_DestroyMutex in rs232.o
+      _SDL_CreateThread in rs232.o
+      _RS232_UnInit in rs232.o
+  "_sem_getvalue", referenced from:
+      _SDL_SemValue in rs232.o
+  "_sem_init", referenced from:
+      _SDL_CreateSemaphore in rs232.o
+      _SDL_CreateMutex in rs232.o
+      _SDL_CreateThread in rs232.o
+      _RS232_Init in rs232.o
+  "_sem_post", referenced from:
+      _SDL_SemPost in rs232.o
+      _SDL_mutexV in rs232.o
+      _SDL_GetErrBuf in rs232.o
+      _SDL_RunThread in rs232.o
+      _SDL_CreateThread in rs232.o
+      _SDL_WaitThread in rs232.o
+      _RS232_ReadBytes in rs232.o
+      ...
+  "_sem_trywait", referenced from:
+      _SDL_SemTryWait in rs232.o
+      _SDL_SemWaitTimeout in rs232.o
+  "_sem_wait$UNIX2003", referenced from:
+      _SDL_SemWait in rs232.o
+      _SDL_SemWaitTimeout in rs232.o
+      _SDL_mutexP in rs232.o
+      _SDL_GetErrBuf in rs232.o
+      _SDL_CreateThread in rs232.o
+      _SDL_WaitThread in rs232.o
+      _RS232_ThreadFunc in rs232.o
+      ...
+  "_setvbuf", referenced from:
+      _RS232_OpenCOMPort in rs232.o
+  "_sin", referenced from:
+      _fpp_opp in fpp.o
+      _dsp_core_init in dsp_core.o
+      _DrawCircle in graph.o
+  "_sinh", referenced from:
+      _fpp_opp in fpp.o
+  "_sqrt", referenced from:
+      _fpp_opp in fpp.o
+      _Ym2149_BuildVolumeTable in sound.o
+      _VDI_SetResolution in vdi.o
+  "_srand", referenced from:
+      _hmain in main.o
+  "_sscanf", referenced from:
+      _fpp_opp in fpp.o
+      _BreakCond_Command in breakcond.o
+      _Symbols_Load in symbols.o
+      _Disass68kLoadSymbols in 68kDisass.o
+      _input_config in cfgopts.o
+      _Keymap_LoadRemapFile in keymap.o
+  "_stat$INODE64", referenced from:
+      _SDLGui_FileSelect in dlgFileSelect.o
+      _HFile_Read in file.o
+      _File_Exists in file.o
+      _File_FindPossibleExtFileName in file.o
+      _File_QueryOverwrite in file.o
+      _File_DirExists in file.o
+      _File_MakeValidPathName in file.o
+      ...
+  "_statvfs", referenced from:
+      _GemDOS_OpCode in gemdos.o
+  "_strcasecmp", referenced from:
+      _DebugUI_SetOptions in debugui.o
+      _BreakCond_GetHatariVariable in breakcond.o
+      _BreakCond_ParseValue in breakcond.o
+      _BreakCond_ParseRegister in breakcond.o
+      _getValue in evaluate.o
+      _Disasm_ParseOption in 68kDisass.o
+      _input_config in cfgopts.o
+      ...
+  "_strchr", referenced from:
+      _Log_SetExceptionDebugMask in log.o
+      _DebugUI_EvaluateExpressions in debugui.o
+      _BreakCond_Command in breakcond.o
+      _BreakAddr_Command in breakcond.o
+      _DebugCpu_Register in debugcpu.o
+      _DebugDsp_Register in debugdsp.o
+      _symbols_load_dri in symbols.o
+      ...
+  "_strcmp", referenced from:
+      _read_table68k in readcpu.o
+      _SDLGui_FileSelect in dlgFileSelect.o
+      _Log_ParseOptions in log.o
+      _Log_SetExceptionDebugMask in log.o
+      _DebugUI_PrintCmdHelp in debugui.o
+      _DebugUI_ParseCommand in debugui.o
+      _DebugUI_Reset in debugui.o
+      ...
+  "_strcspn", referenced from:
+      _DebugUI_EvaluateExpressions in debugui.o
+  "_strdup", referenced from:
+      _SDLGui_FileSelect in dlgFileSelect.o
+      _Log_ParseOptions in log.o
+      _Log_SetExceptionDebugMask in log.o
+      _DebugUI_ParseFile in debugui.o
+      _DebugUI_MatchHelper in debugui.o
+      _DebugUI_EvaluateExpressions in debugui.o
+      _DebugUI_ParseCommand in debugui.o
+      ...
+  "_strerror$UNIX2003", referenced from:
+      _File_Open in file.o
+      _MemorySnapShot_OpenFile in memorySnapShot.o
+  "_strlen", referenced from:
+      _read_table68k in readcpu.o
+      _Dialog_AboutDlg in dlgAbout.o
+      _SDLGui_FileSelect in dlgFileSelect.o
+      _Dialog_SoundDlg in dlgSound.o
+      _SDLGui_DrawDialog in sdlgui.o
+      _SDLGui_DoDialog in sdlgui.o
+      _NvRam_Init in nvram.o
+      ...
+  "_strncasecmp", referenced from:
+      _DebugUI_MatchHelper in debugui.o
+      _DebugUI_MatchReset in debugui.o
+      _BreakCond_MatchCpuVariable in breakcond.o
+      _ZIP_GetFilesDir in zip.o
+      _Opt_MatchOption in options.o
+      _strstartswith in retro_strings.o
+  "_strncmp", referenced from:
+      _mode_from_str in readcpu.o
+      _DebugUI_EvaluateExpressions in debugui.o
+      _DebugUI_MatchCommand in debugui.o
+      _BreakCond_Command in breakcond.o
+      _DebugInfo_MatchLock in debugInfo.o
+      _DebugInfo_MatchInfo in debugInfo.o
+      _Symbols_MatchCpuAddress in symbols.o
+      ...
+  "_strrchr", referenced from:
+      _DlgFloppy_Main in dlgFloppy.o
+      _DlgHardDisk_Main in dlgHardDisk.o
+      _DebugUI_ParseFile in debugui.o
+      _Opt_ParseParameters in options.o
+      _File_SplitPath in file.o
+      _File_MakeAbsoluteName in file.o
+      _File_MakeValidPathName in file.o
+      ...
+  "_strstr", referenced from:
+      _m68k_disasm in newcpu.o
+  "_strtok", referenced from:
+      _DebugUI_ParseCommand in debugui.o
+      _BreakCond_Command in breakcond.o
+      _input_config in cfgopts.o
+      _update_config in cfgopts.o
+      _Paths_Init in paths.o
+  "_strtol", referenced from:
+      _Control_ProcessBuffer in control.o
+  "_strtoul", referenced from:
+      _getNumber in evaluate.o
+  "_sysconf", referenced from:
+      _co_create in libco.o
+  "_tan", referenced from:
+      _fpp_opp in fpp.o
+  "_tanf", referenced from:
+      _DmaSnd_Init_Bass_and_Treble_Tables in dmaSnd.o
+  "_tanh", referenced from:
+      _fpp_opp in fpp.o
+  "_time", referenced from:
+      _NvRam_Data_ReadByte in nvram.o
+      _hmain in main.o
+      _Rtc_SecondsUnits_ReadByte in rtc.o
+      _Rtc_SecondsTens_ReadByte in rtc.o
+      _Rtc_MinutesUnits_ReadByte in rtc.o
+      _Rtc_MinutesTens_ReadByte in rtc.o
+      _Rtc_HoursUnits_ReadByte in rtc.o
+      ...
+  "_tmpfile", referenced from:
+      _update_config in cfgopts.o
+      _TOS_LoadImage in tos.o
+  "_tolower", referenced from:
+      _add_path_component in gemdos.o
+  "_toupper", referenced from:
+      _add_path_component in gemdos.o
+  "_unlink", referenced from:
+      _update_config in cfgopts.o
+      _GemDOS_OpCode in gemdos.o
+  "_usleep$UNIX2003", referenced from:
+      _SDLGui_FileSelect in dlgFileSelect.o
+      _hmain in main.o
+      _SDL_SemWaitTimeout in rs232.o
+      _RS232_ThreadFunc in rs232.o
+      _Screen_EnterFullScreen in screen.o
+      _Screen_ReturnFromFullScreen in screen.o
+  "_utime", referenced from:
+      _GemDOS_OpCode in gemdos.o
+  "_vfprintf", referenced from:
+      _Log_Printf in log.o
+      _Log_AlertDlg in log.o
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile.libretro:238: hatari_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-hatari'
+cp "hatari_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/hatari_libretro.dylib"
+cp: hatari_libretro.dylib: No such file or directory

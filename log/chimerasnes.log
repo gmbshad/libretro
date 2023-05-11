@@ -1,0 +1,36 @@
+Building chimerasnes...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-chimerasnes"
+gmake platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-chimerasnes'
+rm -f chimerasnes_libretro.dylib ./source/apu.o ./source/cheats.o ./source/clip.o ./source/cpu.o ./source/cpuexec.o ./source/cpuops.o ./source/cx4.o ./source/dma.o ./source/dsp.o ./source/dsp1.o ./source/dsp2.o ./source/dsp3.o ./source/dsp4.o ./source/fxemu.o ./source/fxinst.o ./source/gfx.o ./source/getset.o ./source/globals.o ./source/math.o ./source/memmap.o ./source/obc1.o ./source/ppu.o ./source/sa1.o ./source/sa1cpu.o ./source/sdd1.o ./source/seta010.o ./source/snesapu.o ./source/soundux.o ./source/spc700.o ./source/spc7110.o ./source/spc7110dec.o ./source/srtc.o ./source/tile.o ./source/xband.o ./libretro.o ./libretro-common/compat/compat_posix_string.o ./libretro-common/compat/compat_strcasestr.o ./libretro-common/compat/compat_strl.o ./libretro-common/compat/fopen_utf8.o ./libretro-common/encodings/encoding_utf.o ./libretro-common/file/file_path.o ./libretro-common/file/file_path_io.o ./libretro-common/streams/file_stream.o ./libretro-common/streams/file_stream_transforms.o ./libretro-common/string/stdstring.o ./libretro-common/time/rtime.o ./libretro-common/vfs/vfs_implementation.o
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-chimerasnes'
+gmake platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-chimerasnes'
+cc -arch i386 -fPIC -DGIT_VERSION=\""b8be941"\"   -Wall -Wextra -pedantic -Wno-sign-compare -Wno-unused-parameter -I./source -I. -I./libretro-common/include -Ofast -DNDEBUG -fomit-frame-pointer -fno-stack-protector -fvisibility=protected -fno-ident -fmerge-all-constants -ffast-math -fno-math-errno -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -fdata-sections -ffunction-sections -Wl,--gc-sections -flto=4 -fwhole-program -fuse-linker-plugin  -c -osource/apu.o source/apu.c
+cc -arch i386 -fPIC -DGIT_VERSION=\""b8be941"\"   -Wall -Wextra -pedantic -Wno-sign-compare -Wno-unused-parameter -I./source -I. -I./libretro-common/include -Ofast -DNDEBUG -fomit-frame-pointer -fno-stack-protector -fvisibility=protected -fno-ident -fmerge-all-constants -ffast-math -fno-math-errno -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -fdata-sections -ffunction-sections -Wl,--gc-sections -flto=4 -fwhole-program -fuse-linker-plugin  -c -osource/cheats.o source/cheats.c
+cc -arch i386 -fPIC -DGIT_VERSION=\""b8be941"\"   -Wall -Wextra -pedantic -Wno-sign-compare -Wno-unused-parameter -I./source -I. -I./libretro-common/include -Ofast -DNDEBUG -fomit-frame-pointer -fno-stack-protector -fvisibility=protected -fno-ident -fmerge-all-constants -ffast-math -fno-math-errno -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -fdata-sections -ffunction-sections -Wl,--gc-sections -flto=4 -fwhole-program -fuse-linker-plugin  -c -osource/clip.o source/clip.c
+cc -arch i386 -fPIC -DGIT_VERSION=\""b8be941"\"   -Wall -Wextra -pedantic -Wno-sign-compare -Wno-unused-parameter -I./source -I. -I./libretro-common/include -Ofast -DNDEBUG -fomit-frame-pointer -fno-stack-protector -fvisibility=protected -fno-ident -fmerge-all-constants -ffast-math -fno-math-errno -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -fdata-sections -ffunction-sections -Wl,--gc-sections -flto=4 -fwhole-program -fuse-linker-plugin  -c -osource/cpu.o source/cpu.c
+clang: error: unsupported argument '4' to option 'flto='
+clang: warning: -Wl,--gc-sections: 'linker' input unused [-Wunused-command-line-argument]
+clang: warning: optimization flag '-fwhole-program' is not supported [-Wignored-optimization-argument]
+clang: warning: optimization flag '-fuse-linker-plugin' is not supported [-Wignored-optimization-argument]
+gmake[1]: *** [Makefile:605: source/apu.o] Error 1
+gmake[1]: *** Waiting for unfinished jobs....
+clang: error: unsupported argument '4' to option 'flto='
+clang: warning: -Wl,--gc-sections: 'linker' input unused [-Wunused-command-line-argument]
+clang: warning: optimization flag '-fwhole-program' is not supported [-Wignored-optimization-argument]
+clang: warning: optimization flag '-fuse-linker-plugin' is not supported [-Wignored-optimization-argument]
+gmake[1]: *** [Makefile:605: source/cheats.o] Error 1
+clang: error: unsupported argument '4' to option 'flto='
+clang: warning: -Wl,--gc-sections: 'linker' input unused [-Wunused-command-line-argument]
+clang: warning: optimization flag '-fwhole-program' is not supported [-Wignored-optimization-argument]
+clang: warning: optimization flag '-fuse-linker-plugin' is not supported [-Wignored-optimization-argument]
+gmake[1]: *** [Makefile:605: source/cpu.o] Error 1
+clang: error: unsupported argument '4' to option 'flto='
+clang: warning: -Wl,--gc-sections: 'linker' input unused [-Wunused-command-line-argument]
+clang: warning: optimization flag '-fwhole-program' is not supported [-Wignored-optimization-argument]
+clang: warning: optimization flag '-fuse-linker-plugin' is not supported [-Wignored-optimization-argument]
+gmake[1]: *** [Makefile:605: source/clip.o] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-chimerasnes'
+cp "chimerasnes_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/chimerasnes_libretro.dylib"
+cp: chimerasnes_libretro.dylib: No such file or directory

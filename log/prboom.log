@@ -1,0 +1,791 @@
+Building prboom...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-prboom"
+gmake platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-prboom'
+rm -f ./libretro/libretro.o ./libretro/libretro_sound.o ./libretro/libretro-common/compat/compat_strcasestr.o ./libretro/libretro-common/encodings/encoding_utf.o ./libretro/libretro-common/compat/compat_snprintf.o ./libretro/libretro-common/compat/compat_strl.o ./libretro/libretro-common/compat/compat_posix_string.o ./libretro/libretro-common/compat/fopen_utf8.o ./libretro/libretro-common/streams/file_stream.o ./libretro/libretro-common/streams/file_stream_transforms.o ./libretro/libretro-common/string/stdstring.o ./libretro/libretro-common/vfs/vfs_implementation.o ./libretro/libretro-common/file/file_path.o ./libretro/libretro-common/file/file_path_io.o ./libretro/libretro-common/time/rtime.o ./deps/libmad/bit.o ./deps/libmad/decoder.o ./deps/libmad/fixed.o ./deps/libmad/frame.o ./deps/libmad/huffman.o ./deps/libmad/layer3.o ./deps/libmad/layer12.o ./deps/libmad/stream.o ./deps/libmad/synth.o ./deps/libmad/timer.o src/am_map.o src/d_deh.o src/d_items.o src/d_main.o src/doomstat.o src/dstrings.o src/f_finale.o src/f_wipe.o src/g_game.o src/hu_lib.o src/hu_stuff.o src/info.o src/m_argv.o src/m_bbox.o src/m_cheat.o src/m_menu.o src/m_misc.o src/m_random.o src/p_ceilng.o src/p_doors.o src/p_enemy.o src/p_floor.o src/p_inter.o src/p_lights.o src/p_map.o src/p_maputl.o src/p_mobj.o src/p_plats.o src/p_pspr.o src/p_saveg.o src/p_setup.o src/p_sight.o src/p_spec.o src/p_switch.o src/p_telept.o src/p_tick.o src/p_user.o src/r_bsp.o src/r_data.o src/r_draw.o src/r_main.o src/r_plane.o src/r_segs.o src/r_sky.o src/r_things.o src/r_patch.o src/s_sound.o src/sounds.o src/st_lib.o src/st_stuff.o src/tables.o src/v_video.o src/w_wad.o src/z_zone.o src/w_memcache.o src/r_fps.o src/r_filter.o src/p_genlin.o src/r_demo.o src/z_bmalloc.o src/lprintf.o src/wi_stuff.o src/md5.o src/d_client.o src/memio.o src/mus2mid.o src/dbopl.o src/opl.o src/opl_queue.o src/oplplayer.o src/flplayer.o src/midifile.o src/madplayer.o src/u_scanner.o src/u_mapinfo.o src/u_musinfo.o prboom_libretro.dylib
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-prboom'
+gmake platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-prboom'
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -olibretro/libretro.o libretro/libretro.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -olibretro/libretro_sound.o libretro/libretro_sound.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -olibretro/libretro-common/compat/compat_strcasestr.o libretro/libretro-common/compat/compat_strcasestr.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -olibretro/libretro-common/encodings/encoding_utf.o libretro/libretro-common/encodings/encoding_utf.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -olibretro/libretro-common/compat/compat_snprintf.o libretro/libretro-common/compat/compat_snprintf.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -olibretro/libretro-common/compat/compat_strl.o libretro/libretro-common/compat/compat_strl.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -olibretro/libretro-common/compat/compat_posix_string.o libretro/libretro-common/compat/compat_posix_string.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -olibretro/libretro-common/compat/fopen_utf8.o libretro/libretro-common/compat/fopen_utf8.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -olibretro/libretro-common/streams/file_stream.o libretro/libretro-common/streams/file_stream.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -olibretro/libretro-common/streams/file_stream_transforms.o libretro/libretro-common/streams/file_stream_transforms.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -olibretro/libretro-common/string/stdstring.o libretro/libretro-common/string/stdstring.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -olibretro/libretro-common/vfs/vfs_implementation.o libretro/libretro-common/vfs/vfs_implementation.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -olibretro/libretro-common/file/file_path.o libretro/libretro-common/file/file_path.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -olibretro/libretro-common/file/file_path_io.o libretro/libretro-common/file/file_path_io.c
+libretro/libretro-common/vfs/vfs_implementation.c:713:18: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+      if (result != -1 && pos + result > stream->size)
+          ~~~~~~ ^  ~~
+libretro/libretro-common/vfs/vfs_implementation.c:726:15: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   if (result != -1 && pos + result > stream->size)
+       ~~~~~~ ^  ~~
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -olibretro/libretro-common/time/rtime.o libretro/libretro-common/time/rtime.c
+2 warnings generated.
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -odeps/libmad/bit.o deps/libmad/bit.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -odeps/libmad/decoder.o deps/libmad/decoder.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -odeps/libmad/fixed.o deps/libmad/fixed.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -odeps/libmad/frame.o deps/libmad/frame.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -odeps/libmad/huffman.o deps/libmad/huffman.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -odeps/libmad/layer3.o deps/libmad/layer3.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -odeps/libmad/layer12.o deps/libmad/layer12.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -odeps/libmad/stream.o deps/libmad/stream.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -odeps/libmad/synth.o deps/libmad/synth.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -odeps/libmad/timer.o deps/libmad/timer.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/am_map.o src/am_map.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/d_deh.o src/d_deh.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/d_items.o src/d_items.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/d_main.o src/d_main.c
+src/d_main.c:449:12: warning: missing field 'name' initializer [-Wmissing-field-initializers]
+      {NULL},
+           ^
+src/d_main.c:450:12: warning: missing field 'name' initializer [-Wmissing-field-initializers]
+      {NULL},
+           ^
+src/d_main.c:451:12: warning: missing field 'name' initializer [-Wmissing-field-initializers]
+      {NULL},
+           ^
+src/d_main.c:456:12: warning: missing field 'name' initializer [-Wmissing-field-initializers]
+      {NULL},
+           ^
+src/d_main.c:457:12: warning: missing field 'name' initializer [-Wmissing-field-initializers]
+      {NULL},
+           ^
+src/d_main.c:458:12: warning: missing field 'name' initializer [-Wmissing-field-initializers]
+      {NULL},
+           ^
+src/d_main.c:463:12: warning: missing field 'name' initializer [-Wmissing-field-initializers]
+      {NULL},
+           ^
+src/d_main.c:464:12: warning: missing field 'name' initializer [-Wmissing-field-initializers]
+      {NULL},
+           ^
+src/d_main.c:465:12: warning: missing field 'name' initializer [-Wmissing-field-initializers]
+      {NULL},
+           ^
+src/d_main.c:466:12: warning: missing field 'name' initializer [-Wmissing-field-initializers]
+      {NULL},
+           ^
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/doomstat.o src/doomstat.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/dstrings.o src/dstrings.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/f_finale.o src/f_finale.c
+10 warnings generated.
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/f_wipe.o src/f_wipe.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/g_game.o src/g_game.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/hu_lib.o src/hu_lib.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/hu_stuff.o src/hu_stuff.c
+src/g_game.c:1464:27: warning: address of array 'gamemapinfo->endpic' will always evaluate to 'true' [-Wpointer-bool-conversion]
+    else if (gamemapinfo->endpic && gamemapinfo->endpic[0] && gamemapinfo->nointermission)
+             ~~~~~~~~~~~~~^~~~~~ ~~
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/info.o src/info.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/m_argv.o src/m_argv.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/m_bbox.o src/m_bbox.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/m_cheat.o src/m_cheat.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/m_menu.o src/m_menu.c
+src/m_cheat.c:264:8: warning: missing field 'deh_cheat' initializer [-Wmissing-field-initializers]
+  {NULL}                 // end-of-list marker
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/m_misc.o src/m_misc.c
+       ^
+src/m_misc.c:187:25: warning: missing field 'ppsz' initializer [-Wmissing-field-initializers]
+  {"Misc settings",{NULL},{0},UL,UL,def_none,ss_none, NULL, NULL},
+                        ^
+src/m_misc.c:206:17: warning: missing field 'ppsz' initializer [-Wmissing-field-initializers]
+  {"Files",{NULL},{0},UL,UL,def_none,ss_none, NULL, NULL},
+                ^
+src/m_misc.c:219:25: warning: missing field 'ppsz' initializer [-Wmissing-field-initializers]
+  {"Game settings",{NULL},{0},UL,UL,def_none,ss_none, NULL, NULL},
+                        ^
+src/m_misc.c:261:34: warning: missing field 'ppsz' initializer [-Wmissing-field-initializers]
+  {"Compatibility settings",{NULL},{0},UL,UL,def_none,ss_none, NULL, NULL},
+                                 ^
+src/m_misc.c:288:26: warning: missing field 'ppsz' initializer [-Wmissing-field-initializers]
+  {"Sound settings",{NULL},{0},UL,UL,def_none,ss_none, NULL, NULL},
+                         ^
+src/m_misc.c:358:24: warning: missing field 'ppsz' initializer [-Wmissing-field-initializers]
+  {"Key bindings",{NULL},{0},UL,UL,def_none,ss_none, NULL, NULL},
+                       ^
+src/m_misc.c:500:23: warning: missing field 'ppsz' initializer [-Wmissing-field-initializers]
+  {"Chat macros",{NULL},{0},UL,UL,def_none,ss_none, NULL, NULL},
+                      ^
+src/m_misc.c:522:28: warning: missing field 'ppsz' initializer [-Wmissing-field-initializers]
+  {"Automap settings",{NULL},{0},UL,UL,def_none,ss_none, NULL, NULL},
+                           ^
+src/m_misc.c:582:37: warning: missing field 'ppsz' initializer [-Wmissing-field-initializers]
+  {"Heads-up display settings",{NULL},{0},UL,UL,def_none,ss_none, NULL, NULL},
+                                    ^
+src/m_misc.c:626:30: warning: missing field 'ppsz' initializer [-Wmissing-field-initializers]
+  {"Weapon preferences",{NULL},{0},UL,UL,def_none,ss_none, NULL, NULL},
+                             ^
+src/m_misc.c:649:17: warning: missing field 'ppsz' initializer [-Wmissing-field-initializers]
+        {"Music", {NULL},{0},UL,UL,def_none,ss_none, NULL, NULL},
+                       ^
+1 warning generated.
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/m_random.o src/m_random.c
+1 warning generated.
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_ceilng.o src/p_ceilng.c
+11 warnings generated.
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_doors.o src/p_doors.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_enemy.o src/p_enemy.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_floor.o src/p_floor.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_inter.o src/p_inter.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_lights.o src/p_lights.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_map.o src/p_map.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_maputl.o src/p_maputl.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_mobj.o src/p_mobj.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_plats.o src/p_plats.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_pspr.o src/p_pspr.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_saveg.o src/p_saveg.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_setup.o src/p_setup.c
+src/p_saveg.c:562:45: warning: comparison of integers of different signs: 'int' and 'size_t' (aka 'unsigned long') [-Wsign-compare]
+      if (!target || P_GetMobj(target,size) >= size)
+                     ~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+src/p_setup.c:761:7: warning: variable 'len' set but not used [-Wunused-but-set-variable]
+  int len = W_LumpLength(lump);
+      ^
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_sight.o src/p_sight.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_spec.o src/p_spec.c
+1 warning generated.
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_switch.o src/p_switch.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_telept.o src/p_telept.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_tick.o src/p_tick.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_user.o src/p_user.c
+1 warning generated.
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/r_bsp.o src/r_bsp.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/r_data.o src/r_data.c
+src/r_data.c:134:8: warning: variable 'totalwidth' set but not used [-Wunused-but-set-variable]
+  int  totalwidth;
+       ^
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/r_draw.o src/r_draw.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/r_main.o src/r_main.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/r_plane.o src/r_plane.c
+src/r_draw.c:299:14: warning: variable 'source' set but not used [-Wunused-but-set-variable]
+   uint16_t *source;
+             ^
+src/r_draw.c:334:14: warning: variable 'source' set but not used [-Wunused-but-set-variable]
+   uint16_t *source;
+             ^
+src/r_draw.c:391:14: warning: variable 'source' set but not used [-Wunused-but-set-variable]
+   uint16_t *source = &short_tempbuf[commontop << 2];
+             ^
+1 warning generated.
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/r_segs.o src/r_segs.c
+src/r_draw.c:4033:12: warning: variable 'frac' set but not used [-Wunused-but-set-variable]
+   fixed_t frac;
+           ^
+src/r_draw.c:4118:11: warning: variable 'frac' set but not used [-Wunused-but-set-variable]
+  fixed_t frac;
+          ^
+src/r_draw.c:4204:11: warning: variable 'frac' set but not used [-Wunused-but-set-variable]
+  fixed_t frac;
+          ^
+src/r_draw.c:4298:11: warning: variable 'frac' set but not used [-Wunused-but-set-variable]
+  fixed_t frac;
+          ^
+src/r_draw.c:4401:12: warning: variable 'frac' set but not used [-Wunused-but-set-variable]
+   fixed_t frac;
+           ^
+src/r_draw.c:4509:11: warning: variable 'frac' set but not used [-Wunused-but-set-variable]
+  fixed_t frac;
+          ^
+src/r_draw.c:4627:12: warning: variable 'frac' set but not used [-Wunused-but-set-variable]
+   fixed_t frac;
+           ^
+src/r_draw.c:4722:12: warning: variable 'frac' set but not used [-Wunused-but-set-variable]
+   fixed_t frac;
+           ^
+src/r_draw.c:4827:12: warning: variable 'frac' set but not used [-Wunused-but-set-variable]
+   fixed_t frac;
+           ^
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/r_sky.o src/r_sky.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/r_things.o src/r_things.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/r_patch.o src/r_patch.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/s_sound.o src/s_sound.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/sounds.o src/sounds.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/st_lib.o src/st_lib.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/st_stuff.o src/st_stuff.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/tables.o src/tables.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/v_video.o src/v_video.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/w_wad.o src/w_wad.c
+src/v_video.c:132:8: warning: missing field 'map' initializer [-Wmissing-field-initializers]
+  {NULL}
+       ^
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/z_zone.o src/z_zone.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/w_memcache.o src/w_memcache.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/r_fps.o src/r_fps.c
+1 warning generated.
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/r_filter.o src/r_filter.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/p_genlin.o src/p_genlin.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/r_demo.o src/r_demo.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/z_bmalloc.o src/z_bmalloc.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/lprintf.o src/lprintf.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/wi_stuff.o src/wi_stuff.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/md5.o src/md5.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/d_client.o src/d_client.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/memio.o src/memio.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/mus2mid.o src/mus2mid.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/dbopl.o src/dbopl.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/opl.o src/opl.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/opl_queue.o src/opl_queue.c
+12 warnings generated.
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/oplplayer.o src/oplplayer.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/flplayer.o src/flplayer.c
+src/oplplayer.c:1127:16: warning: variable 'total' set but not used [-Wunused-but-set-variable]
+    static int total = 0;
+               ^
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/midifile.o src/midifile.c
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/madplayer.o src/madplayer.c
+src/midifile.c:565:25: warning: format specifies type 'long' but the argument has type 'unsigned int' [-Wformat]
+                        ntohl(file->header.chunk_header.chunk_size));
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_endian.h:135:25: note: expanded from macro 'ntohl'
+#define ntohl(x)        __DARWIN_OSSwapInt32(x)
+                        ^~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h:88:5: note: expanded from macro '__DARWIN_OSSwapInt32'
+    (__builtin_constant_p(x) ? __DARWIN_OSSwapConstInt32(x) : _OSSwapInt32(x))
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/u_scanner.o src/u_scanner.c
+src/u_scanner.c:50:3: warning: suspicious concatenation of string literals in an array initialization; did you mean to separate the elements with a comma? [-Wstring-concatenation]
+  "Less Than or Equals",
+  ^
+src/u_scanner.c:49:3: note: place parentheses around the string literal to silence warning
+  "Greater Than or Equals"
+  ^
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/u_mapinfo.o src/u_mapinfo.c
+1 warning generated.
+cc -arch i386 -DGIT_VERSION=\"" 47a95e9"\" -DHAVE_LIBMAD -DMUSIC_SUPPORT -O2 -DNDEBUG -D__LIBRETRO__ -DFPM_DEFAULT -DINLINE="inline" -fomit-frame-pointer  -Wall -W -Wno-unused-parameter -fPIC -I. -Isrc -I./deps/libmad -I./libretro/libretro-common/include -include z_zone.h  -c -osrc/u_musinfo.o src/u_musinfo.c
+1 warning generated.
+1 warning generated.
+cc -arch i386 -fPIC -dynamiclib -o prboom_libretro.dylib ./libretro/libretro.o ./libretro/libretro_sound.o ./libretro/libretro-common/compat/compat_strcasestr.o ./libretro/libretro-common/encodings/encoding_utf.o ./libretro/libretro-common/compat/compat_snprintf.o ./libretro/libretro-common/compat/compat_strl.o ./libretro/libretro-common/compat/compat_posix_string.o ./libretro/libretro-common/compat/fopen_utf8.o ./libretro/libretro-common/streams/file_stream.o ./libretro/libretro-common/streams/file_stream_transforms.o ./libretro/libretro-common/string/stdstring.o ./libretro/libretro-common/vfs/vfs_implementation.o ./libretro/libretro-common/file/file_path.o ./libretro/libretro-common/file/file_path_io.o ./libretro/libretro-common/time/rtime.o ./deps/libmad/bit.o ./deps/libmad/decoder.o ./deps/libmad/fixed.o ./deps/libmad/frame.o ./deps/libmad/huffman.o ./deps/libmad/layer3.o ./deps/libmad/layer12.o ./deps/libmad/stream.o ./deps/libmad/synth.o ./deps/libmad/timer.o src/am_map.o src/d_deh.o src/d_items.o src/d_main.o src/doomstat.o src/dstrings.o src/f_finale.o src/f_wipe.o src/g_game.o src/hu_lib.o src/hu_stuff.o src/info.o src/m_argv.o src/m_bbox.o src/m_cheat.o src/m_menu.o src/m_misc.o src/m_random.o src/p_ceilng.o src/p_doors.o src/p_enemy.o src/p_floor.o src/p_inter.o src/p_lights.o src/p_map.o src/p_maputl.o src/p_mobj.o src/p_plats.o src/p_pspr.o src/p_saveg.o src/p_setup.o src/p_sight.o src/p_spec.o src/p_switch.o src/p_telept.o src/p_tick.o src/p_user.o src/r_bsp.o src/r_data.o src/r_draw.o src/r_main.o src/r_plane.o src/r_segs.o src/r_sky.o src/r_things.o src/r_patch.o src/s_sound.o src/sounds.o src/st_lib.o src/st_stuff.o src/tables.o src/v_video.o src/w_wad.o src/z_zone.o src/w_memcache.o src/r_fps.o src/r_filter.o src/p_genlin.o src/r_demo.o src/z_bmalloc.o src/lprintf.o src/wi_stuff.o src/md5.o src/d_client.o src/memio.o src/mus2mid.o src/dbopl.o src/opl.o src/opl_queue.o src/oplplayer.o src/flplayer.o src/midifile.o src/madplayer.o src/u_scanner.o src/u_mapinfo.o src/u_musinfo.o -framework CoreFoundation -lm
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: could not create compact unwind for _I_UpdateSound: stack subl instruction is too different from dwarf stack size
+ld: warning: could not create compact unwind for _D_DoomMainSetup: stack subl instruction is too different from dwarf stack size
+ld: warning: could not create compact unwind for _G_Ticker: stack subl instruction is too different from dwarf stack size
+ld: warning: could not create compact unwind for _G_DoLoadGame: stack subl instruction is too different from dwarf stack size
+ld: warning: could not create compact unwind for _G_SaveGame: stack subl instruction is too different from dwarf stack size
+ld: warning: could not create compact unwind for _mad_layer_III: stack subl instruction is too different from dwarf stack size
+ld: warning: could not create compact unwind for _I_Error: stack subl instruction is too different from dwarf stack size
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks//CoreFoundation.framework/CoreFoundation.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks//CoreFoundation.framework/CoreFoundation.tbd (4 slices)
+Undefined symbols for architecture i386:
+  "__DefaultRuneLocale", referenced from:
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+      _ProcessDehFile in d_deh.o
+      _ptr_lstrip in d_deh.o
+      _rstrip in d_deh.o
+      _deh_GetData in d_deh.o
+      _deh_procStrings in d_deh.o
+      ...
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+      _ProcessDehFile in d_deh.o
+      _ptr_lstrip in d_deh.o
+      _rstrip in d_deh.o
+      _deh_GetData in d_deh.o
+      _deh_procStrings in d_deh.o
+      ...
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+      _ProcessDehFile in d_deh.o
+      _ptr_lstrip in d_deh.o
+      _rstrip in d_deh.o
+      _deh_GetData in d_deh.o
+      _deh_procStrings in d_deh.o
+      ...
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+      _ProcessDehFile in d_deh.o
+      _ptr_lstrip in d_deh.o
+      _rstrip in d_deh.o
+      _deh_GetData in d_deh.o
+      _deh_procStrings in d_deh.o
+      ...
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+      _ProcessDehFile in d_deh.o
+      _ptr_lstrip in d_deh.o
+      _rstrip in d_deh.o
+      _deh_GetData in d_deh.o
+      _deh_procStrings in d_deh.o
+      ...
+  "___bzero", referenced from:
+      _I_UpdateSound in libretro_sound.o
+      _I_InitSound in libretro_sound.o
+      _mad_frame_init in frame.o
+      _mad_layer_III in layer3.o
+      _mad_layer_II in layer12.o
+      _D_DoomMainSetup in d_main.o
+      _G_DoLoadLevel in g_game.o
+      ...
+  "___divdi3", referenced from:
+      _rfread in file_stream_transforms.o
+      _rfwrite in file_stream_transforms.o
+      _AM_Start in am_map.o
+      _AM_Responder in am_map.o
+      _AM_Ticker in am_map.o
+      _T_VerticalDoor in p_doors.o
+      _PIT_ApplyTorque in p_map.o
+      ...
+  "___error", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+      _M_WriteFile in m_misc.o
+  "___maskrune", referenced from:
+      _filestream_vscanf in file_stream.o
+      _ProcessDehFile in d_deh.o
+      _ptr_lstrip in d_deh.o
+      _rstrip in d_deh.o
+      _deh_GetData in d_deh.o
+      _deh_procStrings in d_deh.o
+      _deh_procBexCodePointers in d_deh.o
+      ...
+  "___memset_chk", referenced from:
+      _I_UpdateSound in libretro_sound.o
+      _R_ClearClipSegs in r_bsp.o
+  "___sprintf_chk", referenced from:
+      _I_GetSfxLumpNum in libretro_sound.o
+      _I_InitSound in libretro_sound.o
+      _GetFirstMap in d_main.o
+      _F_BunnyScroll in f_finale.o
+      _G_CheckNumForLevel in g_game.o
+      _G_DoLoadLevel in g_game.o
+      _G_DoLoadGameFromSaveBuffer in g_game.o
+      ...
+  "___stack_chk_fail", referenced from:
+      _update_variables in libretro.o
+      _retro_load_game in libretro.o
+      _lprintf in libretro.o
+      _I_GetSfxLumpNum in libretro_sound.o
+      _I_UpdateSound in libretro_sound.o
+      _I_InitSound in libretro_sound.o
+      _filestream_vscanf in file_stream.o
+      ...
+  "___stack_chk_guard", referenced from:
+      _update_variables in libretro.o
+      _retro_load_game in libretro.o
+      _lprintf in libretro.o
+      _I_GetSfxLumpNum in libretro_sound.o
+      _I_UpdateSound in libretro_sound.o
+      _I_InitSound in libretro_sound.o
+      _filestream_vscanf in file_stream.o
+      ...
+      _update_variables in libretro.o
+      _retro_load_game in libretro.o
+      _lprintf in libretro.o
+      _I_GetSfxLumpNum in libretro_sound.o
+      _I_UpdateSound in libretro_sound.o
+      _I_InitSound in libretro_sound.o
+      _filestream_vscanf in file_stream.o
+      ...
+      _update_variables in libretro.o
+      _retro_load_game in libretro.o
+      _lprintf in libretro.o
+      _I_GetSfxLumpNum in libretro_sound.o
+      _I_UpdateSound in libretro_sound.o
+      _I_InitSound in libretro_sound.o
+      _filestream_vscanf in file_stream.o
+      ...
+      _update_variables in libretro.o
+      _retro_load_game in libretro.o
+      _lprintf in libretro.o
+      _I_GetSfxLumpNum in libretro_sound.o
+      _I_UpdateSound in libretro_sound.o
+      _I_InitSound in libretro_sound.o
+      _filestream_vscanf in file_stream.o
+      ...
+      _update_variables in libretro.o
+      _retro_load_game in libretro.o
+      _lprintf in libretro.o
+      _I_GetSfxLumpNum in libretro_sound.o
+      _I_UpdateSound in libretro_sound.o
+      _I_InitSound in libretro_sound.o
+      _filestream_vscanf in file_stream.o
+      ...
+      _update_variables in libretro.o
+      _retro_load_game in libretro.o
+      _lprintf in libretro.o
+      _I_GetSfxLumpNum in libretro_sound.o
+      _I_UpdateSound in libretro_sound.o
+      _I_InitSound in libretro_sound.o
+      _filestream_vscanf in file_stream.o
+      ...
+      _update_variables in libretro.o
+      _retro_load_game in libretro.o
+      _lprintf in libretro.o
+      _I_GetSfxLumpNum in libretro_sound.o
+      _I_UpdateSound in libretro_sound.o
+      _I_InitSound in libretro_sound.o
+      _filestream_vscanf in file_stream.o
+      ...
+      ...
+  "___stdoutp", referenced from:
+      _ProcessDehFile in d_deh.o
+      _D_DoomMainSetup in d_main.o
+      _ProcessDehFile in d_deh.o
+      _D_DoomMainSetup in d_main.o
+  "___strcat_chk", referenced from:
+      _deh_procBexCodePointers in d_deh.o
+      _HU_Drawer in hu_stuff.o
+  "___strcpy_chk", referenced from:
+      _deh_procText in d_deh.o
+      _D_DoomMainSetup in d_main.o
+      _GetFirstMap in d_main.o
+      _G_SaveGame in g_game.o
+      _HU_Responder in hu_stuff.o
+      _M_SaveSelect in m_menu.o
+      _M_DrawScreenItems in m_menu.o
+      ...
+  "___strlcat_chk", referenced from:
+      _fill_pathname_abbreviated_or_relative in file_path.o
+  "___strlcpy_chk", referenced from:
+      _update_variables in libretro.o
+      _retro_load_game in libretro.o
+      _path_get_archive_delim in file_path.o
+      _fill_pathname in file_path.o
+      _fill_pathname_abbreviated_or_relative in file_path.o
+  "___tolower", referenced from:
+      _strcasestr_retro__ in compat_strcasestr.o
+      _string_to_lower in stdstring.o
+      _path_is_compressed_file in file_path.o
+      _deh_procPars in d_deh.o
+      _M_FindCheats in m_cheat.o
+      _U_GetNextToken in u_scanner.o
+  "___toupper", referenced from:
+      _string_to_upper in stdstring.o
+      _string_ucwords in stdstring.o
+      _F_CastDrawer in f_finale.o
+      _F_TextWrite in f_finale.o
+      _HUlib_drawTextLine in hu_lib.o
+      _M_DrawLoad in m_menu.o
+      _M_WriteText in m_menu.o
+      ...
+  "_abort", referenced from:
+      _retro_vfs_file_get_path_impl in vfs_implementation.o
+      _Channel__BlockTemplate in dbopl.o
+      _Channel__BlockTemplate_sm3Percussion in dbopl.o
+      _Channel__BlockTemplate_sm2Percussion in dbopl.o
+  "_atof", referenced from:
+      _U_GetNextToken in u_scanner.o
+  "_atoi", referenced from:
+      _update_variables in libretro.o
+      _D_DoomMainSetup in d_main.o
+      _G_DoPlayDemo in g_game.o
+      _G_ReloadDefaults in g_game.o
+      _M_Responder in m_menu.o
+      _P_SpawnSpecials in p_spec.o
+  "_close$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_close_impl in vfs_implementation.o
+  "_closedir$UNIX2003", referenced from:
+      _retro_vfs_closedir_impl in vfs_implementation.o
+  "_exp2", referenced from:
+      _DBOPL_InitTables in dbopl.o
+  "_fclose", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_close_impl in vfs_implementation.o
+      _ProcessDehFile in d_deh.o
+     (maybe you meant: _mem_fclose)
+  "_feof", referenced from:
+      _deh_procThing in d_deh.o
+      _deh_procFrame in d_deh.o
+      _deh_procPointer in d_deh.o
+      _deh_procSounds in d_deh.o
+      _deh_procAmmo in d_deh.o
+      _deh_procWeapon in d_deh.o
+      _deh_procSprite in d_deh.o
+      ...
+  "_ferror", referenced from:
+      _retro_vfs_file_error_impl in vfs_implementation.o
+  "_fflush", referenced from:
+      _retro_vfs_file_flush_impl in vfs_implementation.o
+  "_fgetc", referenced from:
+      _deh_procText in d_deh.o
+  "_fgets", referenced from:
+      _ProcessDehFile in d_deh.o
+      _deh_procThing in d_deh.o
+      _deh_procFrame in d_deh.o
+      _deh_procPointer in d_deh.o
+      _deh_procSounds in d_deh.o
+      _deh_procAmmo in d_deh.o
+      _deh_procWeapon in d_deh.o
+      ...
+  "_fileno", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fopen$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _ProcessDehFile in d_deh.o
+  "_fprintf", referenced from:
+      _ProcessDehFile in d_deh.o
+      _deh_procStringSub in d_deh.o
+      _deh_procThing in d_deh.o
+      _deh_procFrame in d_deh.o
+      _deh_procPointer in d_deh.o
+      _deh_procSounds in d_deh.o
+      _deh_procAmmo in d_deh.o
+      ...
+  "_fread", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+     (maybe you meant: _mem_fread)
+  "_free", referenced from:
+      _Z_Close in z_zone.o
+      _Z_FreeTags in z_zone.o
+      _Z_Malloc in z_zone.o
+      _Z_Free in z_zone.o
+      _Z_Realloc in z_zone.o
+     (maybe you meant: _freelookviewheight, _path_linked_list_free )
+  "_fseeko", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+  "_ftello", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+      _retro_vfs_file_write_impl in vfs_implementation.o
+  "_ftruncate", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fwrite$UNIX2003", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+      _deh_procThing in d_deh.o
+      _deh_procFrame in d_deh.o
+      _deh_procText in d_deh.o
+      _deh_procStrings in d_deh.o
+      _deh_procBexSprites in d_deh.o
+      _deh_procBexSounds in d_deh.o
+      ...
+  "_localtime", referenced from:
+      _rtime_localtime in rtime.o
+     (maybe you meant: _rtime_localtime)
+  "_lseek", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+      _retro_vfs_file_write_impl in vfs_implementation.o
+  "_malloc", referenced from:
+      _Z_Malloc in z_zone.o
+  "_mbstowcs", referenced from:
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+  "_memchr", referenced from:
+      _R_RenderBSPNode in r_bsp.o
+      _Z_BMalloc in z_bmalloc.o
+      _Z_BFree in z_bmalloc.o
+  "_memcpy", referenced from:
+      _retro_load_game in libretro.o
+      _utf8cpy in encoding_utf.o
+      _string_replace_substring in stdstring.o
+      _mad_layer_III in layer3.o
+      _D_DoomMainSetup in d_main.o
+      _wipe_ScreenWipe in f_wipe.o
+      _G_DoSaveGameToBuffer in g_game.o
+      ...
+  "_memmove", referenced from:
+      _string_trim_whitespace_left in stdstring.o
+      _string_trim_whitespace in stdstring.o
+      _mad_layer_III in layer3.o
+      _P_SetupLevel in p_setup.o
+  "_memset", referenced from:
+      _HU_Drawer in hu_stuff.o
+      _R_RenderBSPNode in r_bsp.o
+      _R_ClearPlanes in r_plane.o
+      _R_DupPlane in r_plane.o
+      _R_FindPlane in r_plane.o
+      _R_CheckPlane in r_plane.o
+      _R_InitSprites in r_things.o
+      ...
+  "_memset_pattern16", referenced from:
+      _P_SpawnPlayer in p_mobj.o
+      _R_DrawMasked in r_things.o
+      _D_InitNetGame in d_client.o
+      _Chip__Setup in dbopl.o
+  "_mkdir", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+     (maybe you meant: _path_mkdir, _retro_vfs_mkdir_impl )
+  "_open$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_opendir$INODE64$UNIX2003", referenced from:
+      _retro_vfs_opendir_impl in vfs_implementation.o
+  "_read$UNIX2003", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+  "_readdir$INODE64", referenced from:
+      _retro_vfs_readdir_impl in vfs_implementation.o
+  "_remove", referenced from:
+      _retro_vfs_file_remove_impl in vfs_implementation.o
+     (maybe you meant: _string_remove_all_whitespace, _string_remove_all_chars , _path_remove_extension , _retro_vfs_file_remove_impl )
+  "_rename", referenced from:
+      _retro_vfs_file_rename_impl in vfs_implementation.o
+     (maybe you meant: _retro_vfs_file_rename_impl, _filestream_rename )
+  "_setbuf", referenced from:
+      _D_DoomMainSetup in d_main.o
+  "_sin", referenced from:
+      _DBOPL_InitTables in dbopl.o
+     (maybe you meant: _singledemo, _string_replace_whitespace_with_single_character , _string_count_occurrences_single_character , _string_replace_multi_space_with_single_space )
+  "_snprintf", referenced from:
+      _retro_load_game in libretro.o
+      _G_Ticker in g_game.o
+      _G_DoLoadGame in g_game.o
+      _G_DoCompleted in g_game.o
+      _G_DoWorldDone in g_game.o
+      _G_ValidateMapName in g_game.o
+      _G_SaveGameName in g_game.o
+      ...
+  "_sprintf", referenced from:
+      _FindFileInDir in libretro.o
+      _I_FindFile in libretro.o
+      _mad_timer_string in timer.o
+      _M_DrawScreenItems in m_menu.o
+      _WI_levelNameLump in wi_stuff.o
+  "_sscanf", referenced from:
+      _filestream_vscanf in file_stream.o
+      _deh_GetData in d_deh.o
+      _deh_procThing in d_deh.o
+      _deh_procFrame in d_deh.o
+      _deh_procPointer in d_deh.o
+      _deh_procSounds in d_deh.o
+      _deh_procAmmo in d_deh.o
+      ...
+  "_stat$INODE64", referenced from:
+      _retro_vfs_stat_impl in vfs_implementation.o
+      _retro_vfs_dirent_is_dir_impl in vfs_implementation.o
+  "_strcasecmp", referenced from:
+      _retro_load_game in libretro.o
+      _deh_procStringSub in d_deh.o
+      _deh_procThing in d_deh.o
+      _deh_procFrame in d_deh.o
+      _deh_procPointer in d_deh.o
+      _deh_procSounds in d_deh.o
+      _deh_procAmmo in d_deh.o
+      ...
+  "_strcat", referenced from:
+      _retro_set_environment in libretro.o
+      _FindFileInDir in libretro.o
+      _deh_procStrings in d_deh.o
+      _D_DoomMainSetup in d_main.o
+      _G_DoLoadGame in g_game.o
+      _AddDefaultExtension in w_wad.o
+  "_strchr", referenced from:
+      _rfopen in file_stream_transforms.o
+      _string_replace_all_chars in stdstring.o
+      _path_get_archive_delim in file_path.o
+  "_strcmp", referenced from:
+      _retro_set_environment in libretro.o
+      _update_variables in libretro.o
+      _retro_cheat_set in libretro.o
+      _path_mkdir in file_path_io.o
+      _ProcessDehFile in d_deh.o
+      _G_ValidateMapName in g_game.o
+      _M_SaveSelect in m_menu.o
+      ...
+  "_strcpy", referenced from:
+      _retro_set_environment in libretro.o
+      _FindFileInDir in libretro.o
+      _I_FindFile in libretro.o
+      _string_replace_substring in stdstring.o
+      _deh_GetData in d_deh.o
+      _D_AddFile in d_main.o
+      _G_DoSaveGameToSaveBuffer in g_game.o
+      ...
+  "_strftime$UNIX2003", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+  "_strlcat", referenced from:
+      _fill_pathname in file_path.o
+      _fill_pathname_slash in file_path.o
+      _fill_pathname_dir in file_path.o
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+      _path_relative_to in file_path.o
+      _fill_pathname_resolve_relative in file_path.o
+      ...
+  "_strlcpy", referenced from:
+      _utf16_to_char_string in encoding_utf.o
+      _word_wrap in stdstring.o
+      _word_wrap_wideglyph in stdstring.o
+      _string_tokenize in stdstring.o
+      _fill_pathname in file_path.o
+      _fill_pathname_base in file_path.o
+      _fill_pathname_basedir in file_path.o
+      ...
+  "_strlen", referenced from:
+      _retro_set_environment in libretro.o
+      _FindFileInDir in libretro.o
+      _I_FindFile in libretro.o
+      _HasTrailingSlash in libretro.o
+      _strcasestr_retro__ in compat_strcasestr.o
+      _string_replace_substring in stdstring.o
+      _string_trim_whitespace_left in stdstring.o
+      ...
+  "_strncasecmp", referenced from:
+      _ProcessDehFile in d_deh.o
+      _deh_procText in d_deh.o
+      _deh_procHelperThing in d_deh.o
+      _deh_procBexSprites in d_deh.o
+      _deh_procBexSounds in d_deh.o
+      _deh_procBexMusic in d_deh.o
+      _D_DoomMainSetup in d_main.o
+      ...
+  "_strncmp", referenced from:
+      _I_RegisterSong in libretro_sound.o
+      _G_DoLoadGameFromSaveBuffer in g_game.o
+      _M_InitHelpScreen in m_menu.o
+      _M_Init in m_menu.o
+      _I_OPL_InitMusic in oplplayer.o
+  "_strncpy", referenced from:
+      _retro_load_game in libretro.o
+      _deh_procThing in d_deh.o
+      _deh_procFrame in d_deh.o
+      _deh_procPointer in d_deh.o
+      _deh_procSounds in d_deh.o
+      _deh_procAmmo in d_deh.o
+      _deh_procWeapon in d_deh.o
+      ...
+  "_strrchr", referenced from:
+      _retro_load_game in libretro.o
+      _string_index_last_occurance in stdstring.o
+      _path_get_extension in file_path.o
+      _path_basename in file_path.o
+      _path_get_extension_mutable in file_path.o
+      _path_remove_extension in file_path.o
+      _path_is_compressed_file in file_path.o
+      ...
+  "_strstr", referenced from:
+      _string_replace_substring in stdstring.o
+      _string_tokenize in stdstring.o
+      _string_find_index_substring_string in stdstring.o
+  "_strtok", referenced from:
+      _update_variables in libretro.o
+      _deh_procThing in d_deh.o
+      _M_AddEpisode in m_menu.o
+      _M_DrawScreenItems in m_menu.o
+  "_strtol", referenced from:
+      _U_GetNextToken in u_scanner.o
+  "_strtoul", referenced from:
+      _update_variables in libretro.o
+      _string_to_unsigned in stdstring.o
+      _string_hex_to_unsigned in stdstring.o
+  "_time", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+     (maybe you meant: _mad_timer_zero, _mad_timer_string , _mad_timer_abs , _mad_timer_set , _mad_timer_add , _mad_timer_fraction , _mad_timer_multiply , _mad_timer_count , _mad_timer_negate , _mad_timer_compare )
+  "_vsnprintf", referenced from:
+      _lprintf in libretro.o
+      _filestream_vprintf in file_stream.o
+      _filestream_printf in file_stream.o
+      _doom_printf in g_game.o
+      _I_Error in lprintf.o
+      _U_Error in u_scanner.o
+  "_wcstombs", referenced from:
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+  "_write$UNIX2003", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile:708: prboom_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-prboom'
+cp "prboom_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/prboom_libretro.dylib"
+cp: prboom_libretro.dylib: No such file or directory

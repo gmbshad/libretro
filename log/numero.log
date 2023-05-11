@@ -1,0 +1,822 @@
+Building numero...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-numero"
+gmake -f Makefile.libretro platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-numero'
+rm -f libnumero/src/../libretro/libretronew.o libnumero/src/core/alu.o libnumero/src/core/alu_reverse.o libnumero/src/core/control.o libnumero/src/core/control_reverse.o libnumero/src/core/core.o libnumero/src/core/device.o libnumero/src/core/indexcb.o libnumero/src/core/indexcb_reverse.o libnumero/src/core/reverse_info.o libnumero/src/hardware/81hw.o libnumero/src/hardware/83hw.o libnumero/src/hardware/83phw.o libnumero/src/hardware/83psehw.o libnumero/src/hardware/86hw.o libnumero/src/hardware/colorlcd.o libnumero/src/hardware/keys.o libnumero/src/hardware/lcd.o libnumero/src/hardware/link.o libnumero/src/Interface/calc.o libnumero/src/Interface/state.o libnumero/src/utilities/linksendvar.o libnumero/src/utilities/savestate.o libnumero/src/utilities/sendfile.o libnumero/src/utilities/sound.o libnumero/src/utilities/var.o libnumero/src/../../ezdib/ezdib.o libnumero/src/../libretro-common/streams/file_stream.o libnumero/src/../libretro-common/vfs/vfs_implementation.o libnumero/src/../libretro-common/compat/fopen_utf8.o libnumero/src/../libretro-common/compat/compat_strl.o libnumero/src/../libretro-common/compat/compat_snprintf.o libnumero/src/../libretro-common/compat/compat_posix_string.o libnumero/src/../libretro-common/compat/compat_strcasestr.o libnumero/src/../libretro-common/file/file_path.o libnumero/src/../libretro-common/time/rtime.o libnumero/src/../libretro-common/string/stdstring.o libnumero/src/../libretro-common/encodings/encoding_utf.o numero_libretro.dylib
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-numero'
+gmake -f Makefile.libretro platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-numero'
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/../libretro/libretronew.o libnumero/src/../libretro/libretronew.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/core/alu.o libnumero/src/core/alu.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/core/alu_reverse.o libnumero/src/core/alu_reverse.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/core/control.o libnumero/src/core/control.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/core/control_reverse.o libnumero/src/core/control_reverse.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/core/core.o libnumero/src/core/core.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/core/device.o libnumero/src/core/device.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/core/indexcb.o libnumero/src/core/indexcb.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/core/indexcb_reverse.o libnumero/src/core/indexcb_reverse.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/core/reverse_info.o libnumero/src/core/reverse_info.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/hardware/81hw.o libnumero/src/hardware/81hw.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/hardware/83hw.o libnumero/src/hardware/83hw.cpp
+libnumero/src/../libretro/libretronew.cpp:569:22: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    char* rom_name = "ti83se.rom";
+                     ^
+libnumero/src/../libretro/libretronew.cpp:571:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+    setProgressDir("ti83se");
+                   ^
+libnumero/src/../libretro/libretronew.cpp:576:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        rom_name = "ti83plus.rom";
+                   ^
+libnumero/src/../libretro/libretronew.cpp:578:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        setProgressDir("ti83plus");
+                       ^
+libnumero/src/../libretro/libretronew.cpp:584:20: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        rom_name = "ti83.rom";
+                   ^
+libnumero/src/../libretro/libretronew.cpp:586:24: warning: conversion from string literal to 'char *' is deprecated [-Wc++11-compat-deprecated-writable-strings]
+        setProgressDir("ti83");
+                       ^
+libnumero/src/../libretro/libretronew.cpp:634:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+    sprintf(savetempdir, "%s", fullpath.c_str());
+    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/../libretro/libretronew.cpp:647:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+    sprintf(saveprogressdir, "%s", fullpath.c_str());
+    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/../libretro/libretronew.cpp:738:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+            sprintf(rom_dir, "%s", info->path);
+            ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/../libretro/libretronew.cpp:758:17: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                sprintf(toast_buffer, "Import Success: %s", info->path);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/../libretro/libretronew.cpp:999:17: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                sprintf(textBuffer, "DEBUG: %s", debugText.c_str());
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/../libretro/libretronew.cpp:1025:9: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(textBuffer, "Please add one of the following rom files to your System Directory");
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/../libretro/libretronew.cpp:1028:9: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(textBuffer, "ti83se.rom (recommended)");
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/../libretro/libretronew.cpp:1031:9: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(textBuffer, "ti83plus.rom");
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/../libretro/libretronew.cpp:1034:9: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf(textBuffer, "ti83.rom");
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/hardware/83phw.o libnumero/src/hardware/83phw.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/hardware/83psehw.o libnumero/src/hardware/83psehw.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/hardware/86hw.o libnumero/src/hardware/86hw.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/hardware/colorlcd.o libnumero/src/hardware/colorlcd.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/hardware/keys.o libnumero/src/hardware/keys.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/hardware/lcd.o libnumero/src/hardware/lcd.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/hardware/link.o libnumero/src/hardware/link.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/Interface/calc.o libnumero/src/Interface/calc.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/Interface/state.o libnumero/src/Interface/state.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/utilities/linksendvar.o libnumero/src/utilities/linksendvar.cpp
+libnumero/src/Interface/state.cpp:242:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                StringCbPrintf(buffer, bufferSize, _T("Pic%d"), circ10(sym->name[1]));
+                                ^
+libnumero/src/include/stdafx.h:159:53: note: expanded from macro 'StringCbPrintf'
+#define StringCbPrintf(dest, size, format, args...) sprintf(dest, format, args)
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/Interface/state.cpp:245:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                StringCbPrintf(buffer, bufferSize, _T("GDB%d"), circ10(sym->name[1]));
+                                ^
+libnumero/src/include/stdafx.h:159:53: note: expanded from macro 'StringCbPrintf'
+#define StringCbPrintf(dest, size, format, args...) sprintf(dest, format, args)
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/Interface/state.cpp:248:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                StringCbPrintf(buffer, bufferSize, _T("Str%d"), circ10(sym->name[1]));
+                                ^
+libnumero/src/include/stdafx.h:159:53: note: expanded from macro 'StringCbPrintf'
+#define StringCbPrintf(dest, size, format, args...) sprintf(dest, format, args)
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/Interface/state.cpp:252:5: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                StringCbPrintf(buffer, bufferSize, _T("%c"), sym->name[0]);
+                                ^
+libnumero/src/include/stdafx.h:159:53: note: expanded from macro 'StringCbPrintf'
+#define StringCbPrintf(dest, size, format, args...) sprintf(dest, format, args)
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/Interface/state.cpp:257:6: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                        StringCbPrintf(buffer, bufferSize, _T("L%d"), sym->name[1] + 1); //L1...L6
+                                        ^
+libnumero/src/include/stdafx.h:159:53: note: expanded from macro 'StringCbPrintf'
+#define StringCbPrintf(dest, size, format, args...) sprintf(dest, format, args)
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/Interface/state.cpp:259:6: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                        StringCbPrintf(buffer, bufferSize, _T("%s"), sym->name + 1); // No Little L
+                                        ^
+libnumero/src/include/stdafx.h:159:53: note: expanded from macro 'StringCbPrintf'
+#define StringCbPrintf(dest, size, format, args...) sprintf(dest, format, args)
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/Interface/state.cpp:264:6: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                        StringCbPrintf(buffer, bufferSize, _T("[%c]"), 'A' + sym->name[1]);
+                                        ^
+libnumero/src/include/stdafx.h:159:53: note: expanded from macro 'StringCbPrintf'
+#define StringCbPrintf(dest, size, format, args...) sprintf(dest, format, args)
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/Interface/state.cpp:280:8: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                        StringCbPrintf(buffer, bufferSize, _T("Y%d"), circ10(b));
+                                                        ^
+libnumero/src/include/stdafx.h:159:53: note: expanded from macro 'StringCbPrintf'
+#define StringCbPrintf(dest, size, format, args...) sprintf(dest, format, args)
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/Interface/state.cpp:283:8: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                        StringCbPrintf(buffer, bufferSize, _T("X%dT"), ((b / 2) + 1) % 6);
+                                                        ^
+libnumero/src/include/stdafx.h:159:53: note: expanded from macro 'StringCbPrintf'
+#define StringCbPrintf(dest, size, format, args...) sprintf(dest, format, args)
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/Interface/state.cpp:289:8: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                                                        StringCbPrintf(buffer, bufferSize, _T("R%d"), (b + 1) % 6);
+                                                        ^
+libnumero/src/include/stdafx.h:159:53: note: expanded from macro 'StringCbPrintf'
+#define StringCbPrintf(dest, size, format, args...) sprintf(dest, format, args)
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/Interface/state.cpp:380:4: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+                        StringCbPrintf(p, 32, _T("*10^%d"), exp);
+                        ^
+libnumero/src/include/stdafx.h:159:53: note: expanded from macro 'StringCbPrintf'
+#define StringCbPrintf(dest, size, format, args...) sprintf(dest, format, args)
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+11 warnings generated.
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/utilities/savestate.o libnumero/src/utilities/savestate.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/utilities/sendfile.o libnumero/src/utilities/sendfile.cpp
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/utilities/sound.o libnumero/src/utilities/sound.cpp
+libnumero/src/utilities/sendfile.cpp:16:10: warning: enumeration value 'ZIP_TYPE' not handled in switch [-Wswitch]
+                switch(var->type)
+                       ^~~~~~~~~
+libnumero/src/utilities/sendfile.cpp:16:10: note: add missing switch cases
+                switch(var->type)
+                       ^
+1 warning generated.
+c++ -arch i386 -DGIT_VERSION=\"" 19354c9"\"  -O2 -DNDEBUG -fno-exceptions -fno-rtti -std=c++98 -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/utilities/var.o libnumero/src/utilities/var.cpp
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/../../ezdib/ezdib.o libnumero/src/../../ezdib/ezdib.c
+libnumero/src/../../ezdib/ezdib.c:822:6: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                                        else
+                                        ^
+libnumero/src/../../ezdib/ezdib.c:1002:6: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                                        else
+                                        ^
+libnumero/src/../../ezdib/ezdib.c:1128:7: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                                                else
+                                                ^
+libnumero/src/../../ezdib/ezdib.c:1608:10: warning: returning 'const unsigned char *' from a function with result type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                return f->pIndex[ ch ];
+                       ^~~~~~~~~~~~~~~
+libnumero/src/../../ezdib/ezdib.c:1683:28: warning: passing 'const unsigned char *' to parameter of type 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                pGlyph = ezd_next_glyph( pGlyph );
+                                         ^~~~~~
+libnumero/src/../../ezdib/ezdib.c:1582:41: note: passing argument to parameter 'pGlyph' here
+const char* ezd_next_glyph( const char* pGlyph )
+                                        ^
+libnumero/src/../../ezdib/ezdib.c:1683:10: warning: assigning to 'const unsigned char *' from 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                pGlyph = ezd_next_glyph( pGlyph );
+                       ^ ~~~~~~~~~~~~~~~~~~~~~~~~
+libnumero/src/../../ezdib/ezdib.c:1743:10: warning: assigning to 'const unsigned char *' from 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                pGlyph = ezd_find_glyph( x_hFont, x_pText[ i ] );
+                       ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libnumero/src/../../ezdib/ezdib.c:1865:5: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                                else
+                                ^
+libnumero/src/../../ezdib/ezdib.c:2001:10: warning: assigning to 'const unsigned char *' from 'const char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                pGlyph = ezd_find_glyph( x_hFont, x_pText[ i ] );
+                       ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libnumero/src/utilities/var.cpp:380:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf( tempText, "%d", calc );
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+libnumero/src/utilities/var.cpp:747:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+        sprintf( tempText, "%d", fsize );
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+9 warnings generated.
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/../libretro-common/streams/file_stream.o libnumero/src/../libretro-common/streams/file_stream.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/../libretro-common/vfs/vfs_implementation.o libnumero/src/../libretro-common/vfs/vfs_implementation.c
+2 warnings generated.
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/../libretro-common/compat/fopen_utf8.o libnumero/src/../libretro-common/compat/fopen_utf8.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/../libretro-common/compat/compat_strl.o libnumero/src/../libretro-common/compat/compat_strl.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/../libretro-common/compat/compat_snprintf.o libnumero/src/../libretro-common/compat/compat_snprintf.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/../libretro-common/compat/compat_posix_string.o libnumero/src/../libretro-common/compat/compat_posix_string.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/../libretro-common/compat/compat_strcasestr.o libnumero/src/../libretro-common/compat/compat_strcasestr.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/../libretro-common/file/file_path.o libnumero/src/../libretro-common/file/file_path.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/../libretro-common/time/rtime.o libnumero/src/../libretro-common/time/rtime.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/../libretro-common/string/stdstring.o libnumero/src/../libretro-common/string/stdstring.c
+cc -arch i386  -O2 -DNDEBUG -DHAVE_STDINT_H -fPIC -D__LIBRETRO__  -DHAVE_STDINT_H -DHAVE_INTTYPES_H -DVIDEO_RGB565 -DHAVE_NETWORK  -Ilibnumero/src/../../common -Ilibnumero/src/../libretro -Ilibnumero/src/../libretro-common/include -Ilibnumero/src/include -Ilibnumero/src/core -Ilibnumero/src/Interface -Ilibnumero/src/hardware -Ilibnumero/src/utilities  -c -olibnumero/src/../libretro-common/encodings/encoding_utf.o libnumero/src/../libretro-common/encodings/encoding_utf.c
+15 warnings generated.
+c++ -arch i386 -fPIC -dynamiclib   -o numero_libretro.dylib libnumero/src/../libretro/libretronew.o libnumero/src/core/alu.o libnumero/src/core/alu_reverse.o libnumero/src/core/control.o libnumero/src/core/control_reverse.o libnumero/src/core/core.o libnumero/src/core/device.o libnumero/src/core/indexcb.o libnumero/src/core/indexcb_reverse.o libnumero/src/core/reverse_info.o libnumero/src/hardware/81hw.o libnumero/src/hardware/83hw.o libnumero/src/hardware/83phw.o libnumero/src/hardware/83psehw.o libnumero/src/hardware/86hw.o libnumero/src/hardware/colorlcd.o libnumero/src/hardware/keys.o libnumero/src/hardware/lcd.o libnumero/src/hardware/link.o libnumero/src/Interface/calc.o libnumero/src/Interface/state.o libnumero/src/utilities/linksendvar.o libnumero/src/utilities/savestate.o libnumero/src/utilities/sendfile.o libnumero/src/utilities/sound.o libnumero/src/utilities/var.o libnumero/src/../../ezdib/ezdib.o libnumero/src/../libretro-common/streams/file_stream.o libnumero/src/../libretro-common/vfs/vfs_implementation.o libnumero/src/../libretro-common/compat/fopen_utf8.o libnumero/src/../libretro-common/compat/compat_strl.o libnumero/src/../libretro-common/compat/compat_snprintf.o libnumero/src/../libretro-common/compat/compat_posix_string.o libnumero/src/../libretro-common/compat/compat_strcasestr.o libnumero/src/../libretro-common/file/file_path.o libnumero/src/../libretro-common/time/rtime.o libnumero/src/../libretro-common/string/stdstring.o libnumero/src/../libretro-common/encodings/encoding_utf.o  
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc++.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc++.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+Undefined symbols for architecture i386:
+  "__DefaultRuneLocale", referenced from:
+      FindRomVersion(char*, unsigned char*, unsigned int) in var.o
+      _filestream_scanf in file_stream.o
+      _string_trim_whitespace_left in stdstring.o
+      _string_trim_whitespace_right in stdstring.o
+      _string_trim_whitespace in stdstring.o
+      _string_hex_to_unsigned in stdstring.o
+      FindRomVersion(char*, unsigned char*, unsigned int) in var.o
+      _filestream_scanf in file_stream.o
+      _string_trim_whitespace_left in stdstring.o
+      _string_trim_whitespace_right in stdstring.o
+      _string_trim_whitespace in stdstring.o
+      _string_hex_to_unsigned in stdstring.o
+      FindRomVersion(char*, unsigned char*, unsigned int) in var.o
+      _filestream_scanf in file_stream.o
+      _string_trim_whitespace_left in stdstring.o
+      _string_trim_whitespace_right in stdstring.o
+      _string_trim_whitespace in stdstring.o
+      _string_hex_to_unsigned in stdstring.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::append(char const*)", referenced from:
+      file_present_in_system(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in libretronew.o
+      setSaveDir() in libretronew.o
+      _retro_reset in libretronew.o
+      setProgressDir(char*) in libretronew.o
+      ImportROMFile(RFILE*, TIFILE*) in var.o
+      importvar(char const*, signed char) in var.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::append(char const*, unsigned long)", referenced from:
+      file_present_in_system(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in libretronew.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::assign(char const*)", referenced from:
+      _retro_init in libretronew.o
+      _retro_load_game in libretronew.o
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::~basic_string()", referenced from:
+      __GLOBAL__sub_I_libretronew.cpp in libretronew.o
+  "operator delete(void*)", referenced from:
+      std::__1::vector<NeilVirtualButton, std::__1::allocator<NeilVirtualButton> >::~vector() in libretronew.o
+      initVirtualButtons() in libretronew.o
+      file_present_in_system(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in libretronew.o
+      setSaveDir() in libretronew.o
+      _retro_reset in libretronew.o
+      setProgressDir(char*) in libretronew.o
+  "operator new(unsigned long)", referenced from:
+      initVirtualButtons() in libretronew.o
+      file_present_in_system(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in libretronew.o
+      setSaveDir() in libretronew.o
+      _retro_reset in libretronew.o
+      setProgressDir(char*) in libretronew.o
+  "___bzero", referenced from:
+      _stbi_load_gif_from_memory in libretronew.o
+      _retro_reset in libretronew.o
+      stbi__load_main(stbi__context*, int*, int*, int*, int, stbi__result_info*, int) in libretronew.o
+      stbi__gif_load_next(stbi__context*, stbi__gif*, int*, int, unsigned char*) in libretronew.o
+      stbi__zbuild_huffman(stbi__zhuffman*, unsigned char const*, int) in libretronew.o
+      CPU_init(CPU*, memory_context*, timer_context*) in core.o
+      ColorLCD_init(CPU*, int) in colorlcd.o
+      ...
+  "___cxa_atexit", referenced from:
+      __GLOBAL__sub_I_libretronew.cpp in libretronew.o
+  "___divdi3", referenced from:
+      IsFrameReady() in libretronew.o
+      _retro_run in libretronew.o
+  "___error", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+  "___maskrune", referenced from:
+      _filestream_scanf in file_stream.o
+      _string_trim_whitespace_left in stdstring.o
+      _string_trim_whitespace_right in stdstring.o
+      _string_trim_whitespace in stdstring.o
+  "___stack_chk_fail", referenced from:
+      _stbi_load in libretronew.o
+      _stbi_load_from_file in libretronew.o
+      stbi__load_and_postprocess_8bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_from_file_16 in libretronew.o
+      stbi__load_and_postprocess_16bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_16 in libretronew.o
+      _stbi_load_16_from_memory in libretronew.o
+      ...
+  "___stack_chk_guard", referenced from:
+      _stbi_load in libretronew.o
+      _stbi_load_from_file in libretronew.o
+      stbi__load_and_postprocess_8bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_from_file_16 in libretronew.o
+      stbi__load_and_postprocess_16bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_16 in libretronew.o
+      _stbi_load_16_from_memory in libretronew.o
+      ...
+      _stbi_load in libretronew.o
+      _stbi_load_from_file in libretronew.o
+      stbi__load_and_postprocess_8bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_from_file_16 in libretronew.o
+      stbi__load_and_postprocess_16bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_16 in libretronew.o
+      _stbi_load_16_from_memory in libretronew.o
+      ...
+      _stbi_load in libretronew.o
+      _stbi_load_from_file in libretronew.o
+      stbi__load_and_postprocess_8bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_from_file_16 in libretronew.o
+      stbi__load_and_postprocess_16bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_16 in libretronew.o
+      _stbi_load_16_from_memory in libretronew.o
+      ...
+      _stbi_load in libretronew.o
+      _stbi_load_from_file in libretronew.o
+      stbi__load_and_postprocess_8bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_from_file_16 in libretronew.o
+      stbi__load_and_postprocess_16bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_16 in libretronew.o
+      _stbi_load_16_from_memory in libretronew.o
+      ...
+      _stbi_load in libretronew.o
+      _stbi_load_from_file in libretronew.o
+      stbi__load_and_postprocess_8bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_from_file_16 in libretronew.o
+      stbi__load_and_postprocess_16bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_16 in libretronew.o
+      _stbi_load_16_from_memory in libretronew.o
+      ...
+      _stbi_load in libretronew.o
+      _stbi_load_from_file in libretronew.o
+      stbi__load_and_postprocess_8bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_from_file_16 in libretronew.o
+      stbi__load_and_postprocess_16bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_16 in libretronew.o
+      _stbi_load_16_from_memory in libretronew.o
+      ...
+      _stbi_load in libretronew.o
+      _stbi_load_from_file in libretronew.o
+      stbi__load_and_postprocess_8bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_from_file_16 in libretronew.o
+      stbi__load_and_postprocess_16bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_16 in libretronew.o
+      _stbi_load_16_from_memory in libretronew.o
+      ...
+      ...
+  "___strlcpy_chk", referenced from:
+      _path_get_archive_delim in file_path.o
+      _fill_pathname in file_path.o
+  "___tolower", referenced from:
+      my_strncasecmp(char const*, char const*, unsigned long) in var.o
+      my_strcasecmp(char const*, char const*) in var.o
+      CmpStringCase(char const*, unsigned char*) in var.o
+      FindRomVersion(char*, unsigned char*, unsigned int) in var.o
+      ReadTiFileHeader(RFILE*, TIFILE*) in var.o
+      importvar(char const*, signed char) in var.o
+      _strcasestr_retro__ in compat_strcasestr.o
+      ...
+  "___toupper", referenced from:
+      _string_to_upper in stdstring.o
+      _string_ucwords in stdstring.o
+  "__tlv_bootstrap", referenced from:
+      stbi__g_failure_reason in libretronew.o
+      stbi__vertically_flip_on_load_local in libretronew.o
+      stbi__vertically_flip_on_load_set in libretronew.o
+      stbi__unpremultiply_on_load_local in libretronew.o
+      stbi__unpremultiply_on_load_set in libretronew.o
+      stbi__de_iphone_flag_local in libretronew.o
+      stbi__de_iphone_flag_set in libretronew.o
+      ...
+  "_abort", referenced from:
+      std::__1::__vector_base<NeilVirtualButton, std::__1::allocator<NeilVirtualButton> >::__throw_length_error() const in libretronew.o
+      std::__1::__throw_length_error(char const*) in libretronew.o
+      std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__throw_length_error() const in libretronew.o
+      _retro_vfs_file_get_path_impl in vfs_implementation.o
+  "_atoi", referenced from:
+      _retro_load_game in libretronew.o
+      _retro_run in libretronew.o
+  "_calloc", referenced from:
+      _retro_init in libretronew.o
+      _retro_set_environment in libretronew.o
+      memory_init_81(memory_context*) in 81hw.o
+      memory_init_83(memory_context*) in 83hw.o
+      memory_init_83p(memory_context*) in 83phw.o
+      SE_AUX_init() in 83psehw.o
+      device_init_83pse(CPU*, int) in 83psehw.o
+      ...
+  "_close$UNIX2003", referenced from:
+      _retro_vfs_file_close_impl in vfs_implementation.o
+  "_closedir$UNIX2003", referenced from:
+      _retro_vfs_closedir_impl in vfs_implementation.o
+  "_cos", referenced from:
+      _ezd_arc in ezdib.o
+  "_exit", referenced from:
+      INT83_init(timer_context*) in 83hw.o
+      link83_init() in 83hw.o
+      device_init_83(CPU*, signed char) in 83hw.o
+      device_init_83p(CPU*) in 83phw.o
+      INT83PSE_init(CPU*, int) in 83psehw.o
+      link83pse_init() in 83psehw.o
+      SE_AUX_init() in 83psehw.o
+      ...
+     (maybe you meant: _exit_save_state)
+  "_fclose", referenced from:
+      _stbi_load in libretronew.o
+      _stbi_load_16 in libretronew.o
+      _stbi_loadf in libretronew.o
+      _stbi_is_hdr in libretronew.o
+      _stbi_info in libretronew.o
+      _stbi_is_16_bit in libretronew.o
+      ReadSave(RFILE*) in savestate.o
+      ...
+  "_feof", referenced from:
+      stbi__stdio_eof(void*) in libretronew.o
+  "_ferror", referenced from:
+      stbi__stdio_eof(void*) in libretronew.o
+      _retro_vfs_file_error_impl in vfs_implementation.o
+  "_fflush", referenced from:
+      _retro_vfs_file_flush_impl in vfs_implementation.o
+  "_fgetc", referenced from:
+      stbi__stdio_skip(void*, int) in libretronew.o
+      fgeti(__sFILE*) in savestate.o
+  "_fileno", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fopen$UNIX2003", referenced from:
+      _stbi_load in libretronew.o
+      _stbi_load_16 in libretronew.o
+      _stbi_loadf in libretronew.o
+      _stbi_is_hdr in libretronew.o
+      _stbi_info in libretronew.o
+      _stbi_is_16_bit in libretronew.o
+      _ezd_save in ezdib.o
+      ...
+  "_fputc", referenced from:
+      fputi(unsigned int, __sFILE*) in savestate.o
+  "_fread", referenced from:
+      stbi__stdio_read(void*, char*, int) in libretronew.o
+      _retro_vfs_file_read_impl in vfs_implementation.o
+  "_free", referenced from:
+      _stbi_image_free in libretronew.o
+      stbi__load_and_postprocess_8bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      stbi__load_and_postprocess_16bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_gif_from_memory in libretronew.o
+      stbi__loadf_main(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_zlib_decode_malloc_guesssize in libretronew.o
+      _stbi_zlib_decode_malloc in libretronew.o
+      ...
+     (maybe you meant: _stbi_image_free, calc_slot_free(tagCALC*) )
+  "_fseek", referenced from:
+      _stbi_load in libretronew.o
+      _stbi_load_from_file in libretronew.o
+      _stbi_load_from_file_16 in libretronew.o
+      _stbi_load_16 in libretronew.o
+      _stbi_is_hdr_from_file in libretronew.o
+      _stbi_info in libretronew.o
+      _stbi_info_from_file in libretronew.o
+      ...
+  "_fseeko", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+  "_ftell", referenced from:
+      _stbi_is_hdr_from_file in libretronew.o
+      _stbi_info in libretronew.o
+      _stbi_info_from_file in libretronew.o
+      _stbi_is_16_bit in libretronew.o
+      _stbi_is_16_bit_from_file in libretronew.o
+  "_ftello", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+  "_ftruncate", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fwrite$UNIX2003", referenced from:
+      _ezd_save in ezdib.o
+      _retro_vfs_file_write_impl in vfs_implementation.o
+  "_ldexpf", referenced from:
+      stbi__hdr_load(stbi__context*, int*, int*, int*, int, stbi__result_info*) in libretronew.o
+  "_localtime", referenced from:
+      _rtime_localtime in rtime.o
+     (maybe you meant: _rtime_localtime)
+  "_longjmp", referenced from:
+      link_send_bytes(CPU*, void*, unsigned long) in link.o
+      link_recv(CPU*) in link.o
+      link_send_pkt(CPU*, unsigned char, void*) in link.o
+      link_recv_pkt(CPU*, _TI_PKTHDR*, unsigned char*) in link.o
+  "_lseek", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+  "_malloc", referenced from:
+      stbi__load_and_postprocess_8bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      stbi__load_and_postprocess_16bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_gif_from_memory in libretronew.o
+      stbi__loadf_main(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_zlib_decode_malloc_guesssize in libretronew.o
+      _stbi_zlib_decode_malloc in libretronew.o
+      _stbi_zlib_decode_malloc_guesssize_headerflag in libretronew.o
+      ...
+     (maybe you meant: _stbi_zlib_decode_malloc_guesssize, _stbi_zlib_decode_noheader_malloc , _stbi_zlib_decode_malloc , _stbi_zlib_decode_malloc_guesssize_headerflag )
+  "_mbstowcs", referenced from:
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+  "_memcmp", referenced from:
+      stbi__hdr_load(stbi__context*, int*, int*, int*, int, stbi__result_info*) in libretronew.o
+      search_symlist(symlist*, char const*, unsigned long) in state.o
+      link_send_var(CPU*, TIFILE*, SEND_FLAG) in linksendvar.o
+  "_memcpy", referenced from:
+      stbi__load_and_postprocess_8bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      stbi__load_and_postprocess_16bit(stbi__context*, int*, int*, int*, int) in libretronew.o
+      _stbi_load_gif_from_memory in libretronew.o
+      stbi__loadf_main(stbi__context*, int*, int*, int*, int) in libretronew.o
+      stbi__do_zlib(stbi__zbuf*, char*, int, int, int) in libretronew.o
+      initVirtualButtons() in libretronew.o
+      file_present_in_system(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in libretronew.o
+      ...
+  "_memmove", referenced from:
+      link_send_var(CPU*, TIFILE*, SEND_FLAG) in linksendvar.o
+      _string_trim_whitespace_left in stdstring.o
+      _string_trim_whitespace in stdstring.o
+  "_memset", referenced from:
+      stbi__do_zlib(stbi__zbuf*, char*, int, int, int) in libretronew.o
+      stbi__load_main(stbi__context*, int*, int*, int*, int, stbi__result_info*, int) in libretronew.o
+      stbi__process_marker(stbi__jpeg*, int) in libretronew.o
+      memory_init_81(memory_context*) in 81hw.o
+      memory_init_83(memory_context*) in 83hw.o
+      memory_init_83p(memory_context*) in 83phw.o
+      memory_init_83pse(memory_context*) in 83psehw.o
+      ...
+  "_mkdir", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+     (maybe you meant: _retro_vfs_mkdir_impl)
+  "_open$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_opendir$INODE64$UNIX2003", referenced from:
+      _retro_vfs_opendir_impl in vfs_implementation.o
+  "_powf", referenced from:
+      stbi__loadf_main(stbi__context*, int*, int*, int*, int) in libretronew.o
+      stbi__load_main(stbi__context*, int*, int*, int*, int, stbi__result_info*, int) in libretronew.o
+  "_printf", referenced from:
+      PrintDebugOutput(char const*, ...) in libretronew.o
+      NewChunk(SAVESTATE_t*, char const*) in savestate.o
+     (maybe you meant: _filestream_printf)
+  "_puts", referenced from:
+      _retro_init in libretronew.o
+      memory_init_81(memory_context*) in 81hw.o
+      device_init_81(CPU*) in 81hw.o
+      INT83_init(timer_context*) in 83hw.o
+      link83_init() in 83hw.o
+      device_init_83(CPU*, signed char) in 83hw.o
+      memory_init_83(memory_context*) in 83hw.o
+      ...
+  "_read$UNIX2003", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+  "_readdir$INODE64", referenced from:
+      _retro_vfs_readdir_impl in vfs_implementation.o
+  "_realloc", referenced from:
+      _stbi_load_gif_from_memory in libretronew.o
+      stbi__do_zlib(stbi__zbuf*, char*, int, int, int) in libretronew.o
+      stbi__parse_png_file(stbi__png*, int, int) in libretronew.o
+      SaveSlot(tagCALC*, char const*, char const*) in savestate.o
+      WriteChar(CHUNK_t*, char) in savestate.o
+      WriteShort(CHUNK_t*, unsigned short) in savestate.o
+      WriteInt(CHUNK_t*, unsigned int) in savestate.o
+      ...
+  "_remove", referenced from:
+      _retro_vfs_file_remove_impl in vfs_implementation.o
+     (maybe you meant: _path_remove_extension, _retro_vfs_file_remove_impl , _string_remove_all_chars )
+  "_rename", referenced from:
+      _retro_vfs_file_rename_impl in vfs_implementation.o
+     (maybe you meant: _filestream_rename, _retro_vfs_file_rename_impl )
+  "_setjmp", referenced from:
+      link_send_pkt(CPU*, unsigned char, void*) in link.o
+      link_recv_pkt(CPU*, _TI_PKTHDR*, unsigned char*) in link.o
+      link_send_backup(CPU*, TIFILE*) in linksendvar.o
+      link_send_var(CPU*, TIFILE*, SEND_FLAG) in linksendvar.o
+  "_setvbuf", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_sin", referenced from:
+      _ezd_arc in ezdib.o
+  "_sprintf", referenced from:
+      _retro_load_game in libretronew.o
+      drawScreen() in libretronew.o
+      Symbol_Name_to_String(int, symbol83P_t*, char*, int) in state.o
+      symbol_to_string(CPU*, symbol83P_t*, char*) in state.o
+      ImportROMFile(RFILE*, TIFILE*) in var.o
+      importvar(char const*, signed char) in var.o
+  "_sscanf", referenced from:
+      ReadIntelHex(RFILE*, INTELHEX*) in var.o
+      _filestream_scanf in file_stream.o
+  "_stat$INODE64", referenced from:
+      _retro_vfs_stat_impl in vfs_implementation.o
+      _retro_vfs_dirent_is_dir_impl in vfs_implementation.o
+  "_strcat", referenced from:
+      _retro_set_environment in libretronew.o
+  "_strchr", referenced from:
+      _string_replace_all_chars in stdstring.o
+  "_strcmp", referenced from:
+      _retro_set_environment in libretronew.o
+  "_strcpy", referenced from:
+      setSaveDir() in libretronew.o
+      _retro_set_environment in libretronew.o
+      setProgressDir(char*) in libretronew.o
+      _retro_load_game in libretronew.o
+      rom_load(tagCALC*, char const*) in calc.o
+      Symbol_Name_to_String(int, symbol83P_t*, char*, int) in state.o
+      App_Name_to_String(apphdr*, char*) in state.o
+      ...
+  "_strdup", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_opendir_impl in vfs_implementation.o
+      _fill_pathname_parent_dir_name in file_path.o
+      _string_init in stdstring.o
+      _string_set in stdstring.o
+      _string_replace_substring in stdstring.o
+      _utf8_to_local_string_alloc in encoding_utf.o
+      ...
+  "_strftime$UNIX2003", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+  "_strlcat", referenced from:
+      _fill_pathname in file_path.o
+      _fill_pathname_noext in file_path.o
+      _fill_pathname_slash in file_path.o
+      _fill_pathname_dir in file_path.o
+      _fill_pathname_base_ext in file_path.o
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+      ...
+  "_strlcpy", referenced from:
+      _strldup in compat_strl.o
+      _fill_pathname in file_path.o
+      _fill_pathname_noext in file_path.o
+      _fill_pathname_base in file_path.o
+      _fill_pathname_base_noext in file_path.o
+      _fill_pathname_basedir in file_path.o
+      _fill_pathname_basedir_noext in file_path.o
+      ...
+  "_strlen", referenced from:
+      file_present_in_system(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >) in libretronew.o
+      setSaveDir() in libretronew.o
+      _retro_reset in libretronew.o
+      _retro_set_environment in libretronew.o
+      setProgressDir(char*) in libretronew.o
+      symbol_to_string(CPU*, symbol83P_t*, char*) in state.o
+      CmpStringCase(char const*, unsigned char*) in var.o
+      ...
+  "_strncmp", referenced from:
+      stbi__info_main(stbi__context*, int*, int*, int*) in libretronew.o
+      stbi__hdr_load(stbi__context*, int*, int*, int*, int, stbi__result_info*) in libretronew.o
+      SendFile(tagCALC*, char const*, SEND_FLAG) in sendfile.o
+  "_strncpy", referenced from:
+      SaveSlot(tagCALC*, char const*, char const*) in savestate.o
+      CreateSave(char const*, char const*, CalcModel) in savestate.o
+  "_strrchr", referenced from:
+      importvar(char const*, signed char) in var.o
+      _path_get_archive_delim in file_path.o
+      _find_last_slash in file_path.o
+      _path_get_extension in file_path.o
+      _path_basename in file_path.o
+      _path_remove_extension in file_path.o
+      _path_is_compressed_file in file_path.o
+      ...
+  "_strstr", referenced from:
+      _string_replace_substring in stdstring.o
+      _string_tokenize in stdstring.o
+  "_strtol", referenced from:
+      stbi__info_main(stbi__context*, int*, int*, int*) in libretronew.o
+      stbi__hdr_load(stbi__context*, int*, int*, int*, int, stbi__result_info*) in libretronew.o
+  "_strtoul", referenced from:
+      _string_to_unsigned in stdstring.o
+      _string_hex_to_unsigned in stdstring.o
+  "_time", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+     (maybe you meant: calc_run_timed(tagCALC*, unsigned long long), mod_timer(CPU*, XTAL*) , set_line_time(ColorLCD*) )
+  "_tmpfile", referenced from:
+      ReadSave(RFILE*) in savestate.o
+  "_ungetc", referenced from:
+      stbi__stdio_skip(void*, int) in libretronew.o
+  "_vsnprintf", referenced from:
+      PrintDebugOutput(char const*, ...) in libretronew.o
+      _filestream_vprintf in file_stream.o
+      _filestream_printf in file_stream.o
+  "_wcstombs", referenced from:
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+  "_write$UNIX2003", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile.libretro:734: numero_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-numero'
+cp "numero_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/numero_libretro.dylib"
+cp: numero_libretro.dylib: No such file or directory

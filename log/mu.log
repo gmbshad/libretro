@@ -1,0 +1,1131 @@
+Building mu...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mu/libretroBuildSystem"
+gmake -f Makefile platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mu/libretroBuildSystem'
+rm -f ./libretro.o ./cursors.o ./miniz.o ./../src/emulator.o ./../src/m5XXBus.o ./../src/dbvz.o ./../src/flx68000.o ./../src/sed1376.o ./../src/ads7846.o ./../src/pdiUsbD12.o ./../src/sdCard.o ./../src/silkscreen.o ./../src/audio/blip_buf.o ./../src/m68k/m68kops.o ./../src/m68k/m68kopnz.o ./../src/m68k/m68kopdm.o ./../src/m68k/m68kopac.o ./../src/m68k/m68kcpu.o ./../src/fileLauncher/launcher.o ./../src/pxa260/pxa260_DMA.o ./../src/pxa260/pxa260_DSP.o ./../src/pxa260/pxa260_GPIO.o ./../src/pxa260/pxa260_IC.o ./../src/pxa260/pxa260_LCD.o ./../src/pxa260/pxa260_PwrClk.o ./../src/pxa260/pxa260_RTC.o ./../src/pxa260/pxa260_TIMR.o ./../src/pxa260/pxa260_UART.o ./../src/pxa260/pxa260I2c.o ./../src/pxa260/pxa260Memctrl.o ./../src/pxa260/pxa260Timing.o ./../src/pxa260/pxa260Ssp.o ./../src/pxa260/pxa260Udc.o ./../src/pxa260/pxa260.o ./../src/armv5te/emuVarPool.o ./../src/armv5te/mem.o ./../src/armv5te/mmu.o ./../src/tps65010.o ./../src/tsc2101.o ./../src/w86l488.o ./../src/armv5te/os/os-linux.o ./../src/armv5te/asmcode.o ./libretro-common/compat/compat_strl.o ./libretro-common/compat/compat_posix_string.o ./libretro-common/compat/fopen_utf8.o ./libretro-common/encodings/encoding_utf.o ./libretro-common/memmap/memmap.o ./libretro-common/streams/file_stream.o ./libretro-common/string/stdstring.o ./libretro-common/vfs/vfs_implementation.o ./../src/armv5te/arm_interpreter.o ./../src/armv5te/thumb_interpreter.o ./../src/armv5te/cpu.o ./../src/armv5te/coproc.o  mu_libretro.dylib
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mu/libretroBuildSystem'
+gmake -f Makefile platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mu/libretroBuildSystem'
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o libretro.o libretro.c
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o cursors.o cursors.c
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o miniz.o miniz.c
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/emulator.o ../src/emulator.c
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/m5XXBus.o ../src/m5XXBus.c
+In file included from libretro.c:17:
+./../include/portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from ../src/emulator.c:15:
+./../include/portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+libretro.c:558:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
+}
+^
+In file included from ../src/m5XXBus.c:7:
+./../include/portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+libretro.c:841:29: warning: passing 'const void *' to parameter of type 'uint8_t *' (aka 'unsigned char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+   return emulatorLoadState(data, size);
+                            ^~~~
+./../include/fileLauncher/../emulator.h:224:33: note: passing argument to parameter 'data' here
+bool emulatorLoadState(uint8_t* data, uint32_t size);//true = success
+                                ^
+./../include/fileLauncher/../emulator.h:42:13: warning: unused function 'debugLog' [-Wunused-function]
+static void debugLog(char* str, ...){};
+            ^
+../src/emulator.c:778:64: warning: '&' within '|' [-Wbitwise-op-parentheses]
+               palmFramebuffer[index] = palmFramebuffer[index] & 0xF81F | FAST_MIN(greenChannel, 0x07E0);
+                                        ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~ ~
+../src/emulator.c:778:64: note: place parentheses around the '&' expression to silence this warning
+               palmFramebuffer[index] = palmFramebuffer[index] & 0xF81F | FAST_MIN(greenChannel, 0x07E0);
+                                                               ^
+                                        (                              )
+../src/m5XXBus.c:79:13: warning: unused function 'probeRead' [-Wunused-function]
+static bool probeRead(uint8_t bank, uint32_t address){
+            ^
+../src/m5XXBus.c:90:13: warning: unused function 'probeWrite' [-Wunused-function]
+static bool probeWrite(uint8_t bank, uint32_t address){
+            ^
+miniz.c:3301:31: warning: unused function 'mz_zip_array_ensure_room' [-Wunused-function]
+static MZ_FORCEINLINE mz_bool mz_zip_array_ensure_room(mz_zip_archive *pZip, mz_zip_array *pArray, size_t n)
+                              ^
+miniz.c:3306:31: warning: unused function 'mz_zip_array_push_back' [-Wunused-function]
+static MZ_FORCEINLINE mz_bool mz_zip_array_push_back(mz_zip_archive *pZip, mz_zip_array *pArray, const void *pElements, size_t n)
+                              ^
+4 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/dbvz.o ../src/dbvz.c
+In file included from ../src/dbvz.c:8:
+./../include/portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from ../src/dbvz.c:57:
+./../include/dbvzRegisterAccessors.c.h:253:112: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+      dbvzChipSelects[DBVZ_CHIP_B0_SED].unprotectedSize = dbvzChipSelects[DBVZ_CHIP_B0_SED].lineSize / (1 << 7 - ((value >> 11 & 0x0003) | 0x0004));
+                                                                                                          ~~ ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./../include/dbvzRegisterAccessors.c.h:253:112: note: place parentheses around the '-' expression to silence this warning
+      dbvzChipSelects[DBVZ_CHIP_B0_SED].unprotectedSize = dbvzChipSelects[DBVZ_CHIP_B0_SED].lineSize / (1 << 7 - ((value >> 11 & 0x0003) | 0x0004));
+                                                                                                               ^
+                                                                                                             (                                    )
+./../include/dbvzRegisterAccessors.c.h:255:112: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+      dbvzChipSelects[DBVZ_CHIP_B0_SED].unprotectedSize = dbvzChipSelects[DBVZ_CHIP_B0_SED].lineSize / (1 << 7 - (value >> 11 & 0x0003));
+                                                                                                          ~~ ~~^~~~~~~~~~~~~~~~~~~~~~~~
+./../include/dbvzRegisterAccessors.c.h:255:112: note: place parentheses around the '-' expression to silence this warning
+      dbvzChipSelects[DBVZ_CHIP_B0_SED].unprotectedSize = dbvzChipSelects[DBVZ_CHIP_B0_SED].lineSize / (1 << 7 - (value >> 11 & 0x0003));
+                                                                                                               ^
+                                                                                                             (                         )
+./../include/dbvzRegisterAccessors.c.h:282:112: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+      dbvzChipSelects[DBVZ_CHIP_DX_RAM].unprotectedSize = dbvzChipSelects[DBVZ_CHIP_DX_RAM].lineSize / (1 << 7 - ((value >> 11 & 0x0003) | 0x0004));
+                                                                                                          ~~ ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./../include/dbvzRegisterAccessors.c.h:282:112: note: place parentheses around the '-' expression to silence this warning
+      dbvzChipSelects[DBVZ_CHIP_DX_RAM].unprotectedSize = dbvzChipSelects[DBVZ_CHIP_DX_RAM].lineSize / (1 << 7 - ((value >> 11 & 0x0003) | 0x0004));
+                                                                                                               ^
+                                                                                                             (                                    )
+./../include/dbvzRegisterAccessors.c.h:284:112: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+      dbvzChipSelects[DBVZ_CHIP_DX_RAM].unprotectedSize = dbvzChipSelects[DBVZ_CHIP_DX_RAM].lineSize / (1 << 7 - (value >> 11 & 0x0003));
+                                                                                                          ~~ ~~^~~~~~~~~~~~~~~~~~~~~~~~
+./../include/dbvzRegisterAccessors.c.h:284:112: note: place parentheses around the '-' expression to silence this warning
+      dbvzChipSelects[DBVZ_CHIP_DX_RAM].unprotectedSize = dbvzChipSelects[DBVZ_CHIP_DX_RAM].lineSize / (1 << 7 - (value >> 11 & 0x0003));
+                                                                                                               ^
+                                                                                                             (                         )
+./../include/dbvzRegisterAccessors.c.h:585:19: warning: unused variable 'urx1' [-Wunused-variable]
+         uint16_t urx1 = registerArrayRead16(URX1);
+                  ^
+./../include/dbvzRegisterAccessors.c.h:602:19: warning: unused variable 'utx1' [-Wunused-variable]
+         uint16_t utx1 = registerArrayRead16(UTX1);
+                  ^
+./../include/dbvzRegisterAccessors.c.h:666:19: warning: unused variable 'urx2' [-Wunused-variable]
+         uint16_t urx2 = registerArrayRead16(URX2);
+                  ^
+./../include/dbvzRegisterAccessors.c.h:683:19: warning: unused variable 'utx2' [-Wunused-variable]
+         uint16_t utx2 = registerArrayRead16(UTX2);
+                  ^
+In file included from ../src/dbvz.c:58:
+./../include/dbvzTiming.c.h:295:58: warning: '&&' within '||' [-Wlogical-op-parentheses]
+            if(hours < alarmHours || hours == alarmHours && minutes < alarmMinutes || hours == alarmHours && minutes == alarmMinutes && seconds < alarmSeconds){
+                                  ~~ ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./../include/dbvzTiming.c.h:295:58: note: place parentheses around the '&&' expression to silence this warning
+            if(hours < alarmHours || hours == alarmHours && minutes < alarmMinutes || hours == alarmHours && minutes == alarmMinutes && seconds < alarmSeconds){
+                                                         ^
+                                     (                                            )
+./../include/dbvzTiming.c.h:295:134: warning: '&&' within '||' [-Wlogical-op-parentheses]
+            if(hours < alarmHours || hours == alarmHours && minutes < alarmMinutes || hours == alarmHours && minutes == alarmMinutes && seconds < alarmSeconds){
+                                                                                   ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./../include/dbvzTiming.c.h:295:134: note: place parentheses around the '&&' expression to silence this warning
+            if(hours < alarmHours || hours == alarmHours && minutes < alarmMinutes || hours == alarmHours && minutes == alarmMinutes && seconds < alarmSeconds){
+                                                                                                                                     ^
+                                                                                      (                                                                       )
+./../include/dbvzTiming.c.h:297:65: warning: '&&' within '||' [-Wlogical-op-parentheses]
+               if(time[0] > alarmHours || time[0] == alarmHours && time[1] > alarmMinutes || time[0] == alarmHours && time[1] == alarmMinutes && time[0] >= alarmSeconds){
+                                       ~~ ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+./../include/dbvzTiming.c.h:297:65: note: place parentheses around the '&&' expression to silence this warning
+               if(time[0] > alarmHours || time[0] == alarmHours && time[1] > alarmMinutes || time[0] == alarmHours && time[1] == alarmMinutes && time[0] >= alarmSeconds){
+                                                                ^
+                                          (                                              )
+./../include/dbvzTiming.c.h:297:143: warning: '&&' within '||' [-Wlogical-op-parentheses]
+               if(time[0] > alarmHours || time[0] == alarmHours && time[1] > alarmMinutes || time[0] == alarmHours && time[1] == alarmMinutes && time[0] >= alarmSeconds){
+                                                                                          ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+./../include/dbvzTiming.c.h:297:143: note: place parentheses around the '&&' expression to silence this warning
+               if(time[0] > alarmHours || time[0] == alarmHours && time[1] > alarmMinutes || time[0] == alarmHours && time[1] == alarmMinutes && time[0] >= alarmSeconds){
+                                                                                                                                              ^
+                                                                                             (                                                                          )
+../src/dbvz.c:95:118: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+                     dbvzFramebuffer[y * dbvzFramebufferWidth + x * 16 + index - pixelShift] = !!(dataUnit & 1 << 15 - index) == invertColors ? masterColorLut[0] : masterColorLut[15];
+                                                                                                               ~~ ~~~^~~~~~~
+../src/dbvz.c:95:118: note: place parentheses around the '-' expression to silence this warning
+                     dbvzFramebuffer[y * dbvzFramebufferWidth + x * 16 + index - pixelShift] = !!(dataUnit & 1 << 15 - index) == invertColors ? masterColorLut[0] : masterColorLut[15];
+                                                                                                                     ^
+                                                                                                                  (         )
+../src/dbvz.c:113:158: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+                     dbvzFramebuffer[y * dbvzFramebufferWidth + x * 8 + index - pixelShift] = invertColors ? masterColorLut[15 - colorLut2Bpp[dataUnit >> 14 - index * 2 & 0x03]] : masterColorLut[colorLut2Bpp[dataUnit >> 14 - index * 2 & 0x03]];
+                                                                                                                                                       ~~ ~~~^~~~~~~~~~~
+../src/dbvz.c:113:158: note: place parentheses around the '-' expression to silence this warning
+                     dbvzFramebuffer[y * dbvzFramebufferWidth + x * 8 + index - pixelShift] = invertColors ? masterColorLut[15 - colorLut2Bpp[dataUnit >> 14 - index * 2 & 0x03]] : masterColorLut[colorLut2Bpp[dataUnit >> 14 - index * 2 & 0x03]];
+                                                                                                                                                             ^
+                                                                                                                                                          (             )
+../src/dbvz.c:113:224: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+                     dbvzFramebuffer[y * dbvzFramebufferWidth + x * 8 + index - pixelShift] = invertColors ? masterColorLut[15 - colorLut2Bpp[dataUnit >> 14 - index * 2 & 0x03]] : masterColorLut[colorLut2Bpp[dataUnit >> 14 - index * 2 & 0x03]];
+                                                                                                                                                                                                                         ~~ ~~~^~~~~~~~~~~
+../src/dbvz.c:113:224: note: place parentheses around the '-' expression to silence this warning
+                     dbvzFramebuffer[y * dbvzFramebufferWidth + x * 8 + index - pixelShift] = invertColors ? masterColorLut[15 - colorLut2Bpp[dataUnit >> 14 - index * 2 & 0x03]] : masterColorLut[colorLut2Bpp[dataUnit >> 14 - index * 2 & 0x03]];
+                                                                                                                                                                                                                               ^
+                                                                                                                                                                                                                            (             )
+../src/dbvz.c:126:146: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+                     dbvzFramebuffer[y * dbvzFramebufferWidth + x * 4 + index - pixelShift] = invertColors ? masterColorLut[15 - (dataUnit >> 12 - index * 4 & 0x0F)] : masterColorLut[dataUnit >> 12 - index * 4 & 0x0F];
+                                                                                                                                           ~~ ~~~^~~~~~~~~~~
+../src/dbvz.c:126:146: note: place parentheses around the '-' expression to silence this warning
+                     dbvzFramebuffer[y * dbvzFramebufferWidth + x * 4 + index - pixelShift] = invertColors ? masterColorLut[15 - (dataUnit >> 12 - index * 4 & 0x0F)] : masterColorLut[dataUnit >> 12 - index * 4 & 0x0F];
+                                                                                                                                                 ^
+                                                                                                                                              (             )
+../src/dbvz.c:126:199: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+                     dbvzFramebuffer[y * dbvzFramebufferWidth + x * 4 + index - pixelShift] = invertColors ? masterColorLut[15 - (dataUnit >> 12 - index * 4 & 0x0F)] : masterColorLut[dataUnit >> 12 - index * 4 & 0x0F];
+                                                                                                                                                                                                ~~ ~~~^~~~~~~~~~~
+../src/dbvz.c:126:199: note: place parentheses around the '-' expression to silence this warning
+                     dbvzFramebuffer[y * dbvzFramebufferWidth + x * 4 + index - pixelShift] = invertColors ? masterColorLut[15 - (dataUnit >> 12 - index * 4 & 0x0F)] : masterColorLut[dataUnit >> 12 - index * 4 & 0x0F];
+                                                                                                                                                                                                      ^
+                                                                                                                                                                                                   (             )
+../src/dbvz.c:310:156: warning: '&' within '|' [-Wbitwise-op-parentheses]
+   uint8_t portDInterruptTriggered = portDInterruptValue & portDInterruptEnabled & portDIsInput & (~portDInterruptEdgeTriggered | ~portDInterruptLastValue & (dbvzIsPllOn() ? 0xFF : 0xF0));
+                                                                                                                                ~ ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/dbvz.c:310:156: note: place parentheses around the '&' expression to silence this warning
+   uint8_t portDInterruptTriggered = portDInterruptValue & portDInterruptEnabled & portDIsInput & (~portDInterruptEdgeTriggered | ~portDInterruptLastValue & (dbvzIsPllOn() ? 0xFF : 0xF0));
+                                                                                                                                                           ^
+                                                                                                                                  (                                                       )
+../src/dbvz.c:1427:46: warning: '&' within '|' [-Wbitwise-op-parentheses]
+   registerArrayWrite32(RTCTIME, hours << 24 & 0x1F000000 | minutes << 16 & 0x003F0000 | seconds & 0x0000003F);
+                                 ~~~~~~~~~~~~^~~~~~~~~~~~ ~
+../src/dbvz.c:1427:46: note: place parentheses around the '&' expression to silence this warning
+   registerArrayWrite32(RTCTIME, hours << 24 & 0x1F000000 | minutes << 16 & 0x003F0000 | seconds & 0x0000003F);
+                                             ^
+                                 (                       )
+../src/dbvz.c:1427:75: warning: '&' within '|' [-Wbitwise-op-parentheses]
+   registerArrayWrite32(RTCTIME, hours << 24 & 0x1F000000 | minutes << 16 & 0x003F0000 | seconds & 0x0000003F);
+                                                          ~ ~~~~~~~~~~~~~~^~~~~~~~~~~~
+../src/dbvz.c:1427:75: note: place parentheses around the '&' expression to silence this warning
+   registerArrayWrite32(RTCTIME, hours << 24 & 0x1F000000 | minutes << 16 & 0x003F0000 | seconds & 0x0000003F);
+                                                                          ^
+                                                            (                         )
+../src/dbvz.c:1427:98: warning: '&' within '|' [-Wbitwise-op-parentheses]
+   registerArrayWrite32(RTCTIME, hours << 24 & 0x1F000000 | minutes << 16 & 0x003F0000 | seconds & 0x0000003F);
+                                                                                       ~ ~~~~~~~~^~~~~~~~~~~~
+../src/dbvz.c:1427:98: note: place parentheses around the '&' expression to silence this warning
+   registerArrayWrite32(RTCTIME, hours << 24 & 0x1F000000 | minutes << 16 & 0x003F0000 | seconds & 0x0000003F);
+                                                                                                 ^
+                                                                                         (                   )
+In file included from ../src/dbvz.c:57:
+./../include/dbvzRegisterAccessors.c.h:98:17: warning: unused function 'uart1RxFifoRead' [-Wunused-function]
+static uint16_t uart1RxFifoRead(void){
+                ^
+./../include/dbvzRegisterAccessors.c.h:136:17: warning: unused function 'uart2RxFifoRead' [-Wunused-function]
+static uint16_t uart2RxFifoRead(void){
+                ^
+./../include/dbvzRegisterAccessors.c.h:556:13: warning: unused function 'updateUart1PortState' [-Wunused-function]
+static void updateUart1PortState(void){
+            ^
+./../include/dbvzRegisterAccessors.c.h:634:13: warning: unused function 'updateUart2PortState' [-Wunused-function]
+static void updateUart2PortState(void){
+            ^
+3 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/flx68000.o ../src/flx68000.c
+5 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/sed1376.o ../src/sed1376.c
+In file included from ../src/flx68000.c:5:
+./../include/portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from ../src/flx68000.c:4:
+./../include/emulator.h:42:13: warning: unused function 'debugLog' [-Wunused-function]
+static void debugLog(char* str, ...){};
+            ^
+In file included from ../src/sed1376.c:5:
+./../include/portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+3 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/ads7846.o ../src/ads7846.c
+In file included from ../src/ads7846.c:5:
+./../include/portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+2 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/pdiUsbD12.o ../src/pdiUsbD12.c
+In file included from ../src/ads7846.c:4:
+./../include/emulator.h:42:13: warning: unused function 'debugLog' [-Wunused-function]
+static void debugLog(char* str, ...){};
+            ^
+3 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/sdCard.o ../src/sdCard.c
+In file included from ../src/pdiUsbD12.c:6:
+./../include/portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from ../src/sdCard.c:6:
+./../include/portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from ../src/sdCard.c:63:
+./../include/sdCardAccessors.c.h:52:85: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+               byte = palmSdCard.responseFifo[palmSdCard.responseReadPosition] << 7 - palmSdCard.responseReadPositionBit;
+                                                                               ~~ ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./../include/sdCardAccessors.c.h:52:85: note: place parentheses around the '-' expression to silence this warning
+               byte = palmSdCard.responseFifo[palmSdCard.responseReadPosition] << 7 - palmSdCard.responseReadPositionBit;
+                                                                                    ^
+                                                                                  (                                     )
+./../include/sdCardAccessors.c.h:54:119: warning: operator '>>' has lower precedence than '+'; '+' will be evaluated first [-Wshift-op-parentheses]
+               byte |= palmSdCard.responseFifo[palmSdCard.responseReadPosition] >> palmSdCard.responseReadPositionBit + 1;
+                                                                                ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+./../include/sdCardAccessors.c.h:54:119: note: place parentheses around the '+' expression to silence this warning
+               byte |= palmSdCard.responseFifo[palmSdCard.responseReadPosition] >> palmSdCard.responseReadPositionBit + 1;
+                                                                                                                      ^
+                                                                                   (                                     )
+./../include/sdCardAccessors.c.h:111:27: warning: passing 'const uint8_t *' (aka 'const unsigned char *') to parameter of type 'uint8_t *' (aka 'unsigned char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+      crc16 = sdCardCrc16(data, size);
+                          ^~~~
+../src/sdCard.c:52:38: note: passing argument to parameter 'data' here
+static uint16_t sdCardCrc16(uint8_t* data, uint16_t size){
+                                     ^
+In file included from ../src/sdCard.c:63:
+./../include/sdCardAccessors.c.h:137:20: warning: '&' within '|' [-Wbitwise-op-parentheses]
+   csd[6] = csd[6] & 0xFC | deviceSize >> 10 & 0x03;
+            ~~~~~~~^~~~~~ ~
+./../include/sdCardAccessors.c.h:137:20: note: place parentheses around the '&' expression to silence this warning
+   csd[6] = csd[6] & 0xFC | deviceSize >> 10 & 0x03;
+                   ^
+            (            )
+./../include/sdCardAccessors.c.h:137:46: warning: '&' within '|' [-Wbitwise-op-parentheses]
+   csd[6] = csd[6] & 0xFC | deviceSize >> 10 & 0x03;
+                          ~ ~~~~~~~~~~~~~~~~~^~~~~~
+./../include/sdCardAccessors.c.h:137:46: note: place parentheses around the '&' expression to silence this warning
+   csd[6] = csd[6] & 0xFC | deviceSize >> 10 & 0x03;
+                                             ^
+                            (                      )
+./../include/sdCardAccessors.c.h:139:20: warning: '&' within '|' [-Wbitwise-op-parentheses]
+   csd[8] = csd[8] & 0x3F | deviceSize << 6 & 0xC0;
+            ~~~~~~~^~~~~~ ~
+./../include/sdCardAccessors.c.h:139:20: note: place parentheses around the '&' expression to silence this warning
+   csd[8] = csd[8] & 0x3F | deviceSize << 6 & 0xC0;
+                   ^
+            (            )
+./../include/sdCardAccessors.c.h:139:45: warning: '&' within '|' [-Wbitwise-op-parentheses]
+   csd[8] = csd[8] & 0x3F | deviceSize << 6 & 0xC0;
+                          ~ ~~~~~~~~~~~~~~~~^~~~~~
+./../include/sdCardAccessors.c.h:139:45: note: place parentheses around the '&' expression to silence this warning
+   csd[8] = csd[8] & 0x3F | deviceSize << 6 & 0xC0;
+                                            ^
+                            (                     )
+../src/sdCard.c:416:101: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+                  palmSdCard.runningCommandPacket[palmSdCard.runningCommandVars[2] / 8] |= bit << 7 - palmSdCard.runningCommandVars[2] % 8;
+                                                                                               ~~ ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/sdCard.c:416:101: note: place parentheses around the '-' expression to silence this warning
+                  palmSdCard.runningCommandPacket[palmSdCard.runningCommandVars[2] / 8] |= bit << 7 - palmSdCard.runningCommandVars[2] % 8;
+                                                                                                    ^
+                                                                                                  (                                       )
+../src/sdCard.c:463:30: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   uint32_t mask = 1 << size - 1;
+                     ~~ ~~~~~^~~
+../src/sdCard.c:463:30: note: place parentheses around the '-' expression to silence this warning
+   uint32_t mask = 1 << size - 1;
+                             ^
+                        (       )
+../src/sdCard.c:485:106: warning: '&&' within '||' [-Wlogical-op-parentheses]
+      bool ignoreCmdBits = palmSdCard.commandBitsRemaining == 48 && (bits == all1s || bits == 0x00000000 && !(size & 0x1));
+                                                                                   ~~ ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+../src/sdCard.c:485:106: note: place parentheses around the '&&' expression to silence this warning
+      bool ignoreCmdBits = palmSdCard.commandBitsRemaining == 48 && (bits == all1s || bits == 0x00000000 && !(size & 0x1));
+                                                                                                         ^
+                                                                                      (                                  )
+../src/sdCard.c:486:115: warning: '&&' within '||' [-Wlogical-op-parentheses]
+      bool safeToOptimize = !palmSdCard.receivingCommand || ignoreCmdBits || palmSdCard.commandBitsRemaining > 47 && palmSdCard.commandBitsRemaining - size < 1;
+                                                                          ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/sdCard.c:486:115: note: place parentheses around the '&&' expression to silence this warning
+      bool safeToOptimize = !palmSdCard.receivingCommand || ignoreCmdBits || palmSdCard.commandBitsRemaining > 47 && palmSdCard.commandBitsRemaining - size < 1;
+                                                                                                                  ^
+                                                                             (                                                                                 )
+../src/sdCard.c:536:85: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+                  palmSdCard.runningCommandPacket[currentByte] = bits >> (size - 8) - (index * 8) & 0xFF;
+                                                                      ~~ ~~~~~~~~~~~^~~~~~~~~~~~~
+../src/sdCard.c:536:85: note: place parentheses around the '-' expression to silence this warning
+                  palmSdCard.runningCommandPacket[currentByte] = bits >> (size - 8) - (index * 8) & 0xFF;
+                                                                                    ^
+                                                                         (                       )
+2 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/silkscreen.o ../src/silkscreen.c
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/audio/blip_buf.o ../src/audio/blip_buf.c
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/m68k/m68kops.o ../src/m68k/m68kops.c
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/m68k/m68kopnz.o ../src/m68k/m68kopnz.c
+14 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/m68k/m68kopdm.o ../src/m68k/m68kopdm.c
+27 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/m68k/m68kopac.o ../src/m68k/m68kopac.c
+2 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/m68k/m68kcpu.o ../src/m68k/m68kcpu.c
+../src/m68k/m68kcpu.c:61:4: warning: suspicious concatenation of string literals in an array initialization; did you mean to separate the elements with a comma? [-Wstring-concatenation]
+   "Invalid CPU",
+   ^
+../src/m68k/m68kcpu.c:60:4: note: place parentheses around the string literal to silence warning
+   "M68EC020"
+   ^
+1 warning generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/fileLauncher/launcher.o ../src/fileLauncher/launcher.c
+In file included from ../src/fileLauncher/launcher.c:7:
+./../include/portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/fileLauncher/launcher.c:150:45: warning: '&' within '|' [-Wbitwise-op-parentheses]
+   m68k_set_reg(M68K_REG_SR, oldCpuState.sr & 0xF0FF | m68k_get_reg(NULL, M68K_REG_SR) & 0x0700);//dont restore intMask
+                             ~~~~~~~~~~~~~~~^~~~~~~~ ~
+../src/fileLauncher/launcher.c:150:45: note: place parentheses around the '&' expression to silence this warning
+   m68k_set_reg(M68K_REG_SR, oldCpuState.sr & 0xF0FF | m68k_get_reg(NULL, M68K_REG_SR) & 0x0700);//dont restore intMask
+                                            ^
+                             (                      )
+../src/fileLauncher/launcher.c:150:88: warning: '&' within '|' [-Wbitwise-op-parentheses]
+   m68k_set_reg(M68K_REG_SR, oldCpuState.sr & 0xF0FF | m68k_get_reg(NULL, M68K_REG_SR) & 0x0700);//dont restore intMask
+                                                     ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../src/fileLauncher/launcher.c:150:88: note: place parentheses around the '&' expression to silence this warning
+   m68k_set_reg(M68K_REG_SR, oldCpuState.sr & 0xF0FF | m68k_get_reg(NULL, M68K_REG_SR) & 0x0700);//dont restore intMask
+                                                                                       ^
+                                                       (                                       )
+In file included from ../src/fileLauncher/launcher.c:6:
+./../include/fileLauncher/../emulator.h:42:13: warning: unused function 'debugLog' [-Wunused-function]
+static void debugLog(char* str, ...){};
+            ^
+5 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/pxa260/pxa260_DMA.o ../src/pxa260/pxa260_DMA.c
+In file included from ../src/pxa260/pxa260_DMA.c:1:
+In file included from ./../include/pxa260/pxa260.h:10:
+In file included from ./../include/pxa260/pxa260_IC.h:4:
+In file included from ./../include/pxa260/pxa260_CPU.h:7:
+In file included from ./../include/pxa260/../armv5te/emu.h:14:
+./../include/pxa260/../armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/pxa260/pxa260_DMA.c:15:15: warning: unused variable 'regs' [-Wunused-variable]
+                const char* regs[] = {"DADDR", "SADDR", "TADDR", "CR", "CSR"};
+                            ^
+../src/pxa260/pxa260_DMA.c:35:16: warning: unused function 'pxa260dmaPrvMemAccessF' [-Wunused-function]
+static Boolean pxa260dmaPrvMemAccessF(void* userData, UInt32 pa, UInt8 size, Boolean write, void* buf){
+               ^
+4 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/pxa260/pxa260_DSP.o ../src/pxa260/pxa260_DSP.c
+In file included from ../src/pxa260/pxa260_DSP.c:2:
+In file included from ./../include/pxa260/pxa260_CPU.h:7:
+In file included from ./../include/pxa260/../armv5te/emu.h:14:
+./../include/pxa260/../armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from ../src/pxa260/pxa260_DSP.c:1:
+In file included from ./../include/pxa260/pxa260_math64.h:4:
+In file included from ./../include/pxa260/pxa260_types.h:9:
+./../include/pxa260/../armv5te/../emulator.h:42:13: warning: unused function 'debugLog' [-Wunused-function]
+static void debugLog(char* str, ...){};
+            ^
+3 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/pxa260/pxa260_GPIO.o ../src/pxa260/pxa260_GPIO.c
+In file included from ../src/pxa260/pxa260_GPIO.c:1:
+In file included from ./../include/pxa260/pxa260.h:10:
+In file included from ./../include/pxa260/pxa260_IC.h:4:
+In file included from ./../include/pxa260/pxa260_CPU.h:7:
+In file included from ./../include/pxa260/../armv5te/emu.h:14:
+./../include/pxa260/../armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+2 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/pxa260/pxa260_IC.o ../src/pxa260/pxa260_IC.c
+In file included from ../src/pxa260/pxa260_IC.c:1:
+In file included from ./../include/pxa260/pxa260_IC.h:4:
+In file included from ./../include/pxa260/pxa260_CPU.h:7:
+In file included from ./../include/pxa260/../armv5te/emu.h:14:
+./../include/pxa260/../armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+2 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/pxa260/pxa260_LCD.o ../src/pxa260/pxa260_LCD.c
+In file included from ../src/pxa260/pxa260_LCD.c:1:
+In file included from ./../include/pxa260/pxa260_LCD.h:4:
+In file included from ./../include/pxa260/pxa260_CPU.h:7:
+In file included from ./../include/pxa260/../armv5te/emu.h:14:
+./../include/pxa260/../armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/pxa260/pxa260_LCD.c:220:47: warning: converting the result of '<<' to a boolean; did you mean '(buf[1] << 8) != 0'? [-Wint-in-bool-context]
+   pxa260Framebuffer[pos] = buf[0] || (buf[1] << 8);
+                                              ^
+3 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/pxa260/pxa260_PwrClk.o ../src/pxa260/pxa260_PwrClk.c
+In file included from ../src/pxa260/pxa260_PwrClk.c:1:
+In file included from ./../include/pxa260/pxa260_PwrClk.h:4:
+In file included from ./../include/pxa260/pxa260_CPU.h:7:
+In file included from ./../include/pxa260/../armv5te/emu.h:14:
+./../include/pxa260/../armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+2 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/pxa260/pxa260_RTC.o ../src/pxa260/pxa260_RTC.c
+In file included from ../src/pxa260/pxa260_RTC.c:8:
+In file included from ./../include/pxa260/pxa260.h:10:
+In file included from ./../include/pxa260/pxa260_IC.h:4:
+In file included from ./../include/pxa260/pxa260_CPU.h:7:
+In file included from ./../include/pxa260/../armv5te/emu.h:14:
+./../include/pxa260/../armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/pxa260/pxa260_RTC.c:51:16: warning: unused function 'pxa260rtcPrvMemAccessF' [-Wunused-function]
+static Boolean pxa260rtcPrvMemAccessF(void* userData, UInt32 pa, UInt8 size, Boolean write, void* buf){
+               ^
+3 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/pxa260/pxa260_TIMR.o ../src/pxa260/pxa260_TIMR.c
+In file included from ../src/pxa260/pxa260_TIMR.c:1:
+In file included from ./../include/pxa260/pxa260.h:10:
+In file included from ./../include/pxa260/pxa260_IC.h:4:
+In file included from ./../include/pxa260/pxa260_CPU.h:7:
+In file included from ./../include/pxa260/../armv5te/emu.h:14:
+./../include/pxa260/../armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+2 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/pxa260/pxa260_UART.o ../src/pxa260/pxa260_UART.c
+In file included from ../src/pxa260/pxa260_UART.c:1:
+In file included from ./../include/pxa260/pxa260_UART.h:4:
+In file included from ./../include/pxa260/pxa260_CPU.h:7:
+In file included from ./../include/pxa260/../armv5te/emu.h:14:
+./../include/pxa260/../armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/pxa260/pxa260_UART.c:218:16: warning: unused function 'pxa260uartPrvMemAccessF' [-Wunused-function]
+static Boolean pxa260uartPrvMemAccessF(void* userData, UInt32 pa, UInt8 size, Boolean write, void* buf){
+               ^
+3 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/pxa260/pxa260I2c.o ../src/pxa260/pxa260I2c.c
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/pxa260/pxa260Memctrl.o ../src/pxa260/pxa260Memctrl.c
+In file included from ../src/pxa260/pxa260I2c.c:4:
+In file included from ./../include/pxa260/pxa260.h:10:
+In file included from ./../include/pxa260/pxa260_IC.h:4:
+In file included from ./../include/pxa260/pxa260_CPU.h:7:
+In file included from ./../include/pxa260/../armv5te/emu.h:14:
+./../include/pxa260/../armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/pxa260/pxa260I2c.c:29:29: warning: '&&' within '||' [-Wlogical-op-parentheses]
+   if(pxa260I2cIcr & 0x0100 && pxa260I2cIsr & 0x0040 || pxa260I2cIcr & 0x0200 && pxa260I2cIsr & 0x0080)
+      ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~ ~~
+../src/pxa260/pxa260I2c.c:29:29: note: place parentheses around the '&&' expression to silence this warning
+   if(pxa260I2cIcr & 0x0100 && pxa260I2cIsr & 0x0040 || pxa260I2cIcr & 0x0200 && pxa260I2cIsr & 0x0080)
+                            ^
+      (                                             )
+../src/pxa260/pxa260I2c.c:29:79: warning: '&&' within '||' [-Wlogical-op-parentheses]
+   if(pxa260I2cIcr & 0x0100 && pxa260I2cIsr & 0x0040 || pxa260I2cIcr & 0x0200 && pxa260I2cIsr & 0x0080)
+                                                     ~~ ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+../src/pxa260/pxa260I2c.c:29:79: note: place parentheses around the '&&' expression to silence this warning
+   if(pxa260I2cIcr & 0x0100 && pxa260I2cIsr & 0x0040 || pxa260I2cIcr & 0x0200 && pxa260I2cIsr & 0x0080)
+                                                                              ^
+                                                        (                                             )
+../src/pxa260/pxa260I2c.c:119:68: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+                     tps65010I2cExchange((pxa260I2cBuffer & 1 << 7 - index) ? I2C_1 : I2C_0);
+                                                              ~~ ~~^~~~~~~
+../src/pxa260/pxa260I2c.c:119:68: note: place parentheses around the '-' expression to silence this warning
+                     tps65010I2cExchange((pxa260I2cBuffer & 1 << 7 - index) ? I2C_1 : I2C_0);
+                                                                   ^
+                                                                 (        )
+../src/pxa260/pxa260I2c.c:129:31: warning: '&' within '|' [-Wbitwise-op-parentheses]
+         pxa260I2cIcr = value & 0xFFFF | pxa260I2cIcr & 0x0008;
+                        ~~~~~~^~~~~~~~ ~
+../src/pxa260/pxa260I2c.c:129:31: note: place parentheses around the '&' expression to silence this warning
+         pxa260I2cIcr = value & 0xFFFF | pxa260I2cIcr & 0x0008;
+                              ^
+                        (             )
+../src/pxa260/pxa260I2c.c:129:55: warning: '&' within '|' [-Wbitwise-op-parentheses]
+         pxa260I2cIcr = value & 0xFFFF | pxa260I2cIcr & 0x0008;
+                                       ~ ~~~~~~~~~~~~~^~~~~~~~
+../src/pxa260/pxa260I2c.c:129:55: note: place parentheses around the '&' expression to silence this warning
+         pxa260I2cIcr = value & 0xFFFF | pxa260I2cIcr & 0x0008;
+                                                      ^
+                                         (                    )
+7 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/pxa260/pxa260Timing.o ../src/pxa260/pxa260Timing.c
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/pxa260/pxa260Ssp.o ../src/pxa260/pxa260Ssp.c
+In file included from ../src/pxa260/pxa260Timing.c:5:
+In file included from ./../include/pxa260/pxa260.h:10:
+In file included from ./../include/pxa260/pxa260_IC.h:4:
+In file included from ./../include/pxa260/pxa260_CPU.h:7:
+In file included from ./../include/pxa260/../armv5te/emu.h:14:
+./../include/pxa260/../armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from ../src/pxa260/pxa260Ssp.c:5:
+In file included from ./../include/pxa260/pxa260.h:10:
+In file included from ./../include/pxa260/pxa260_IC.h:4:
+In file included from ./../include/pxa260/pxa260_CPU.h:7:
+In file included from ./../include/pxa260/../armv5te/emu.h:14:
+./../include/pxa260/../armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from ../src/pxa260/pxa260Timing.c:5:
+In file included from ./../include/pxa260/pxa260.h:10:
+In file included from ./../include/pxa260/pxa260_IC.h:4:
+In file included from ./../include/pxa260/pxa260_CPU.h:4:
+In file included from ./../include/pxa260/pxa260_types.h:9:
+./../include/emulator.h:42:13: warning: unused function 'debugLog' [-Wunused-function]
+static void debugLog(char* str, ...){};
+            ^
+../src/pxa260/pxa260Ssp.c:241:57: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+         input |= tsc2101ExchangeBit(output >> bitCount - index & 0x0001);
+                                            ~~ ~~~~~~~~~^~~~~~~
+../src/pxa260/pxa260Ssp.c:241:57: note: place parentheses around the '-' expression to silence this warning
+         input |= tsc2101ExchangeBit(output >> bitCount - index & 0x0001);
+                                                        ^
+                                               (               )
+3 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/pxa260/pxa260Udc.o ../src/pxa260/pxa260Udc.c
+3 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/pxa260/pxa260.o ../src/pxa260/pxa260.c
+In file included from ../src/pxa260/pxa260Udc.c:3:
+In file included from ./../include/pxa260/pxa260.h:10:
+In file included from ./../include/pxa260/pxa260_IC.h:4:
+In file included from ./../include/pxa260/pxa260_CPU.h:7:
+In file included from ./../include/pxa260/../armv5te/emu.h:14:
+./../include/pxa260/../armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/pxa260/pxa260Udc.c:117:42: warning: '&' within '|' [-Wbitwise-op-parentheses]
+         pxa260UdcUdccr = pxa260UdcUdccr & 0x5E | value & 0xA1;//write normal bits
+                          ~~~~~~~~~~~~~~~^~~~~~ ~
+../src/pxa260/pxa260Udc.c:117:42: note: place parentheses around the '&' expression to silence this warning
+         pxa260UdcUdccr = pxa260UdcUdccr & 0x5E | value & 0xA1;//write normal bits
+                                         ^
+                          (                    )
+../src/pxa260/pxa260Udc.c:117:57: warning: '&' within '|' [-Wbitwise-op-parentheses]
+         pxa260UdcUdccr = pxa260UdcUdccr & 0x5E | value & 0xA1;//write normal bits
+                                                ~ ~~~~~~^~~~~~
+../src/pxa260/pxa260Udc.c:117:57: note: place parentheses around the '&' expression to silence this warning
+         pxa260UdcUdccr = pxa260UdcUdccr & 0x5E | value & 0xA1;//write normal bits
+                                                        ^
+                                                  (           )
+../src/pxa260/pxa260Udc.c:158:42: warning: '&' within '|' [-Wbitwise-op-parentheses]
+         pxa260UdcUfnhr = pxa260UdcUfnhr & 0xBF | value & 0x40;//write normal bits
+                          ~~~~~~~~~~~~~~~^~~~~~ ~
+../src/pxa260/pxa260Udc.c:158:42: note: place parentheses around the '&' expression to silence this warning
+         pxa260UdcUfnhr = pxa260UdcUfnhr & 0xBF | value & 0x40;//write normal bits
+                                         ^
+                          (                    )
+../src/pxa260/pxa260Udc.c:158:57: warning: '&' within '|' [-Wbitwise-op-parentheses]
+         pxa260UdcUfnhr = pxa260UdcUfnhr & 0xBF | value & 0x40;//write normal bits
+                                                ~ ~~~~~~^~~~~~
+../src/pxa260/pxa260Udc.c:158:57: note: place parentheses around the '&' expression to silence this warning
+         pxa260UdcUfnhr = pxa260UdcUfnhr & 0xBF | value & 0x40;//write normal bits
+                                                        ^
+                                                  (           )
+In file included from ../src/pxa260/pxa260.c:4:
+In file included from ./../include/pxa260/pxa260.h:10:
+In file included from ./../include/pxa260/pxa260_IC.h:4:
+In file included from ./../include/pxa260/pxa260_CPU.h:7:
+In file included from ./../include/pxa260/../armv5te/emu.h:14:
+./../include/pxa260/../armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/pxa260/pxa260.c:232:13: warning: unused variable 'offset' [-Wunused-variable]
+   uint32_t offset = 0;
+            ^
+../src/pxa260/pxa260.c:237:13: warning: unused variable 'offset' [-Wunused-variable]
+   uint32_t offset = 0;
+            ^
+6 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/armv5te/emuVarPool.o ../src/armv5te/emuVarPool.c
+In file included from ../src/armv5te/emuVarPool.c:8:
+In file included from ./../include/armv5te/emu.h:14:
+./../include/armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from ../src/armv5te/emuVarPool.c:8:
+In file included from ./../include/armv5te/emu.h:13:
+./../include/armv5te/../emulator.h:42:13: warning: unused function 'debugLog' [-Wunused-function]
+static void debugLog(char* str, ...){};
+            ^
+3 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/armv5te/mem.o ../src/armv5te/mem.c
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/armv5te/mmu.o ../src/armv5te/mmu.c
+4 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/tps65010.o ../src/tps65010.c
+In file included from ../src/armv5te/mem.c:6:
+In file included from ./../include/armv5te/emu.h:14:
+./../include/armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/armv5te/mem.c:62:15: warning: unused variable 'flags' [-Wunused-variable]
+    uint32_t *flags = &RAM_FLAGS((size_t)ptr & ~3);
+              ^
+../src/armv5te/mem.c:61:14: warning: unused variable 'addr' [-Wunused-variable]
+    uint32_t addr = phys_mem_addr(ptr);
+             ^
+In file included from ../src/armv5te/mmu.c:4:
+In file included from ./../include/armv5te/emu.h:14:
+./../include/armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from ../src/tps65010.c:6:
+In file included from ./../include/pxa260/pxa260_GPIO.h:4:
+In file included from ./../include/pxa260/pxa260_CPU.h:7:
+In file included from ./../include/pxa260/../armv5te/emu.h:14:
+./../include/pxa260/../armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/tps65010.c:48:38: warning: '&' within '|' [-Wbitwise-op-parentheses]
+   return tps65010Registers[DEFGPIO] & (0xF0 | direction) | inputVoltage & ~direction;
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~ ~
+../src/tps65010.c:48:38: note: place parentheses around the '&' expression to silence this warning
+   return tps65010Registers[DEFGPIO] & (0xF0 | direction) | inputVoltage & ~direction;
+                                     ^
+          (                                              )
+../src/tps65010.c:48:74: warning: '&' within '|' [-Wbitwise-op-parentheses]
+   return tps65010Registers[DEFGPIO] & (0xF0 | direction) | inputVoltage & ~direction;
+                                                          ~ ~~~~~~~~~~~~~^~~~~~~~~~~~
+../src/tps65010.c:48:74: note: place parentheses around the '&' expression to silence this warning
+   return tps65010Registers[DEFGPIO] & (0xF0 | direction) | inputVoltage & ~direction;
+                                                                         ^
+                                                            (                        )
+../src/tps65010.c:58:58: warning: '&' within '|' [-Wbitwise-op-parentheses]
+   tps65010Registers[DEFGPIO] = direction << 4 | voltage & direction | tps65010Registers[DEFGPIO] & 0x0F & ~direction;
+                                               ~ ~~~~~~~~^~~~~~~~~~~
+../src/tps65010.c:58:58: note: place parentheses around the '&' expression to silence this warning
+   tps65010Registers[DEFGPIO] = direction << 4 | voltage & direction | tps65010Registers[DEFGPIO] & 0x0F & ~direction;
+                                                         ^
+                                                 (                  )
+../src/tps65010.c:58:106: warning: '&' within '|' [-Wbitwise-op-parentheses]
+   tps65010Registers[DEFGPIO] = direction << 4 | voltage & direction | tps65010Registers[DEFGPIO] & 0x0F & ~direction;
+                                                                     ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+../src/tps65010.c:58:106: note: place parentheses around the '&' expression to silence this warning
+   tps65010Registers[DEFGPIO] = direction << 4 | voltage & direction | tps65010Registers[DEFGPIO] & 0x0F & ~direction;
+                                                                                                         ^
+                                                                       (                                             )
+../src/tps65010.c:139:13: warning: unused variable 'offset' [-Wunused-variable]
+   uint32_t offset = 0;
+            ^
+../src/tps65010.c:144:13: warning: unused variable 'offset' [-Wunused-variable]
+   uint32_t offset = 0;
+            ^
+../src/tps65010.c:222:4: warning: unused label 'trigger' [-Wunused-label]
+   trigger:
+   ^~~~~~~~
+../src/tps65010.c:51:13: warning: unused function 'tps65010WriteGpio' [-Wunused-function]
+static void tps65010WriteGpio(uint8_t value){
+            ^
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/tsc2101.o ../src/tsc2101.c
+2 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/w86l488.o ../src/w86l488.c
+4 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/armv5te/os/os-linux.o ../src/armv5te/os/os-linux.c
+10 warnings generated.
+../src/w86l488.c:17:13: warning: unused variable 'offset' [-Wunused-variable]
+   uint32_t offset = 0;
+            ^
+../src/w86l488.c:22:13:cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o ../src/armv5te/asmcode.o ../src/armv5te/asmcode.c
+ warning: unused variable 'offset' [-Wunused-variable]
+   uint32_t offset = 0;
+            ^
+2 warnings generated.
+In file included from ../src/tsc2101.c:7cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o libretro-common/compat/compat_strl.o libretro-common/compat/compat_strl.c
+:
+In file included from ./../include/pxa260/pxa260.h:10:
+In file included from ./../include/pxa260/pxa260_IC.h:4:
+In file included from ./../include/pxa260/pxa260_CPU.h:7:
+In file included from ./../include/pxa260/../armv5te/emu.h:14:
+./../include/pxa260/../armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/pxa260/../armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/tsc2101.c:203:57: warning: '&' within '|' [-Wbitwise-op-parentheses]
+         return tsc2101Registers[TOUCH_CONTROL_TSC_ADC] & 0x3FFF | palmInput.touchscreenTouched << 15 | 1 << 14/*TODO: this states the ADC is never busy*/;
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~ ~
+../src/tsc2101.c:203:57: note: place parentheses around the '&' expression to silence this warning
+         return tsc2101Registers[TOUCH_CONTROL_TSC_ADC] & 0x3FFF | palmInput.touchscreenTouched << 15 | 1 << 14/*TODO: this states the ADC is never busy*/;
+                                                        ^
+                (                                               )
+../src/tsc2101.c:356:1: warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+In file included from ../src/armv5te/asmcode.c:1:
+In file included from ./../include/armv5te/asmcode.h:6:
+In file included from ./../include/armv5te/emu.h:14:
+./../include/armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from ../src/armv5te/asmcode.c:1:
+In file included from ./../include/armv5te/asmcode.h:6:
+In file included from ./../include/armv5te/emu.h:13:
+./../include/armv5te/../emulator.h:42:13: warning: unused function 'debugLog' [-Wunused-function]
+static void debugLog(char* str, ...){};
+            ^
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o libretro-common/compat/compat_posix_string.o libretro-common/compat/compat_posix_string.c
+3 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o libretro-common/compat/fopen_utf8.o libretro-common/compat/fopen_utf8.c
+In file included from ../src/armv5te/os/os-linux.c:20:
+In file included from ./../include/armv5te/mmu.h:5:
+In file included from ./../include/armv5te/emu.h:14:
+./../include/armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o libretro-common/encodings/encoding_utf.o libretro-common/encodings/encoding_utf.c
+2 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o libretro-common/memmap/memmap.o libretro-common/memmap/memmap.c
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o libretro-common/streams/file_stream.o libretro-common/streams/file_stream.c
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o libretro-common/string/stdstring.o libretro-common/string/stdstring.c
+4 warnings generated.
+cc -arch i386 -I./../include -I./libretro-common/include -O2 -DNDEBUG -DGIT_VERSION=\"" 91a4673"\" -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1 -c -o libretro-common/vfs/vfs_implementation.o libretro-common/vfs/vfs_implementation.c
+libretro-common/streams/file_stream.c:434:24: warning: 'vsprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead. [-Wdeprecated-declarations]
+   int64_t num_chars = vsprintf(buffer, format, args);
+                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:207:1: note: 'vsprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+c++ -arch i386 -std=c++11 -I./../include -I./libretro-common/include -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1   -c -o ../src/armv5te/arm_interpreter.o ../src/armv5te/arm_interpreter.cpp
+c++ -arch i386 -std=c++11 -I./../include -I./libretro-common/include -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1   -c -o ../src/armv5te/thumb_interpreter.o ../src/armv5te/thumb_interpreter.cpp
+c++ -arch i386 -std=c++11 -I./../include -I./libretro-common/include -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1   -c -o ../src/armv5te/cpu.o ../src/armv5te/cpu.cpp
+clang: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+clangclang: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+../src/armv5te/cpu.cpp:1:10: fatal error: 'algorithm' file not found
+#include <algorithm>
+         ^~~~~~~~~~~
+In file included from ../src/armv5te/arm_interpreter.cpp:3:
+In file included from ./../include/armv5te/asmcode.h:6:
+In file included from ./../include/armv5te/emu.h:14:
+./../include/armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from ../src/armv5te/arm_interpreter.cpp:6:
+./../include/armv5te/debug.h:12:10: fatal error: 'string' file not found
+#include <string>
+         ^~~~~~~~
+In file included from ../src/armv5te/thumb_interpreter.cpp:1:
+In file included from ./../include/armv5te/asmcode.h:6:
+In file included from ./../include/armv5te/emu.h:14:
+./../include/armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from ../src/armv5te/thumb_interpreter.cpp:3:
+./../include/armv5te/debug.h:12:10: fatal error: 'string' file not found
+#include <string>
+         ^~~~~~~~
+1 warning generated.
+2 warnings and 1 error generated.
+2 warnings and 1 error generated.
+c++ -arch i386 -std=c++11 -I./../include -I./libretro-common/include -DEMU_NO_SAFETY -DEMU_SUPPORT_PALM_OS5 -DSUPPORT_LINUX  -DNO_TRANSLATION -fomit-frame-pointer -Wall -W -Wno-unused-parameter -Wno-sign-compare -Wno-uninitialized -fPIC -mmacosx-version-min=10.1   -c -o ../src/armv5te/coproc.o ../src/armv5te/coproc.cpp
+gmake[1]: *** [<builtin>: ../src/armv5te/thumb_interpreter.o] Error 1
+gmake[1]: *** Waiting for unfinished jobs....
+1 error generated.
+gmake[1]: *** [<builtin>: ../src/armv5te/arm_interpreter.o] Error 1
+gmake[1]: *** [<builtin>: ../src/armv5te/cpu.o] Error 1
+clang: warning: include path for libstdc++ headers not found; pass '-stdlib=libc++' on the command line to use the libc++ standard library instead [-Wstdlibcxx-not-found]
+In file included from ../src/armv5te/coproc.cpp:3:
+In file included from ./../include/armv5te/mmu.h:5:
+In file included from ./../include/armv5te/emu.h:14:
+./../include/armv5te/../portability.h:80:58: warning: operator '>>' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:80:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX >> SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:84:58: warning: operator '<<' has lower precedence than '-'; '-' will be evaluated first [-Wshift-op-parentheses]
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                               ~~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+./../include/armv5te/../portability.h:84:58: note: place parentheses around the '-' expression to silence this warning
+   return value | (UINTMAX_MAX << SIZEOF_BITS(uintmax_t) - count);
+                                  ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+../src/armv5te/coproc.cpp:62:18: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+            warn("Unknown coprocessor instruction MRC %08X", insn);
+                 ^
+../src/armv5te/coproc.cpp:90:26: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+               emuprintf("Turned MMU %s\n", value & 1 ? "on" : "off");
+                         ^
+../src/armv5te/coproc.cpp:112:23: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+            emuprintf("Wait for interrupt, does not work with uARM core!\n");
+                      ^
+../src/armv5te/coproc.cpp:145:18: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+            warn("Unknown coprocessor instruction MCR %08X\n", insn);
+                 ^
+../src/armv5te/coproc.cpp:168:13: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+       warn("Unknown coprocessor instruction MCR %08X\n", instr);
+            ^
+7 warnings generated.
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mu/libretroBuildSystem'
+cp "mu_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/mu_libretro.dylib"
+cp: mu_libretro.dylib: No such file or directory

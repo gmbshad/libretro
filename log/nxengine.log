@@ -1,0 +1,2208 @@
+Building nxengine...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-nxengine"
+gmake platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-nxengine'
+rm -f nxengine/ai/ai.o nxengine/ai/balrog_common.o nxengine/ai/IrregularBBox.o nxengine/ai/almond/almond.o nxengine/ai/boss/balfrog.o nxengine/ai/boss/ballos.o nxengine/ai/boss/core.o nxengine/ai/boss/heavypress.o nxengine/ai/boss/ironhead.o nxengine/ai/boss/omega.o nxengine/ai/boss/sisters.o nxengine/ai/boss/undead_core.o nxengine/ai/boss/x.o nxengine/ai/egg/egg.o nxengine/ai/egg/egg2.o nxengine/ai/egg/igor.o nxengine/ai/final_battle/balcony.o nxengine/ai/final_battle/doctor.o nxengine/ai/final_battle/doctor_common.o nxengine/ai/final_battle/doctor_frenzied.o nxengine/ai/final_battle/final_misc.o nxengine/ai/final_battle/misery_finalbattle.o nxengine/ai/final_battle/sidekicks.o nxengine/ai/first_cave/first_cave.o nxengine/ai/hell/ballos_misc.o nxengine/ai/hell/ballos_priest.o nxengine/ai/hell/hell.o nxengine/ai/last_cave/last_cave.o nxengine/ai/maze/balrog_boss_missiles.o nxengine/ai/maze/critter_purple.o nxengine/ai/maze/gaudi.o nxengine/ai/maze/labyrinth_m.o nxengine/ai/maze/pooh_black.o nxengine/ai/maze/maze.o nxengine/ai/npc/balrog.o nxengine/ai/npc/curly.o nxengine/ai/npc/curly_ai.o nxengine/ai/npc/misery.o nxengine/ai/npc/npcguest.o nxengine/ai/npc/npcplayer.o nxengine/ai/npc/npcregu.o nxengine/ai/oside/oside.o nxengine/ai/plantation/plantation.o nxengine/ai/sand/curly_boss.o nxengine/ai/sand/puppy.o nxengine/ai/sand/sand.o nxengine/ai/sand/toroko_frenzied.o nxengine/ai/sym/smoke.o nxengine/ai/sym/sym.o nxengine/ai/village/balrog_boss_running.o nxengine/ai/village/ma_pignon.o nxengine/ai/village/village.o nxengine/ai/weapons/blade.o nxengine/ai/weapons/bubbler.o nxengine/ai/weapons/fireball.o nxengine/ai/weapons/missile.o nxengine/ai/weapons/nemesis.o nxengine/ai/weapons/polar_mgun.o nxengine/ai/weapons/snake.o nxengine/ai/weapons/spur.o nxengine/ai/weapons/weapons.o nxengine/ai/weapons/whimstar.o nxengine/ai/weed/balrog_boss_flying.o nxengine/ai/weed/frenzied_mimiga.o nxengine/ai/weed/weed.o nxengine/common/BList.o nxengine/common/DBuffer.o nxengine/common/DString.o nxengine/common/InitList.o nxengine/common/StringList.o nxengine/endgame/credits.o nxengine/endgame/CredReader.o nxengine/endgame/island.o nxengine/endgame/endgame_misc.o nxengine/graphics/graphics.o nxengine/graphics/nxsurface.o nxengine/graphics/font.o nxengine/graphics/sprites.o nxengine/graphics/tileset.o nxengine/intro/intro.o nxengine/intro/title.o nxengine/pause/dialog.o nxengine/pause/message.o nxengine/pause/objects.o nxengine/pause/options.o nxengine/pause/pause.o nxengine/libretro/libretro.o nxengine/main.o nxengine/siflib/sectSprites.o nxengine/siflib/sectStringArray.o nxengine/siflib/sif.o nxengine/siflib/sifloader.o nxengine/sound/org.o nxengine/sound/pxt.o nxengine/sound/sound.o nxengine/TextBox/ItemImage.o nxengine/TextBox/SaveSelect.o nxengine/TextBox/StageSelect.o nxengine/TextBox/TextBox.o nxengine/TextBox/YesNoPrompt.o nxengine/autogen/AssignSprites.o nxengine/autogen/objnames.o nxengine/caret.o nxengine/floattext.o nxengine/game.o nxengine/inventory.o nxengine/map.o nxengine/map_system.o nxengine/object.o nxengine/ObjManager.o nxengine/p_arms.o nxengine/player.o nxengine/playerstats.o nxengine/screeneffect.o nxengine/settings.o nxengine/slope.o nxengine/stageboss.o nxengine/statusbar.o nxengine/trig.o nxengine/tsc.o nxengine/sdl/SDL_error.o nxengine/sdl/file/SDL_rwops.o nxengine/sdl/video/SDL_blit.o nxengine/sdl/video/SDL_blit_0.o nxengine/sdl/video/SDL_blit_1.o nxengine/sdl/video/SDL_blit_A.o nxengine/sdl/video/SDL_blit_N.o nxengine/sdl/video/SDL_bmp.o nxengine/sdl/video/SDL_pixels.o nxengine/sdl/video/SDL_surface.o nxengine/libretro/libretro-common/streams/file_stream.o nxengine/libretro/libretro-common/streams/file_stream_transforms.o nxengine/libretro/libretro-common/compat/fopen_utf8.o nxengine/libretro/libretro-common/file/file_path.o nxengine/libretro/libretro-common/file/file_path_io.o nxengine/libretro/libretro-common/encodings/encoding_utf.o nxengine/libretro/libretro-common/compat/compat_strl.o nxengine/libretro/libretro-common/compat/compat_snprintf.o nxengine/libretro/libretro-common/compat/compat_posix_string.o nxengine/libretro/libretro-common/string/stdstring.o nxengine/libretro/libretro-common/time/rtime.o nxengine/libretro/libretro-common/vfs/vfs_implementation.o nxengine/common/misc.o nxengine/common/bufio.o nxengine/extract-auto/cachefiles.o nxengine/extract-auto/extractorg.o nxengine/extract-auto/extractpxt.o nxengine/extract-auto/extractstages.o nxengine/libretro/libretro_shared.o nxengine/sound/sslib.o nxengine/niku.o nxengine/input.o nxengine/stagedata.o nxengine/profile.o nxengine_libretro.dylib
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-nxengine'
+gmake platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-nxengine'
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/ai.o nxengine/ai/ai.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/balrog_common.o nxengine/ai/balrog_common.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/IrregularBBox.o nxengine/ai/IrregularBBox.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/almond/almond.o nxengine/ai/almond/almond.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/boss/balfrog.o nxengine/ai/boss/balfrog.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/boss/ballos.o nxengine/ai/boss/ballos.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/boss/core.o nxengine/ai/boss/core.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/boss/heavypress.o nxengine/ai/boss/heavypress.cpp
+nxengine/ai/boss/balfrog.cpp:472:46: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                        o->x += (o->timer & 2) ? (1 << CSF) : (-1 << CSF);
+                                                               ~~ ^
+nxengine/ai/boss/ballos.cpp:481:3: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                500, 2,
+                ^~~~~~
+                {     }
+nxengine/ai/boss/ballos.cpp:482:3: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                200, 1,
+                ^~~~~~
+                {     }
+nxengine/ai/boss/ballos.cpp:483:3: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                20,  0,
+                ^~~~~~
+                {     }
+nxengine/ai/boss/ballos.cpp:484:3: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                200, -1,
+                ^~~~~~~
+                {      }
+nxengine/ai/boss/ballos.cpp:485:3: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                500, -2,
+                ^~~~~~~
+                {      }
+nxengine/ai/boss/ballos.cpp:486:3: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                200, -1,
+                ^~~~~~~
+                {      }
+nxengine/ai/boss/ballos.cpp:487:3: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                20,  0,
+                ^~~~~~
+                {     }
+nxengine/ai/boss/ballos.cpp:488:3: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                200, 1,
+                ^~~~~~
+                {     }
+nxengine/ai/boss/ballos.cpp:489:3: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                0,   0
+                ^~~~~~
+                {     }
+nxengine/ai/boss/ballos.cpp:635:38: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                                CreateObject(o->x + nx_random(-40<<CSF, 40<<CSF), \
+                                                              ~~~^
+nxengine/ai/boss/ballos.cpp:668:32: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                        int x = o->x + nx_random(-60<<CSF, 60<<CSF);
+                                                 ~~~^
+nxengine/ai/boss/ballos.cpp:669:32: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                        int y = o->y + nx_random(-60<<CSF, 60<<CSF);
+                                                 ~~~^
+nxengine/ai/boss/ballos.cpp:1058:3: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                0x180, SHORT, -SHORT, -LONG, -LONG,             // RIGHT on ceiling
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                 }
+nxengine/ai/boss/ballos.cpp:1059:3: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                0x80,  SHORT, -SHORT, LONG, LONG,               // LEFT on floor
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                               }
+nxengine/ai/boss/ballos.cpp:1060:3: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                0x100, -LONG, -LONG, SHORT, -SHORT,             // UP left wall
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                 }
+nxengine/ai/boss/ballos.cpp:1061:3: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                0x00,  LONG, LONG,   SHORT, -SHORT              // DOWN right wall
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                {                                 }
+nxengine/ai/boss/heavypress.cpp:164:35: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                                SmokePuff(o->x + nx_random(-60<<CSF, 60<<CSF),
+                                                           ~~~^
+nxengine/ai/boss/heavypress.cpp:165:29: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                                                  o->y + nx_random(-40<<CSF, 40<<CSF));
+                                                                   ~~~^
+In file included from nxengine/ai/boss/heavypress.cpp:4:
+nxengine/ai/boss/heavypress.fdh:31:13: warning: unused function 'run_defeated' [-Wunused-function]
+static void run_defeated(Object *o);
+            ^
+1 warning generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/boss/ironhead.o nxengine/ai/boss/ironhead.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/boss/omega.o nxengine/ai/boss/omega.cpp
+3 warnings generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/boss/sisters.o nxengine/ai/boss/sisters.cpp
+16 warnings generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/boss/undead_core.o nxengine/ai/boss/undead_core.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/boss/x.o nxengine/ai/boss/x.cpp
+nxengine/ai/boss/undead_core.cpp:392:34: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                int x = face->x + nx_random(-16<<CSF, 32<<CSF);
+                                            ~~~^
+nxengine/ai/boss/undead_core.cpp:484:32: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                        int x = o->x + nx_random(-72<<CSF, 72<<CSF);
+                                                 ~~~^
+nxengine/ai/boss/undead_core.cpp:485:32: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                        int y = o->y + nx_random(-64<<CSF, 64<<CSF);
+                                                 ~~~^
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/egg/egg.o nxengine/ai/egg/egg.cpp
+In file included from nxengine/ai/boss/undead_core.cpp:4:
+nxengine/ai/boss/undead_core.fdh:60:13: warning: unused function 'SetRotatorStates' [-Wunused-function]
+static void SetRotatorStates(int newstate);
+            ^
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/egg/egg2.o nxengine/ai/egg/egg2.cpp
+nxengine/ai/boss/x.cpp:628:39: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                        static const int xoffs[]   = { -64 <<CSF,  76 <<CSF, -64 <<CSF,  76 <<CSF };
+                                                       ~~~ ^
+nxengine/ai/boss/x.cpp:628:61: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                        static const int xoffs[]   = { -64 <<CSF,  76 <<CSF, -64 <<CSF,  76 <<CSF };
+                                                                             ~~~ ^
+nxengine/ai/boss/x.cpp:629:61: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                        static const int yoffs[]   = {  27 <<CSF,  27 <<CSF, -16 <<CSF, -16 <<CSF };
+                                                                             ~~~ ^
+nxengine/ai/boss/x.cpp:629:72: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                        static const int yoffs[]   = {  27 <<CSF,  27 <<CSF, -16 <<CSF, -16 <<CSF };
+                                                                                        ~~~ ^
+nxengine/ai/boss/x.cpp:688:35: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+        static const int xoffs[] = { -22 <<CSF,  28 <<CSF, -15 <<CSF,  17 <<CSF };
+                                     ~~~ ^
+nxengine/ai/boss/x.cpp:688:57: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+        static const int xoffs[] = { -22 <<CSF,  28 <<CSF, -15 <<CSF,  17 <<CSF };
+                                                           ~~~ ^
+nxengine/ai/boss/x.cpp:689:35: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+        static const int yoffs[] = { -16 <<CSF, -16 <<CSF,  14 <<CSF,  14 <<CSF };
+                                     ~~~ ^
+nxengine/ai/boss/x.cpp:689:46: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+        static const int yoffs[] = { -16 <<CSF, -16 <<CSF,  14 <<CSF,  14 <<CSF };
+                                                ~~~ ^
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/egg/igor.o nxengine/ai/egg/igor.cpp
+4 warnings generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/final_battle/balcony.o nxengine/ai/final_battle/balcony.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/final_battle/doctor.o nxengine/ai/final_battle/doctor.cpp
+nxengine/ai/egg/igor.cpp:401:51: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+        smoke = CreateObject(o->CenterX() + nx_random(-16<<CSF, 16<<CSF),
+                                                      ~~~^
+nxengine/ai/egg/igor.cpp:402:36: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                                                 o->CenterY() + nx_random(-16<<CSF, 16<<CSF),
+                                                                          ~~~^
+8 warnings generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/final_battle/doctor_common.o nxengine/ai/final_battle/doctor_common.cpp
+2 warnings generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/final_battle/doctor_frenzied.o nxengine/ai/final_battle/doctor_frenzied.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/final_battle/final_misc.o nxengine/ai/final_battle/final_misc.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/final_battle/misery_finalbattle.o nxengine/ai/final_battle/misery_finalbattle.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/final_battle/sidekicks.o nxengine/ai/final_battle/sidekicks.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/first_cave/first_cave.o nxengine/ai/first_cave/first_cave.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/hell/ballos_misc.o nxengine/ai/hell/ballos_misc.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/hell/ballos_priest.o nxengine/ai/hell/ballos_priest.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/hell/hell.o nxengine/ai/hell/hell.cpp
+nxengine/ai/hell/ballos_misc.cpp:59:49: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/last_cave/last_cave.o nxengine/ai/last_cave/last_cave.cpp
+                                                Object *s = SmokePuff(o->x + nx_random(-12<<CSF, 12<<CSF), \
+                                                                                       ~~~^
+nxengine/ai/hell/ballos_misc.cpp:125:33: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                                dv->xinertia = nx_random(-16<<CSF, 16<<CSF);
+                                                         ~~~^
+nxengine/ai/hell/ballos_misc.cpp:143:30: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                        o->yinertia = nx_random(-5<<CSF, 5<<CSF);
+                                                ~~^
+nxengine/ai/last_cave/last_cave.cpp:243:42: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                                                                                   o->CenterY() + nx_random(-32<<CSF, 32<<CSF), \
+                                                                                                            ~~~^
+In file included from nxengine/ai/last_cave/last_cave.cpp:3:
+nxengine/ai/last_cave/../plantation/plantation.fdh:58:15: warning: unused function 'SpawnRocketTrail' [-Wunused-function]
+static Caret *SpawnRocketTrail(Object *o, int side);
+              ^
+In file included from nxengine/ai/last_cave/last_cave.cpp:4:
+nxengine/ai/last_cave/../sym/sym.fdh:62:13: warning: unused function 'hv_project_beam' [-Wunused-function]
+static void hv_project_beam(Object *o);
+            ^
+nxengine/ai/last_cave/../sym/sym.fdh:72:13: warning: unused function 'smoke_if_bonus_item' [-Wunused-function]
+static void smoke_if_bonus_item(Object *o);
+            ^
+3 warnings generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/maze/balrog_boss_missiles.o nxengine/ai/maze/balrog_boss_missiles.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/maze/critter_purple.o nxengine/ai/maze/critter_purple.cpp
+4 warnings generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/maze/gaudi.o nxengine/ai/maze/gaudi.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/maze/labyrinth_m.o nxengine/ai/maze/labyrinth_m.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/maze/pooh_black.o nxengine/ai/maze/pooh_black.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/maze/maze.o nxengine/ai/maze/maze.cpp
+nxengine/ai/maze/pooh_black.cpp:89:41: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                                int x = o->CenterX() + nx_random(-12<<CSF, 12<<CSF);
+                                                                 ~~~^
+nxengine/ai/maze/pooh_black.cpp:90:41: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                                int y = o->CenterY() + nx_random(-12<<CSF, 12<<CSF);
+                                                                 ~~~^
+nxengine/ai/maze/pooh_black.cpp:219:39: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                int x = o->CenterX() + nx_random(-12<<CSF, 12<<CSF);
+                                                 ~~~^
+nxengine/ai/maze/pooh_black.cpp:223:48: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                        y = o->y + (o->clipy1 << CSF) + nx_random(-4<<CSF, 4<<CSF);
+                                                                  ~~^
+nxengine/ai/maze/pooh_black.cpp:225:36: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                        y = o->CenterY() + nx_random(-12<<CSF, 12<<CSF);
+                                                     ~~~^
+nxengine/ai/maze/labyrinth_m.cpp:26:9: warning: variable 'shot' set but not used [-Wunused-but-set-variable]
+Object *shot;
+        ^
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/npc/balrog.o nxengine/ai/npc/balrog.cpp
+5 warnings generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/npc/curly.o nxengine/ai/npc/curly.cpp
+1 warning generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/npc/curly_ai.o nxengine/ai/npc/curly_ai.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/npc/misery.o nxengine/ai/npc/misery.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/npc/npcguest.o nxengine/ai/npc/npcguest.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/npc/npcplayer.o nxengine/ai/npc/npcplayer.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/npc/npcregu.o nxengine/ai/npc/npcregu.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/oside/oside.o nxengine/ai/oside/oside.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/plantation/plantation.o nxengine/ai/plantation/plantation.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/sand/curly_boss.o nxengine/ai/sand/curly_boss.cpp
+nxengine/ai/plantation/plantation.cpp:266:29: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                        o->ymark2 = nx_random(-32<<CSF, 32<<CSF);       // unique target point on main bat
+                                              ~~~^
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/sand/puppy.o nxengine/ai/sand/puppy.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/sand/sand.o nxengine/ai/sand/sand.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/sand/toroko_frenzied.o nxengine/ai/sand/toroko_frenzied.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/sym/smoke.o nxengine/ai/sym/smoke.cpp
+1 warning generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/sym/sym.o nxengine/ai/sym/sym.cpp
+nxengine/ai/sym/smoke.cpp:139:44: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                CreateObject(o->CenterX() + nx_random(-16<<CSF, 16<<CSF),
+                                                      ~~~^
+nxengine/ai/sym/smoke.cpp:140:35: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                                         o->CenterY() + nx_random(-16<<CSF, 16<<CSF),
+                                                                  ~~~^
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/village/balrog_boss_running.o nxengine/ai/village/balrog_boss_running.cpp
+2 warnings generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/village/ma_pignon.o nxengine/ai/village/ma_pignon.cpp
+nxengine/ai/sym/sym.cpp:891:41: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+static const Point waterattrpoint[] = { 0, -3 };
+                                        ^~~~~
+                                        {    }
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/village/village.o nxengine/ai/village/village.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/weapons/blade.o nxengine/ai/weapons/blade.cpp
+nxengine/ai/village/ma_pignon.cpp:410:64: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                                                Object *smoke = CreateObject(o->CenterX() + nx_random(-12<<CSF, 12<<CSF),
+                                                                                                      ~~~^
+1 warning generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/weapons/bubbler.o nxengine/ai/weapons/bubbler.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/weapons/fireball.o nxengine/ai/weapons/fireball.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/weapons/missile.o nxengine/ai/weapons/missile.cpp
+nxengine/ai/weapons/fireball.cpp:68:37: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+                        static const Point embedpt[] = { 8, 8 };
+                                                         ^~~~
+                                                         {   }
+1 warning generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/weapons/nemesis.o nxengine/ai/weapons/nemesis.cpp
+nxengine/ai/weapons/missile.cpp:24:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0xA00,  0x80,  4,   4,          16,             8,         1,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                           }
+nxengine/ai/weapons/missile.cpp:25:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0xA00,  0x100, 6,   6,          32,             15,        2,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                           }
+nxengine/ai/weapons/missile.cpp:26:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0xA00,  0x80,  12,  2,          40,             8,         2,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                           }
+nxengine/ai/weapons/missile.cpp:30:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x1400, 0x200, 8,   4,     16,          18,        1,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                   }
+nxengine/ai/weapons/missile.cpp:31:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x1400, 0x200, 6,   5,     32,          30,        2,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                   }
+nxengine/ai/weapons/missile.cpp:32:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x1400, 0x200, 12,  3,     40,          18,    2,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                               }
+1 warning generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/weapons/polar_mgun.o nxengine/ai/weapons/polar_mgun.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/weapons/snake.o nxengine/ai/weapons/snake.cpp
+6 warnings generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/weapons/spur.o nxengine/ai/weapons/spur.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/weapons/weapons.o nxengine/ai/weapons/weapons.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/weapons/whimstar.o nxengine/ai/weapons/whimstar.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/weed/balrog_boss_flying.o nxengine/ai/weed/balrog_boss_flying.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/weed/frenzied_mimiga.o nxengine/ai/weed/frenzied_mimiga.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ai/weed/weed.o nxengine/ai/weed/weed.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/common/BList.o nxengine/common/BList.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/common/DBuffer.o nxengine/common/DBuffer.cpp
+In file included from nxengine/common/BList.cpp:32:
+nxengine/common/BList.h:63:10: warning: private field '_reserved' is not used [-Wunused-private-field]
+                uint32  _reserved[1];
+                        ^
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/common/DString.o nxengine/common/DString.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/common/InitList.o nxengine/common/InitList.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/common/StringList.o nxengine/common/StringList.cpp
+1 warning generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/endgame/credits.o nxengine/endgame/credits.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/endgame/CredReader.o nxengine/endgame/CredReader.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/endgame/island.o nxengine/endgame/island.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/endgame/endgame_misc.o nxengine/endgame/endgame_misc.cpp
+nxengine/endgame/CredReader.cpp:57:13: warning: comparison of integers of different signs: 'int' and 'unsigned long' [-Wsign-compare]
+                        for(i=0;i<sizeof(cmd->text)-1;i++)
+                                ~^~~~~~~~~~~~~~~~~~~~
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/graphics/graphics.o nxengine/graphics/graphics.cpp
+1 warning generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/graphics/nxsurface.o nxengine/graphics/nxsurface.cpp
+nxengine/endgame/endgame_misc.cpp:481:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_KING,               6, 0, RIGHT, false,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                         }
+nxengine/autogen/sprites.h:142:19: note: expanded from macro 'SPR_KING'
+#define SPR_KING                138
+                                ^
+nxengine/endgame/endgame_misc.cpp:482:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_TOROKO,             2, 0, RIGHT, false,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                         }
+nxengine/autogen/sprites.h:141:21: note: expanded from macro 'SPR_TOROKO'
+#define SPR_TOROKO              137
+                                ^
+nxengine/endgame/endgame_misc.cpp:483:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_KAZUMA,             4, 0, RIGHT, true,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                        }
+nxengine/autogen/sprites.h:147:21: note: expanded from macro 'SPR_KAZUMA'
+#define SPR_KAZUMA              143
+                                ^
+nxengine/endgame/endgame_misc.cpp:484:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SUE,                4, 0, RIGHT, false,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                         }
+nxengine/autogen/sprites.h:140:18: note: expanded from macro 'SPR_SUE'
+#define SPR_SUE         136
+                        ^
+nxengine/endgame/endgame_misc.cpp:485:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_MOMORIN,    2, 0, LEFT, true,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                               }
+nxengine/autogen/sprites.h:324:22: note: expanded from macro 'SPR_MOMORIN'
+#define SPR_MOMORIN             320
+                                ^
+nxengine/endgame/endgame_misc.cpp:486:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_PROFESSOR_BOOSTER, 8, 0, LEFT, false,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                       }
+nxengine/autogen/sprites.h:148:32: note: expanded from macro 'SPR_PROFESSOR_BOOSTER'
+#define SPR_PROFESSOR_BOOSTER           144
+                                        ^
+nxengine/endgame/endgame_misc.cpp:487:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_JENKA,              0, 0, LEFT, false,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                        }
+nxengine/autogen/sprites.h:137:20: note: expanded from macro 'SPR_JENKA'
+#define SPR_JENKA               133
+                                ^
+nxengine/endgame/endgame_misc.cpp:489:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_NURSE_HASUMI,        1, 0, RIGHT, false,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                          }
+nxengine/autogen/sprites.h:298:27: note: expanded from macro 'SPR_NURSE_HASUMI'
+#define SPR_NURSE_HASUMI                294
+                                        ^
+nxengine/endgame/endgame_misc.cpp:490:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_DR_GERO,             1, 0, RIGHT, false,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                          }
+nxengine/autogen/sprites.h:297:22: note: expanded from macro 'SPR_DR_GERO'
+#define SPR_DR_GERO             293
+                                ^
+nxengine/endgame/endgame_misc.cpp:491:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_BALROG_CAST,         1, 0, RIGHT, true,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                         }
+nxengine/autogen/sprites.h:412:26: note: expanded from macro 'SPR_BALROG_CAST'
+#define SPR_BALROG_CAST         408
+                                ^
+nxengine/endgame/endgame_misc.cpp:492:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_CURLY,                       1, 0, RIGHT, false,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                  }
+nxengine/autogen/sprites.h:134:20: note: expanded from macro 'SPR_CURLY'
+#define SPR_CURLY               130
+                                ^
+nxengine/endgame/endgame_misc.cpp:493:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_MISERY,                      0, 2, LEFT, false,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                 }
+nxengine/autogen/sprites.h:135:21: note: expanded from macro 'SPR_MISERY'
+#define SPR_MISERY              131
+                                ^
+nxengine/endgame/endgame_misc.cpp:494:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_MALCO_BROKEN,        1, 0, LEFT, true,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                        }
+nxengine/autogen/sprites.h:194:27: note: expanded from macro 'SPR_MALCO_BROKEN'
+#define SPR_MALCO_BROKEN                190
+                                        ^
+nxengine/endgame/endgame_misc.cpp:495:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_HERMIT_GUNSMITH, 1, 0, LEFT, true
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                    }
+nxengine/autogen/sprites.h:254:30: note: expanded from macro 'SPR_HERMIT_GUNSMITH'
+#define SPR_HERMIT_GUNSMITH             250
+                                        ^
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/graphics/font.o nxengine/graphics/font.cpp
+14 warnings generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/graphics/sprites.o nxengine/graphics/sprites.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/graphics/tileset.o nxengine/graphics/tileset.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/intro/intro.o nxengine/intro/intro.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/intro/title.o nxengine/intro/title.cpp
+nxengine/intro/intro.cpp:105:31: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                                effect(o->x + nx_random(-8<<CSF, 8<<CSF),
+                                                        ~~^
+1 warning generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/pause/dialog.o nxengine/pause/dialog.cpp
+nxengine/intro/title.cpp:14:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        (3*3000),       SPR_CS_SUE,    2,               // 3 mins       - Sue & Safety
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                               }
+nxengine/intro/title.cpp:15:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        (4*3000),       SPR_CS_KING,   41,      // 4 mins       - King & White
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                }
+nxengine/intro/title.cpp:16:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        (5*3000),       SPR_CS_TOROKO, 40,      // 5 mins       - Toroko & Toroko's Theme
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                }
+nxengine/intro/title.cpp:17:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        (6*3000),       SPR_CS_CURLY,  36,      // 6 mins       - Curly & Running Hell
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                }
+nxengine/intro/title.cpp:18:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0xFFFFFFFF, SPR_CS_MYCHAR, 24           // default
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                            }
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/pause/message.o nxengine/pause/message.cpp
+5 warnings generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/pause/objects.o nxengine/pause/objects.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/pause/options.o nxengine/pause/options.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/pause/pause.o nxengine/pause/pause.cpp
+nxengine/pause/objects.cpp:123:33: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+               create_object(-16<<CSF, nx_random(-16, SCREEN_HEIGHT) << CSF, OC_IKACHAN);
+                             ~~~^
+nxengine/graphics/font.cpp:153:20: warning: missing field 'y' initializer [-Wmissing-field-initializers]
+                SDL_Rect src = {0};
+                                 ^
+nxengine/graphics/font.cpp:160:20: warning: missing field 'y' initializer [-Wmissing-field-initializers]
+                SDL_Rect dst = {0};
+                                 ^
+nxengine/graphics/font.cpp:209:20: warning: missing field 'y' initializer [-Wmissing-field-initializers]
+                SDL_Rect src = {0};
+                                 ^
+nxengine/graphics/font.cpp:215:20: warning: missing field 'y' initializer [-Wmissing-field-initializers]
+                SDL_Rect dst = {0};
+                                 ^
+1 warning generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/libretro/libretro.o nxengine/libretro/libretro.cpp
+nxengine/graphics/font.cpp:339:28: warning: array subscript is of type 'char' [-Wchar-subscripts]
+        int ht = whitefont.letters['M']->h;
+                                  ^~~~
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/main.o nxengine/main.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/siflib/sectSprites.o nxengine/siflib/sectSprites.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/siflib/sectStringArray.o nxengine/siflib/sectStringArray.cpp
+5 warningsc++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/siflib/sif.o nxengine/siflib/sif.cpp
+ generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/siflib/sifloader.o nxengine/siflib/sifloader.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/sound/org.o nxengine/sound/org.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/sound/pxt.o nxengine/sound/pxt.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/sound/sound.o nxengine/sound/sound.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/TextBox/ItemImage.o nxengine/TextBox/ItemImage.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/TextBox/SaveSelect.o nxengine/TextBox/SaveSelect.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/TextBox/StageSelect.o nxengine/TextBox/StageSelect.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/TextBox/TextBox.o nxengine/TextBox/TextBox.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/TextBox/YesNoPrompt.o nxengine/TextBox/YesNoPrompt.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/autogen/AssignSprites.o nxengine/autogen/AssignSprites.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/autogen/objnames.o nxengine/autogen/objnames.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/caret.o nxengine/caret.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/floattext.o nxengine/floattext.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/game.o nxengine/game.cpp
+nxengine/game.cpp:23:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        NULL,                           NULL,                   NULL,                   // GM_NONE
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                           }
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stddef.h:84:18: note: expanded from macro 'NULL'
+#    define NULL __null
+                 ^
+nxengine/game.cpp:24:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        game_tick_normal,       NULL,                   NULL,                   // GM_NORMAL
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                   }
+nxengine/game.cpp:25:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        inventory_tick,         inventory_init, NULL,                   // GM_INVENTORY
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                           }
+nxengine/game.cpp:26:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        ms_tick,                        ms_init,                ms_close,               // GM_MAP_SYSTEM
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                               }
+nxengine/game.cpp:27:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        island_tick,            island_init,    NULL,                   // GM_ISLAND
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                           }
+nxengine/game.cpp:28:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        credit_tick,            credit_init,    credit_close,   // GM_CREDITS
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                   }
+nxengine/game.cpp:29:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        intro_tick,                     intro_init,             NULL,                   // GM_INTRO
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                           }
+nxengine/game.cpp:30:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        title_tick,                     title_init,             NULL,                   // GM_TITLE
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                           }
+nxengine/game.cpp:31:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        pause_tick,                     pause_init,             NULL,                   // GP_PAUSED
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                           }
+nxengine/game.cpp:32:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        options_tick,           options_init,   options_close   // GP_OPTIONS
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                    }
+nxengine/floattext.cpp:150:4: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+   sprintf(&text[1], "%d", ft->shownAmount);
+   ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:188:1: note: 'sprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/inventory.o nxengine/inventory.cpp
+1 warning generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/map.o nxengine/map.cpp
+10 warnings generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/map_system.o nxengine/map_system.cpp
+nxengine/map.cpp:68:30: warning: result of comparison of constant -1 with expression of type 'bool' is always false [-Wtautological-constant-out-of-range-compare]
+        if (tsc_load(fname, SP_MAP) == -1) return 1;
+            ~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/object.o nxengine/object.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/ObjManager.o nxengine/ObjManager.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/p_arms.o nxengine/p_arms.cpp
+1 warning generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/player.o nxengine/player.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/playerstats.o nxengine/playerstats.cpp
+nxengine/p_arms.cpp:24:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_POLARSTAR,     0,  0, 1, 8,   1, 0x1000, 0, SND_POLAR_STAR_L1_2,               // polarstar l1
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                       }
+nxengine/autogen/sprites.h:29:29: note: expanded from macro 'SPR_SHOT_POLARSTAR'
+#define SPR_SHOT_POLARSTAR              25
+                                        ^
+nxengine/p_arms.cpp:25:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_POLARSTAR,     1,  1, 1, 12,  2, 0x1000, 0, SND_POLAR_STAR_L1_2,               // polarstar l2
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                       }
+nxengine/autogen/sprites.h:29:29: note: expanded from macro 'SPR_SHOT_POLARSTAR'
+#define SPR_SHOT_POLARSTAR              25
+                                        ^
+nxengine/p_arms.cpp:26:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_POLARSTAR_L3,  2,  0, 1, 16,  4, 0x1000, 0, SND_POLAR_STAR_L3,         // polarstar l3
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                     }
+nxengine/autogen/sprites.h:31:32: note: expanded from macro 'SPR_SHOT_POLARSTAR_L3'
+#define SPR_SHOT_POLARSTAR_L3           27
+                                        ^
+nxengine/p_arms.cpp:28:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_MGUN_L1,               0,  0, 1, 20,  2, 0x1000, 0, SND_POLAR_STAR_L1_2,               // mgun l1
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                               }
+nxengine/autogen/sprites.h:33:27: note: expanded from macro 'SPR_SHOT_MGUN_L1'
+#define SPR_SHOT_MGUN_L1                29
+                                        ^
+nxengine/p_arms.cpp:30:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_MGUN_L2,               1,  0, 1, 20,  4, 0x1000, 0, SND_POLAR_STAR_L1_2,               // mgun l2, white piece
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                               }
+nxengine/autogen/sprites.h:35:27: note: expanded from macro 'SPR_SHOT_MGUN_L2'
+#define SPR_SHOT_MGUN_L2                31
+                                        ^
+nxengine/p_arms.cpp:31:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_MGUN_L2,               1,  1, 0, 21,  0, 0x1000, 0, 0,                                         // mgun l2, blue piece
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                             }
+nxengine/autogen/sprites.h:35:27: note: expanded from macro 'SPR_SHOT_MGUN_L2'
+#define SPR_SHOT_MGUN_L2                31
+                                        ^
+nxengine/p_arms.cpp:32:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_MGUN_L2,               1,  2, 0, 22,  0, 0x1000, 0, 0,                                         // mgun l2, dark piece
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                             }
+nxengine/autogen/sprites.h:35:27: note: expanded from macro 'SPR_SHOT_MGUN_L2'
+#define SPR_SHOT_MGUN_L2                31
+                                        ^
+nxengine/p_arms.cpp:34:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_MGUN_L3LEAD,   2,  0, 1, 20,  6, 0x1000, 0, SND_POLAR_STAR_L3,         // mgun l3
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                     }
+nxengine/autogen/sprites.h:37:31: note: expanded from macro 'SPR_SHOT_MGUN_L3LEAD'
+#define SPR_SHOT_MGUN_L3LEAD            33
+                                        ^
+nxengine/p_arms.cpp:35:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_MGUN_L3TAIL,   2,  0, 0, 21,  0, 0x1000, 0, 0,                                         // the very long...
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                     }
+nxengine/autogen/sprites.h:39:31: note: expanded from macro 'SPR_SHOT_MGUN_L3TAIL'
+#define SPR_SHOT_MGUN_L3TAIL            35
+                                        ^
+nxengine/p_arms.cpp:36:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_MGUN_L3TAIL,   2,  1, 0, 22,  0, 0x1000, 0, 0,                                         // ...4 piece trail...
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                     }
+nxengine/autogen/sprites.h:39:31: note: expanded from macro 'SPR_SHOT_MGUN_L3TAIL'
+#define SPR_SHOT_MGUN_L3TAIL            35
+                                        ^
+nxengine/p_arms.cpp:37:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_MGUN_L3TAIL,   2,  2, 0, 23,  0, 0x1000, 0, 0,                                         // ...of the level 3...
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                     }
+nxengine/autogen/sprites.h:39:31: note: expanded from macro 'SPR_SHOT_MGUN_L3TAIL'
+#define SPR_SHOT_MGUN_L3TAIL            35
+                                        ^
+nxengine/p_arms.cpp:38:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_MGUN_L3TAIL,   2,  3, 0, 24,  0, 0x1000, 0, 0,                                         // ...machine gun
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                     }
+nxengine/autogen/sprites.h:39:31: note: expanded from macro 'SPR_SHOT_MGUN_L3TAIL'
+#define SPR_SHOT_MGUN_L3TAIL            35
+                                        ^
+nxengine/p_arms.cpp:41:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_MISSILE1,              0,  0, 1, 50,  0, 0x0000, 0, SND_POLAR_STAR_L1_2,       // missile level 1
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                               }
+nxengine/autogen/sprites.h:41:28: note: expanded from macro 'SPR_SHOT_MISSILE1'
+#define SPR_SHOT_MISSILE1               37
+                                        ^
+nxengine/p_arms.cpp:42:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_MISSILE2,              1,  0, 1, 65,  0, 0x0000, 0, SND_POLAR_STAR_L1_2,       // missile level 2
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                               }
+nxengine/autogen/sprites.h:43:28: note: expanded from macro 'SPR_SHOT_MISSILE2'
+#define SPR_SHOT_MISSILE2               39
+                                        ^
+nxengine/p_arms.cpp:43:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_MISSILE3,              2,  0, 1, 90,  0, 0x0000, 0, SND_POLAR_STAR_L1_2,       // missile level 3
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                               }
+nxengine/autogen/sprites.h:45:28: note: expanded from macro 'SPR_SHOT_MISSILE3'
+#define SPR_SHOT_MISSILE3               41
+                                        ^
+nxengine/p_arms.cpp:45:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_SUPERMISSILE13,0,  0, 1, 30,  0, 0x0000, 0, SND_POLAR_STAR_L1_2,       // supermissile l1
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                       }
+nxengine/autogen/sprites.h:47:34: note: expanded from macro 'SPR_SHOT_SUPERMISSILE13'
+#define SPR_SHOT_SUPERMISSILE13         43
+                                        ^
+nxengine/p_arms.cpp:46:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_SUPERMISSILE2, 1,  0, 1, 40,  0, 0x0000, 0, SND_POLAR_STAR_L1_2,       // supermissile l2
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                       }
+nxengine/autogen/sprites.h:49:33: note: expanded from macro 'SPR_SHOT_SUPERMISSILE2'
+#define SPR_SHOT_SUPERMISSILE2          45
+                                        ^
+nxengine/p_arms.cpp:47:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_SUPERMISSILE13,2,  0, 1, 40,  0, 0x0000, 0, SND_POLAR_STAR_L1_2,       // supermissile l3
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                       }
+nxengine/autogen/sprites.h:47:34: note: expanded from macro 'SPR_SHOT_SUPERMISSILE13'
+#define SPR_SHOT_SUPERMISSILE13         43
+                                        ^
+nxengine/p_arms.cpp:50:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_FIREBALL1,             0,  0, 1, 100, 2, 0x0000, 1, SND_FIREBALL,              // fireball l1
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                        }
+nxengine/autogen/sprites.h:13:29: note: expanded from macro 'SPR_SHOT_FIREBALL1'
+#define SPR_SHOT_FIREBALL1              9
+                                        ^
+nxengine/p_arms.cpp:51:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_FIREBALL23,    1,  0, 1, 100, 3, 0x0000, 1, SND_FIREBALL,              // fireball l2
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                }
+nxengine/autogen/sprites.h:51:30: note: expanded from macro 'SPR_SHOT_FIREBALL23'
+#define SPR_SHOT_FIREBALL23             47
+                                        ^
+nxengine/p_arms.cpp:52:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_FIREBALL23,    2,  0, 1, 100, 3, 0x0000, 1, SND_FIREBALL,              // fireball l3
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                }
+nxengine/autogen/sprites.h:51:30: note: expanded from macro 'SPR_SHOT_FIREBALL23'
+#define SPR_SHOT_FIREBALL23             47
+                                        ^
+nxengine/p_arms.cpp:54:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_BLADE_L1,              0,  0, 0, 29, 15, 0x800,  0, SND_FIREBALL,              // Blade L1
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                        }
+nxengine/autogen/sprites.h:54:28: note: expanded from macro 'SPR_SHOT_BLADE_L1'
+#define SPR_SHOT_BLADE_L1               50
+                                        ^
+nxengine/p_arms.cpp:55:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_BLADE_L2,              1,  0, 0, 17, 6,  0x800,  0, SND_FIREBALL,              // Blade L2
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                        }
+nxengine/autogen/sprites.h:56:28: note: expanded from macro 'SPR_SHOT_BLADE_L2'
+#define SPR_SHOT_BLADE_L2               52
+                                        ^
+nxengine/p_arms.cpp:56:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_BLADE_L3,              2,  0, 0, 30, 1,  0x800,  0, SND_FIREBALL,              // Blade L3
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                        }
+nxengine/autogen/sprites.h:276:28: note: expanded from macro 'SPR_SHOT_BLADE_L3'
+#define SPR_SHOT_BLADE_L3               272
+                                        ^
+nxengine/p_arms.cpp:58:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_SNAKE_L1,              0,  0, 1, 20, 4,  0x600,  2, SND_SNAKE_FIRE,    // Snake L1
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                          }
+nxengine/autogen/sprites.h:279:28: note: expanded from macro 'SPR_SHOT_SNAKE_L1'
+#define SPR_SHOT_SNAKE_L1               275
+                                        ^
+nxengine/p_arms.cpp:59:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_FIREBALL23,    1,      0, 1, 23, 6,  0x200,  2, SND_SNAKE_FIRE,        // Snake L2
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                      }
+nxengine/autogen/sprites.h:51:30: note: expanded from macro 'SPR_SHOT_FIREBALL23'
+#define SPR_SHOT_FIREBALL23             47
+                                        ^
+nxengine/p_arms.cpp:60:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_FIREBALL23,    2,      0, 1, 30, 8,  0x200,  2, SND_SNAKE_FIRE,        // Snake L3
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                      }
+nxengine/autogen/sprites.h:51:30: note: expanded from macro 'SPR_SHOT_FIREBALL23'
+#define SPR_SHOT_FIREBALL23             47
+                                        ^
+nxengine/p_arms.cpp:62:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_NEMESIS_L1,    0,  0, 2, 20, 12, 0x1000, 0, SND_NEMESIS_FIRE,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                    }
+nxengine/autogen/sprites.h:420:30: note: expanded from macro 'SPR_SHOT_NEMESIS_L1'
+#define SPR_SHOT_NEMESIS_L1             416
+                                        ^
+nxengine/p_arms.cpp:63:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_NEMESIS_L2,    1,  0, 2, 20, 6,  0x1000, 0, SND_POLAR_STAR_L3,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                     }
+nxengine/autogen/sprites.h:422:30: note: expanded from macro 'SPR_SHOT_NEMESIS_L2'
+#define SPR_SHOT_NEMESIS_L2             418
+                                        ^
+nxengine/p_arms.cpp:64:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_NEMESIS_L3,    2,  0, 2, 20, 1,  0x555,  0, 0,         // 1/3 speed
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                     }
+nxengine/autogen/sprites.h:424:30: note: expanded from macro 'SPR_SHOT_NEMESIS_L3'
+#define SPR_SHOT_NEMESIS_L3             420
+                                        ^
+nxengine/p_arms.cpp:66:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_BUBBLER_L1,    0,      0, 1, 40, 1,  0x600,  2, SND_BUBBLER_FIRE,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                        }
+nxengine/autogen/sprites.h:427:30: note: expanded from macro 'SPR_SHOT_BUBBLER_L1'
+#define SPR_SHOT_BUBBLER_L1             423
+                                        ^
+nxengine/p_arms.cpp:67:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_BUBBLER_L2,    1,      0, 1, 60, 2,  0x600,  2, SND_BUBBLER_FIRE,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                        }
+nxengine/autogen/sprites.h:428:30: note: expanded from macro 'SPR_SHOT_BUBBLER_L2'
+#define SPR_SHOT_BUBBLER_L2             424
+                                        ^
+nxengine/p_arms.cpp:68:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_BUBBLER_L3,    2,      0, 1, 100,2,  0x600,  2, SND_BUBBLER_FIRE,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                        }
+nxengine/autogen/sprites.h:429:30: note: expanded from macro 'SPR_SHOT_BUBBLER_L3'
+#define SPR_SHOT_BUBBLER_L3             425
+                                        ^
+nxengine/p_arms.cpp:71:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_POLARSTAR,             0,      0, 1, 30, 4,  0x1000, 0, SND_SPUR_FIRE_1,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                               }
+nxengine/autogen/sprites.h:29:29: note: expanded from macro 'SPR_SHOT_POLARSTAR'
+#define SPR_SHOT_POLARSTAR              25
+                                        ^
+nxengine/p_arms.cpp:72:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_POLARSTAR,             1,      1, 1, 30, 8,  0x1000, 0, SND_SPUR_FIRE_2,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                               }
+nxengine/autogen/sprites.h:29:29: note: expanded from macro 'SPR_SHOT_POLARSTAR'
+#define SPR_SHOT_POLARSTAR              25
+                                        ^
+nxengine/p_arms.cpp:73:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_POLARSTAR_L3,  2,  0, 0, 30, 12, 0x1000, 0, SND_SPUR_FIRE_3,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                   }
+nxengine/autogen/sprites.h:31:32: note: expanded from macro 'SPR_SHOT_POLARSTAR_L3'
+#define SPR_SHOT_POLARSTAR_L3           27
+                                        ^
+nxengine/p_arms.cpp:76:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        SPR_SHOT_NEMESIS_L1,    0,  0, 1, 20, 12, 0x1000, 0, SND_NEMESIS_FIRE,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        {                                                                    }
+nxengine/autogen/sprites.h:420:30: note: expanded from macro 'SPR_SHOT_NEMESIS_L1'
+#define SPR_SHOT_NEMESIS_L1             416
+                                        ^
+nxengine/p_arms.cpp:79:1: warning: missing field 'manualsetup' initializer [-Wmissing-field-initializers]
+};
+^
+nxengine/p_arms.cpp:78:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0, 0, 0, 0, 0, 0, 0
+        ^~~~~~~~~~~~~~~~~~~
+        {                  }
+nxengine/p_arms.cpp:396:28: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                if (level == 2) xoff = -5<<CSF; else xoff = -4<<CSF;
+                                       ~~^
+nxengine/p_arms.cpp:396:49: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                if (level == 2) xoff = -5<<CSF; else xoff = -4<<CSF;
+                                                            ~~^
+nxengine/p_arms.cpp:497:53: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+        FireSimpleBulletOffset(object_type, bullet_type, -4<<CSF, 0);
+                                                         ~~^
+nxengine/p_arms.cpp:546:82: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+        Object *fb = FireSimpleBulletOffset(object_types[level], B_FIREBALL1 + level, -8<<CSF, 0);
+                                                                                      ~~^
+nxengine/p_arms.cpp:619:58: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+        FireSimpleBulletOffset(object_type, B_SNAKE_L1+level, -5<<CSF, 0);
+                                                              ~~^
+nxengine/p_arms.cpp:643:56: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+        FireSimpleBulletOffset(objtype, B_BUBBLER_L1+level, -4<<CSF, 0);
+                                                            ~~^
+nxengine/p_arms.cpp:664:56: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                FireSimpleBulletOffset(OBJ_POLAR_SHOT, B_PSTAR_L3, -4<<CSF, 0);
+                                                                   ~~^
+nxengine/p_arms.cpp:715:62: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+                                FireSimpleBulletOffset(OBJ_SPUR_SHOT, B_SPUR_L1+level, -4<<CSF, 0);
+                                                                                       ~~^
+nxengine/player.cpp:1261:32: warning: overlapping comparisons always evaluate to true [-Wtautological-overlap-compare]
+                        if (player->yinertia < 0x80 || player->yinertia > -0x80)
+                            ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+nxengine/player.cpp:1244:32: warning: overlapping comparisons always evaluate to true [-Wtautological-overlap-compare]
+                        if (player->xinertia < 0x80 || player->xinertia > -0x80)
+                            ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/screeneffect.o nxengine/screeneffect.cpp
+47 warnings generated.
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/settings.o nxengine/settings.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/slope.o nxengine/slope.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/stageboss.o nxengine/stageboss.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/statusbar.o nxengine/statusbar.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/trig.o nxengine/trig.cpp
+c++ -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/tsc.o nxengine/tsc.cpp
+In file included from nxengine/tsc.cpp:49:
+nxengine/tsc_cmdtbl.cpp:4:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "AE+", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:5:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "AM+", 2,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:6:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "AM-", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:7:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "AMJ", 2,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:8:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "ANP", 3,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:9:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "BOA", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:10:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "BSL", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:11:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "CAT", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:12:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "CIL", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:13:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "CLO", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:14:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "CLR", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:15:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "CMP", 3,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:16:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "CMU", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:17:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "CNP", 3,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:18:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "CPS", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:19:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "CRE", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:20:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "CSS", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:21:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "DNA", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:22:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "DNP", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:23:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "ECJ", 2,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:24:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "END", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:25:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "EQ+", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:26:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "EQ-", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:27:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "ESC", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:28:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "EVE", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:29:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "FAC", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:30:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "FAI", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:31:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "FAO", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:32:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "FL+", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:33:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "FL-", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:34:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "FLA", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:35:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "FLJ", 2,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:36:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "FMU", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:37:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "FOB", 2,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:38:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "FOM", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:39:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "FON", 2,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:40:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "FRE", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:41:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "GIT", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:42:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "HMC", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:43:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "INI", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:44:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "INP", 3,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:45:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "IT+", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:46:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "IT-", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:47:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "ITJ", 2,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:48:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "KEY", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:49:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "LDP", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:50:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "LI+", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:51:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "ML+", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:52:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "MLP", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:53:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "MM0", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:54:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "MNA", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:55:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "MNP", 4,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:56:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "MOV", 2,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:57:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "MP+", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:58:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "MPJ", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:59:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "MS2", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:60:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "MS3", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:61:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "MSG", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:62:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "MYB", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:63:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "MYD", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:64:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "NCJ", 2,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:65:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "NOD", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:66:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "NUM", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:67:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "PRI", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:68:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "PS+", 2,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:69:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "QUA", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:70:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "RMU", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:71:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "SAT", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:72:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "SIL", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:73:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "SK+", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:74:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "SK-", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:75:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "SKJ", 2,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:76:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "SLP", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:77:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "SMC", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:78:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "SMP", 2,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:79:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "SNP", 4,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:80:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "SOU", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:81:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "SPS", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:82:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "SSS", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:83:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "STC", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:84:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "SVP", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:85:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "TAM", 3,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:86:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "TRA", 4,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:87:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "TUR", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:88:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "UNI", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:89:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "UNJ", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:90:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "WAI", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:91:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "WAS", 0,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:92:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "XX1", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:93:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "YNJ", 1,
+        ^~~~~~~~
+        {       }
+nxengine/tsc_cmdtbl.cpp:94:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "ZAM", 0,
+        ^~~~~~~~
+        {       }
+2 warnings generated.
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/sdl/SDL_error.o nxengine/sdl/SDL_error.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/sdl/file/SDL_rwops.o nxengine/sdl/file/SDL_rwops.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/sdl/video/SDL_blit.o nxengine/sdl/video/SDL_blit.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/sdl/video/SDL_blit_0.o nxengine/sdl/video/SDL_blit_0.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/sdl/video/SDL_blit_1.o nxengine/sdl/video/SDL_blit_1.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/sdl/video/SDL_blit_A.o nxengine/sdl/video/SDL_blit_A.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/sdl/video/SDL_blit_N.o nxengine/sdl/video/SDL_blit_N.c
+91 warnings generated.
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/sdl/video/SDL_bmp.o nxengine/sdl/video/SDL_bmp.c
+nxengine/sdl/video/SDL_blit_N.c:1369:37: warning: missing field 'alpha' initializer [-Wmissing-field-initializers]
+   { 0,0,0, 0, 0,0,0, 0, NULL, NULL },
+                                    ^
+nxengine/sdl/video/SDL_blit_N.c:1474:46: warning: comparison of integers of different signs: 'unsigned int' and 'int' [-Wsign-compare]
+               (a_need & table[which].alpha) == a_need &&
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~  ^  ~~~~~~
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/sdl/video/SDL_pixels.o nxengine/sdl/video/SDL_pixels.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/sdl/video/SDL_surface.o nxengine/sdl/video/SDL_surface.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/libretro/libretro-common/streams/file_stream.o nxengine/libretro/libretro-common/streams/file_stream.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/libretro/libretro-common/streams/file_stream_transforms.o nxengine/libretro/libretro-common/streams/file_stream_transforms.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/libretro/libretro-common/compat/fopen_utf8.o nxengine/libretro/libretro-common/compat/fopen_utf8.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/libretro/libretro-common/file/file_path.o nxengine/libretro/libretro-common/file/file_path.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/libretro/libretro-common/file/file_path_io.o nxengine/libretro/libretro-common/file/file_path_io.c
+2 warnings generated.
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/libretro/libretro-common/encodings/encoding_utf.o nxengine/libretro/libretro-common/encodings/encoding_utf.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/libretro/libretro-common/compat/compat_strl.o nxengine/libretro/libretro-common/compat/compat_strl.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/libretro/libretro-common/compat/compat_snprintf.o nxengine/libretro/libretro-common/compat/compat_snprintf.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/libretro/libretro-common/compat/compat_posix_string.o nxengine/libretro/libretro-common/compat/compat_posix_string.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/libretro/libretro-common/string/stdstring.o nxengine/libretro/libretro-common/string/stdstring.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/libretro/libretro-common/time/rtime.o nxengine/libretro/libretro-common/time/rtime.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/libretro/libretro-common/vfs/vfs_implementation.o nxengine/libretro/libretro-common/vfs/vfs_implementation.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/common/misc.o nxengine/common/misc.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/common/bufio.o nxengine/common/bufio.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/extract-auto/cachefiles.o nxengine/extract-auto/cachefiles.c
+nxengine/libretro/libretro-common/vfs/vfs_implementation.c:713:18: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+      if (result != -1 && pos + result > stream->size)
+          ~~~~~~ ^  ~~
+nxengine/libretro/libretro-common/vfs/vfs_implementation.c:726:15: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [-Wsign-compare]
+   if (result != -1 && pos + result > stream->size)
+       ~~~~~~ ^  ~~
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/extract-auto/extractorg.o nxengine/extract-auto/extractorg.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/extract-auto/extractpxt.o nxengine/extract-auto/extractpxt.c
+nxengine/extract-auto/extractpxt.c:42:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "use  ", 1,
+        ^~~~~~~~~~
+        {         }
+nxengine/extract-auto/extractpxt.c:43:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "size ", 1,
+        ^~~~~~~~~~
+        {         }
+nxengine/extract-auto/extractpxt.c:44:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "main_model   ", 1,
+        ^~~~~~~~~~~~~~~~~~
+        {                 }
+nxengine/extract-auto/extractpxt.c:45:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "main_freq    ", 0,
+        ^~~~~~~~~~~~~~~~~~
+        {                 }
+nxengine/extract-auto/extractpxt.c:46:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "main_top     ", 1,
+        ^~~~~~~~~~~~~~~~~~
+        {                 }
+nxengine/extract-auto/extractpxt.c:47:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "main_offset  ", 1,
+        ^~~~~~~~~~~~~~~~~~
+        {                 }
+nxengine/extract-auto/extractpxt.c:48:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "pitch_model  ", 1,
+        ^~~~~~~~~~~~~~~~~~
+        {                 }
+nxengine/extract-auto/extractpxt.c:49:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "pitch_freq   ", 0,
+        ^~~~~~~~~~~~~~~~~~
+        {                 }
+nxengine/extract-auto/extractpxt.c:50:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "pitch_top    ", 1,
+        ^~~~~~~~~~~~~~~~~~
+        {                 }
+nxengine/extract-auto/extractpxt.c:51:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "pitch_offset ", 1,
+        ^~~~~~~~~~~~~~~~~~
+        {                 }
+nxengine/extract-auto/extractpxt.c:52:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "volume_model ", 1,
+        ^~~~~~~~~~~~~~~~~~
+        {                 }
+nxengine/extract-auto/extractpxt.c:53:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "volume_freq  ", 0,
+        ^~~~~~~~~~~~~~~~~~
+        {                 }
+nxengine/extract-auto/extractpxt.c:54:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "volume_top   ", 1,
+        ^~~~~~~~~~~~~~~~~~
+        {                 }
+nxengine/extract-auto/extractpxt.c:55:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "volume_offset", 1,
+        ^~~~~~~~~~~~~~~~~~
+        {                 }
+nxengine/extract-auto/extractpxt.c:56:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "initialY", 1,
+        ^~~~~~~~~~~~~
+        {            }
+nxengine/extract-auto/extractpxt.c:57:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "ax      ", 1,
+        ^~~~~~~~~~~~~
+        {            }
+nxengine/extract-auto/extractpxt.c:58:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "ay      ", 1,
+        ^~~~~~~~~~~~~
+        {            }
+nxengine/extract-auto/extractpxt.c:59:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "bx      ", 1,
+        ^~~~~~~~~~~~~
+        {            }
+nxengine/extract-auto/extractpxt.c:60:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "by      ", 1,
+        ^~~~~~~~~~~~~
+        {            }
+nxengine/extract-auto/extractpxt.c:61:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "cx      ", 1,
+        ^~~~~~~~~~~~~
+        {            }
+nxengine/extract-auto/extractpxt.c:62:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        "cy      ", 1,
+        ^~~~~~~~~~~~~
+        {            }
+nxengine/extract-auto/extractpxt.c:64:1: warning: missing field 'is_integer' initializer [-Wmissing-field-initializers]
+};
+^
+nxengine/extract-auto/extractpxt.c:63:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        NULL
+        ^~~~
+        {   }
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stddef.h:89:16: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+               ^~~~~~~~~~
+nxengine/extract-auto/extractpxt.c:74:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x01, 1, 0x0907b0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:75:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x02, 1, 0x0909e0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:76:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x03, 1, 0x0934c0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:77:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x04, 1, 0x090890,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:78:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x05, 1, 0x090660,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:79:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x06, 1, 0x093530,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:80:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x07, 1, 0x0935a0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:81:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x0b, 1, 0x090740,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:82:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x0c, 2, 0x090c80,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:83:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x0e, 1, 0x090a50,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:84:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x0f, 1, 0x08fbe0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:85:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x10, 2, 0x090350,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:86:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x11, 3, 0x090430,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:87:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x12, 1, 0x090820,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:88:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x14, 2, 0x090900,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:89:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x15, 1, 0x090c10,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:90:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x16, 1, 0x0906d0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:91:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x17, 1, 0x08fcc0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:92:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x18, 1, 0x08fc50,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:93:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x19, 2, 0x090d60,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:94:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x1a, 2, 0x090b30,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:95:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x1b, 1, 0x090e40,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:96:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x1c, 2, 0x0910e0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:97:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x1d, 1, 0x0911c0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:98:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x1e, 1, 0x091ee0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:99:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x1f, 1, 0x091310,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:100:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x20, 2, 0x08f940,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:101:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x21, 2, 0x08fa20,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:102:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x22, 2, 0x08fb00,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:103:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x23, 3, 0x090eb0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:104:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x25, 2, 0x092810,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:105:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x26, 2, 0x091230,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:106:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x27, 3, 0x091000,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:107:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x28, 2, 0x092730,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:108:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x29, 2, 0x092730,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:109:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x2a, 1, 0x091380,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:110:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x2b, 1, 0x0913f0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:111:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x2c, 3, 0x091460,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:112:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x2d, 1, 0x0915b0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:113:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x2e, 1, 0x091620,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:114:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x2f, 1, 0x091700,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:115:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x30, 1, 0x091770,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:116:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x31, 2, 0x0917e0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:117:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x32, 2, 0x08fd30,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:118:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x33, 2, 0x08fe10,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:119:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x34, 2, 0x08fef0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:120:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x35, 2, 0x090580,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:121:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x36, 2, 0x091a80,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:122:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x37, 2, 0x092ea0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:123:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x38, 2, 0x092650,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:124:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x39, 2, 0x0928f0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:125:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x3a, 2, 0x092dc0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:126:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x3b, 1, 0x093060,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:127:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x3c, 1, 0x0930d0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:128:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x3d, 1, 0x093140,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:129:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x3e, 2, 0x0931b0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:130:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x3f, 2, 0x093290,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:131:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x40, 2, 0x093370,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:132:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x41, 1, 0x093450,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:133:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x46, 2, 0x08ffd0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:134:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x47, 2, 0x0900b0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:135:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x48, 2, 0x090190,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:136:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x64, 1, 0x0918c0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:137:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x65, 3, 0x091930,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:138:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x66, 2, 0x091b60,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:139:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x67, 2, 0x091c40,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:140:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x68, 1, 0x091cb0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:141:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x68, 1, 0x092c00,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:142:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x69, 1, 0x091d20,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:143:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x6a, 2, 0x091d90,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:144:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x6b, 1, 0x091e70,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:145:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x6c, 1, 0x091f50,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:146:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x6d, 1, 0x091fc0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:147:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x6e, 1, 0x092030,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:148:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x6f, 1, 0x0920a0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:149:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x70, 1, 0x092110,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:150:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x71, 1, 0x092180,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:151:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x72, 2, 0x0921f0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:152:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x73, 3, 0x092ab0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:153:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x74, 3, 0x092c70,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:154:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x75, 2, 0x092f80,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:155:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x96, 2, 0x0922d0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:156:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x97, 2, 0x0923b0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:157:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x98, 1, 0x092490,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:158:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x99, 1, 0x092500,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:159:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x9a, 2, 0x092570,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:160:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0x9b, 2, 0x0929d0,
+        ^~~~~~~~~~~~~~~~~
+        {                }
+nxengine/extract-auto/extractpxt.c:161:2: warning: suggest braces around initialization of subobject [-Wmissing-braces]
+        0, 0, 0
+        ^~~~~~~
+        {      }
+nxengine/extract-auto/extractpxt.c:178:16: warning: comparison of integers of different signs: 'int' and 'unsigned long' [-Wsign-compare]
+        for (i = 0; i < sizeof(snd) / sizeof(snd[0]); i++)
+                    ~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+nxengine/extract-auto/extractorg.c:133:18: warning: comparison of integers of different signs: 'int' and 'unsigned long' [-Wsign-compare]
+   for (i = 0; i < sizeof(org_data) / sizeof(org_data[0]); i++)
+               ~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/extract-auto/extractstages.o nxengine/extract-auto/extractstages.c
+1 warning generated.
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/libretro/libretro_shared.o nxengine/libretro/libretro_shared.c
+112 warnings generated.
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/sound/sslib.o nxengine/sound/sslib.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/niku.o nxengine/niku.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/input.o nxengine/input.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/stagedata.o nxengine/stagedata.c
+cc -arch i386 -DOSX -O2 -DNDEBUG -DRELEASE_BUILD -DFRONTEND_SUPPORTS_RGB565  -DHAVE_INTTYPES_H -D__LIBRETRO__  -DINLINE="inline"  -Wall -W -Wno-unused-parameter -fPIC -stdlib=libc++ -Inxengine -Inxengine/graphics -Inxengine/libretro -Inxengine/libretro/libretro-common/include -Inxengine/sdl/include   -c -onxengine/profile.o nxengine/profile.c
+c++ -arch i386 -fPIC -stdlib=libc++ -dynamiclib  -o nxengine_libretro.dylib nxengine/ai/ai.o nxengine/ai/balrog_common.o nxengine/ai/IrregularBBox.o nxengine/ai/almond/almond.o nxengine/ai/boss/balfrog.o nxengine/ai/boss/ballos.o nxengine/ai/boss/core.o nxengine/ai/boss/heavypress.o nxengine/ai/boss/ironhead.o nxengine/ai/boss/omega.o nxengine/ai/boss/sisters.o nxengine/ai/boss/undead_core.o nxengine/ai/boss/x.o nxengine/ai/egg/egg.o nxengine/ai/egg/egg2.o nxengine/ai/egg/igor.o nxengine/ai/final_battle/balcony.o nxengine/ai/final_battle/doctor.o nxengine/ai/final_battle/doctor_common.o nxengine/ai/final_battle/doctor_frenzied.o nxengine/ai/final_battle/final_misc.o nxengine/ai/final_battle/misery_finalbattle.o nxengine/ai/final_battle/sidekicks.o nxengine/ai/first_cave/first_cave.o nxengine/ai/hell/ballos_misc.o nxengine/ai/hell/ballos_priest.o nxengine/ai/hell/hell.o nxengine/ai/last_cave/last_cave.o nxengine/ai/maze/balrog_boss_missiles.o nxengine/ai/maze/critter_purple.o nxengine/ai/maze/gaudi.o nxengine/ai/maze/labyrinth_m.o nxengine/ai/maze/pooh_black.o nxengine/ai/maze/maze.o nxengine/ai/npc/balrog.o nxengine/ai/npc/curly.o nxengine/ai/npc/curly_ai.o nxengine/ai/npc/misery.o nxengine/ai/npc/npcguest.o nxengine/ai/npc/npcplayer.o nxengine/ai/npc/npcregu.o nxengine/ai/oside/oside.o nxengine/ai/plantation/plantation.o nxengine/ai/sand/curly_boss.o nxengine/ai/sand/puppy.o nxengine/ai/sand/sand.o nxengine/ai/sand/toroko_frenzied.o nxengine/ai/sym/smoke.o nxengine/ai/sym/sym.o nxengine/ai/village/balrog_boss_running.o nxengine/ai/village/ma_pignon.o nxengine/ai/village/village.o nxengine/ai/weapons/blade.o nxengine/ai/weapons/bubbler.o nxengine/ai/weapons/fireball.o nxengine/ai/weapons/missile.o nxengine/ai/weapons/nemesis.o nxengine/ai/weapons/polar_mgun.o nxengine/ai/weapons/snake.o nxengine/ai/weapons/spur.o nxengine/ai/weapons/weapons.o nxengine/ai/weapons/whimstar.o nxengine/ai/weed/balrog_boss_flying.o nxengine/ai/weed/frenzied_mimiga.o nxengine/ai/weed/weed.o nxengine/common/BList.o nxengine/common/DBuffer.o nxengine/common/DString.o nxengine/common/InitList.o nxengine/common/StringList.o nxengine/endgame/credits.o nxengine/endgame/CredReader.o nxengine/endgame/island.o nxengine/endgame/endgame_misc.o nxengine/graphics/graphics.o nxengine/graphics/nxsurface.o nxengine/graphics/font.o nxengine/graphics/sprites.o nxengine/graphics/tileset.o nxengine/intro/intro.o nxengine/intro/title.o nxengine/pause/dialog.o nxengine/pause/message.o nxengine/pause/objects.o nxengine/pause/options.o nxengine/pause/pause.o nxengine/libretro/libretro.o nxengine/main.o nxengine/siflib/sectSprites.o nxengine/siflib/sectStringArray.o nxengine/siflib/sif.o nxengine/siflib/sifloader.o nxengine/sound/org.o nxengine/sound/pxt.o nxengine/sound/sound.o nxengine/TextBox/ItemImage.o nxengine/TextBox/SaveSelect.o nxengine/TextBox/StageSelect.o nxengine/TextBox/TextBox.o nxengine/TextBox/YesNoPrompt.o nxengine/autogen/AssignSprites.o nxengine/autogen/objnames.o nxengine/caret.o nxengine/floattext.o nxengine/game.o nxengine/inventory.o nxengine/map.o nxengine/map_system.o nxengine/object.o nxengine/ObjManager.o nxengine/p_arms.o nxengine/player.o nxengine/playerstats.o nxengine/screeneffect.o nxengine/settings.o nxengine/slope.o nxengine/stageboss.o nxengine/statusbar.o nxengine/trig.o nxengine/tsc.o nxengine/sdl/SDL_error.o nxengine/sdl/file/SDL_rwops.o nxengine/sdl/video/SDL_blit.o nxengine/sdl/video/SDL_blit_0.o nxengine/sdl/video/SDL_blit_1.o nxengine/sdl/video/SDL_blit_A.o nxengine/sdl/video/SDL_blit_N.o nxengine/sdl/video/SDL_bmp.o nxengine/sdl/video/SDL_pixels.o nxengine/sdl/video/SDL_surface.o nxengine/libretro/libretro-common/streams/file_stream.o nxengine/libretro/libretro-common/streams/file_stream_transforms.o nxengine/libretro/libretro-common/compat/fopen_utf8.o nxengine/libretro/libretro-common/file/file_path.o nxengine/libretro/libretro-common/file/file_path_io.o nxengine/libretro/libretro-common/encodings/encoding_utf.o nxengine/libretro/libretro-common/compat/compat_strl.o nxengine/libretro/libretro-common/compat/compat_snprintf.o nxengine/libretro/libretro-common/compat/compat_posix_string.o nxengine/libretro/libretro-common/string/stdstring.o nxengine/libretro/libretro-common/time/rtime.o nxengine/libretro/libretro-common/vfs/vfs_implementation.o nxengine/common/misc.o nxengine/common/bufio.o nxengine/extract-auto/cachefiles.o nxengine/extract-auto/extractorg.o nxengine/extract-auto/extractpxt.o nxengine/extract-auto/extractstages.o nxengine/libretro/libretro_shared.o nxengine/sound/sslib.o nxengine/niku.o nxengine/input.o nxengine/stagedata.o nxengine/profile.o -lm
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc++.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc++.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+Undefined symbols for architecture i386:
+  "__DefaultRuneLocale", referenced from:
+      CredReader::ReadNumber() in CredReader.o
+      CredReader::ReadCommand(CredCommand*) in CredReader.o
+      ReadNumber(char const**, char const*) in tsc.o
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+      CredReader::ReadNumber() in CredReader.o
+      CredReader::ReadCommand(CredCommand*) in CredReader.o
+      ReadNumber(char const**, char const*) in tsc.o
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+      CredReader::ReadNumber() in CredReader.o
+      CredReader::ReadCommand(CredCommand*) in CredReader.o
+      ReadNumber(char const**, char const*) in tsc.o
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+      CredReader::ReadNumber() in CredReader.o
+      CredReader::ReadCommand(CredCommand*) in CredReader.o
+      ReadNumber(char const**, char const*) in tsc.o
+      _filestream_vscanf in file_stream.o
+      _string_hex_to_unsigned in stdstring.o
+  "__Unwind_Resume", referenced from:
+      DString::DString(char const*) in DString.o
+      DString::DString(char const*) in DString.o
+      DString::DString(char const*, int) in DString.o
+      DString::DString(char const*, int) in DString.o
+      DString::DString(DString&) in DString.o
+      DString::DString(DString&) in DString.o
+      DString::ReplaceString(char const*, char const*) in DString.o
+      ...
+  "std::terminate()", referenced from:
+      ___clang_call_terminate in DString.o
+      ___clang_call_terminate in StringList.o
+      ___clang_call_terminate in credits.o
+      ___clang_call_terminate in sprites.o
+      ___clang_call_terminate in dialog.o
+      ___clang_call_terminate in sectSprites.o
+      ___clang_call_terminate in sectStringArray.o
+      ...
+  "vtable for __cxxabiv1::__class_type_info", referenced from:
+      typeinfo for BList in BList.o
+      typeinfo for Options::FocusHolder in dialog.o
+      typeinfo for Options::FocusHolder in message.o
+      typeinfo for Object in objects.o
+      typeinfo for Object in ObjManager.o
+      typeinfo for Object in player.o
+      typeinfo for ScreenEffect in screeneffect.o
+      ...
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+  "vtable for __cxxabiv1::__si_class_type_info", referenced from:
+      typeinfo for BalfrogBoss in balfrog.o
+      typeinfo for BallosBoss in ballos.o
+      typeinfo for CoreBoss in core.o
+      typeinfo for HeavyPress in heavypress.o
+      typeinfo for IronheadBoss in ironhead.o
+      typeinfo for OmegaBoss in omega.o
+      typeinfo for SistersBoss in sisters.o
+      ...
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+  "vtable for __cxxabiv1::__vmi_class_type_info", referenced from:
+      typeinfo for StringList in StringList.o
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+  "operator delete[](void*)", referenced from:
+      StageBossManager::SetType(int) in stageboss.o
+  "operator delete(void*)", referenced from:
+      BList::~BList() in BList.o
+      StringList::~StringList() in StringList.o
+      Credits::~Credits() in credits.o
+      BigImage::~BigImage() in credits.o
+      Credits::Draw() in credits.o
+      BigImage::~BigImage() in credits.o
+      credit_init(int) in credits.o
+      ...
+  "operator new(unsigned long)", referenced from:
+      Credits::RunNextCommand() in credits.o
+      Credits::NewLine() in credits.o
+      credit_init(int) in credits.o
+      Graphics::InitVideo() in graphics.o
+      NXSurface::FromFile(char const*, bool) in nxsurface.o
+      Sprites_LoadSheetIfNeeded(int) in sprites.o
+      Sprites::create_spritesheet(int, int) in sprites.o
+      ...
+  "___bzero", referenced from:
+      NXFont::NXFont() in font.o
+      NXFont::NXFont() in font.o
+      __GLOBAL__sub_I_font.cpp in font.o
+      Sprites::Init() in sprites.o
+      Sprites::Close() in sprites.o
+      _retro_run in libretro.o
+      run_main() in main.o
+      ...
+  "___cxa_atexit", referenced from:
+      __GLOBAL__sub_I_font.cpp in font.o
+      __GLOBAL__sub_I_sprites.cpp in sprites.o
+      Options::init_objects() in objects.o
+      Options::create_object(int, int, int) in objects.o
+      ai_oc_controller(Object*) in objects.o
+      __GLOBAL__sub_I_options.cpp in options.o
+      __GLOBAL__sub_I_ObjManager.cpp in ObjManager.o
+      ...
+  "___cxa_begin_catch", referenced from:
+      ___clang_call_terminate in DString.o
+      ___clang_call_terminate in StringList.o
+      ___clang_call_terminate in credits.o
+      ___clang_call_terminate in sprites.o
+      ___clang_call_terminate in dialog.o
+      ___clang_call_terminate in sectSprites.o
+      ___clang_call_terminate in sectStringArray.o
+      ...
+  "___cxa_guard_acquire", referenced from:
+      Options::init_objects() in objects.o
+      Options::create_object(int, int, int) in objects.o
+      ai_oc_controller(Object*) in objects.o
+      run_main() in main.o
+  "___cxa_guard_release", referenced from:
+      Options::init_objects() in objects.o
+      Options::create_object(int, int, int) in objects.o
+      ai_oc_controller(Object*) in objects.o
+      run_main() in main.o
+  "___divdi3", referenced from:
+      _rfread in file_stream_transforms.o
+      _rfwrite in file_stream_transforms.o
+  "___error", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+  "___gxx_personality_v0", referenced from:
+      DString::DString(char const*) in DString.o
+      DString::DString(char const*) in DString.o
+      DString::DString(char const*, int) in DString.o
+      DString::DString(char const*, int) in DString.o
+      DString::DString(DString&) in DString.o
+      DString::DString(DString&) in DString.o
+      DString::ReplaceString(char const*, char const*) in DString.o
+      ...
+  "___maskrune", referenced from:
+      _filestream_vscanf in file_stream.o
+  "___stack_chk_fail", referenced from:
+      load_npc_tbl() in ai.o
+      DString::ReplaceString(char const*, char const*) in DString.o
+      Credits::Init() in credits.o
+      BigImage::Init() in credits.o
+      Credits::RunNextCommand() in credits.o
+      Credits::Jump(int) in credits.o
+      credit_init(int) in credits.o
+      ...
+  "___stack_chk_guard", referenced from:
+      load_npc_tbl() in ai.o
+      DString::ReplaceString(char const*, char const*) in DString.o
+      Credits::Init() in credits.o
+      BigImage::Init() in credits.o
+      Credits::RunNextCommand() in credits.o
+      Credits::Jump(int) in credits.o
+      credit_init(int) in credits.o
+      ...
+      load_npc_tbl() in ai.o
+      DString::ReplaceString(char const*, char const*) in DString.o
+      Credits::Init() in credits.o
+      BigImage::Init() in credits.o
+      Credits::RunNextCommand() in credits.o
+      Credits::Jump(int) in credits.o
+      credit_init(int) in credits.o
+      ...
+      load_npc_tbl() in ai.o
+      DString::ReplaceString(char const*, char const*) in DString.o
+      Credits::Init() in credits.o
+      BigImage::Init() in credits.o
+      Credits::RunNextCommand() in credits.o
+      Credits::Jump(int) in credits.o
+      credit_init(int) in credits.o
+      ...
+      load_npc_tbl() in ai.o
+      DString::ReplaceString(char const*, char const*) in DString.o
+      Credits::Init() in credits.o
+      BigImage::Init() in credits.o
+      Credits::RunNextCommand() in credits.o
+      Credits::Jump(int) in credits.o
+      credit_init(int) in credits.o
+      ...
+      load_npc_tbl() in ai.o
+      DString::ReplaceString(char const*, char const*) in DString.o
+      Credits::Init() in credits.o
+      BigImage::Init() in credits.o
+      Credits::RunNextCommand() in credits.o
+      Credits::Jump(int) in credits.o
+      credit_init(int) in credits.o
+      ...
+      load_npc_tbl() in ai.o
+      DString::ReplaceString(char const*, char const*) in DString.o
+      Credits::Init() in credits.o
+      BigImage::Init() in credits.o
+      Credits::RunNextCommand() in credits.o
+      Credits::Jump(int) in credits.o
+      credit_init(int) in credits.o
+      ...
+      load_npc_tbl() in ai.o
+      DString::ReplaceString(char const*, char const*) in DString.o
+      Credits::Init() in credits.o
+      BigImage::Init() in credits.o
+      Credits::RunNextCommand() in credits.o
+      Credits::Jump(int) in credits.o
+      credit_init(int) in credits.o
+      ...
+      ...
+  "___strcpy_chk", referenced from:
+      _LRSDL_SetError in SDL_error.o
+      _cachefiles_init in cachefiles.o
+      _extract_stages in extractstages.o
+  "___strlcat_chk", referenced from:
+      _fill_pathname_abbreviated_or_relative in file_path.o
+  "___strlcpy_chk", referenced from:
+      _path_get_archive_delim in file_path.o
+      _fill_pathname in file_path.o
+      _fill_pathname_abbreviated_or_relative in file_path.o
+  "___tolower", referenced from:
+      _path_is_compressed_file in file_path.o
+      _string_to_lower in stdstring.o
+  "___toupper", referenced from:
+      _string_to_upper in stdstring.o
+      _string_ucwords in stdstring.o
+  "_abort", referenced from:
+      _retro_vfs_file_get_path_impl in vfs_implementation.o
+  "_atoi", referenced from:
+      CredReader::ReadNumber() in CredReader.o
+      CredReader::ReadCommand(CredCommand*) in CredReader.o
+      ReadNumber(char const**, char const*) in tsc.o
+  "_calloc", referenced from:
+      pxt_Render(stPXSound*) in pxt.o
+      _LRSDL_AllocFormat in SDL_pixels.o
+      _LRSDL_AllocBlitMap in SDL_pixels.o
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+      _retro_vfs_opendir_impl in vfs_implementation.o
+      _cachefiles_init in cachefiles.o
+      ...
+  "_close$UNIX2003", referenced from:
+      _retro_vfs_file_close_impl in vfs_implementation.o
+  "_closedir$UNIX2003", referenced from:
+      _retro_vfs_closedir_impl in vfs_implementation.o
+  "_exit", referenced from:
+      ai_toroko_shack(Object*) in village.o
+  "_exp2", referenced from:
+      org_init(RFILE*, int) in org.o
+  "_fclose", referenced from:
+      _retro_vfs_file_close_impl in vfs_implementation.o
+  "_ferror", referenced from:
+      _retro_vfs_file_error_impl in vfs_implementation.o
+  "_fflush", referenced from:
+      _retro_vfs_file_flush_impl in vfs_implementation.o
+  "_fgetc", referenced from:
+      _fgetfloat in misc.o
+  "_fgets", referenced from:
+      _fgetline in misc.o
+  "_fileno", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fopen$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_fread", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+      _fgetl in misc.o
+  "_free", referenced from:
+      BList::~BList() in BList.o
+      BList::~BList() in BList.o
+      BList::~BList() in BList.o
+      DBuffer::~DBuffer() in DBuffer.o
+      DBuffer::~DBuffer() in DBuffer.o
+      DBuffer::SetTo(unsigned char const*, int) in DBuffer.o
+      DBuffer::SetTo(unsigned char const*, int) in DString.o
+      ...
+     (maybe you meant: _extract_org_free, ai_beetle_freefly(Object*) , pxt_freeSoundFX() , _path_linked_list_free , _freezeframe )
+  "_fseeko", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+  "_ftello", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+      _retro_vfs_file_write_impl in vfs_implementation.o
+  "_ftruncate", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fwrite$UNIX2003", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+  "_localtime", referenced from:
+      _rtime_localtime in rtime.o
+     (maybe you meant: _rtime_localtime)
+  "_lseek", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+      _retro_vfs_file_seek_impl in vfs_implementation.o
+      _retro_vfs_file_write_impl in vfs_implementation.o
+  "_malloc", referenced from:
+      BList::BList(int) in BList.o
+      BList::BList(int) in BList.o
+      BList::BList(BList const&) in BList.o
+      BList::BList(BList const&) in BList.o
+      DBuffer::AppendData(unsigned char const*, int) in DBuffer.o
+      DBuffer::AppendString(char const*) in DBuffer.o
+      DBuffer::AppendStringNoNull(char const*) in DBuffer.o
+      ...
+  "_mbstowcs", referenced from:
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+  "_memchr", referenced from:
+      music(int) in sound.o
+      should_music_play(int, int) in sound.o
+      music_is_boss(int) in sound.o
+      music_set_enabled(int) in sound.o
+  "_memcmp", referenced from:
+      _Map1to1 in SDL_pixels.o
+  "_memcpy", referenced from:
+      BList::BList(BList const&) in BList.o
+      BList::BList(BList const&) in BList.o
+      BList::operator=(BList const&) in BList.o
+      BList::AddList(BList const*, int) in BList.o
+      BList::AddList(BList const*) in BList.o
+      DBuffer::AppendData(unsigned char const*, int) in DBuffer.o
+      DBuffer::AppendString(char const*) in DBuffer.o
+      ...
+  "_memmove", referenced from:
+      BList::AddItem(void const*, int) in BList.o
+      BList::AddList(BList const*, int) in BList.o
+      BList::RemoveItem(int) in BList.o
+      BList::RemoveItems(int, int) in BList.o
+      BList::MoveItem(int, int) in BList.o
+      SIFSprite::InsertFrame(SIFFrame*, int) in sif.o
+      SIFSprite::DeleteFrame(int) in sif.o
+      ...
+  "_memset", referenced from:
+      tsc_init() in tsc.o
+      _LRSDL_FillRect in SDL_surface.o
+  "_memset_pattern16", referenced from:
+      _retro_set_controller_port_device in libretro.o
+  "_mkdir", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+     (maybe you meant: _path_mkdir, _retro_vfs_mkdir_impl )
+  "_open$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+  "_opendir$INODE64$UNIX2003", referenced from:
+      _retro_vfs_opendir_impl in vfs_implementation.o
+  "_qsort", referenced from:
+      BList::SortItems(int (*)(void const*, void const*)) in BList.o
+  "_read$UNIX2003", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+  "_readdir$INODE64", referenced from:
+      _retro_vfs_readdir_impl in vfs_implementation.o
+  "_realloc", referenced from:
+      BList::_ResizeArray(int) in BList.o
+      BList::operator=(BList const&) in BList.o
+      BList::AddItem(void const*, int) in BList.o
+      BList::AddItem(void const*) in BList.o
+      BList::AddList(BList const*, int) in BList.o
+      BList::AddList(BList const*) in BList.o
+      BList::RemoveItem(int) in BList.o
+      ...
+  "_remove", referenced from:
+      _retro_vfs_file_remove_impl in vfs_implementation.o
+     (maybe you meant: _string_remove_all_whitespace, _string_remove_all_chars , _path_remove_extension , _retro_vfs_file_remove_impl )
+  "_rename", referenced from:
+      _retro_vfs_file_rename_impl in vfs_implementation.o
+     (maybe you meant: _retro_vfs_file_rename_impl, _filestream_rename )
+  "_sin", referenced from:
+      pxt_initsynth() in pxt.o
+      trig_init() in trig.o
+     (maybe you meant: _sin_table, _string_replace_whitespace_with_single_character , _string_count_occurrences_single_character , _string_replace_multi_space_with_single_space )
+  "_snprintf", referenced from:
+      load_npc_tbl() in ai.o
+      Credits::Init() in credits.o
+      BigImage::Init() in credits.o
+      credit_init(int) in credits.o
+      CredReader::OpenFile() in CredReader.o
+      Tileset::Load(int) in tileset.o
+      load_stage(int) in map.o
+      ...
+  "_sprintf", referenced from:
+      FloatText::Draw() in floattext.o
+  "_sscanf", referenced from:
+      _filestream_vscanf in file_stream.o
+  "_stat$INODE64", referenced from:
+      _retro_vfs_stat_impl in vfs_implementation.o
+      _retro_vfs_dirent_is_dir_impl in vfs_implementation.o
+  "_strcasecmp", referenced from:
+      _extract_stages in extractstages.o
+  "_strcat", referenced from:
+      Options::Dialog::Draw() in dialog.o
+      Options::Dialog::DrawItem(int, int, Options::ODItem*) in dialog.o
+  "_strchr", referenced from:
+      _rfopen in file_stream_transforms.o
+      _path_get_archive_delim in file_path.o
+      _string_replace_all_chars in stdstring.o
+  "_strcmp", referenced from:
+      StringList::operator==(StringList const&) const in StringList.o
+      load_stage(int) in map.o
+      _path_mkdir in file_path_io.o
+      _cachefiles_init in cachefiles.o
+      _copen in cachefiles.o
+      _retro_init_saves in libretro_shared.o
+  "_strcpy", referenced from:
+      Options::Dialog::AddItem(char const*, void (*)(Options::ODItem*, int), void (*)(Options::ODItem*), int, int) in dialog.o
+      Options::Dialog::AddDismissalItem(char const*) in dialog.o
+      Options::Dialog::Draw() in dialog.o
+      Options::Dialog::DrawItem(int, int, Options::ODItem*) in dialog.o
+      _60hz_get(Options::ODItem*) in options.o
+      _sound_get(Options::ODItem*) in options.o
+      _music_get(Options::ODItem*) in options.o
+      ...
+  "_strdup", referenced from:
+      StringList::AddString(char const*) in StringList.o
+      StringList::operator=(StringList const&) in StringList.o
+      Options::Message::Message(char const*, char const*) in message.o
+      _path_linked_list_add_path in file_path.o
+      _fill_pathname_parent_dir_name in file_path.o
+      _path_mkdir in file_path_io.o
+      _utf8_to_local_string_alloc in encoding_utf.o
+      ...
+  "_strftime$UNIX2003", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+  "_strlcat", referenced from:
+      _fill_pathname in file_path.o
+      _fill_pathname_slash in file_path.o
+      _fill_pathname_dir in file_path.o
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+      _path_relative_to in file_path.o
+      _fill_pathname_resolve_relative in file_path.o
+      ...
+  "_strlcpy", referenced from:
+      _retro_load_game in libretro.o
+      _fill_pathname in file_path.o
+      _fill_pathname_base in file_path.o
+      _fill_pathname_basedir in file_path.o
+      _fill_pathname_parent_dir_name in file_path.o
+      _fill_pathname_parent_dir in file_path.o
+      _fill_str_dated_filename in file_path.o
+      ...
+  "_strlen", referenced from:
+      DBuffer::AppendString(char const*) in DBuffer.o
+      DBuffer::AppendStringNoNull(char const*) in DBuffer.o
+      DBuffer::SetTo(char const*) in DBuffer.o
+      DString::DString(char const*) in DString.o
+      DString::SetTo(char const*) in DString.o
+      DString::DString(char const*) in DString.o
+      DString::AppendString(char const*) in DString.o
+      ...
+  "_strrchr", referenced from:
+      _path_get_extension in file_path.o
+      _path_basename in file_path.o
+      _path_get_extension_mutable in file_path.o
+      _path_remove_extension in file_path.o
+      _path_is_compressed_file in file_path.o
+      _fill_pathname in file_path.o
+      _find_last_slash in file_path.o
+      ...
+  "_strstr", referenced from:
+      DString::ReplaceString(char const*, char const*) in DString.o
+      Credits::RunNextCommand() in credits.o
+      _string_replace_substring in stdstring.o
+      _string_tokenize in stdstring.o
+      _string_find_index_substring_string in stdstring.o
+  "_strtoul", referenced from:
+      _string_to_unsigned in stdstring.o
+      _string_hex_to_unsigned in stdstring.o
+  "_tan", referenced from:
+      trig_init() in trig.o
+     (maybe you meant: _tan_table)
+  "_time", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+  "_vsnprintf", referenced from:
+      _filestream_vprintf in file_stream.o
+      _filestream_printf in file_stream.o
+  "_wcstombs", referenced from:
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+  "_write$UNIX2003", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile:735: nxengine_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-nxengine'
+cp "nxengine_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/nxengine_libretro.dylib"
+cp: nxengine_libretro.dylib: No such file or directory

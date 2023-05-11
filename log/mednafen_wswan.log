@@ -1,0 +1,250 @@
+Building mednafen_wswan...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mednafen_wswan"
+gmake platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mednafen_wswan'
+rm -f mednafen_wswan_libretro.dylib ./mednafen/mempatcher.o ./mednafen/wswan/sound.o ./mednafen/wswan/interrupt.o ./mednafen/wswan/rtc.o ./mednafen/wswan/tcache.o ./mednafen/wswan/gfx.o ./mednafen/wswan/wswan-memory.o ./mednafen/wswan/v30mz.o ./mednafen/wswan/eeprom.o ./mednafen/sound/Blip_Buffer.o ./mednafen/state.o ./mednafen/settings.o ./libretro.o ./libretro-common/compat/compat_strl.o ./libretro-common/compat/compat_snprintf.o
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mednafen_wswan'
+gmake platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mednafen_wswan'
+c++ -arch i386 -c -o mednafen/mempatcher.o mednafen/mempatcher.cpp  -DGIT_VERSION=\"" 2d4edfd"\" -DWANT_16BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -funroll-loops -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -I. -I./mednafen -I./mednafen/include -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include   -DSIZEOF_DOUBLE=8 -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=931 -DMPC_FIXED_POINT -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_  -DINLINE="inline"
+cc -arch i386 -c -o mednafen/wswan/sound.o mednafen/wswan/sound.c  -DGIT_VERSION=\"" 2d4edfd"\" -DWANT_16BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -funroll-loops -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -I. -I./mednafen -I./mednafen/include -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include   -DSIZEOF_DOUBLE=8 -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=931 -DMPC_FIXED_POINT -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_  -DINLINE="inline"
+cc -arch i386 -c -o mednafen/wswan/interrupt.o mednafen/wswan/interrupt.c  -DGIT_VERSION=\"" 2d4edfd"\" -DWANT_16BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -funroll-loops -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -I. -I./mednafen -I./mednafen/include -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include   -DSIZEOF_DOUBLE=8 -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=931 -DMPC_FIXED_POINT -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_  -DINLINE="inline"
+cc -arch i386 -c -o mednafen/wswan/rtc.o mednafen/wswan/rtc.c  -DGIT_VERSION=\"" 2d4edfd"\" -DWANT_16BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -funroll-loops -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -I. -I./mednafen -I./mednafen/include -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include   -DSIZEOF_DOUBLE=8 -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=931 -DMPC_FIXED_POINT -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_  -DINLINE="inline"
+cc -arch i386 -c -o mednafen/wswan/tcache.o mednafen/wswan/tcache.c  -DGIT_VERSION=\"" 2d4edfd"\" -DWANT_16BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -funroll-loops -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -I. -I./mednafen -I./mednafen/include -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include   -DSIZEOF_DOUBLE=8 -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=931 -DMPC_FIXED_POINT -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_  -DINLINE="inline"
+cc -arch i386 -c -o mednafen/wswan/gfx.o mednafen/wswan/gfx.c  -DGIT_VERSION=\"" 2d4edfd"\" -DWANT_16BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -funroll-loops -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -I. -I./mednafen -I./mednafen/include -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include   -DSIZEOF_DOUBLE=8 -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=931 -DMPC_FIXED_POINT -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_  -DINLINE="inline"
+cc -arch i386 -c -o mednafen/wswan/wswan-memory.o mednafen/wswan/wswan-memory.c  -DGIT_VERSION=\"" 2d4edfd"\" -DWANT_16BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -funroll-loops -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -I. -I./mednafen -I./mednafen/include -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include   -DSIZEOF_DOUBLE=8 -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=931 -DMPC_FIXED_POINT -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_  -DINLINE="inline"
+cc -arch i386 -c -o mednafen/wswan/v30mz.o mednafen/wswan/v30mz.c  -DGIT_VERSION=\"" 2d4edfd"\" -DWANT_16BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -funroll-loops -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -I. -I./mednafen -I./mednafen/include -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include   -DSIZEOF_DOUBLE=8 -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=931 -DMPC_FIXED_POINT -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_  -DINLINE="inline"
+mednafen/wswan/v30mz.c:1239:40: warning: variable 'mult' set but not used [-Wunused-but-set-variable]
+         OP( 0xd4, i_aam    ) { uint32 mult=FETCH; mult=0; I.regs.b[AH] = I.regs.b[AL] / 10; I.regs.b[AL] %= 10; SetSZPF_Word(I.regs.w[AW]); CLK(17); } OP_EPILOGUE;
+                                       ^
+mednafen/wswan/v30mz.c:1240:40: warning: variable 'mult' set but not used [-Wunused-but-set-variable]
+         OP( 0xd5, i_aad    ) { uint32 mult=FETCH; mult=0; I.regs.b[AL] = I.regs.b[AH] * 10 + I.regs.b[AL]; I.regs.b[AH] = 0; SetSZPF_Byte(I.regs.b[AL]); CLK(6); } OP_EPILOGUE;
+                                       ^
+cc -arch i386 -c -o mednafen/wswan/eeprom.o mednafen/wswan/eeprom.c  -DGIT_VERSION=\"" 2d4edfd"\" -DWANT_16BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -funroll-loops -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -I. -I./mednafen -I./mednafen/include -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include   -DSIZEOF_DOUBLE=8 -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=931 -DMPC_FIXED_POINT -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_  -DINLINE="inline"
+cc -arch i386 -c -o mednafen/sound/Blip_Buffer.o mednafen/sound/Blip_Buffer.c  -DGIT_VERSION=\"" 2d4edfd"\" -DWANT_16BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -funroll-loops -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -I. -I./mednafen -I./mednafen/include -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include   -DSIZEOF_DOUBLE=8 -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=931 -DMPC_FIXED_POINT -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_  -DINLINE="inline"
+cc -arch i386 -c -o mednafen/state.o mednafen/state.c  -DGIT_VERSION=\"" 2d4edfd"\" -DWANT_16BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -funroll-loops -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -I. -I./mednafen -I./mednafen/include -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include   -DSIZEOF_DOUBLE=8 -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=931 -DMPC_FIXED_POINT -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_  -DINLINE="inline"
+cc -arch i386 -c -o mednafen/settings.o mednafen/settings.c  -DGIT_VERSION=\"" 2d4edfd"\" -DWANT_16BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -funroll-loops -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -I. -I./mednafen -I./mednafen/include -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include   -DSIZEOF_DOUBLE=8 -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=931 -DMPC_FIXED_POINT -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_  -DINLINE="inline"
+cc -arch i386 -c -o libretro.o libretro.c  -DGIT_VERSION=\"" 2d4edfd"\" -DWANT_16BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -funroll-loops -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -I. -I./mednafen -I./mednafen/include -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include   -DSIZEOF_DOUBLE=8 -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=931 -DMPC_FIXED_POINT -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_  -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/compat/compat_strl.o libretro-common/compat/compat_strl.c  -DGIT_VERSION=\"" 2d4edfd"\" -DWANT_16BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -funroll-loops -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -I. -I./mednafen -I./mednafen/include -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include   -DSIZEOF_DOUBLE=8 -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=931 -DMPC_FIXED_POINT -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_  -DINLINE="inline"
+cc -arch i386 -c -o libretro-common/compat/compat_snprintf.o libretro-common/compat/compat_snprintf.c  -DGIT_VERSION=\"" 2d4edfd"\" -DWANT_16BPP -DWANT_STEREO_SOUND -DFRONTEND_SUPPORTS_RGB565 -O2 -DNDEBUG -funroll-loops -fPIC -stdlib=libc++ -mmacosx-version-min=10.7   -I. -I./mednafen -I./mednafen/include -I./mednafen/hw_sound -I./mednafen/hw_cpu -I./mednafen/hw_misc -I./libretro-common/include   -DSIZEOF_DOUBLE=8 -Wall -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-uninitialized  -Wno-strict-aliasing -DMEDNAFEN_VERSION_NUMERIC=931 -DMPC_FIXED_POINT -DSTDC_HEADERS -D__STDC_LIMIT_MACROS -D__LIBRETRO__ -D_LOW_ACCURACY_  -DINLINE="inline"
+2 warnings generated.
+c++ -arch i386 -o mednafen_wswan_libretro.dylib mednafen/mempatcher.o mednafen/wswan/sound.o mednafen/wswan/interrupt.o mednafen/wswan/rtc.o mednafen/wswan/tcache.o mednafen/wswan/gfx.o mednafen/wswan/wswan-memory.o mednafen/wswan/v30mz.o mednafen/wswan/eeprom.o mednafen/sound/Blip_Buffer.o mednafen/state.o mednafen/settings.o libretro.o libretro-common/compat/compat_strl.o libretro-common/compat/compat_snprintf.o -fPIC -stdlib=libc++ -mmacosx-version-min=10.7  -dynamiclib 
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc++.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc++.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+Undefined symbols for architecture i386:
+  "__Unwind_Resume", referenced from:
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+  "std::__1::__vector_base_common<true>::__throw_length_error() const", referenced from:
+      std::__1::__vector_base<__SUBCHEAT, std::__1::allocator<__SUBCHEAT> >::__throw_length_error() const in mempatcher.o
+      std::__1::__vector_base<__CHEATF, std::__1::allocator<__CHEATF> >::__throw_length_error() const in mempatcher.o
+  "std::logic_error::logic_error(char const*)", referenced from:
+      std::length_error::length_error(char const*) in mempatcher.o
+  "std::length_error::~length_error()", referenced from:
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+  "typeinfo for std::length_error", referenced from:
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+  "vtable for std::length_error", referenced from:
+      std::length_error::length_error(char const*) in mempatcher.o
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+  "operator delete(void*)", referenced from:
+      std::__1::vector<__CHEATF, std::__1::allocator<__CHEATF> >::~vector() in mempatcher.o
+      RebuildSubCheats() in mempatcher.o
+      MDFNI_AddCheat(char const*, unsigned int, unsigned long long, unsigned long long, char, unsigned int, bool) in mempatcher.o
+      ___cxx_global_array_dtor in mempatcher.o
+  "operator new(unsigned long)", referenced from:
+      RebuildSubCheats() in mempatcher.o
+      MDFNI_AddCheat(char const*, unsigned int, unsigned long long, unsigned long long, char, unsigned int, bool) in mempatcher.o
+  "___bzero", referenced from:
+      _wsSetVideo in tcache.o
+      _wsScanline in gfx.o
+      _WSwan_GfxReset in gfx.o
+      _WSwan_MemoryInit in wswan-memory.o
+      _WSwan_MemoryReset in wswan-memory.o
+      _WSwan_EEPROMInit in eeprom.o
+      _Blip_Buffer_clear in Blip_Buffer.o
+      ...
+  "___cxa_allocate_exception", referenced from:
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+  "___cxa_atexit", referenced from:
+      __GLOBAL__sub_I_mempatcher.cpp in mempatcher.o
+  "___cxa_free_exception", referenced from:
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+  "___cxa_throw", referenced from:
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+  "___divdi3", referenced from:
+      _Blip_Buffer_set_sample_rate in Blip_Buffer.o
+  "___gxx_personality_v0", referenced from:
+      std::__1::__throw_length_error(char const*) in mempatcher.o
+      Dwarf Exception Unwind Info (__eh_frame) in mempatcher.o
+  "___memcpy_chk", referenced from:
+      _MDFNSS_StateAction in state.o
+  "___stack_chk_fail", referenced from:
+      _MDFNMP_ApplyPeriodicCheats in mempatcher.o
+      MDFNI_DecodePAR(char const*, unsigned int*, unsigned char*, unsigned char*, char*) in mempatcher.o
+      _WSwan_SoundStateAction in sound.o
+      _WSwan_InterruptStateAction in interrupt.o
+      _WSwan_RTCStateAction in rtc.o
+      _wsScanline in gfx.o
+      _WSwan_GfxStateAction in gfx.o
+      ...
+  "___stack_chk_guard", referenced from:
+      _MDFNMP_ApplyPeriodicCheats in mempatcher.o
+      MDFNI_DecodePAR(char const*, unsigned int*, unsigned char*, unsigned char*, char*) in mempatcher.o
+      _WSwan_SoundStateAction in sound.o
+      _WSwan_InterruptStateAction in interrupt.o
+      _WSwan_RTCStateAction in rtc.o
+      _wsScanline in gfx.o
+      _WSwan_GfxStateAction in gfx.o
+      ...
+      _MDFNMP_ApplyPeriodicCheats in mempatcher.o
+      MDFNI_DecodePAR(char const*, unsigned int*, unsigned char*, unsigned char*, char*) in mempatcher.o
+      _WSwan_SoundStateAction in sound.o
+      _WSwan_InterruptStateAction in interrupt.o
+      _WSwan_RTCStateAction in rtc.o
+      _wsScanline in gfx.o
+      _WSwan_GfxStateAction in gfx.o
+      ...
+      _MDFNMP_ApplyPeriodicCheats in mempatcher.o
+      MDFNI_DecodePAR(char const*, unsigned int*, unsigned char*, unsigned char*, char*) in mempatcher.o
+      _WSwan_SoundStateAction in sound.o
+      _WSwan_InterruptStateAction in interrupt.o
+      _WSwan_RTCStateAction in rtc.o
+      _wsScanline in gfx.o
+      _WSwan_GfxStateAction in gfx.o
+      ...
+      _MDFNMP_ApplyPeriodicCheats in mempatcher.o
+      MDFNI_DecodePAR(char const*, unsigned int*, unsigned char*, unsigned char*, char*) in mempatcher.o
+      _WSwan_SoundStateAction in sound.o
+      _WSwan_InterruptStateAction in interrupt.o
+      _WSwan_RTCStateAction in rtc.o
+      _wsScanline in gfx.o
+      _WSwan_GfxStateAction in gfx.o
+      ...
+      _MDFNMP_ApplyPeriodicCheats in mempatcher.o
+      MDFNI_DecodePAR(char const*, unsigned int*, unsigned char*, unsigned char*, char*) in mempatcher.o
+      _WSwan_SoundStateAction in sound.o
+      _WSwan_InterruptStateAction in interrupt.o
+      _WSwan_RTCStateAction in rtc.o
+      _wsScanline in gfx.o
+      _WSwan_GfxStateAction in gfx.o
+      ...
+      _MDFNMP_ApplyPeriodicCheats in mempatcher.o
+      MDFNI_DecodePAR(char const*, unsigned int*, unsigned char*, unsigned char*, char*) in mempatcher.o
+      _WSwan_SoundStateAction in sound.o
+      _WSwan_InterruptStateAction in interrupt.o
+      _WSwan_RTCStateAction in rtc.o
+      _wsScanline in gfx.o
+      _WSwan_GfxStateAction in gfx.o
+      ...
+      _MDFNMP_ApplyPeriodicCheats in mempatcher.o
+      MDFNI_DecodePAR(char const*, unsigned int*, unsigned char*, unsigned char*, char*) in mempatcher.o
+      _WSwan_SoundStateAction in sound.o
+      _WSwan_InterruptStateAction in interrupt.o
+      _WSwan_RTCStateAction in rtc.o
+      _wsScanline in gfx.o
+      _WSwan_GfxStateAction in gfx.o
+      ...
+      ...
+  "___toupper", referenced from:
+      _WSwan_EEPROMInit in eeprom.o
+  "_atoi", referenced from:
+      _check_variables in libretro.o
+  "_calloc", referenced from:
+      _MDFNMP_Init in mempatcher.o
+      _retro_load_game in libretro.o
+      _retro_set_environment in libretro.o
+  "_floor", referenced from:
+      _Blip_Buffer_set_sample_rate in Blip_Buffer.o
+      _Blip_Buffer_clock_rate_factor in Blip_Buffer.o
+  "_free", referenced from:
+      _MDFNMP_Kill in mempatcher.o
+      _MDFN_FlushGameCheats in mempatcher.o
+      MDFNI_DelCheat(unsigned int) in mempatcher.o
+      _WSwan_MemoryKill in wswan-memory.o
+      _Blip_Buffer_deinit in Blip_Buffer.o
+      _check_variables in libretro.o
+      _retro_load_game in libretro.o
+      ...
+  "_gmtime", referenced from:
+      _WSwan_RTCRead in rtc.o
+  "_localtime", referenced from:
+      _WSwan_RTCReset in rtc.o
+  "_malloc", referenced from:
+      _WSwan_MemoryInit in wswan-memory.o
+      _check_variables in libretro.o
+      _retro_load_game in libretro.o
+      _retro_60hz_cache_audio_samples in libretro.o
+      _retro_serialize in libretro.o
+      _strldup in compat_strl.o
+  "_memcpy", referenced from:
+      RebuildSubCheats() in mempatcher.o
+      MDFNI_AddCheat(char const*, unsigned int, unsigned long long, unsigned long long, char, unsigned int, bool) in mempatcher.o
+      _WSwan_SoundStateAction in sound.o
+      _wsExecuteLine in gfx.o
+      _WSwan_GfxStateAction in gfx.o
+      _WSwan_EEPROMInit in eeprom.o
+      _MDFNSS_StateAction in state.o
+      ...
+  "_memmove", referenced from:
+      MDFNI_DelCheat(unsigned int) in mempatcher.o
+      _Blip_Buffer_remove_samples in Blip_Buffer.o
+      _Blip_Buffer_read_samples in Blip_Buffer.o
+      _retro_run in libretro.o
+  "_memset", referenced from:
+      _wsScanline in gfx.o
+      _retro_load_game in libretro.o
+  "_memset_pattern16", referenced from:
+      _WSwan_SoundReset in sound.o
+  "_mktime$UNIX2003", referenced from:
+      _WSwan_RTCReset in rtc.o
+  "_realloc", referenced from:
+      MDFNI_SetCheat(unsigned int, char const*, unsigned int, unsigned long long, unsigned long long, int, char, unsigned int, bool) in mempatcher.o
+      _WSwan_SoundFlush in sound.o
+      _Blip_Buffer_set_sample_rate in Blip_Buffer.o
+      _MDFNSS_StateAction in state.o
+      _MDFNSS_SaveSM in state.o
+      _SubWrite in state.o
+  "_sscanf", referenced from:
+      _MDFNMP_ApplyPeriodicCheats in mempatcher.o
+      MDFNI_DecodePAR(char const*, unsigned int*, unsigned char*, unsigned char*, char*) in mempatcher.o
+  "_strcat", referenced from:
+      _retro_set_environment in libretro.o
+  "_strchr", referenced from:
+      _MDFNMP_ApplyPeriodicCheats in mempatcher.o
+  "_strcmp", referenced from:
+      _FindSF in state.o
+      _MDFN_GetSettingUI in settings.o
+      _MDFN_GetSettingB in settings.o
+      _MDFN_GetSettingS in settings.o
+      _check_variables in libretro.o
+      _retro_set_environment in libretro.o
+  "_strcpy", referenced from:
+      MDFNI_SetCheat(unsigned int, char const*, unsigned int, unsigned long long, unsigned long long, int, char, unsigned int, bool) in mempatcher.o
+      _retro_set_environment in libretro.o
+  "_strdup", referenced from:
+      MDFNI_AddCheat(char const*, unsigned int, unsigned long long, unsigned long long, char, unsigned int, bool) in mempatcher.o
+  "_strlcpy", referenced from:
+      _SubWrite in state.o
+      _strldup in compat_strl.o
+  "_strlen", referenced from:
+      MDFNI_DecodePAR(char const*, unsigned int*, unsigned char*, unsigned char*, char*) in mempatcher.o
+      MDFNI_SetCheat(unsigned int, char const*, unsigned int, unsigned long long, unsigned long long, int, char, unsigned int, bool) in mempatcher.o
+      _WSwan_EEPROMInit in eeprom.o
+      _MDFNSS_StateAction in state.o
+      _retro_set_environment in libretro.o
+  "_strncmp", referenced from:
+      _MDFNSS_StateAction in state.o
+  "_strtol", referenced from:
+      _check_variables in libretro.o
+  "_strtoull", referenced from:
+      _MDFNMP_ApplyPeriodicCheats in mempatcher.o
+  "_time", referenced from:
+      _WSwan_RTCReset in rtc.o
+     (maybe you meant: _v30mz_timestamp)
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile:615: mednafen_wswan_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mednafen_wswan'
+cp "mednafen_wswan_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/mednafen_wswan_libretro.dylib"
+cp: mednafen_wswan_libretro.dylib: No such file or directory

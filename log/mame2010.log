@@ -1,0 +1,509 @@
+Building mame2010...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mame2010"
+gmake platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mame2010'
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mame2010'
+gmake platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mame2010'
+mkdir -p obj/retro64
+mkdir -p obj/retro64/emu/audio
+mkdir -p obj/retro64/emu/cpu
+mkdir -p obj/retro64/emu/cpu/adsp2100
+mkdir -p obj/retro64/emu/cpu/alph8201
+mkdir -p obj/retro64/emu/cpu/am29000
+mkdir -p obj/retro64/emu/cpu/apexc
+mkdir -p obj/retro64/emu/cpu/arm
+mkdir -p obj/retro64/emu/cpu/arm7
+mkdir -p obj/retro64/emu/cpu/asap
+mkdir -p obj/retro64/emu/cpu/avr8
+mkdir -p obj/retro64/emu/cpu/ccpu
+mkdir -p obj/retro64/emu/cpu/cdp1802
+mkdir -p obj/retro64/emu/cpu/cop400
+mkdir -p obj/retro64/emu/cpu/cp1610
+mkdir -p obj/retro64/emu/cpu/cubeqcpu
+mkdir -p obj/retro64/emu/cpu/dsp32
+mkdir -p obj/retro64/emu/cpu/dsp56k
+mkdir -p obj/retro64/emu/cpu/e132xs
+mkdir -p obj/retro64/emu/cpu/esrip
+mkdir -p obj/retro64/emu/cpu/f8
+mkdir -p obj/retro64/emu/cpu/g65816
+mkdir -p obj/retro64/emu/cpu/h6280
+mkdir -p obj/retro64/emu/cpu/h83002
+mkdir -p obj/retro64/emu/cpu/hd6309
+mkdir -p obj/retro64/emu/cpu/i386
+mkdir -p obj/retro64/emu/cpu/i4004
+mkdir -p obj/retro64/emu/cpu/i8008
+mkdir -p obj/retro64/emu/cpu/i8085
+mkdir -p obj/retro64/emu/cpu/i86
+mkdir -p obj/retro64/emu/cpu/i860
+mkdir -p obj/retro64/emu/cpu/i960
+mkdir -p obj/retro64/emu/cpu/jaguar
+mkdir -p obj/retro64/emu/cpu/konami
+mkdir -p obj/retro64/emu/cpu/lh5801
+mkdir -p obj/retro64/emu/cpu/lr35902
+mkdir -p obj/retro64/emu/cpu/m37710
+mkdir -p obj/retro64/emu/cpu/m6502
+mkdir -p obj/retro64/emu/cpu/m6800
+mkdir -p obj/retro64/emu/cpu/m68000
+mkdir -p obj/retro64/emu/cpu/m6805
+mkdir -p obj/retro64/emu/cpu/m6809
+mkdir -p obj/retro64/emu/cpu/mb86233
+mkdir -p obj/retro64/emu/cpu/mb88xx
+mkdir -p obj/retro64/emu/cpu/mc68hc11
+mkdir -p obj/retro64/emu/cpu/mcs48
+mkdir -p obj/retro64/emu/cpu/mcs51
+mkdir -p obj/retro64/emu/cpu/minx
+mkdir -p obj/retro64/emu/cpu/mips
+mkdir -p obj/retro64/emu/cpu/mn10200
+mkdir -p obj/retro64/emu/cpu/nec
+mkdir -p obj/retro64/emu/cpu/pdp1
+mkdir -p obj/retro64/emu/cpu/pic16c5x
+mkdir -p obj/retro64/emu/cpu/pic16c62x
+mkdir -p obj/retro64/emu/cpu/powerpc
+mkdir -p obj/retro64/emu/cpu/rsp
+mkdir -p obj/retro64/emu/cpu/s2650
+mkdir -p obj/retro64/emu/cpu/saturn
+mkdir -p obj/retro64/emu/cpu/sc61860
+mkdir -p obj/retro64/emu/cpu/scmp
+mkdir -p obj/retro64/emu/cpu/se3208
+mkdir -p obj/retro64/emu/cpu/sh2
+mkdir -p obj/retro64/emu/cpu/sh4
+mkdir -p obj/retro64/emu/cpu/sharc
+mkdir -p obj/retro64/emu/cpu/sm8500
+mkdir -p obj/retro64/emu/cpu/spc700
+mkdir -p obj/retro64/emu/cpu/ssem
+mkdir -p obj/retro64/emu/cpu/ssp1601
+mkdir -p obj/retro64/emu/cpu/superfx
+mkdir -p obj/retro64/emu/cpu/t11
+mkdir -p obj/retro64/emu/cpu/tlcs90
+mkdir -p obj/retro64/emu/cpu/tlcs900
+mkdir -p obj/retro64/emu/cpu/tms0980
+mkdir -p obj/retro64/emu/cpu/tms32010
+mkdir -p obj/retro64/emu/cpu/tms32025
+mkdir -p obj/retro64/emu/cpu/tms32031
+mkdir -p obj/retro64/emu/cpu/tms32051
+mkdir -p obj/retro64/emu/cpu/tms34010
+mkdir -p obj/retro64/emu/cpu/tms57002
+mkdir -p obj/retro64/emu/cpu/tms7000
+mkdir -p obj/retro64/emu/cpu/tms9900
+mkdir -p obj/retro64/emu/cpu/upd7810
+mkdir -p obj/retro64/emu/cpu/v30mz
+mkdir -p obj/retro64/emu/cpu/v60
+mkdir -p obj/retro64/emu/cpu/v810
+mkdir -p obj/retro64/emu/cpu/z180
+mkdir -p obj/retro64/emu/cpu/z8
+mkdir -p obj/retro64/emu/cpu/z80
+mkdir -p obj/retro64/emu/cpu/z8000
+mkdir -p obj/retro64/emu/debug
+mkdir -p obj/retro64/emu/debugint
+mkdir -p obj/retro64/emu/drivers
+mkdir -p obj/retro64/emu/layout
+mkdir -p obj/retro64/emu/machine
+mkdir -p obj/retro64/emu/sound
+mkdir -p obj/retro64/emu/video
+mkdir -p obj/retro64/lib/expat
+mkdir -p obj/retro64/lib/softfloat
+mkdir -p obj/retro64/lib/util
+mkdir -p obj/retro64/lib/zlib
+mkdir -p obj/retro64/mame/audio
+mkdir -p obj/retro64/mame/drivers
+mkdir -p obj/retro64/mame/layout
+mkdir -p obj/retro64/mame/machine
+mkdir -p obj/retro64/mame/mame
+mkdir -p obj/retro64/mame/video
+mkdir -p obj/retro64/osd/retro
+mkdir -p obj/retro64/osd/retro/libretro-common
+mkdir -p obj/retro64/osd/retro/libretro-common/compat
+mkdir -p obj/retro64/osd/retro/libretro-common/file
+c++ -arch i386 -DCRLF=2 -DDISABLE_MIDI=1 -DINLINE="static inline" -DPTR64 -DNDEBUG  -DFLAC__NO_DLL -DNATIVE_DRC=drcbe_x64_be_interface -DDISABLE_MIDI -DGIT_VERSION=\"" 5f524dd"\" -D__LIBRETRO__ -fPIC -pipe -O3 -fno-strict-aliasing  -Wall -Wcast-align -Wundef -Wformat-security -Wwrite-strings -Wno-sign-compare -Wno-conversion -I./src/osd/retro/libretro-common/include -I./src/osd/retro/libretro-common/include/compat/zlib -I./src/mame -Iobj/retro64/mame/layout -I./src/emu -Iobj/retro64/emu -Iobj/retro64/emu/layout -I./src/lib/util -I./src/lib -I./src/osd -I./src/osd/retro -I./src/lib/expat -I./src/lib/util -I./src/lib/libjpeg -fno-delete-null-pointer-checks -x c++ -std=gnu++98 -Woverloaded-virtual -c src/mame/mamedriv.c -o obj/retro64/mame/mamedriv.o
+c++ -arch i386 -DCRLF=2 -DDISABLE_MIDI=1 -DINLINE="static inline" -DPTR64 -DNDEBUG  -DFLAC__NO_DLL -DNATIVE_DRC=drcbe_x64_be_interface -DDISABLE_MIDI -DGIT_VERSION=\"" 5f524dd"\" -D__LIBRETRO__ -fPIC -pipe -O3 -fno-strict-aliasing  -Wall -Wcast-align -Wundef -Wformat-security -Wwrite-strings -Wno-sign-compare -Wno-conversion -I./src/osd/retro/libretro-common/include -I./src/osd/retro/libretro-common/include/compat/zlib -I./src/mame -Iobj/retro64/mame/layout -I./src/emu -Iobj/retro64/emu -Iobj/retro64/emu/layout -I./src/lib/util -I./src/lib -I./src/osd -I./src/osd/retro -I./src/lib/expat -I./src/lib/util -I./src/lib/libjpeg -fno-delete-null-pointer-checks -x c++ -std=gnu++98 -Woverloaded-virtual -c src/mame/drivers/albazc.c -o obj/retro64/mame/drivers/albazc.o
+c++ -arch i386 -DCRLF=2 -DDISABLE_MIDI=1 -DINLINE="static inline" -DPTR64 -DNDEBUG  -DFLAC__NO_DLL -DNATIVE_DRC=drcbe_x64_be_interface -DDISABLE_MIDI -DGIT_VERSION=\"" 5f524dd"\" -D__LIBRETRO__ -fPIC -pipe -O3 -fno-strict-aliasing  -Wall -Wcast-align -Wundef -Wformat-security -Wwrite-strings -Wno-sign-compare -Wno-conversion -I./src/osd/retro/libretro-common/include -I./src/osd/retro/libretro-common/include/compat/zlib -I./src/mame -Iobj/retro64/mame/layout -I./src/emu -Iobj/retro64/emu -Iobj/retro64/emu/layout -I./src/lib/util -I./src/lib -I./src/osd -I./src/osd/retro -I./src/lib/expat -I./src/lib/util -I./src/lib/libjpeg -fno-delete-null-pointer-checks -x c++ -std=gnu++98 -Woverloaded-virtual -c src/mame/drivers/albazg.c -o obj/retro64/mame/drivers/albazg.o
+c++ -arch i386 -DCRLF=2 -DDISABLE_MIDI=1 -DINLINE="static inline" -DPTR64 -DNDEBUG  -DFLAC__NO_DLL -DNATIVE_DRC=drcbe_x64_be_interface -DDISABLE_MIDI -DGIT_VERSION=\"" 5f524dd"\" -D__LIBRETRO__ -fPIC -pipe -O3 -fno-strict-aliasing  -Wall -Wcast-align -Wundef -Wformat-security -Wwrite-strings -Wno-sign-compare -Wno-conversion -I./src/osd/retro/libretro-common/include -I./src/osd/retro/libretro-common/include/compat/zlib -I./src/mame -Iobj/retro64/mame/layout -I./src/emu -Iobj/retro64/emu -Iobj/retro64/emu/layout -I./src/lib/util -I./src/lib -I./src/osd -I./src/osd/retro -I./src/lib/expat -I./src/lib/util -I./src/lib/libjpeg -fno-delete-null-pointer-checks -x c++ -std=gnu++98 -Woverloaded-virtual -c src/mame/drivers/rmhaihai.c -o obj/retro64/mame/drivers/rmhaihai.o
+In file included from src/mame/drivers/albazc.c:13:
+In file included from ./src/emu/emu.h:53:
+In file included from ./src/emu/emucore.h:30:
+./src/emu/emualloc.h:205:1: warning: replacement function 'operator new' cannot be declared 'inline' [-Winline-new-delete]
+inline void *operator new(std::size_t size) throw (std::bad_alloc)
+^
+./src/emu/emualloc.h:213:1: warning: replacement function 'operator new[]' cannot be declared 'inline' [-Winline-new-delete]
+inline void *operator new[](std::size_t size) throw (std::bad_alloc)
+^
+./src/emu/emualloc.h:221:1: warning: replacement function 'operator delete' cannot be declared 'inline' [-Winline-new-delete]
+inline void operator delete(void *ptr)
+^
+./src/emu/emualloc.h:221:13: warning: 'operator delete' is missing exception specification 'throw()' [-Wmissing-exception-spec]
+inline void operator delete(void *ptr)
+            ^
+                                       throw()
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/new:182:36: note: previous declaration is here
+_LIBCPP_OVERRIDABLE_FUNC_VIS void  operator delete(void* __p) _NOEXCEPT;
+                                   ^
+In file included from src/mame/drivers/albazc.c:13:
+In file included from ./src/emu/emu.h:53:
+In file included from ./src/emu/emucore.h:30:
+./src/emu/emualloc.h:227:1: warning: replacement function 'operator delete[]' cannot be declared 'inline' [-Winline-new-delete]
+inline void operator delete[](void *ptr)
+^
+./src/emu/emualloc.h:227:13: warning: 'operator delete[]' is missing exception specification 'throw()' [-Wmissing-exception-spec]
+inline void operator delete[](void *ptr)
+            ^
+                                         throw()
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/new:190:36: note: previous declaration is here
+_LIBCPP_OVERRIDABLE_FUNC_VIS void  operator delete[](void* __p) _NOEXCEPT;
+                                   ^
+In file included from src/mame/mamedriv.c:18:
+In file included from ./src/emu/emu.h:53:
+In file included from ./src/emu/emucore.h:30:
+./src/emu/emualloc.h:205:1: warning: replacement function 'operator new' cannot be declared 'inline' [-Winline-new-delete]
+inline void *operator new(std::size_t size) throw (std::bad_alloc)
+^
+./src/emu/emualloc.h:213:1: warning: replacement function 'operator new[]' cannot be declared 'inline' [-Winline-new-delete]
+inline void *operator new[](std::size_t size) throw (std::bad_alloc)
+^
+./src/emu/emualloc.h:221:1: warning: replacement function 'operator delete' cannot be declared 'inline' [-Winline-new-delete]
+inline void operator delete(void *ptr)
+^
+./src/emu/emualloc.h:221:13: warning: 'operator delete' is missing exception specification 'throw()' [-Wmissing-exception-spec]
+inline void operator delete(void *ptr)
+            ^
+                                       throw()
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/new:182:36: note: previous declaration is here
+_LIBCPP_OVERRIDABLE_FUNC_VIS void  operator delete(void* __p) _NOEXCEPT;
+                                   ^
+In file included from src/mame/mamedriv.c:18:
+In file included from ./src/emu/emu.h:53:
+In file included from ./src/emu/emucore.h:30:
+./src/emu/emualloc.h:227:1: warning: replacement function 'operator delete[]' cannot be declared 'inline' [-Winline-new-delete]
+inline void operator delete[](void *ptr)
+^
+./src/emu/emualloc.h:227:13: warning: 'operator delete[]' is missing exception specification 'throw()' [-Wmissing-exception-spec]
+inline void operator delete[](void *ptr)
+            ^
+                                         throw()
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/new:190:36: note: previous declaration is here
+_LIBCPP_OVERRIDABLE_FUNC_VIS void  operator delete[](void* __p) _NOEXCEPT;
+                                   ^
+In file included from src/mame/drivers/albazc.c:13:
+In file included from ./src/emu/emu.h:53:
+./src/emu/emucore.h:284:3: warning: 'vsprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead. [-Wdeprecated-declarations]
+                vsprintf(text, format, ap);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:207:1: note: 'vsprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+In file included from src/mame/drivers/albazc.c:13:
+In file included from ./src/emu/emu.h:53:
+./src/emu/emucore.h:292:3: warning: 'vsprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead. [-Wdeprecated-declarations]
+                vsprintf(text, format, ap);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:207:1: note: 'vsprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+In file included from src/mame/drivers/albazc.c:13:
+In file included from ./src/emu/emu.h:53:
+./src/emu/emucore.h:299:3: warning: 'vsprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead. [-Wdeprecated-declarations]
+                vsprintf(text, format, ap);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:207:1: note: 'vsprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+In file included from src/mame/drivers/albazg.c:56:
+In file included from ./src/emu/emu.h:53:
+In file included from ./src/emu/emucore.h:30:
+./src/emu/emualloc.h:205:1: warning: replacement function 'operator new' cannot be declared 'inline' [-Winline-new-delete]
+inline void *operator new(std::size_t size) throw (std::bad_alloc)
+^
+./src/emu/emualloc.h:213:1: warning: replacement function 'operator new[]' cannot be declared 'inline' [-Winline-new-delete]
+inline void *operator new[](std::size_t size) throw (std::bad_alloc)
+^
+./src/emu/emualloc.h:221:1: warning: replacement function 'operator delete' cannot be declared 'inline' [-Winline-new-delete]
+inline void operator delete(void *ptr)
+^
+./src/emu/emualloc.h:221:13: warning: 'operator delete' is missing exception specification 'throw()' [-Wmissing-exception-spec]
+inline void operator delete(void *ptr)
+            ^
+                                       throw()
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/new:182:36: note: previous declaration is here
+_LIBCPP_OVERRIDABLE_FUNC_VIS void  operator delete(void* __p) _NOEXCEPT;
+                                   ^
+In file included from src/mame/drivers/albazg.c:56:
+In file included from ./src/emu/emu.h:53:
+In file included from ./src/emu/emucore.h:30:
+./src/emu/emualloc.h:227:1: warning: replacement function 'operator delete[]' cannot be declared 'inline' [-Winline-new-delete]
+inline void operator delete[](void *ptr)
+^
+./src/emu/emualloc.h:227:13: warning: 'operator delete[]' is missing exception specification 'throw()' [-Wmissing-exception-spec]
+inline void operator delete[](void *ptr)
+            ^
+                                         throw()
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/new:190:36: note: previous declaration is here
+_LIBCPP_OVERRIDABLE_FUNC_VIS void  operator delete[](void* __p) _NOEXCEPT;
+                                   ^
+In file included from src/mame/drivers/rmhaihai.c:31:
+In file included from ./src/emu/emu.h:53:
+In file included from ./src/emu/emucore.h:30:
+./src/emu/emualloc.h:205:1: warning: replacement function 'operator new' cannot be declared 'inline' [-Winline-new-delete]
+inline void *operator new(std::size_t size) throw (std::bad_alloc)
+^
+./src/emu/emualloc.h:213:1: warning: replacement function 'operator new[]' cannot be declared 'inline' [-Winline-new-delete]
+inline void *operator new[](std::size_t size) throw (std::bad_alloc)
+^
+./src/emu/emualloc.h:221:1: warning: replacement function 'operator delete' cannot be declared 'inline' [-Winline-new-delete]
+inline void operator delete(void *ptr)
+^
+./src/emu/emualloc.h:221:13: warning: 'operator delete' is missing exception specification 'throw()' [-Wmissing-exception-spec]
+inline void operator delete(void *ptr)
+            ^
+                                       throw()
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/new:182:36: note: previous declaration is here
+_LIBCPP_OVERRIDABLE_FUNC_VIS void  operator delete(void* __p) _NOEXCEPT;
+                                   ^
+In file included from src/mame/drivers/rmhaihai.c:31:
+In file included from ./src/emu/emu.h:53:
+In file included from ./src/emu/emucore.h:30:
+./src/emu/emualloc.h:227:1: warning: replacement function 'operator delete[]' cannot be declared 'inline' [-Winline-new-delete]
+inline void operator delete[](void *ptr)
+^
+./src/emu/emualloc.h:227:13: warning: 'operator delete[]' is missing exception specification 'throw()' [-Wmissing-exception-spec]
+inline void operator delete[](void *ptr)
+            ^
+                                         throw()
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/new:190:36: note: previous declaration is here
+_LIBCPP_OVERRIDABLE_FUNC_VIS void  operator delete[](void* __p) _NOEXCEPT;
+                                   ^
+In file included from src/mame/mamedriv.c:18:
+In file included from ./src/emu/emu.h:53:
+./src/emu/emucore.h:284:3: warning: 'vsprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead. [-Wdeprecated-declarations]
+                vsprintf(text, format, ap);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:207:1: note: 'vsprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+In file included from src/mame/mamedriv.c:18:
+In file included from ./src/emu/emu.h:53:
+./src/emu/emucore.h:292:3: warning: 'vsprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead. [-Wdeprecated-declarations]
+                vsprintf(text, format, ap);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:207:1: note: 'vsprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+In file included from src/mame/mamedriv.c:18:
+In file included from ./src/emu/emu.h:53:
+./src/emu/emucore.h:299:3: warning: 'vsprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead. [-Wdeprecated-declarations]
+                vsprintf(text, format, ap);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:207:1: note: 'vsprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+In file included from src/mame/drivers/albazg.c:56:
+In file included from ./src/emu/emu.h:53:
+./src/emu/emucore.h:284:3: warning: 'vsprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead. [-Wdeprecated-declarations]
+                vsprintf(text, format, ap);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:207:1: note: 'vsprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+In file included from src/mame/drivers/albazg.c:56:
+In file included from ./src/emu/emu.h:53:
+./src/emu/emucore.h:292:3: warning: 'vsprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead. [-Wdeprecated-declarations]
+                vsprintf(text, format, ap);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:207:1: note: 'vsprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+In file included from src/mame/drivers/albazg.c:56:
+In file included from ./src/emu/emu.h:53:
+./src/emu/emucore.h:299:3: warning: 'vsprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead. [-Wdeprecated-declarations]
+                vsprintf(text, format, ap);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:207:1: note: 'vsprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+In file included from src/mame/drivers/rmhaihai.c:31:
+In file included from ./src/emu/emu.h:53:
+./src/emu/emucore.h:284:3: warning: 'vsprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead. [-Wdeprecated-declarations]
+                vsprintf(text, format, ap);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:207:1: note: 'vsprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+In file included from src/mame/drivers/rmhaihai.c:31:
+In file included from ./src/emu/emu.h:53:
+./src/emu/emucore.h:292:3: warning: 'vsprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead. [-Wdeprecated-declarations]
+                vsprintf(text, format, ap);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:207:1: note: 'vsprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+In file included from src/mame/drivers/rmhaihai.c:31:
+In file included from ./src/emu/emu.h:53:
+./src/emu/emucore.h:299:3: warning: 'vsprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead. [-Wdeprecated-declarations]
+                vsprintf(text, format, ap);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:207:1: note: 'vsprintf' has been explicitly marked deprecated here
+__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead.")
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+                                                      ^
+In file included from src/mame/drivers/albazc.c:13:
+In file included from ./src/emu/emu.h:54:
+In file included from ./src/emu/eminline.h:20:
+./src/emu/eigccx86.h:47:5: error: unknown register name '%cc' in asm
+                : "%cc"                                         /* Clobbers condition codes */
+                  ^
+./src/emu/eigccx86.h:73:5: error: unknown register name '%cc' in asm
+                : "%cc"                                         /* Clobbers condition codes */
+                  ^
+In file included from src/mame/mamedriv.c:18:
+In file included from ./src/emu/emu.h:54:
+In file included from ./src/emu/eminline.h:20:
+./src/emu/eigccx86.h:47:5: error: unknown register name '%cc' in asm
+                : "%cc"                                         /* Clobbers condition codes */
+                  ^
+./src/emu/eigccx86.h:73:5: error: unknown register name '%cc' in asm
+                : "%cc"                                         /* Clobbers condition codes */
+                  ^
+In file included from src/mame/drivers/albazc.c:13:
+In file included from ./src/emu/emu.h:67:
+./src/emu/mmry.h:1230:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT16 *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+                return *(UINT16 *)&space->direct.decrypted[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1237:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Wcast-align]
+                return *(UINT32 *)&space->direct.decrypted[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1244:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT64 *' (aka 'unsigned long long *') increases required alignment from 1 to 4 [-Wcast-align]
+                return *(UINT64 *)&space->direct.decrypted[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1273:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT16 *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+                return *(UINT16 *)&space->direct.raw[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1280:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Wcast-align]
+                return *(UINT32 *)&space->direct.raw[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1287:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT64 *' (aka 'unsigned long long *') increases required alignment from 1 to 4 [-Wcast-align]
+                return *(UINT64 *)&space->direct.raw[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from src/mame/drivers/albazg.c:56:
+In file included from ./src/emu/emu.h:54:
+In file included from ./src/emu/eminline.h:20:
+./src/emu/eigccx86.h:47:5: error: unknown register name '%cc' in asm
+                : "%cc"                                         /* Clobbers condition codes */
+                  ^
+./src/emu/eigccx86.h:73:5: error: unknown register name '%cc' in asm
+                : "%cc"                                         /* Clobbers condition codes */
+                  ^
+In file included from src/mame/drivers/rmhaihai.c:31:
+In file included from ./src/emu/emu.h:54:
+In file included from ./src/emu/eminline.h:20:
+./src/emu/eigccx86.h:47:5: error: unknown register name '%cc' in asm
+                : "%cc"                                         /* Clobbers condition codes */
+                  ^
+./src/emu/eigccx86.h:73:5: error: unknown register name '%cc' in asm
+                : "%cc"                                         /* Clobbers condition codes */
+                  ^
+In file included from src/mame/mamedriv.c:18:
+In file included from ./src/emu/emu.h:67:
+./src/emu/mmry.h:1230:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT16 *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+                return *(UINT16 *)&space->direct.decrypted[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1237:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Wcast-align]
+                return *(UINT32 *)&space->direct.decrypted[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1244:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT64 *' (aka 'unsigned long long *') increases required alignment from 1 to 4 [-Wcast-align]
+                return *(UINT64 *)&space->direct.decrypted[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1273:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT16 *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+                return *(UINT16 *)&space->direct.raw[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1280:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Wcast-align]
+                return *(UINT32 *)&space->direct.raw[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1287:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT64 *' (aka 'unsigned long long *') increases required alignment from 1 to 4 [-Wcast-align]
+                return *(UINT64 *)&space->direct.raw[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from src/mame/drivers/albazg.c:56:
+In file included from ./src/emu/emu.h:67In file included from src/mame/drivers/rmhaihai.c:31:
+In file included from ./src/emu/emu.h:67:
+./src/emu/mmry.h:1230:11: :
+./src/emu/mmry.h:1230:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT16 *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+                return *(UINT16 *)&space->direct.decrypted[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1237:11:warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT16 *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+                return *(UINT16 *)&space->direct.decrypted[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1237:11:  warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Wcast-align]
+                return *(UINT32 *)&space->direct.decrypted[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Wcast-align]
+                return *(UINT32 *)&space->direct.decrypted[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1244:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT64 *' (aka 'unsigned long long *') increases required alignment from 1 to 4 [-Wcast-align]
+                return *(UINT64 *)&space->direct.decrypted[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1244:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT64 *' (aka 'unsigned long long *') increases required alignment from 1 to 4 [-Wcast-align]
+                return *(UINT64 *)&space->direct.decrypted[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1273:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT16 *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+                return *(UINT16 *)&space->direct.raw[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1280:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Wcast-align]
+                return *(UINT32 *)&space->direct.raw[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1287:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT64 *' (aka 'unsigned long long *') increases required alignment from 1 to 4 [-Wcast-align]
+./src/emu/mmry.h:1273:11                return *(UINT64 *)&space->direct.raw[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT16 *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+                return *(UINT16 *)&space->direct.raw[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1280:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Wcast-align]
+                return *(UINT32 *)&space->direct.raw[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/emu/mmry.h:1287:11: warning: cast from 'UINT8 *' (aka 'unsigned char *') to 'UINT64 *' (aka 'unsigned long long *') increases required alignment from 1 to 4 [-Wcast-align]
+                return *(UINT64 *)&space->direct.raw[byteaddress & space->direct.bytemask];
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+15 warnings and 2 errors generated.
+gmake[1]: *** [Makefile:885: obj/retro64/mame/drivers/albazc.o] Error 1
+gmake[1]: *** Waiting for unfinished jobs....
+15 warnings and 2 errors generated.
+gmake[1]: *** [Makefile:885: obj/retro64/mame/drivers/albazg.o] Error 1
+15 warnings and 2 errors generated.
+gmake[1]: *** [Makefile:885: obj/retro64/mame/drivers/rmhaihai.o] Error 1
+15 warnings and 2 errors generated.
+gmake[1]: *** [Makefile:885: obj/retro64/mame/mamedriv.o] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-mame2010'
+cp "mame2010_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/mame2010_libretro.dylib"
+cp: mame2010_libretro.dylib: No such file or directory

@@ -1,0 +1,352 @@
+Building quicknes...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-quicknes"
+gmake -f Makefile platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-quicknes'
+rm -f ./libretro/libretro.o ./nes_emu/abstract_file.o ./nes_emu/apu_state.o ./nes_emu/Blip_Buffer.o ./nes_emu/Effects_Buffer.o ./nes_emu/Mapper_Fme7.o ./nes_emu/Mapper_Mmc5.o ./nes_emu/Mapper_Namco106.o ./nes_emu/Mapper_Vrc6.o ./nes_emu/misc_mappers.o ./nes_emu/Mapper_15.o ./nes_emu/Mapper_60.o ./nes_emu/Multi_Buffer.o ./nes_emu/Nes_Apu.o ./nes_emu/Nes_Buffer.o ./nes_emu/Nes_Cart.o ./nes_emu/Nes_Core.o ./nes_emu/Nes_Cpu.o ./nes_emu/nes_data.o ./nes_emu/Nes_Effects_Buffer.o ./nes_emu/Nes_Emu.o ./nes_emu/Nes_File.o ./nes_emu/Nes_Fme7_Apu.o ./nes_emu/Nes_Mapper.o ./nes_emu/nes_mappers.o ./nes_emu/Nes_Mmc1.o ./nes_emu/Nes_Mmc3.o ./nes_emu/Mapper_Misc.o ./nes_emu/Mapper_Unrom512.o ./nes_emu/Mapper_Vrc1.o ./nes_emu/Mapper_Vrc3.o ./nes_emu/Mapper_Vrc2_4.o ./nes_emu/Mapper_Vrc7.o ./nes_emu/Nes_Vrc7.o ./nes_emu/emu2413.o ./nes_emu/emu2413_state.o ./nes_emu/Nes_Namco_Apu.o ./nes_emu/Mmc24.o ./nes_emu/Nes_Oscs.o ./nes_emu/Nes_Ppu.o ./nes_emu/Nes_Ppu_Impl.o ./nes_emu/Nes_Ppu_Rendering.o ./nes_emu/Nes_State.o ./nes_emu/nes_util.o ./nes_emu/Nes_Vrc6_Apu.o ./nes_emu/Data_Reader.o ./nes_emu/Mappers.o ./nes_emu/Mapper_74x161x162x32.o ./nes_emu/Mapper_180.o ./nes_emu/Mapper_193.o ./nes_emu/Mapper_240.o ./nes_emu/Mapper_241.o ./nes_emu/Mapper_244.o ./nes_emu/Mapper_246.o ./nes_emu/Mapper_AveNina.o ./nes_emu/Mapper_IremG101.o ./nes_emu/Mapper_IremTamS1.o ./nes_emu/Mapper_JalecoJF11.o ./nes_emu/Mapper_Namco54xx.o ./nes_emu/Mapper_Sunsoft1.o ./nes_emu/Mapper_Sunsoft2.o ./nes_emu/Mapper_TaitoX1005.o ./nes_emu/Mapper_TaitoTC0190.o ./nes_emu/Mapper_Un1rom.o ./nes_emu/nes_ntsc.o
+rm -f quicknes_libretro.dylib
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-quicknes'
+gmake -f Makefile platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-quicknes'
+c++ -arch i386 -c -olibretro/libretro.o libretro/libretro.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/abstract_file.o nes_emu/abstract_file.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/apu_state.o nes_emu/apu_state.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Blip_Buffer.o nes_emu/Blip_Buffer.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Effects_Buffer.o nes_emu/Effects_Buffer.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_Fme7.o nes_emu/Mapper_Fme7.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_Mmc5.o nes_emu/Mapper_Mmc5.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_Namco106.o nes_emu/Mapper_Namco106.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_Vrc6.o nes_emu/Mapper_Vrc6.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/misc_mappers.o nes_emu/misc_mappers.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_15.o nes_emu/Mapper_15.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_60.o nes_emu/Mapper_60.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Multi_Buffer.o nes_emu/Multi_Buffer.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_Apu.o nes_emu/Nes_Apu.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_Buffer.o nes_emu/Nes_Buffer.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_Cart.o nes_emu/Nes_Cart.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_Core.o nes_emu/Nes_Core.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_Cpu.o nes_emu/Nes_Cpu.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/nes_data.o nes_emu/nes_data.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+nes_emu/Nes_Core.cpp:31:16: warning: unused variable 'low_ram_end' [-Wunused-const-variable]
+unsigned const low_ram_end  = 0x2000;
+               ^
+c++ -arch i386 -c -ones_emu/Nes_Effects_Buffer.o nes_emu/Nes_Effects_Buffer.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_Emu.o nes_emu/Nes_Emu.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_File.o nes_emu/Nes_File.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+1 warning generated.
+c++ -arch i386 -c -ones_emu/Nes_Fme7_Apu.o nes_emu/Nes_Fme7_Apu.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_Mapper.o nes_emu/Nes_Mapper.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/nes_mappers.o nes_emu/nes_mappers.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_Mmc1.o nes_emu/Nes_Mmc1.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_Mmc3.o nes_emu/Nes_Mmc3.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_Misc.o nes_emu/Mapper_Misc.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_Unrom512.o nes_emu/Mapper_Unrom512.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_Vrc1.o nes_emu/Mapper_Vrc1.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_Vrc3.o nes_emu/Mapper_Vrc3.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_Vrc2_4.o nes_emu/Mapper_Vrc2_4.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_Vrc7.o nes_emu/Mapper_Vrc7.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_Vrc7.o nes_emu/Nes_Vrc7.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/emu2413.o nes_emu/emu2413.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/emu2413_state.o nes_emu/emu2413_state.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_Namco_Apu.o nes_emu/Nes_Namco_Apu.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mmc24.o nes_emu/Mmc24.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_Oscs.o nes_emu/Nes_Oscs.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_Ppu.o nes_emu/Nes_Ppu.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_Ppu_Impl.o nes_emu/Nes_Ppu_Impl.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_Ppu_Rendering.o nes_emu/Nes_Ppu_Rendering.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_State.o nes_emu/Nes_State.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/nes_util.o nes_emu/nes_util.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Nes_Vrc6_Apu.o nes_emu/Nes_Vrc6_Apu.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Data_Reader.o nes_emu/Data_Reader.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mappers.o nes_emu/Mappers.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_74x161x162x32.o nes_emu/Mapper_74x161x162x32.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_180.o nes_emu/Mapper_180.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_193.o nes_emu/Mapper_193.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_240.o nes_emu/Mapper_240.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_241.o nes_emu/Mapper_241.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_244.o nes_emu/Mapper_244.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_246.o nes_emu/Mapper_246.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_AveNina.o nes_emu/Mapper_AveNina.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_IremG101.o nes_emu/Mapper_IremG101.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_IremTamS1.o nes_emu/Mapper_IremTamS1.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_JalecoJF11.o nes_emu/Mapper_JalecoJF11.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_Namco54xx.o nes_emu/Mapper_Namco54xx.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_Sunsoft1.o nes_emu/Mapper_Sunsoft1.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_Sunsoft2.o nes_emu/Mapper_Sunsoft2.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_TaitoX1005.o nes_emu/Mapper_TaitoX1005.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_TaitoTC0190.o nes_emu/Mapper_TaitoTC0190.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/Mapper_Un1rom.o nes_emu/Mapper_Un1rom.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -c -ones_emu/nes_ntsc.o nes_emu/nes_ntsc.cpp -DGIT_VERSION=\"" 75d501a"\" -O2 -DNDEBUG -fPIC -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro -I./libretro/libretro-common/include
+c++ -arch i386 -o quicknes_libretro.dylib -dynamiclib ./libretro/libretro.o ./nes_emu/abstract_file.o ./nes_emu/apu_state.o ./nes_emu/Blip_Buffer.o ./nes_emu/Effects_Buffer.o ./nes_emu/Mapper_Fme7.o ./nes_emu/Mapper_Mmc5.o ./nes_emu/Mapper_Namco106.o ./nes_emu/Mapper_Vrc6.o ./nes_emu/misc_mappers.o ./nes_emu/Mapper_15.o ./nes_emu/Mapper_60.o ./nes_emu/Multi_Buffer.o ./nes_emu/Nes_Apu.o ./nes_emu/Nes_Buffer.o ./nes_emu/Nes_Cart.o ./nes_emu/Nes_Core.o ./nes_emu/Nes_Cpu.o ./nes_emu/nes_data.o ./nes_emu/Nes_Effects_Buffer.o ./nes_emu/Nes_Emu.o ./nes_emu/Nes_File.o ./nes_emu/Nes_Fme7_Apu.o ./nes_emu/Nes_Mapper.o ./nes_emu/nes_mappers.o ./nes_emu/Nes_Mmc1.o ./nes_emu/Nes_Mmc3.o ./nes_emu/Mapper_Misc.o ./nes_emu/Mapper_Unrom512.o ./nes_emu/Mapper_Vrc1.o ./nes_emu/Mapper_Vrc3.o ./nes_emu/Mapper_Vrc2_4.o ./nes_emu/Mapper_Vrc7.o ./nes_emu/Nes_Vrc7.o ./nes_emu/emu2413.o ./nes_emu/emu2413_state.o ./nes_emu/Nes_Namco_Apu.o ./nes_emu/Mmc24.o ./nes_emu/Nes_Oscs.o ./nes_emu/Nes_Ppu.o ./nes_emu/Nes_Ppu_Impl.o ./nes_emu/Nes_Ppu_Rendering.o ./nes_emu/Nes_State.o ./nes_emu/nes_util.o ./nes_emu/Nes_Vrc6_Apu.o ./nes_emu/Data_Reader.o ./nes_emu/Mappers.o ./nes_emu/Mapper_74x161x162x32.o ./nes_emu/Mapper_180.o ./nes_emu/Mapper_193.o ./nes_emu/Mapper_240.o ./nes_emu/Mapper_241.o ./nes_emu/Mapper_244.o ./nes_emu/Mapper_246.o ./nes_emu/Mapper_AveNina.o ./nes_emu/Mapper_IremG101.o ./nes_emu/Mapper_IremTamS1.o ./nes_emu/Mapper_JalecoJF11.o ./nes_emu/Mapper_Namco54xx.o ./nes_emu/Mapper_Sunsoft1.o ./nes_emu/Mapper_Sunsoft2.o ./nes_emu/Mapper_TaitoX1005.o ./nes_emu/Mapper_TaitoTC0190.o ./nes_emu/Mapper_Un1rom.o ./nes_emu/nes_ntsc.o  
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc++.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc++.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+Undefined symbols for architecture i386:
+  "__Unwind_Resume", referenced from:
+      _retro_load_game in libretro.o
+      _retro_serialize_size in libretro.o
+      _retro_serialize in libretro.o
+      _retro_unserialize in libretro.o
+      Effects_Buffer::Effects_Buffer(bool) in Effects_Buffer.o
+      Effects_Buffer::~Effects_Buffer() in Effects_Buffer.o
+      register_mapper<Mapper_Fme7>::create() in Mapper_Fme7.o
+      ...
+  "std::terminate()", referenced from:
+      ___clang_call_terminate in libretro.o
+      ___clang_call_terminate in Effects_Buffer.o
+      ___clang_call_terminate in Mapper_Fme7.o
+      ___clang_call_terminate in Mapper_Namco106.o
+      ___clang_call_terminate in Mapper_Vrc6.o
+      ___clang_call_terminate in Multi_Buffer.o
+      ___clang_call_terminate in Nes_Buffer.o
+      ...
+  "vtable for __cxxabiv1::__class_type_info", referenced from:
+      typeinfo for Data_Writer in abstract_file.o
+      typeinfo for fme7_state_t in Mapper_Fme7.o
+      typeinfo for mmc5_state_t in Mapper_Mmc5.o
+      typeinfo for namco106_state_t in Mapper_Namco106.o
+      typeinfo for vrc6_state_t in Mapper_Vrc6.o
+      typeinfo for mapper_15_state_t in Mapper_15.o
+      typeinfo for Multi_Buffer in Multi_Buffer.o
+      ...
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+  "vtable for __cxxabiv1::__si_class_type_info", referenced from:
+      typeinfo for Mem_Writer in abstract_file.o
+      typeinfo for Effects_Buffer in Effects_Buffer.o
+      typeinfo for Mapper_Color_Dreams in misc_mappers.o
+      typeinfo for Mapper_Nina1 in misc_mappers.o
+      typeinfo for Mapper_Gnrom in misc_mappers.o
+      typeinfo for Mapper_Camerica in misc_mappers.o
+      typeinfo for Mapper_87 in misc_mappers.o
+      ...
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+  "vtable for __cxxabiv1::__vmi_class_type_info", referenced from:
+      typeinfo for Mapper_Fme7 in Mapper_Fme7.o
+      typeinfo for Mapper_Mmc5 in Mapper_Mmc5.o
+      typeinfo for Mapper_Namco106 in Mapper_Namco106.o
+      typeinfo for Mapper_Vrc6 in Mapper_Vrc6.o
+      typeinfo for Mapper_15 in Mapper_15.o
+      typeinfo for Mapper_Mmc1 in Nes_Mmc1.o
+      typeinfo for Mapper_Mmc3 in Nes_Mmc3.o
+      ...
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+  "operator delete[](void*)", referenced from:
+      Effects_Buffer::~Effects_Buffer() in Effects_Buffer.o
+      Nes_Ppu_Impl::~Nes_Ppu_Impl() in Nes_Ppu_Impl.o
+      Nes_Ppu_Impl::close_chr() in Nes_Ppu_Impl.o
+      Nes_Ppu_Impl::~Nes_Ppu_Impl() in Nes_Ppu_Impl.o
+      Nes_Ppu_Impl::open_chr(unsigned char const*, long) in Nes_Ppu_Impl.o
+  "operator delete(void*)", referenced from:
+      _retro_load_game in libretro.o
+      Mem_Writer::~Mem_Writer() in abstract_file.o
+      register_mapper<Mapper_Fme7>::create() in Mapper_Fme7.o
+      Mapper_Fme7::~Mapper_Fme7() in Mapper_Fme7.o
+      Mapper_Mmc5::~Mapper_Mmc5() in Mapper_Mmc5.o
+      register_mapper<Mapper_Mmc5>::create() in Mapper_Mmc5.o
+      Mapper_Namco106::~Mapper_Namco106() in Mapper_Namco106.o
+      ...
+  "operator new[](unsigned long)", referenced from:
+      Effects_Buffer::set_sample_rate(long, int) in Effects_Buffer.o
+      Nes_Ppu_Impl::open_chr(unsigned char const*, long) in Nes_Ppu_Impl.o
+  "operator new(unsigned long)", referenced from:
+      _retro_load_game in libretro.o
+      register_mapper<Mapper_Fme7>::create() in Mapper_Fme7.o
+      register_mapper<Mapper_Mmc5>::create() in Mapper_Mmc5.o
+      register_mapper<Mapper_Namco106>::create() in Mapper_Namco106.o
+      make_vrc6a() in Mapper_Vrc6.o
+      make_vrc6b() in Mapper_Vrc6.o
+      register_mapper<Mapper_Color_Dreams>::create() in misc_mappers.o
+      ...
+  "___bzero", referenced from:
+      Blip_Buffer::clear(int) in Blip_Buffer.o
+      Blip_Buffer::set_sample_rate(long, int) in Blip_Buffer.o
+      Blip_Buffer::remove_samples(long) in Blip_Buffer.o
+      Blip_Buffer::read_samples(short*, long, int) in Blip_Buffer.o
+      Effects_Buffer::clear() in Effects_Buffer.o
+      Effects_Buffer::config(Effects_Buffer::config_t const&) in Effects_Buffer.o
+      Nes_Emu::Nes_Emu() in Nes_Emu.o
+      ...
+  "___cxa_atexit", referenced from:
+      __GLOBAL__sub_I_libretro.cpp in libretro.o
+  "___cxa_begin_catch", referenced from:
+      ___clang_call_terminate in libretro.o
+      ___clang_call_terminate in Effects_Buffer.o
+      ___clang_call_terminate in Mapper_Fme7.o
+      ___clang_call_terminate in Mapper_Namco106.o
+      ___clang_call_terminate in Mapper_Vrc6.o
+      ___clang_call_terminate in Multi_Buffer.o
+      ___clang_call_terminate in Nes_Buffer.o
+      ...
+  "___cxa_pure_virtual", referenced from:
+      vtable for Effects_Buffer in Effects_Buffer.o
+      vtable for Multi_Buffer in Multi_Buffer.o
+      vtable for Nes_Mapper in Nes_Mapper.o
+  "___exp10", referenced from:
+      blip_eq_t::generate(float*, int) const in Blip_Buffer.o
+  "___exp10f", referenced from:
+      _OPLL_new in emu2413.o
+  "___gxx_personality_v0", referenced from:
+      _retro_load_game in libretro.o
+      _retro_serialize_size in libretro.o
+      _retro_serialize in libretro.o
+      _retro_unserialize in libretro.o
+      Dwarf Exception Unwind Info (__eh_frame) in libretro.o
+      Dwarf Exception Unwind Info (__eh_frame) in Effects_Buffer.o
+      Dwarf Exception Unwind Info (__eh_frame) in Mapper_Fme7.o
+      Dwarf Exception Unwind Info (__eh_frame) in Mapper_Mmc5.o
+      Dwarf Exception Unwind Info (__eh_frame) in Mapper_Namco106.o
+      Dwarf Exception Unwind Info (__eh_frame) in Mapper_Vrc6.o
+      Dwarf Exception Unwind Info (__eh_frame) in misc_mappers.o
+      ...
+      Effects_Buffer::Effects_Buffer(bool) in Effects_Buffer.o
+      Effects_Buffer::~Effects_Buffer() in Effects_Buffer.o
+      ...
+  "___stack_chk_fail", referenced from:
+      _retro_run in libretro.o
+      _retro_load_game in libretro.o
+      Blip_Synth_::treble_eq(blip_eq_t const&) in Blip_Buffer.o
+      Nes_Cart::load_ines(Auto_File_Reader) in Nes_Cart.o
+      Nes_Ppu_Impl::recalc_sprite_max(int) in Nes_Ppu_Impl.o
+      Nes_Ppu_Rendering::check_sprite_hit(int, int) in Nes_Ppu_Rendering.o
+      Nes_State_::write_blocks(Nes_File_Writer&) const in Nes_State.o
+      ...
+  "___stack_chk_guard", referenced from:
+      _retro_run in libretro.o
+      _retro_load_game in libretro.o
+      Blip_Synth_::treble_eq(blip_eq_t const&) in Blip_Buffer.o
+      Nes_Cart::load_ines(Auto_File_Reader) in Nes_Cart.o
+      Nes_Ppu_Impl::recalc_sprite_max(int) in Nes_Ppu_Impl.o
+      Nes_Ppu_Rendering::check_sprite_hit(int, int) in Nes_Ppu_Rendering.o
+      Nes_State_::write_blocks(Nes_File_Writer&) const in Nes_State.o
+      ...
+      _retro_run in libretro.o
+      _retro_load_game in libretro.o
+      Blip_Synth_::treble_eq(blip_eq_t const&) in Blip_Buffer.o
+      Nes_Cart::load_ines(Auto_File_Reader) in Nes_Cart.o
+      Nes_Ppu_Impl::recalc_sprite_max(int) in Nes_Ppu_Impl.o
+      Nes_Ppu_Rendering::check_sprite_hit(int, int) in Nes_Ppu_Rendering.o
+      Nes_State_::write_blocks(Nes_File_Writer&) const in Nes_State.o
+      ...
+      _retro_run in libretro.o
+      _retro_load_game in libretro.o
+      Blip_Synth_::treble_eq(blip_eq_t const&) in Blip_Buffer.o
+      Nes_Cart::load_ines(Auto_File_Reader) in Nes_Cart.o
+      Nes_Ppu_Impl::recalc_sprite_max(int) in Nes_Ppu_Impl.o
+      Nes_Ppu_Rendering::check_sprite_hit(int, int) in Nes_Ppu_Rendering.o
+      Nes_State_::write_blocks(Nes_File_Writer&) const in Nes_State.o
+      ...
+      _retro_run in libretro.o
+      _retro_load_game in libretro.o
+      Blip_Synth_::treble_eq(blip_eq_t const&) in Blip_Buffer.o
+      Nes_Cart::load_ines(Auto_File_Reader) in Nes_Cart.o
+      Nes_Ppu_Impl::recalc_sprite_max(int) in Nes_Ppu_Impl.o
+      Nes_Ppu_Rendering::check_sprite_hit(int, int) in Nes_Ppu_Rendering.o
+      Nes_State_::write_blocks(Nes_File_Writer&) const in Nes_State.o
+      ...
+      _retro_run in libretro.o
+      _retro_load_game in libretro.o
+      Blip_Synth_::treble_eq(blip_eq_t const&) in Blip_Buffer.o
+      Nes_Cart::load_ines(Auto_File_Reader) in Nes_Cart.o
+      Nes_Ppu_Impl::recalc_sprite_max(int) in Nes_Ppu_Impl.o
+      Nes_Ppu_Rendering::check_sprite_hit(int, int) in Nes_Ppu_Rendering.o
+      Nes_State_::write_blocks(Nes_File_Writer&) const in Nes_State.o
+      ...
+      _retro_run in libretro.o
+      _retro_load_game in libretro.o
+      Blip_Synth_::treble_eq(blip_eq_t const&) in Blip_Buffer.o
+      Nes_Cart::load_ines(Auto_File_Reader) in Nes_Cart.o
+      Nes_Ppu_Impl::recalc_sprite_max(int) in Nes_Ppu_Impl.o
+      Nes_Ppu_Rendering::check_sprite_hit(int, int) in Nes_Ppu_Rendering.o
+      Nes_State_::write_blocks(Nes_File_Writer&) const in Nes_State.o
+      ...
+      _retro_run in libretro.o
+      _retro_load_game in libretro.o
+      Blip_Synth_::treble_eq(blip_eq_t const&) in Blip_Buffer.o
+      Nes_Cart::load_ines(Auto_File_Reader) in Nes_Cart.o
+      Nes_Ppu_Impl::recalc_sprite_max(int) in Nes_Ppu_Impl.o
+      Nes_Ppu_Rendering::check_sprite_hit(int, int) in Nes_Ppu_Rendering.o
+      Nes_State_::write_blocks(Nes_File_Writer&) const in Nes_State.o
+      ...
+      ...
+  "___toupper", referenced from:
+      game_genie_patch_t::decode(char const*) in nes_util.o
+  "_atoi", referenced from:
+      check_variables() in libretro.o
+  "_calloc", referenced from:
+      _retro_set_environment in libretro.o
+      _OPLL_new in emu2413.o
+  "_cos", referenced from:
+      blip_eq_t::generate(float*, int) const in Blip_Buffer.o
+  "_cosf", referenced from:
+      _nes_ntsc_init in nes_ntsc.o
+  "_exp2f", referenced from:
+      _OPLL_new in emu2413.o
+  "_expf", referenced from:
+      _nes_ntsc_init in nes_ntsc.o
+  "_free", referenced from:
+      _retro_set_environment in libretro.o
+      Mem_Writer::~Mem_Writer() in abstract_file.o
+      Mem_Writer::~Mem_Writer() in abstract_file.o
+      Mem_Writer::~Mem_Writer() in abstract_file.o
+      Blip_Buffer::~Blip_Buffer() in Blip_Buffer.o
+      Blip_Buffer::~Blip_Buffer() in Blip_Buffer.o
+      Nes_Cart::clear() in Nes_Cart.o
+      ...
+  "_log", referenced from:
+      _OPLL_new in emu2413.o
+  "_log10", referenced from:
+      _OPLL_new in emu2413.o
+  "_memchr", referenced from:
+      game_genie_patch_t::decode(char const*) in nes_util.o
+  "_memcmp", referenced from:
+      Mapper_Vrc6::read_state(mapper_state_t const&) in Mapper_Vrc6.o
+  "_memcpy", referenced from:
+      _retro_load_game in libretro.o
+      Mem_Writer::write(void const*, long) in abstract_file.o
+      Nes_Core::save_state(Nes_State_*) const in Nes_Core.o
+      Nes_Core::load_state(Nes_State_ const&) in Nes_Core.o
+      Nes_Emu::write_chr(void const*, long, long) in Nes_Emu.o
+      mapper_state_t::write(void const*, unsigned long) in Nes_Mapper.o
+      mapper_state_t::read(void*, unsigned long) const in Nes_Mapper.o
+      ...
+  "_memmove", referenced from:
+      Blip_Buffer::remove_samples(long) in Blip_Buffer.o
+      Blip_Buffer::read_samples(short*, long, int) in Blip_Buffer.o
+  "_memset", referenced from:
+      Nes_Core::open(Nes_Cart const*) in Nes_Core.o
+      Nes_Core::reset(bool, bool) in Nes_Core.o
+      Nes_Core::load_state(Nes_State_ const&) in Nes_Core.o
+      Nes_Core::enable_sram(bool, bool) in Nes_Core.o
+      Nes_Ppu_Impl::reset(bool) in Nes_Ppu_Impl.o
+      Nes_Ppu_Impl::recalc_sprite_max(int) in Nes_Ppu_Impl.o
+  "_pow", referenced from:
+      blip_eq_t::generate(float*, int) const in Blip_Buffer.o
+  "_powf", referenced from:
+      _nes_ntsc_init in nes_ntsc.o
+  "_realloc", referenced from:
+      Mem_Writer::write(void const*, long) in abstract_file.o
+      Blip_Buffer::set_sample_rate(long, int) in Blip_Buffer.o
+      Nes_Cart::resize_prg(long) in Nes_Cart.o
+      Nes_Cart::resize_chr(long) in Nes_Cart.o
+      Nes_Cart::load_ines(Auto_File_Reader) in Nes_Cart.o
+  "_sin", referenced from:
+      _OPLL_new in emu2413.o
+  "_sinf", referenced from:
+      _nes_ntsc_init in nes_ntsc.o
+  "_strcat", referenced from:
+      _retro_set_environment in libretro.o
+  "_strcmp", referenced from:
+      _retro_init in libretro.o
+      _retro_set_environment in libretro.o
+      check_variables() in libretro.o
+      update_audio_mode() in libretro.o
+  "_strcpy", referenced from:
+      _retro_set_environment in libretro.o
+  "_strlen", referenced from:
+      _retro_set_environment in libretro.o
+      game_genie_patch_t::decode(char const*) in nes_util.o
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile:690: quicknes_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-quicknes'
+cp "quicknes_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/quicknes_libretro.dylib"
+cp: quicknes_libretro.dylib: No such file or directory

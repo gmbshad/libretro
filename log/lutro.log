@@ -1,0 +1,1053 @@
+Building lutro...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-lutro"
+gmake -f Makefile platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-lutro'
+make -C deps/lua/src clean
+rm -f liblua.a lua luac lapi.o lcode.o ldebug.o ldo.o ldump.o lfunc.o lgc.o llex.o lmem.o lobject.o lopcodes.o lparser.o lstate.o lstring.o ltable.o ltm.o lundump.o lvm.o lzio.o lauxlib.o lbaselib.o ldblib.o liolib.o lmathlib.o loslib.o ltablib.o lstrlib.o loadlib.o linit.o lua.o luac.o print.o
+rm -f obj//./libretro.o obj//./lutro.o obj//./runtime.o obj//./image.o obj//./graphics.o obj//./input.o obj//./audio.o obj//./decoder.o obj//./event.o obj//./keyboard.o obj//./sound.o obj//./filesystem.o obj//./system.o obj//./timer.o obj//./lutro_math.o obj//./joystick.o obj//./mouse.o obj//./lutro_stb_image.o obj//./lutro_window.o obj//./painter.o obj//./libretro-common/file/file_path.o obj//./libretro-common/file/file_path_io.o obj//./libretro-common/features/features_cpu.o obj//./libretro-common/audio/conversion/float_to_s16.o obj//./libretro-common/audio/conversion/s16_to_float.o obj//./libretro-common/audio/audio_mix.o obj//./libretro-common/compat/compat_posix_string.o obj//./libretro-common/memmap/memalign.o obj//./libretro-common/memmap/memmap.o obj//./libretro-common/compat/compat_strcasestr.o obj//./libretro-common/compat/compat_strl.o obj//./libretro-common/encodings/encoding_crc32.o obj//./libretro-common/encodings/encoding_utf.o obj//./libretro-common/time/rtime.o obj//./libretro-common/streams/file_stream.o obj//./libretro-common/streams/trans_stream.o obj//./libretro-common/streams/trans_stream_pipe.o obj//./libretro-common/streams/interface_stream.o obj//./libretro-common/streams/memory_stream.o obj//./libretro-common/string/stdstring.o obj//./libretro-common/vfs/vfs_implementation.o obj//./libretro-common/compat/fopen_utf8.o obj//./deps/luautf8/lutf8lib.o obj//./deps/zlib/ioapi.o obj//./deps/zlib/unzip.o obj//./deps/zlib/adler32.o obj//./deps/zlib/compress.o obj//./deps/zlib/crc32.o obj//./deps/zlib/deflate.o obj//./deps/zlib/gzclose.o obj//./deps/zlib/gzlib.o obj//./deps/zlib/gzread.o obj//./deps/zlib/gzwrite.o obj//./deps/zlib/inffast.o obj//./deps/zlib/inflate.o obj//./deps/zlib/inftrees.o obj//./deps/zlib/trees.o obj//./deps/zlib/uncompr.o obj//./deps/zlib/zutil.o obj//./deps/ogg/bitwise.o obj//./deps/ogg/framing.o obj//./deps/vorbis/analysis.o obj//./deps/vorbis/barkmel.o obj//./deps/vorbis/bitrate.o obj//./deps/vorbis/block.o obj//./deps/vorbis/codebook.o obj//./deps/vorbis/envelope.o obj//./deps/vorbis/floor0.o obj//./deps/vorbis/floor1.o obj//./deps/vorbis/info.o obj//./deps/vorbis/lookup.o obj//./deps/vorbis/lpc.o obj//./deps/vorbis/lsp.o obj//./deps/vorbis/mapping0.o obj//./deps/vorbis/mdct.o obj//./deps/vorbis/psy.o obj//./deps/vorbis/registry.o obj//./deps/vorbis/res0.o obj//./deps/vorbis/sharedbook.o obj//./deps/vorbis/smallft.o obj//./deps/vorbis/synthesis.o obj//./deps/vorbis/vorbisenc.o obj//./deps/vorbis/vorbisfile.o obj//./deps/vorbis/window.o lutro_libretro.dylib obj//lutro_libretro.dylib
+if [ -d "obj" ]; then rm -rf obj; fi
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-lutro'
+gmake -f Makefile platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-lutro'
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro.o libretro.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./lutro.o lutro.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./runtime.o runtime.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./image.o image.c
+lutro.c:139:8: warning: unused variable 'top' [-Wunused-variable]
+   int top = lua_gettop(L);
+       ^cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./graphics.o graphics.c
+
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./input.o input.c
+lutro.c:557:8: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+   int result = 1;
+       ^
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./audio.o audio.c
+In file included from lutro.c:1:
+In file included from ./lutro.h:8:
+./lutro_assert.h:122:73: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#  define tool_assertf(cond, msg, ...)      _base_soft_assertf(cond, msg, ## __VA_ARGS__)
+                                                                        ^
+./lutro_assert.h:63:187: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define _base_soft_assertf(cond, msg, ...)            ((void)((cond) || ((_lutro_assertf_internal(AssertIgnorable,     __FILE__ "(%d): assertion `%s` failed. " msg "\n", __LINE__, #cond , ## __VA_ARGS__)  ) && (abort(), 0))))
+                                                                                                                                                                                          ^
+lutro.c:54:16: warning: unused variable 'allocation_count' [-Wunused-variable]
+static int32_t allocation_count = 0;
+               ^
+5 warnings generated.
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./decoder.o decoder.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./event.o event.c
+In file included from audio.c:2:
+In file included from ./lutro.h:8:
+./lutro_assert.h:93:70: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#  define lutro_errorf(msg, ...)             _base_soft_errorf (msg, ## __VA_ARGS__)
+                                                                     ^
+./lutro_assert.h:56:189: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define _base_soft_errorf(msg, ...)                   ((void)(          ((_lutro_assertf_internal(AssertErrorOnly,     __FILE__ "(%d): error "                  msg "\n", __LINE__,         ## __VA_ARGS__),0)                )))
+                                                                                                                                                                                            ^
+./lutro_assert.h:105:78: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#  define lutro_alertf(msg, ...)             _base_soft_alertf  (       msg, ## __VA_ARGS__)
+                                                                             ^
+./lutro_assert.h:54:189: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define _base_soft_alertf(msg, ...)                   ((void)(          ((_lutro_assertf_internal(AssertIgnorable,     __FILE__ "(%d): alert "                  msg "\n", __LINE__,         ## __VA_ARGS__)  ) && (abort(), 0))))
+                                                                                                                                                                                            ^
+./lutro_assert.h:105:76: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#  define lutro_alertf(msg, ...)             _base_soft_alertf  (       msg, ## __VA_ARGS__)
+                                                                           ^
+./lutro_assert.h:54:179: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define _base_soft_alertf(msg, ...)                   ((void)(          ((_lutro_assertf_internal(AssertIgnorable,     __FILE__ "(%d): alert "                  msg "\n", __LINE__,         ## __VA_ARGS__)  ) && (abort(), 0))))
+                                                                                                                                                                                  ^
+audio.c:823:13: warning: unused function 'pause_sources_in_table' [-Wunused-function]
+static void pause_sources_in_table(lua_State* L, int idx)
+            ^
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./keyboard.o keyboard.c
+In file included from decoder.c:7:
+./lutro_assert.h:93:70: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#  define lutro_errorf(msg, ...)             _base_soft_errorf (msg, ## __VA_ARGS__)
+                                                                     ^
+./lutro_assert.h:56:189: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define _base_soft_errorf(msg, ...)                   ((void)(          ((_lutro_assertf_internal(AssertErrorOnly,     __FILE__ "(%d): error "                  msg "\n", __LINE__,         ## __VA_ARGS__),0)                )))
+                                                                                                                                                                                            ^
+./lutro_assert.h:93:70: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#  define lutro_errorf(msg, ...)             _base_soft_errorf (msg, ## __VA_ARGS__)
+                                                                     ^
+./lutro_assert.h:56:189: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define _base_soft_errorf(msg, ...)                   ((void)(          ((_lutro_assertf_internal(AssertErrorOnly,     __FILE__ "(%d): error "                  msg "\n", __LINE__,         ## __VA_ARGS__),0)                )))
+                                                                                                                                                                                            ^
+./lutro_assert.h:93:68: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#  define lutro_errorf(msg, ...)             _base_soft_errorf (msg, ## __VA_ARGS__)
+                                                                   ^
+./lutro_assert.h:56:179: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define _base_soft_errorf(msg, ...)                   ((void)(          ((_lutro_assertf_internal(AssertErrorOnly,     __FILE__ "(%d): error "                  msg "\n", __LINE__,         ## __VA_ARGS__),0)                )))
+                                                                                                                                                                                  ^
+./lutro_assert.h:93:68: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#  define lutro_errorf(msg, ...)             _base_soft_errorf (msg, ## __VA_ARGS__)
+                                                                   ^
+./lutro_assert.h:56:179: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define _base_soft_errorf(msg, ...)                   ((void)(          ((_lutro_assertf_internal(AssertErrorOnly,     __FILE__ "(%d): error "                  msg "\n", __LINE__,         ## __VA_ARGS__),0)                )))
+                                                                                                                                                                                  ^
+./lutro_assert.h:93:70: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#  define lutro_errorf(msg, ...)             _base_soft_errorf (msg, ## __VA_ARGS__)
+                                                                     ^
+./lutro_assert.h:56:189: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define _base_soft_errorf(msg, ...)                   ((void)(          ((_lutro_assertf_internal(AssertErrorOnly,     __FILE__ "(%d): error "                  msg "\n", __LINE__,         ## __VA_ARGS__),0)                )))
+                                                                                                                                                                                            ^
+decoder.c:110:11: warning: variable 'rendered' set but not used [-Wunused-but-set-variable]
+   size_t rendered = 0;
+          ^
+In file included from decoder.c:7:
+./lutro_assert.h:93:70: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#  define lutro_errorf(msg, ...)             _base_soft_errorf (msg, ## __VA_ARGS__)
+                                                                     ^
+./lutro_assert.h:56:189: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define _base_soft_errorf(msg, ...)                   ((void)(          ((_lutro_assertf_internal(AssertErrorOnly,     __FILE__ "(%d): error "                  msg "\n", __LINE__,         ## __VA_ARGS__),0)                )))
+                                                                                                                                                                                            ^
+./lutro_assert.h:93:70: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#  define lutro_errorf(msg, ...)             _base_soft_errorf (msg, ## __VA_ARGS__)
+                                                                     ^
+./lutro_assert.h:56:189: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define _base_soft_errorf(msg, ...)                   ((void)(          ((_lutro_assertf_internal(AssertErrorOnly,     __FILE__ "(%d): error "                  msg "\n", __LINE__,         ## __VA_ARGS__),0)                )))
+                                                                                                                                                                                            ^
+./lutro_assert.h:93:70: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#  define lutro_errorf(msg, ...)             _base_soft_errorf (msg, ## __VA_ARGS__)
+                                                                     ^
+./lutro_assert.h:56:189: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define _base_soft_errorf(msg, ...)                   ((void)(          ((_lutro_assertf_internal(AssertErrorOnly,     __FILE__ "(%d): error "                  msg "\n", __LINE__,         ## __VA_ARGS__),0)                )))
+                                                                                                                                                                                            ^
+./lutro_assert.h:93:70: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#  define lutro_errorf(msg, ...)             _base_soft_errorf (msg, ## __VA_ARGS__)
+                                                                     ^
+./lutro_assert.h:56:189: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define _base_soft_errorf(msg, ...)                   ((void)(          ((_lutro_assertf_internal(AssertErrorOnly,     __FILE__ "(%d): error "                  msg "\n", __LINE__,         ## __VA_ARGS__),0)                )))
+                                                                                                                                                                                            ^
+./lutro_assert.h:142:73: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#  define dbg_assumef(cond, msg, ...)       _base_hard_assertf(cond, msg, ## __VA_ARGS__)
+                                                                        ^
+./lutro_assert.h:61:187: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define _base_hard_assertf(cond, msg, ...)            ((void)((cond) || ((_lutro_assertf_internal(AssertUnrecoverable, __FILE__ "(%d): assertion `%s` failed. " msg "\n", __LINE__, #cond , ## __VA_ARGS__),1) && (abort(), 0))))
+                                                                                                                                                                                          ^
+./lutro_assert.h:140:75: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#  define dbg_assertf(cond, msg, ...)       _base_soft_assertf(cond, msg, ## __VA_ARGS__)
+                                                                          ^
+./lutro_assert.h:63:189: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define _base_soft_assertf(cond, msg, ...)            ((void)((cond) || ((_lutro_assertf_internal(AssertIgnorable,     __FILE__ "(%d): assertion `%s` failed. " msg "\n", __LINE__, #cond , ## __VA_ARGS__)  ) && (abort(), 0))))
+                                                                                                                                                                                            ^
+./lutro_assert.h:140:75: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#  define dbg_assertf(cond, msg, ...)       _base_soft_assertf(cond, msg, ## __VA_ARGS__)
+                                                                          ^
+./lutro_assert.h:63:189: warning: token pasting of ',' and __VA_ARGS__ is a GNU extension [-Wgnu-zero-variadic-macro-arguments]
+#define _base_soft_assertf(cond, msg, ...)            ((void)((cond) || ((_lutro_assertf_internal(AssertIgnorable,     __FILE__ "(%d): assertion `%s` failed. " msg "\n", __LINE__, #cond , ## __VA_ARGS__)  ) && (abort(), 0))))
+                                                                                                                                                                                            ^
+7 warnings generated.
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./sound.o sound.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./filesystem.o filesystem.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./system.o system.c
+25 warnings generated.
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./timer.o timer.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./lutro_math.o lutro_math.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./joystick.o joystick.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./mouse.o mouse.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./lutro_stb_image.o lutro_stb_image.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./lutro_window.o lutro_window.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./painter.o painter.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/file/file_path.o libretro-common/file/file_path.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/file/file_path_io.o libretro-common/file/file_path_io.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/features/features_cpu.o libretro-common/features/features_cpu.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/audio/conversion/float_to_s16.o libretro-common/audio/conversion/float_to_s16.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/audio/conversion/s16_to_float.o libretro-common/audio/conversion/s16_to_float.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/audio/audio_mix.o libretro-common/audio/audio_mix.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/compat/compat_posix_string.o libretro-common/compat/compat_posix_string.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/memmap/memalign.o libretro-common/memmap/memalign.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/memmap/memmap.o libretro-common/memmap/memmap.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/compat/compat_strcasestr.o libretro-common/compat/compat_strcasestr.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/compat/compat_strl.o libretro-common/compat/compat_strl.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/encodings/encoding_crc32.o libretro-common/encodings/encoding_crc32.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/encodings/encoding_utf.o libretro-common/encodings/encoding_utf.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/time/rtime.o libretro-common/time/rtime.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/streams/file_stream.o libretro-common/streams/file_stream.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/streams/trans_stream.o libretro-common/streams/trans_stream.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/streams/trans_stream_pipe.o libretro-common/streams/trans_stream_pipe.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/streams/interface_stream.o libretro-common/streams/interface_stream.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/streams/memory_stream.o libretro-common/streams/memory_stream.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/string/stdstring.o libretro-common/string/stdstring.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/vfs/vfs_implementation.o libretro-common/vfs/vfs_implementation.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./libretro-common/compat/fopen_utf8.o libretro-common/compat/fopen_utf8.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/luautf8/lutf8lib.o deps/luautf8/lutf8lib.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/zlib/ioapi.o deps/zlib/ioapi.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/zlib/unzip.o deps/zlib/unzip.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/zlib/adler32.o deps/zlib/adler32.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/zlib/compress.o deps/zlib/compress.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/zlib/crc32.o deps/zlib/crc32.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/zlib/deflate.o deps/zlib/deflate.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/zlib/gzclose.o deps/zlib/gzclose.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/zlib/gzlib.o deps/zlib/gzlib.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/zlib/gzread.o deps/zlib/gzread.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/zlib/gzwrite.o deps/zlib/gzwrite.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/zlib/inffast.o deps/zlib/inffast.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/zlib/inflate.o deps/zlib/inflate.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/zlib/inftrees.o deps/zlib/inftrees.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/zlib/trees.o deps/zlib/trees.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/zlib/uncompr.o deps/zlib/uncompr.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/zlib/zutil.o deps/zlib/zutil.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/ogg/bitwise.o deps/ogg/bitwise.c
+deps/zlib/inflate.c:1484:16: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+           return -1L << 16;
+                  ~~~ ^
+1 warning generated.
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/ogg/framing.o deps/ogg/framing.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/analysis.o deps/vorbis/analysis.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/barkmel.o deps/vorbis/barkmel.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/bitrate.o deps/vorbis/bitrate.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/block.o deps/vorbis/block.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/codebook.o deps/vorbis/codebook.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/envelope.o deps/vorbis/envelope.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/floor0.o deps/vorbis/floor0.c
+deps/vorbis/codebook.c:453:11: warning: unused variable 'j' [-Wunused-variable]
+    int i,j;
+          ^
+1 warning generated.
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/floor1.o deps/vorbis/floor1.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/info.o deps/vorbis/info.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/lookup.o deps/vorbis/lookup.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/lpc.o deps/vorbis/lpc.c
+deps/vorbis/floor1.c:474:26: warning: variable 'y2b' set but not used [-Wunused-but-set-variable]
+  double xb=0,yb=0,x2b=0,y2b=0,xyb=0,bn=0;
+                         ^
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/lsp.o deps/vorbis/lsp.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/mapping0.o deps/vorbis/mapping0.c
+deps/vorbis/lsp.c:312:10: warning: variable 'lastdelta' set but not used [-Wunused-but-set-variable]
+  double lastdelta=0.f;
+         ^
+1 warning generated.
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/mdct.o deps/vorbis/mdct.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/psy.o deps/vorbis/psy.c
+1 warning generated.
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/registry.o deps/vorbis/registry.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/res0.o deps/vorbis/res0.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/sharedbook.o deps/vorbis/sharedbook.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/smallft.o deps/vorbis/smallft.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/synthesis.o deps/vorbis/synthesis.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/vorbisenc.o deps/vorbis/vorbisenc.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/vorbisfile.o deps/vorbis/vorbisfile.c
+cc -arch i386 -DHAVE_STRL -DDONT_WANT_ARM_OPTIMIZATIONS  -g -DHAVE_COMPOSITION -Wall -pedantic -fPIC -I. -I./libretro-common/include -I./deps/zlib -I./deps/vorbis -I./deps/ogg -I./deps -Ideps/lua/src  -DOUTSIDE_SPEEX -DRANDOM_PREFIX=speex -DEXPORT= -DFIXED_POINT -std=gnu99  -DGIT_VERSION=\"" 4164f97"\"  -c -o obj//./deps/vorbis/window.o deps/vorbis/window.c
+gmake -C deps/lua/src CC="cc -arch i386 " CXX="c++ -arch i386" MYCFLAGS="-g -w -fPIC" MYLDFLAGS=" -fPIC" SYSCFLAGS="-DLUA_USE_MACOSX -fPIC" liblua.a
+gmake[2]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-lutro/deps/lua/src'
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lapi.o lapi.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lcode.o lcode.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o ldebug.o ldebug.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o ldo.o ldo.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o ldump.o ldump.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lfunc.o lfunc.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lgc.o lgc.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o llex.o llex.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lmem.o lmem.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lobject.o lobject.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lopcodes.o lopcodes.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lparser.o lparser.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lstate.o lstate.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lstring.o lstring.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o ltable.o ltable.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o ltm.o ltm.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lundump.o lundump.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lvm.o lvm.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lzio.o lzio.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lauxlib.o lauxlib.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lbaselib.o lbaselib.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o ldblib.o ldblib.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o liolib.o liolib.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lmathlib.o lmathlib.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o loslib.o loslib.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o ltablib.o ltablib.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o lstrlib.o lstrlib.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o loadlib.o loadlib.c
+cc -arch i386  -O2 -Wall -g -w -fPIC   -c -o linit.o linit.c
+ar rcu liblua.a lapi.o lcode.o ldebug.o ldo.o ldump.o lfunc.o lgc.o llex.o lmem.o lobject.o lopcodes.o lparser.o lstate.o lstring.o ltable.o ltm.o lundump.o lvm.o lzio.o lauxlib.o lbaselib.o ldblib.o liolib.o lmathlib.o loslib.o ltablib.o lstrlib.o loadlib.o linit.o	# DLL needs all object files
+ranlib liblua.a
+gmake[2]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-lutro/deps/lua/src'
+cc -arch i386 -fPIC -dynamiclib   -o obj//lutro_libretro.dylib obj//./libretro.o obj//./lutro.o obj//./runtime.o obj//./image.o obj//./graphics.o obj//./input.o obj//./audio.o obj//./decoder.o obj//./event.o obj//./keyboard.o obj//./sound.o obj//./filesystem.o obj//./system.o obj//./timer.o obj//./lutro_math.o obj//./joystick.o obj//./mouse.o obj//./lutro_stb_image.o obj//./lutro_window.o obj//./painter.o obj//./libretro-common/file/file_path.o obj//./libretro-common/file/file_path_io.o obj//./libretro-common/features/features_cpu.o obj//./libretro-common/audio/conversion/float_to_s16.o obj//./libretro-common/audio/conversion/s16_to_float.o obj//./libretro-common/audio/audio_mix.o obj//./libretro-common/compat/compat_posix_string.o obj//./libretro-common/memmap/memalign.o obj//./libretro-common/memmap/memmap.o obj//./libretro-common/compat/compat_strcasestr.o obj//./libretro-common/compat/compat_strl.o obj//./libretro-common/encodings/encoding_crc32.o obj//./libretro-common/encodings/encoding_utf.o obj//./libretro-common/time/rtime.o obj//./libretro-common/streams/file_stream.o obj//./libretro-common/streams/trans_stream.o obj//./libretro-common/streams/trans_stream_pipe.o obj//./libretro-common/streams/interface_stream.o obj//./libretro-common/streams/memory_stream.o obj//./libretro-common/string/stdstring.o obj//./libretro-common/vfs/vfs_implementation.o obj//./libretro-common/compat/fopen_utf8.o obj//./deps/luautf8/lutf8lib.o obj//./deps/zlib/ioapi.o obj//./deps/zlib/unzip.o obj//./deps/zlib/adler32.o obj//./deps/zlib/compress.o obj//./deps/zlib/crc32.o obj//./deps/zlib/deflate.o obj//./deps/zlib/gzclose.o obj//./deps/zlib/gzlib.o obj//./deps/zlib/gzread.o obj//./deps/zlib/gzwrite.o obj//./deps/zlib/inffast.o obj//./deps/zlib/inflate.o obj//./deps/zlib/inftrees.o obj//./deps/zlib/trees.o obj//./deps/zlib/uncompr.o obj//./deps/zlib/zutil.o obj//./deps/ogg/bitwise.o obj//./deps/ogg/framing.o obj//./deps/vorbis/analysis.o obj//./deps/vorbis/barkmel.o obj//./deps/vorbis/bitrate.o obj//./deps/vorbis/block.o obj//./deps/vorbis/codebook.o obj//./deps/vorbis/envelope.o obj//./deps/vorbis/floor0.o obj//./deps/vorbis/floor1.o obj//./deps/vorbis/info.o obj//./deps/vorbis/lookup.o obj//./deps/vorbis/lpc.o obj//./deps/vorbis/lsp.o obj//./deps/vorbis/mapping0.o obj//./deps/vorbis/mdct.o obj//./deps/vorbis/psy.o obj//./deps/vorbis/registry.o obj//./deps/vorbis/res0.o obj//./deps/vorbis/sharedbook.o obj//./deps/vorbis/smallft.o obj//./deps/vorbis/synthesis.o obj//./deps/vorbis/vorbisenc.o obj//./deps/vorbis/vorbisfile.o obj//./deps/vorbis/window.o deps/lua/src/liblua.a -lm
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+Undefined symbols for architecture i386:
+  "__DefaultRuneLocale", referenced from:
+      _luaO_str2d in liblua.a(lobject.o)
+      _luaX_token2str in liblua.a(llex.o)
+      _luaX_lexerror in liblua.a(llex.o)
+      _llex in liblua.a(llex.o)
+      _read_numeral in liblua.a(llex.o)
+      _luaB_tonumber in liblua.a(lbaselib.o)
+      _match_class in liblua.a(lstrlib.o)
+      ...
+      _luaO_str2d in liblua.a(lobject.o)
+      _luaX_token2str in liblua.a(llex.o)
+      _luaX_lexerror in liblua.a(llex.o)
+      _llex in liblua.a(llex.o)
+      _read_numeral in liblua.a(llex.o)
+      _luaB_tonumber in liblua.a(lbaselib.o)
+      _match_class in liblua.a(lstrlib.o)
+      ...
+      _luaO_str2d in liblua.a(lobject.o)
+      _luaX_token2str in liblua.a(llex.o)
+      _luaX_lexerror in liblua.a(llex.o)
+      _llex in liblua.a(llex.o)
+      _read_numeral in liblua.a(llex.o)
+      _luaB_tonumber in liblua.a(lbaselib.o)
+      _match_class in liblua.a(lstrlib.o)
+      ...
+      _luaO_str2d in liblua.a(lobject.o)
+      _luaX_token2str in liblua.a(llex.o)
+      _luaX_lexerror in liblua.a(llex.o)
+      _llex in liblua.a(llex.o)
+      _read_numeral in liblua.a(llex.o)
+      _luaB_tonumber in liblua.a(lbaselib.o)
+      _match_class in liblua.a(lstrlib.o)
+      ...
+  "___assert_rtn", referenced from:
+      _lutro_assetPath_init in lutro.o
+      _stbi__load_and_postprocess_16bit in lutro_stb_image.o
+      _stbi__load_and_postprocess_8bit in lutro_stb_image.o
+      _stbi__convert_format in lutro_stb_image.o
+      _stbi__convert_format16 in lutro_stb_image.o
+      _stbi__compute_transparency16 in lutro_stb_image.o
+      _stbi__compute_transparency in lutro_stb_image.o
+      ...
+  "___bzero", referenced from:
+      _luaF_newLclosure in liblua.a(lfunc.o)
+      _luaS_resize in liblua.a(lstring.o)
+  "___divdi3", referenced from:
+      _decWav_sampleTell in decoder.o
+  "___error", referenced from:
+      _source_seek in audio.o
+      _decOgg_init in decoder.o
+      _decWav_init in decoder.o
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+      _gz_load in gzread.o
+      _gz_comp in gzwrite.o
+      __get_data in vorbisfile.o
+      ...
+  "___maskrune", referenced from:
+      _luaO_str2d in liblua.a(lobject.o)
+      _luaX_token2str in liblua.a(llex.o)
+      _luaX_lexerror in liblua.a(llex.o)
+      _llex in liblua.a(llex.o)
+      _read_numeral in liblua.a(llex.o)
+      _luaB_tonumber in liblua.a(lbaselib.o)
+      _match_class in liblua.a(lstrlib.o)
+      ...
+  "___memcpy_chk", referenced from:
+      _lutro_serialize in lutro.o
+      _push_font in graphics.o
+      _stbi__vertical_flip in lutro_stb_image.o
+      _stbi__getn in lutro_stb_image.o
+      _stbi__create_png_image in lutro_stb_image.o
+      _stbi__create_png_image_raw in lutro_stb_image.o
+      _stbi__parse_uncompressed_block in lutro_stb_image.o
+      ...
+  "___memmove_chk", referenced from:
+      _string_trim_whitespace_left in stdstring.o
+      _oggpack_writecopy_helper in bitwise.o
+      _ogg_stream_iovecin in framing.o
+      _ogg_stream_flush_i in framing.o
+      _ogg_sync_buffer in framing.o
+      _ogg_stream_pagein in framing.o
+      _vorbis_analysis_blockout in block.o
+      ...
+  "___memset_chk", referenced from:
+      _retro_get_system_info in libretro.o
+      _lutro_serialize in lutro.o
+      _new_canvas in graphics.o
+      _decOgg_init in decoder.o
+      _decWav_init in decoder.o
+      _stbi__load_main in lutro_stb_image.o
+      _stbi__zbuild_huffman in lutro_stb_image.o
+      ...
+  "___moddi3", referenced from:
+      _decWav_sampleTell in decoder.o
+  "___snprintf_chk", referenced from:
+      _lutro_load in lutro.o
+      _gz_open in gzlib.o
+      _gzdopen in gzlib.o
+      _gz_error in gzlib.o
+  "___sprintf_chk", referenced from:
+      _luaO_pushvfstring in liblua.a(lobject.o)
+      _luaV_tostring in liblua.a(lvm.o)
+      _luaV_concat in liblua.a(lvm.o)
+      _str_format in liblua.a(lstrlib.o)
+  "___stack_chk_fail", referenced from:
+      _retro_load_game in libretro.o
+      _lutro_set_package_path in lutro.o
+      _lutro_unzip in lutro.o
+      _lutro_load in lutro.o
+      _image_data_create_from_path in image.o
+      _gfx_newImageFont in graphics.o
+      _audio_newSource in audio.o
+      ...
+  "___stack_chk_guard", referenced from:
+      _retro_load_game in libretro.o
+      _lutro_set_package_path in lutro.o
+      _lutro_unzip in lutro.o
+      _lutro_load in lutro.o
+      _image_data_create_from_path in image.o
+      _gfx_newImageFont in graphics.o
+      _audio_newSource in audio.o
+      ...
+      _retro_load_game in libretro.o
+      _lutro_set_package_path in lutro.o
+      _lutro_unzip in lutro.o
+      _lutro_load in lutro.o
+      _image_data_create_from_path in image.o
+      _gfx_newImageFont in graphics.o
+      _audio_newSource in audio.o
+      ...
+      _retro_load_game in libretro.o
+      _lutro_set_package_path in lutro.o
+      _lutro_unzip in lutro.o
+      _lutro_load in lutro.o
+      _image_data_create_from_path in image.o
+      _gfx_newImageFont in graphics.o
+      _audio_newSource in audio.o
+      ...
+      _retro_load_game in libretro.o
+      _lutro_set_package_path in lutro.o
+      _lutro_unzip in lutro.o
+      _lutro_load in lutro.o
+      _image_data_create_from_path in image.o
+      _gfx_newImageFont in graphics.o
+      _audio_newSource in audio.o
+      ...
+      _retro_load_game in libretro.o
+      _lutro_set_package_path in lutro.o
+      _lutro_unzip in lutro.o
+      _lutro_load in lutro.o
+      _image_data_create_from_path in image.o
+      _gfx_newImageFont in graphics.o
+      _audio_newSource in audio.o
+      ...
+      _retro_load_game in libretro.o
+      _lutro_set_package_path in lutro.o
+      _lutro_unzip in lutro.o
+      _lutro_load in lutro.o
+      _image_data_create_from_path in image.o
+      _gfx_newImageFont in graphics.o
+      _audio_newSource in audio.o
+      ...
+      _retro_load_game in libretro.o
+      _lutro_set_package_path in lutro.o
+      _lutro_unzip in lutro.o
+      _lutro_load in lutro.o
+      _image_data_create_from_path in image.o
+      _gfx_newImageFont in graphics.o
+      _audio_newSource in audio.o
+      ...
+      ...
+  "___stderrp", referenced from:
+      _fallback_log in libretro.o
+      __lutro_assertf_internal in lutro.o
+      _traceback in lutro.o
+      _lutro_init in lutro.o
+      _lutro_lua_panic in lutro.o
+      _lutro_load in lutro.o
+      _lutro_gamepadevent in lutro.o
+      ...
+      _fallback_log in libretro.o
+      __lutro_assertf_internal in lutro.o
+      _traceback in lutro.o
+      _lutro_init in lutro.o
+      _lutro_lua_panic in lutro.o
+      _lutro_load in lutro.o
+      _lutro_gamepadevent in lutro.o
+      ...
+      _fallback_log in libretro.o
+      __lutro_assertf_internal in lutro.o
+      _traceback in lutro.o
+      _lutro_init in lutro.o
+      _lutro_lua_panic in lutro.o
+      _lutro_load in lutro.o
+      _lutro_gamepadevent in lutro.o
+      ...
+      _fallback_log in libretro.o
+      __lutro_assertf_internal in lutro.o
+      _traceback in lutro.o
+      _lutro_init in lutro.o
+      _lutro_lua_panic in lutro.o
+      _lutro_load in lutro.o
+      _lutro_gamepadevent in lutro.o
+      ...
+      _fallback_log in libretro.o
+      __lutro_assertf_internal in lutro.o
+      _traceback in lutro.o
+      _lutro_init in lutro.o
+      _lutro_lua_panic in lutro.o
+      _lutro_load in lutro.o
+      _lutro_gamepadevent in lutro.o
+      ...
+      _fallback_log in libretro.o
+      __lutro_assertf_internal in lutro.o
+      _traceback in lutro.o
+      _lutro_init in lutro.o
+      _lutro_lua_panic in lutro.o
+      _lutro_load in lutro.o
+      _lutro_gamepadevent in lutro.o
+      ...
+      _fallback_log in libretro.o
+      __lutro_assertf_internal in lutro.o
+      _traceback in lutro.o
+      _lutro_init in lutro.o
+      _lutro_lua_panic in lutro.o
+      _lutro_load in lutro.o
+      _lutro_gamepadevent in lutro.o
+      ...
+      ...
+  "___stdinp", referenced from:
+      _luaL_loadfile in liblua.a(lauxlib.o)
+      _db_debug in liblua.a(ldblib.o)
+      _luaopen_io in liblua.a(liolib.o)
+      _luaL_loadfile in liblua.a(lauxlib.o)
+      _db_debug in liblua.a(ldblib.o)
+      _luaopen_io in liblua.a(liolib.o)
+      _luaL_loadfile in liblua.a(lauxlib.o)
+      _db_debug in liblua.a(ldblib.o)
+      _luaopen_io in liblua.a(liolib.o)
+  "___stdoutp", referenced from:
+      _lutro_init in lutro.o
+      _luaB_print in liblua.a(lbaselib.o)
+      _luaopen_io in liblua.a(liolib.o)
+      _lutro_init in lutro.o
+      _luaB_print in liblua.a(lbaselib.o)
+      _luaopen_io in liblua.a(liolib.o)
+      _lutro_init in lutro.o
+      _luaB_print in liblua.a(lbaselib.o)
+      _luaopen_io in liblua.a(liolib.o)
+  "___strcat_chk", referenced from:
+      _vorbis_comment_add_tag in info.o
+      _vorbis_comment_query in info.o
+      _vorbis_comment_query_count in info.o
+  "___strcpy_chk", referenced from:
+      _lutro_assetPath_init in lutro.o
+      _fill_pathname_abbreviated_or_relative in file_path.o
+      _string_replace_substring in stdstring.o
+      _word_wrap in stdstring.o
+      _vorbis_comment_add in info.o
+      _vorbis_comment_add_tag in info.o
+      _vorbis_comment_query in info.o
+      ...
+  "___strlcat_chk", referenced from:
+      _lutro_set_package_path in lutro.o
+      _lutro_assetPath_init in lutro.o
+      _image_data_create_from_path in image.o
+      _gfx_newImageFont in graphics.o
+      _fs_exists in filesystem.o
+      _fs_read in filesystem.o
+      _fs_write in filesystem.o
+      ...
+  "___strlcpy_chk", referenced from:
+      _lutro_set_package_path in lutro.o
+      _lutro_load in lutro.o
+      _lutro_assetPath_init in lutro.o
+      _lutro_relpath_to_modname in runtime.o
+      _image_data_create_from_path in image.o
+      _gfx_newImageFont in graphics.o
+      _fs_exists in filesystem.o
+      ...
+  "___strncpy_chk", referenced from:
+      _str_format in liblua.a(lstrlib.o)
+  "___tolower", referenced from:
+      _str_lower in liblua.a(lstrlib.o)
+      _match_class in liblua.a(lstrlib.o)
+  "___toupper", referenced from:
+      _str_upper in liblua.a(lstrlib.o)
+  "___vsnprintf_chk", referenced from:
+      _filestream_vprintf in file_stream.o
+      _gzvprintf in gzwrite.o
+  "_abort", referenced from:
+      _lutro_pcall in lutro.o
+      _lutro_init in lutro.o
+      _lutro_lua_panic in lutro.o
+      _lutro_serialize_size in lutro.o
+      _mixer_render in audio.o
+      _audio_play in audio.o
+      _audio_pause in audio.o
+      ...
+  "_abs", referenced from:
+      _stbi__paeth in lutro_stb_image.o
+      _pntr_strike_line in painter.o
+      _inspect_error in floor1.o
+      _render_point in floor1.o
+      _render_line0 in floor1.o
+      _render_line in floor1.o
+      _setup_tone_curves in psy.o
+      ...
+     (maybe you meant: _lua_absindex, _path_is_absolute )
+  "_acos", referenced from:
+      _vorbis_lpc_to_lsp in lsp.o
+      _math_acos in liblua.a(lmathlib.o)
+  "_asin", referenced from:
+      _math_asin in liblua.a(lmathlib.o)
+  "_atan", referenced from:
+      _main in barkmel.o
+      _floor0_map_lazy_init in floor0.o
+      __vp_psy_init in psy.o
+      _math_atan in liblua.a(lmathlib.o)
+  "_atan2", referenced from:
+      _math_atan2 in liblua.a(lmathlib.o)
+  "_calloc", referenced from:
+      _lutro_calloc_internal in lutro.o
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _retro_vfs_opendir_impl in vfs_implementation.o
+      _vorbis_block_init in block.o
+      _vorbis_analysis_init in block.o
+      ...
+     (maybe you meant: _lutro_calloc_internal)
+  "_clearerr", referenced from:
+      _g_read in liblua.a(liolib.o)
+  "_clock$UNIX2003", referenced from:
+      _os_clock in liblua.a(loslib.o)
+  "_close$UNIX2003", referenced from:
+      _retro_vfs_file_close_impl in vfs_implementation.o
+      _gzclose_r in gzread.o
+      _gzclose_w in gzwrite.o
+  "_closedir$UNIX2003", referenced from:
+      _retro_vfs_closedir_impl in vfs_implementation.o
+  "_cos", referenced from:
+      _pntr_strike_ellipse in painter.o
+      _pntr_fill_ellipse in painter.o
+      _vorbis_lsp_to_curve in lsp.o
+      _mdct_init in mdct.o
+      _dradfg in smallft.o
+      _dradbg in smallft.o
+      _drfti1 in smallft.o
+      ...
+  "_cosh", referenced from:
+      _math_cosh in liblua.a(lmathlib.o)
+  "_difftime", referenced from:
+      _os_difftime in liblua.a(loslib.o)
+  "_exit", referenced from:
+      _floor1_fit in floor1.o
+      _luaD_throw in liblua.a(ldo.o)
+      _os_exit in liblua.a(loslib.o)
+  "_exp", referenced from:
+      _vorbis_lsp_to_curve in lsp.o
+      __vp_psy_init in psy.o
+      _setup_tone_curves in psy.o
+      _math_exp in liblua.a(lmathlib.o)
+     (maybe you meant: _luaK_exp2RK, _luaK_exp2nextreg , _luaK_exp2anyreg , _fill_pathname_expand_special , _floor0_exportbundle , _residue0_exportbundle , _residue1_exportbundle , _luaK_exp2val , _residue2_exportbundle , _floor1_exportbundle , _mapping0_exportbundle )
+  "_fclose", referenced from:
+      _lutro_unzip in lutro.o
+      _source_gc in audio.o
+      _decWav_destroy in decoder.o
+      _decWav_init in decoder.o
+      _fs_read in filesystem.o
+      _fs_write in filesystem.o
+      _fs_load in filesystem.o
+      ...
+  "_feof", referenced from:
+      _decWav_init in decoder.o
+      _getF in liblua.a(lauxlib.o)
+  "_ferror", referenced from:
+      _retro_vfs_file_error_impl in vfs_implementation.o
+      _ferror_file_func in ioapi.o
+      _luaL_loadfile in liblua.a(lauxlib.o)
+      _io_readline in liblua.a(liolib.o)
+      _g_read in liblua.a(liolib.o)
+  "_fflush", referenced from:
+      __lutro_assertf_internal in lutro.o
+      _traceback in lutro.o
+      _lutro_init in lutro.o
+      _retro_vfs_file_flush_impl in vfs_implementation.o
+      _f_flush in liblua.a(liolib.o)
+      _io_flush in liblua.a(liolib.o)
+  "_fgets", referenced from:
+      _db_debug in liblua.a(ldblib.o)
+      _read_line in liblua.a(liolib.o)
+  "_fileno", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fmod", referenced from:
+      _math_fmod in liblua.a(lmathlib.o)
+  "_fopen$UNIX2003", referenced from:
+      _lutro_unzip in lutro.o
+      _decWav_init in decoder.o
+      _fs_read in filesystem.o
+      _fs_write in filesystem.o
+      _fs_load in filesystem.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _fopen_file_func in ioapi.o
+      ...
+  "_fprintf", referenced from:
+      __lutro_assertf_internal in lutro.o
+      _traceback in lutro.o
+      _lutro_init in lutro.o
+      _lutro_lua_panic in lutro.o
+      _lutro_load in lutro.o
+      _lutro_gamepadevent in lutro.o
+      _lutro_run in lutro.o
+      ...
+  "_fputs$UNIX2003", referenced from:
+      _luaB_print in liblua.a(lbaselib.o)
+      _db_debug in liblua.a(ldblib.o)
+  "_fread", referenced from:
+      _decWav_init in decoder.o
+      _decWav_decode in decoder.o
+      _fs_read in filesystem.o
+      _fs_load in filesystem.o
+      _retro_vfs_file_read_impl in vfs_implementation.o
+      _fread_file_func in ioapi.o
+      l___const.ov_open.callbacks in vorbisfile.o
+      ...
+  "_free", referenced from:
+      _lutro_free_internal in lutro.o
+      _stbi_image_free in lutro_stb_image.o
+      _stbi_zlib_decode_malloc_guesssize in lutro_stb_image.o
+      _stbi_zlib_decode_malloc_guesssize_headerflag in lutro_stb_image.o
+      _stbi_zlib_decode_noheader_malloc in lutro_stb_image.o
+      _lutro_stb_image_load in lutro_stb_image.o
+      _stbi__convert_8_to_16 in lutro_stb_image.o
+      ...
+     (maybe you meant: _luaC_freeall, _lutro_free_internal , __vi_gpsy_free , _stbi_image_free , _luaE_freethread , _luaF_freeupval , _luaF_freeclosure , __vi_psy_free , _res0_free_info , _audio_mix_free_chunk , _res0_free_look , __vp_global_free , _luaH_free , _memalign_free , _luaF_freeproto )
+  "_freopen$UNIX2003", referenced from:
+      _luaL_loadfile in liblua.a(lauxlib.o)
+  "_frexp", referenced from:
+      _math_frexp in liblua.a(lmathlib.o)
+  "_fscanf", referenced from:
+      _g_read in liblua.a(liolib.o)
+  "_fseek", referenced from:
+      _decWav_init in decoder.o
+      _decWav_seek in decoder.o
+      _decWav_decode in decoder.o
+      _fs_read in filesystem.o
+      _fs_load in filesystem.o
+      _fseek_file_func in ioapi.o
+      _fseek64_file_func in ioapi.o
+      ...
+  "_fseeko", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+  "_ftell", referenced from:
+      _decWav_init in decoder.o
+      _decWav_seek in decoder.o
+      _decWav_sampleTell in decoder.o
+      _decWav_decode in decoder.o
+      _fs_read in filesystem.o
+      _fs_load in filesystem.o
+      _ftell_file_func in ioapi.o
+      ...
+  "_ftello", referenced from:
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+  "_ftruncate", referenced from:
+      _retro_vfs_file_truncate_impl in vfs_implementation.o
+  "_fwrite$UNIX2003", referenced from:
+      _lutro_unzip in lutro.o
+      _retro_vfs_file_write_impl in vfs_implementation.o
+      _fwrite_file_func in ioapi.o
+      _g_write in liblua.a(liolib.o)
+  "_getc", referenced from:
+      _luaL_loadfile in liblua.a(lauxlib.o)
+      _g_read in liblua.a(liolib.o)
+     (maybe you meant: _memstream_getc, _filestream_getc , _intfstream_getc )
+  "_getenv", referenced from:
+      _fs_getUserDirectory in filesystem.o
+      _os_getenv in liblua.a(loslib.o)
+      _luaopen_package in liblua.a(loadlib.o)
+  "_gettimeofday", referenced from:
+      _ra_clock_gettime in features_cpu.o
+  "_gmtime", referenced from:
+      _os_date in liblua.a(loslib.o)
+  "_isspace", referenced from:
+      _filestream_vscanf in file_stream.o
+  "_isxdigit", referenced from:
+      _string_hex_to_unsigned in stdstring.o
+  "_labs", referenced from:
+      _vorbis_staticbook_pack in codebook.o
+  "_ldexp", referenced from:
+      __float32_pack in sharedbook.o
+      __float32_unpack in sharedbook.o
+      _math_ldexp in liblua.a(lmathlib.o)
+  "_localeconv", referenced from:
+      _read_numeral in liblua.a(llex.o)
+  "_localtime", referenced from:
+      _rtime_localtime in rtime.o
+      _os_date in liblua.a(loslib.o)
+     (maybe you meant: _rtime_localtime)
+  "_log", referenced from:
+      _mdct_init in mdct.o
+      __vp_psy_init in psy.o
+      _setup_tone_curves in psy.o
+      __float32_pack in sharedbook.o
+      _math_log in liblua.a(lmathlib.o)
+     (maybe you meant: _luaO_log2)
+  "_log10", referenced from:
+      _math_log10 in liblua.a(lmathlib.o)
+  "_longjmp", referenced from:
+      _luaD_throw in liblua.a(ldo.o)
+  "_lseek", referenced from:
+      _retro_vfs_file_seek_internal in vfs_implementation.o
+      _retro_vfs_file_tell_impl in vfs_implementation.o
+      _gz_open in gzlib.o
+      _gzrewind in gzlib.o
+      _gzseek64 in gzlib.o
+      _gzoffset64 in gzlib.o
+  "_malloc", referenced from:
+      _lutro_malloc_internal in lutro.o
+      _stbi__malloc in lutro_stb_image.o
+      _memalign_alloc in memalign.o
+      _strldup in compat_strl.o
+      _file_crc32 in encoding_crc32.o
+      _utf16_to_char in encoding_utf.o
+      _filestream_open in file_stream.o
+      ...
+     (maybe you meant: _lutro_malloc_internal, _stbi_zlib_decode_malloc , _stbi_zlib_decode_malloc_guesssize_headerflag , _stbi_zlib_decode_malloc_guesssize , _stbi_zlib_decode_noheader_malloc )
+  "_mbstowcs", referenced from:
+      _utf8_to_utf16_string_alloc in encoding_utf.o
+  "_memchr", referenced from:
+      _gzgets in gzread.o
+      _ogg_sync_pageseek in framing.o
+      _llex in liblua.a(llex.o)
+      _read_numeral in liblua.a(llex.o)
+      _str_format in liblua.a(lstrlib.o)
+      _str_find_aux in liblua.a(lstrlib.o)
+  "_memcmp", referenced from:
+      _vorbis_synthesis_idheader in info.o
+      _vorbis_synthesis_headerin in info.o
+      _luaS_newlstr in liblua.a(lstring.o)
+      _str_find_aux in liblua.a(lstrlib.o)
+      _match in liblua.a(lstrlib.o)
+      _luaU_undump in liblua.a(lundump.o)
+  "_memcpy", referenced from:
+      _retro_load_game in libretro.o
+      _stbi__create_png_image in lutro_stb_image.o
+      _unzOpenInternal in unzip.o
+      _unzOpen2_64 in unzip.o
+      _unz64local_GetCurrentFileInfoInternal in unzip.o
+      _unzLocateFile in unzip.o
+      _local_book_besterror in res0.o
+      ...
+  "_memset", referenced from:
+      _retro_unload_game in libretro.o
+      _mixer_render in audio.o
+      _lutro_keyboard_init in keyboard.o
+      _stbi__parse_png_file in lutro_stb_image.o
+      _stbi__zbuild_huffman in lutro_stb_image.o
+      _stbi__compute_huffman_codes in lutro_stb_image.o
+      _cpu_features_get_time_usec in features_cpu.o
+      ...
+  "_mkdir", referenced from:
+      _retro_vfs_mkdir_impl in vfs_implementation.o
+     (maybe you meant: _path_mkdir, _retro_vfs_mkdir_impl )
+  "_mktime$UNIX2003", referenced from:
+      _os_time in liblua.a(loslib.o)
+  "_modf", referenced from:
+      _math_modf in liblua.a(lmathlib.o)
+  "_mprotect$UNIX2003", referenced from:
+      _memprotect in memmap.o
+  "_msync$UNIX2003", referenced from:
+      _memsync in memmap.o
+  "_open$UNIX2003", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _gz_open in gzlib.o
+  "_opendir$INODE64$UNIX2003", referenced from:
+      _retro_vfs_opendir_impl in vfs_implementation.o
+  "_pow", referenced from:
+      _main in barkmel.o
+      __book_maptype1_quantvals in sharedbook.o
+      _luaV_execute in liblua.a(lvm.o)
+      _math_pow in liblua.a(lmathlib.o)
+      _codearith in liblua.a(lcode.o)
+  "_printf", referenced from:
+      _lutro_unzip in lutro.o
+      _lutro_gamepadevent in lutro.o
+      _lutro_stack_dump in runtime.o
+      _lutro_keyboardevent in keyboard.o
+      _lutro_joystickevent in joystick.o
+     (maybe you meant: _pntr_printf, _filestream_printf , _intfstream_printf )
+  "_puts", referenced from:
+      _lutro_stack_dump in runtime.o
+  "_qsort", referenced from:
+      _floor1_unpack in floor1.o
+      _floor1_look in floor1.o
+      _vorbis_lpc_to_lsp in lsp.o
+      _noise_normalize in psy.o
+      _vorbis_book_init_decode in sharedbook.o
+  "_rand", referenced from:
+      _lutro_math_random in lutro_math.o
+      _math_random in liblua.a(lmathlib.o)
+     (maybe you meant: _lutro_math_random)
+  "_read$UNIX2003", referenced from:
+      _retro_vfs_file_read_impl in vfs_implementation.o
+      _gz_load in gzread.o
+  "_readdir$INODE64", referenced from:
+      _retro_vfs_readdir_impl in vfs_implementation.o
+  "_realloc", referenced from:
+      _lutro_realloc_internal in lutro.o
+      _stbi__parse_png_file in lutro_stb_image.o
+      _stbi__zexpand in lutro_stb_image.o
+      _filestream_getline in file_stream.o
+      _oggpack_write in bitwise.o
+      _oggpackB_write in bitwise.o
+      _oggpack_writecopy_helper in bitwise.o
+      ...
+     (maybe you meant: _luaD_reallocstack, _lutro_realloc_internal , _luaD_reallocCI , _luaM_realloc_ )
+  "_remove", referenced from:
+      _retro_vfs_file_remove_impl in vfs_implementation.o
+      _os_remove in liblua.a(loslib.o)
+     (maybe you meant: _lua_remove, _path_remove_extension , _retro_vfs_file_remove_impl , _string_remove_all_chars )
+  "_rename", referenced from:
+      _retro_vfs_file_rename_impl in vfs_implementation.o
+      _os_rename in liblua.a(loslib.o)
+     (maybe you meant: _filestream_rename, _retro_vfs_file_rename_impl )
+  "_setjmp", referenced from:
+      _luaD_rawrunprotected in liblua.a(ldo.o)
+  "_setlocale", referenced from:
+      _os_setlocale in liblua.a(loslib.o)
+  "_setvbuf", referenced from:
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      _f_setvbuf in liblua.a(liolib.o)
+  "_sin", referenced from:
+      _pntr_strike_ellipse in painter.o
+      _pntr_fill_ellipse in painter.o
+      __ve_envelope_init in envelope.o
+      _mdct_init in mdct.o
+      _dradfg in smallft.o
+      _dradbg in smallft.o
+      _drfti1 in smallft.o
+      ...
+  "_sinh", referenced from:
+      _math_sinh in liblua.a(lmathlib.o)
+  "_srand", referenced from:
+      _lutro_math_init in lutro_math.o
+      _lutro_math_setRandomSeed in lutro_math.o
+      _math_randomseed in liblua.a(lmathlib.o)
+  "_sscanf", referenced from:
+      _filestream_vscanf in file_stream.o
+  "_stat$INODE64", referenced from:
+      _retro_vfs_stat_impl in vfs_implementation.o
+      _retro_vfs_dirent_is_dir_impl in vfs_implementation.o
+  "_strcat", referenced from:
+      _luaO_chunkid in liblua.a(lobject.o)
+  "_strchr", referenced from:
+      _path_get_archive_delim in file_path.o
+      _string_replace_all_chars in stdstring.o
+      _luaL_findtable in liblua.a(lauxlib.o)
+      _propagatemark in liblua.a(lgc.o)
+      _lua_getinfo in liblua.a(ldebug.o)
+      _luaO_pushvfstring in liblua.a(lobject.o)
+      _db_getinfo in liblua.a(ldblib.o)
+      ...
+  "_strcmp", referenced from:
+      _lutro_load in lutro.o
+      _gfx_printf in graphics.o
+      _gfx_rectangle in graphics.o
+      _gfx_polygon in graphics.o
+      _gfx_circle in graphics.o
+      _gfx_ellipse in graphics.o
+      _input_find_value in input.o
+      ...
+  "_strcoll", referenced from:
+      _luaV_lessthan in liblua.a(lvm.o)
+      _luaV_execute in liblua.a(lvm.o)
+  "_strcspn", referenced from:
+      _luaO_chunkid in liblua.a(lobject.o)
+  "_strdup", referenced from:
+      _fill_pathname_parent_dir_name in file_path.o
+      _path_mkdir in file_path_io.o
+      _utf8_to_local_string_alloc in encoding_utf.o
+      _local_to_utf8_string_alloc in encoding_utf.o
+      _string_init in stdstring.o
+      _string_replace_substring in stdstring.o
+      _retro_vfs_file_open_impl in vfs_implementation.o
+      ...
+  "_strerror$UNIX2003", referenced from:
+      _source_seek in audio.o
+      _decOgg_init in decoder.o
+      _decWav_init in decoder.o
+      _gz_load in gzread.o
+      _gz_comp in gzwrite.o
+      _luaL_loadfile in liblua.a(lauxlib.o)
+      _io_fclose in liblua.a(liolib.o)
+      ...
+  "_strftime$UNIX2003", referenced from:
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+      _os_date in liblua.a(loslib.o)
+  "_strlen", referenced from:
+      _lutro_unzip in lutro.o
+      _lutro_serialize in lutro.o
+      _lutro_relpath_to_modname in runtime.o
+      _fs_getUserDirectory in filesystem.o
+      _pntr_print in painter.o
+      _pntr_text_width in painter.o
+      _font_load_filename in painter.o
+      ...
+  "_strncat", referenced from:
+      _luaO_chunkid in liblua.a(lobject.o)
+  "_strncpy", referenced from:
+      _luaO_chunkid in liblua.a(lobject.o)
+  "_strpbrk", referenced from:
+      _str_find_aux in liblua.a(lstrlib.o)
+  "_strrchr", referenced from:
+      _find_last_slash in file_path.o
+      _path_get_extension in file_path.o
+      _path_remove_extension in file_path.o
+      _fill_pathname in file_path.o
+      _ll_module in liblua.a(loadlib.o)
+  "_strstr", referenced from:
+      _audio_newSource in audio.o
+      _snd_newSoundData in sound.o
+      _string_replace_substring in stdstring.o
+      _string_tokenize in stdstring.o
+      _luaL_gsub in liblua.a(lauxlib.o)
+  "_strtod$UNIX2003", referenced from:
+      _luaO_str2d in liblua.a(lobject.o)
+  "_strtoul", referenced from:
+      _string_to_unsigned in stdstring.o
+      _string_hex_to_unsigned in stdstring.o
+      _luaO_str2d in liblua.a(lobject.o)
+      _luaB_tonumber in liblua.a(lbaselib.o)
+  "_sysconf", referenced from:
+      _cpu_features_get_core_amount in features_cpu.o
+  "_sysctlbyname", referenced from:
+      _cpu_features_get in features_cpu.o
+      _cpu_features_get_model_name in features_cpu.o
+  "_system$UNIX2003", referenced from:
+      _os_execute in liblua.a(loslib.o)
+  "_tan", referenced from:
+      _math_tan in liblua.a(lmathlib.o)
+  "_tanh", referenced from:
+      _math_tanh in liblua.a(lmathlib.o)
+  "_time", referenced from:
+      _lutro_math_init in lutro_math.o
+      _fill_dated_filename in file_path.o
+      _fill_str_dated_filename in file_path.o
+      _os_date in liblua.a(loslib.o)
+      _os_time in liblua.a(loslib.o)
+     (maybe you meant: _ov_time_tell, _ov_time_seek_page_lap , _timer_getFPS , _timer_getTime , _ov_time_total , _frame_time , _ov_time_seek , _timer_getDelta , _ov_time_seek_page , _lutro_timer_init , _vorbis_granule_time , _lutro_timer_preload , _ov_time_seek_lap , _cpu_features_get_time_usec )
+  "_tmpfile", referenced from:
+      _io_tmpfile in liblua.a(liolib.o)
+  "_tmpnam", referenced from:
+      _os_tmpname in liblua.a(loslib.o)
+  "_tolower", referenced from:
+      _lutro_assetPath_init in lutro.o
+      _string_is_equal_case_insensitive in file_path.o
+      _casencmp in compat_strcasestr.o
+      _string_to_lower in stdstring.o
+  "_toupper", referenced from:
+      _string_to_upper in stdstring.o
+      _string_ucwords in stdstring.o
+      _tagcompare in info.o
+  "_ungetc", referenced from:
+      _luaL_loadfile in liblua.a(lauxlib.o)
+      _g_read in liblua.a(liolib.o)
+  "_vasprintf", referenced from:
+      _pntr_printf in painter.o
+  "_vfprintf", referenced from:
+      _fallback_log in libretro.o
+      __lutro_assertf_internal in lutro.o
+  "_wcstombs", referenced from:
+      _utf16_to_utf8_string_alloc in encoding_utf.o
+  "_write$UNIX2003", referenced from:
+      _retro_vfs_file_write_impl in vfs_implementation.o
+      _gz_comp in gzwrite.o
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile:580: obj//lutro_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-lutro'
+cp "lutro_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/lutro_libretro.dylib"
+cp: lutro_libretro.dylib: No such file or directory

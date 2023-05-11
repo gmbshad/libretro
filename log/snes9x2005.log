@@ -1,0 +1,233 @@
+Building snes9x2005...
+cd "/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-snes9x2005"
+gmake platform="osx" -j4  clean
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-snes9x2005'
+rm -f snes9x2005_libretro.dylib ./source/c4.o ./source/c4emu.o ./source/cheats2.o ./source/cheats.o ./source/clip.o ./source/cpu.o ./source/cpuexec.o ./source/cpuops.o ./source/data.o ./source/dma.o ./source/dsp1.o ./source/fxemu.o ./source/fxinst.o ./source/gfx.o ./source/getset.o ./source/globals.o ./source/memmap.o ./source/obc1.o ./source/ppu.o ./source/sa1.o ./source/sa1cpu.o ./source/sdd1.o ./source/sdd1emu.o ./source/seta010.o ./source/seta011.o ./source/seta018.o ./source/seta.o ./source/spc7110.o ./source/spc7110dec.o ./source/srtc.o ./source/tile.o ./libretro.o ./source/apu.o ./source/soundux.o ./source/spc700.o
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-snes9x2005'
+gmake platform="osx" -j4 CC="cc -arch i386" CXX="c++ -arch i386" 
+gmake[1]: Entering directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-snes9x2005'
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/c4.o source/c4.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/c4emu.o source/c4emu.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/cheats2.o source/cheats2.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/cheats.o source/cheats.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/clip.o source/clip.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/cpu.o source/cpu.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/cpuexec.o source/cpuexec.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/cpuops.o source/cpuops.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/data.o source/data.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/dma.o source/dma.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/dsp1.o source/dsp1.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/fxemu.o source/fxemu.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/fxinst.o source/fxinst.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/gfx.o source/gfx.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/getset.o source/getset.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/globals.o source/globals.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/memmap.o source/memmap.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/obc1.o source/obc1.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/ppu.o source/ppu.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/sa1.o source/sa1.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/sa1cpu.o source/sa1cpu.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/sdd1.o source/sdd1.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/sdd1emu.o source/sdd1emu.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/seta010.o source/seta010.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/seta011.o source/seta011.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/seta018.o source/seta018.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/seta.o source/seta.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/spc7110.o source/spc7110.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/spc7110dec.o source/spc7110dec.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/srtc.o source/srtc.c
+source/srtc.c:405:7: warning: 'memcpy' will always overflow; destination buffer has size 4, but size argument is 8 [-Wbuiltin-memcpy-chk-size]
+      memcpy(&rtc.system_timestamp, &Memory.SRAM [s + 5 + MAX_RTC_INDEX], 8);
+      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:3: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                ^
+1 warning generated.
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/tile.o source/tile.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -olibretro.o libretro.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/apu.o source/apu.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/soundux.o source/soundux.c
+cc -arch i386 -fPIC -DGIT_VERSION=\"" fd45b0e"\"  -DLOAD_FROM_MEMORY  -Wall -Wextra -pedantic -Wno-implicit-function-declaration -Wno-implicit-fallthrough -Wno-sign-compare -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-uninitialized -Wno-strict-aliasing -Wno-overflow -fno-strict-overflow -I./source -I. -I./libretro-common/include -O2 -DNDEBUG -DLAGFIX  -c -osource/spc700.o source/spc700.c
+cc -arch i386 -fPIC -dynamiclib  -lm -o snes9x2005_libretro.dylib ./source/c4.o ./source/c4emu.o ./source/cheats2.o ./source/cheats.o ./source/clip.o ./source/cpu.o ./source/cpuexec.o ./source/cpuops.o ./source/data.o ./source/dma.o ./source/dsp1.o ./source/fxemu.o ./source/fxinst.o ./source/gfx.o ./source/getset.o ./source/globals.o ./source/memmap.o ./source/obc1.o ./source/ppu.o ./source/sa1.o ./source/sa1cpu.o ./source/sdd1.o ./source/sdd1emu.o ./source/seta010.o ./source/seta011.o ./source/seta018.o ./source/seta.o ./source/spc7110.o ./source/spc7110dec.o ./source/srtc.o ./source/tile.o ./libretro.o ./source/apu.o ./source/soundux.o ./source/spc700.o 
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libm.tbd (3 slices)
+ld: warning: ignoring file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, missing required architecture i386 in file /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd (3 slices)
+Undefined symbols for architecture i386:
+  "__DefaultRuneLocale", referenced from:
+      _S9xGameGenieToRaw in cheats.o
+  "___bzero", referenced from:
+      _S9xSetC4 in c4emu.o
+      _C4DoScaleRotate in c4emu.o
+      _CommonS9xReset in cpu.o
+      _FxReset in fxemu.o
+      _S9xUpdateScreen in gfx.o
+      _LoadROM in memmap.o
+      _InitROM in memmap.o
+      ...
+  "___divdi3", referenced from:
+      _S9xSetPlaybackRate in soundux.o
+  "___maskrune", referenced from:
+      _S9xGameGenieToRaw in cheats.o
+  "___memcpy_chk", referenced from:
+      _ComputeClipWindows in clip.o
+      _S9xSRTCPostLoadState in srtc.o
+  "___memset_chk", referenced from:
+      _S9xMixSamples in soundux.o
+      _S9xMixSamplesLowPass in soundux.o
+  "___sprintf_chk", referenced from:
+      _InitROM in memmap.o
+      _ParseSNESHeader in memmap.o
+  "___stack_chk_fail", referenced from:
+      _S9xGoldFingerToRaw in cheats.o
+      _S9xGameGenieToRaw in cheats.o
+      _ComputeClipWindows in clip.o
+      _S9xSetupOBJ in gfx.o
+      _DrawOBJS in gfx.o
+      _S9xDeinterleaveType1 in memmap.o
+      _S9xDeinterleaveType2 in memmap.o
+      ...
+  "___stack_chk_guard", referenced from:
+      _S9xGoldFingerToRaw in cheats.o
+      _S9xGameGenieToRaw in cheats.o
+      _ComputeClipWindows in clip.o
+      _S9xSetupOBJ in gfx.o
+      _DrawOBJS in gfx.o
+      _S9xDeinterleaveType1 in memmap.o
+      _S9xDeinterleaveType2 in memmap.o
+      ...
+      _S9xGoldFingerToRaw in cheats.o
+      _S9xGameGenieToRaw in cheats.o
+      _ComputeClipWindows in clip.o
+      _S9xSetupOBJ in gfx.o
+      _DrawOBJS in gfx.o
+      _S9xDeinterleaveType1 in memmap.o
+      _S9xDeinterleaveType2 in memmap.o
+      ...
+      _S9xGoldFingerToRaw in cheats.o
+      _S9xGameGenieToRaw in cheats.o
+      _ComputeClipWindows in clip.o
+      _S9xSetupOBJ in gfx.o
+      _DrawOBJS in gfx.o
+      _S9xDeinterleaveType1 in memmap.o
+      _S9xDeinterleaveType2 in memmap.o
+      ...
+      _S9xGoldFingerToRaw in cheats.o
+      _S9xGameGenieToRaw in cheats.o
+      _ComputeClipWindows in clip.o
+      _S9xSetupOBJ in gfx.o
+      _DrawOBJS in gfx.o
+      _S9xDeinterleaveType1 in memmap.o
+      _S9xDeinterleaveType2 in memmap.o
+      ...
+      _S9xGoldFingerToRaw in cheats.o
+      _S9xGameGenieToRaw in cheats.o
+      _ComputeClipWindows in clip.o
+      _S9xSetupOBJ in gfx.o
+      _DrawOBJS in gfx.o
+      _S9xDeinterleaveType1 in memmap.o
+      _S9xDeinterleaveType2 in memmap.o
+      ...
+  "___strcpy_chk", referenced from:
+      _S9xGameGenieToRaw in cheats.o
+  "___toupper", referenced from:
+      _S9xGameGenieToRaw in cheats.o
+  "_calloc", referenced from:
+      _S9xInitMemory in memmap.o
+      _retro_set_environment in libretro.o
+  "_free", referenced from:
+      _S9xDeinitGFX in gfx.o
+      _S9xDeinterleaveType1 in memmap.o
+      _S9xDeinterleaveGD24 in memmap.o
+      _S9xDeinitMemory in memmap.o
+      _S9xDeinterleaveType2 in memmap.o
+      _InitROM in memmap.o
+      _spc7110dec_deinit in spc7110dec.o
+      ...
+  "_malloc", referenced from:
+      _S9xInitGFX in gfx.o
+      _S9xDeinterleaveType1 in memmap.o
+      _S9xDeinterleaveGD24 in memmap.o
+      _S9xInitMemory in memmap.o
+      _S9xDeinterleaveType2 in memmap.o
+      _InitROM in memmap.o
+      _spc7110dec_init in spc7110dec.o
+      ...
+  "_memcmp", referenced from:
+      _InitROM in memmap.o
+      _SuperFXROMMap in memmap.o
+      _ApplyROMFixes in memmap.o
+      _DetectSuperFxRamSize in memmap.o
+  "_memcpy", referenced from:
+      _S9xUpdateScreen in gfx.o
+      _S9xDeinterleaveType1 in memmap.o
+      _S9xDeinterleaveGD24 in memmap.o
+      _LoadROM in memmap.o
+      _S9xDeinterleaveType2 in memmap.o
+      _SPC7110HiROMMap in memmap.o
+      _TalesROMMap in memmap.o
+      ...
+  "_memmove", referenced from:
+      _S9xSetC4 in c4emu.o
+      _S9xDeleteCheat in cheats2.o
+      _DrawOBJS in gfx.o
+      _S9xSA1DMA in sa1.o
+      _spc7110dec_mode1 in spc7110dec.o
+      _spc7110dec_mode2 in spc7110dec.o
+  "_memset", referenced from:
+      _S9xReset in cpu.o
+      _S9xUpdateScreen in gfx.o
+      _InitROM in memmap.o
+      _ResetSpeedMap in memmap.o
+  "_memset_pattern16", referenced from:
+      _ComputeClipWindows in clip.o
+      _SPC7110HiROMMap in memmap.o
+      _SA1ROMMap in memmap.o
+      _SufamiTurboLoROMMap in memmap.o
+  "_qsort", referenced from:
+      _ComputeClipWindows in clip.o
+  "_rand", referenced from:
+      _S9xGetPPU in ppu.o
+  "_sscanf", referenced from:
+      _S9xProActionReplayToRaw in cheats.o
+      _S9xGoldFingerToRaw in cheats.o
+      _S9xGameGenieToRaw in cheats.o
+  "_strcat", referenced from:
+      _retro_set_environment in libretro.o
+  "_strcmp", referenced from:
+      _match_na in memmap.o
+      _retro_set_environment in libretro.o
+      _check_variables in libretro.o
+  "_strcpy", referenced from:
+      _retro_set_environment in libretro.o
+  "_strlen", referenced from:
+      _S9xProActionReplayToRaw in cheats.o
+      _S9xGoldFingerToRaw in cheats.o
+      _S9xGameGenieToRaw in cheats.o
+      _InitROM in memmap.o
+      _match_id in memmap.o
+      _retro_set_environment in libretro.o
+  "_strncasecmp", referenced from:
+      _ApplyROMFixes in memmap.o
+  "_strncmp", referenced from:
+      _LoadROM in memmap.o
+      _InitROM in memmap.o
+      _match_id in memmap.o
+  "_strncpy", referenced from:
+      _S9xGoldFingerToRaw in cheats.o
+      _S9xGameGenieToRaw in cheats.o
+      _InitROM in memmap.o
+      _ParseSNESHeader in memmap.o
+  "_strtol", referenced from:
+      _check_variables in libretro.o
+  "_time", referenced from:
+      _S9xUpdateRTC in spc7110.o
+      _S9xSetSPC7110 in spc7110.o
+      _S9xHardResetSRTC in srtc.o
+      _S9xUpdateSrtcTime in srtc.o
+      _S9xSetSRTC in srtc.o
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [Makefile:648: snes9x2005_libretro.dylib] Error 1
+gmake[1]: Leaving directory '/Users/redd/Documents/GitHub/RetroARCH/libretro/libretro-snes9x2005'
+cp "snes9x2005_libretro.dylib" "/Users/redd/Documents/GitHub/RetroARCH/libretro/dist/osx-x86_64/snes9x2005_libretro.dylib"
+cp: snes9x2005_libretro.dylib: No such file or directory
